@@ -2,7 +2,7 @@
 title: "Reflections on DECEIVERS by Alfred Bester"
 description: "A critical reflection on Alfred Bester's 1982 sci-fi novel Deceivers, exploring its themes of race, gender, and technology."
 pubDate: '2020-04-20'
-categories: ['reading', 'science-fiction']
+categories: ['readings', 'science-fiction']
 image: "/images/dc9b92_3da3f40f3bec4e2ab58168cf70ed8498~mv2.jpg"
 ---
 

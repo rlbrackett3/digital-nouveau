@@ -2,7 +2,7 @@
 title: "Deep Thoughts from Isaac Asimov"
 description: "Reflecting on an Isaac Asimov quote that opens Chapter 2 of Marvin Minsky's The Society of Mind."
 pubDate: '2020-06-01'
-categories: ['reading', 'philosophy']
+categories: ['readings', 'philosophy']
 image: "/images/dc9b92_62a114873e4c4583959cb8419727c130~mv2.png"
 ---
 

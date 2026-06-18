@@ -1,16 +1,5 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_COPYRIGHT, CATEGORIES } from '../consts';
-
-const categoryDisplay: Record<string, string> = {
-	design: 'Design',
-	drawings: 'Drawings',
-	readings: 'Readings',
-	skyfi: 'SkyFi',
-	thinkings: 'Thinkings',
-	observings: 'Observings',
-	teachings: 'Teachings',
-	writings: 'Writings',
-};
 ---
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,20 +24,22 @@ const categoryDisplay: Record<string, string> = {
 		<a href="/portfolio" class="nav-link">portfolio</a>
 		<a href="/skyfi-a-reading-list" class="nav-link">skyfi :: a reading list</a>
 	</nav>
+	</header>
+
+	<!-- Category navigation - Wix style: in main content area, not in header -->
 	<nav class="category-nav">
 		<span class="category-nav-label">browse:</span>
+		<a href="/blog" class="category-link">&gt; everything ~</a>
+		<span class="category-sep">/</span>
 		{CATEGORIES.map((cat, i) => (
 			<>
-				{
-					<a href={`/category/${cat}`} class="category-link">{categoryDisplay[cat] || cat}</a>
-				}
+				<a href={`/category/${cat}`} class="category-link">{cat}</a>
 				{i < CATEGORIES.length - 1 && <span class="category-sep">/</span>}
 			</>
 		))}
 	</nav>
-</header>
 
-<slot />
+	<slot />
 
 <footer class="site-footer">
 	<div class="footer-inner">
@@ -151,27 +142,29 @@ const categoryDisplay: Record<string, string> = {
 		color: var(--accent);
 	}
 
-	/* Category navigation - light text on black header */
+	/* Category navigation - white background, Wix style */
 	.category-nav {
 		max-width: 1200px;
-		margin: 0.4rem auto 0;
+		margin: 1rem auto 0;
+		padding: 0.5rem 2rem;
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
 		flex-wrap: wrap;
-		padding-bottom: 0.25rem;
+		border-top: 1px solid var(--border);
+		border-bottom: 1px solid var(--border);
 	}
 
 	.category-nav-label {
 		font-size: 0.7rem;
-		color: #888888;
+		color: var(--text-muted);
 		text-transform: lowercase;
 		letter-spacing: 0.05em;
 		margin-right: 0.25rem;
 	}
 
 	.category-link {
-		color: #cccccc;
+		color: var(--text-secondary);
 		text-decoration: none;
 		font-size: 0.75rem;
 		font-weight: 400;
@@ -184,7 +177,7 @@ const categoryDisplay: Record<string, string> = {
 
 	.category-sep {
 		font-size: 0.7rem;
-		color: #888888;
+		color: var(--text-muted);
 		user-select: none;
 	}
 

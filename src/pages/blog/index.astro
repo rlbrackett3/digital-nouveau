@@ -2,7 +2,7 @@
 // Updated blog index page - Wix-inspired light theme
 import SiteLayout from '@/components/SiteLayout.astro';
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, CATEGORIES } from '@/consts';
+import { SITE_TITLE } from '@/consts';
 
 const allPosts = await getCollection('blog');
 const sortedPosts = allPosts
@@ -11,17 +11,6 @@ const sortedPosts = allPosts
 		const words = (post.body || '').trim().split(/\s+/).filter(Boolean).length;
 		return { ...post, readTime: Math.max(1, Math.ceil(words / 200)) };
 	});
-
-const categoryDisplay: Record<string, string> = {
-	design: 'Design',
-	drawings: 'Drawings',
-	readings: 'Readings',
-	skyfi: 'SkyFi',
-	thinkings: 'Thinkings',
-	observings: 'Observings',
-	teachings: 'Teachings',
-	writings: 'Writings',
-};
 ---
 
 <SiteLayout title={"Blog Archive | " + SITE_TITLE}>
@@ -34,16 +23,6 @@ const categoryDisplay: Record<string, string> = {
 			<h1>Blog Archive</h1>
 			<p>All posts, newest first.</p>
 		</div>
-
-		<nav class="category-filter">
-			<span class="filter-label">filter:</span>
-			{CATEGORIES.map((cat, i) => (
-				<>
-					<a href={`/category/${cat}`} class="filter-link">{categoryDisplay[cat] || cat}</a>
-					{i < CATEGORIES.length - 1 && <span class="filter-sep">/</span>}
-				</>
-			))}
-		</nav>
 
 		<div class="post-list">
 			{sortedPosts.map(post => (

@@ -2,7 +2,7 @@
 title: "Start with better dreams"
 description: "Reflections on the Hieroglyph project and Neal Stephenson's call for techno-optimistic storytelling."
 pubDate: '2020-02-20'
-categories: ['reading', 'design']
+categories: ['readings', 'design']
 image: "/images/dc9b92_3ab0b2ea695a468782ea970874878a95~mv2.gif"
 ---
 

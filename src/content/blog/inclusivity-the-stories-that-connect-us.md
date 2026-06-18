@@ -2,7 +2,7 @@
 title: "Inclusivity :: The Stories That Connect Us"
 description: "Reflections on neurodiversity, inclusivity, and the power of storytelling through the Escape Pod podcast."
 pubDate: '2020-05-10'
-categories: ['reading', 'inclusivity']
+categories: ['readings', 'inclusivity']
 image: "/images/dc9b92_7e1dc4fe82e04629ac481dbfe3f83873~mv2.jpg"
 ---
 

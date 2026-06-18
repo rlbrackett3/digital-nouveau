@@ -2,7 +2,7 @@
 // Digital Nouveau - Index page (Wix-inspired light theme)
 import SiteLayout from '@/components/SiteLayout.astro';
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, SITE_DESCRIPTION, CATEGORIES } from '@/consts';
+import { SITE_TITLE, SITE_DESCRIPTION } from '@/consts';
 
 const allPosts = await getCollection('blog');
 const sortedPosts = allPosts
@@ -12,17 +12,6 @@ const sortedPosts = allPosts
 		return { ...post, readTime: Math.max(1, Math.ceil(words / 200)) };
 	})
 	.slice(0, 12);
-
-const categoryDisplay: Record<string, string> = {
-	design: 'Design',
-	drawings: 'Drawings',
-	readings: 'Readings',
-	skyfi: 'SkyFi',
-	thinkings: 'Thinkings',
-	observings: 'Observings',
-	teachings: 'Teachings',
-	writings: 'Writings',
-};
 ---
 
 <SiteLayout title={SITE_TITLE}>
@@ -32,14 +21,6 @@ const categoryDisplay: Record<string, string> = {
 	</head>
 
 	<main class="index-page">
-		<nav class="category-nav-horizontal">
-			<a href="/blog">&gt; everything ~</a>
-			{CATEGORIES.map(cat => {
-				const displayName = categoryDisplay[cat] || cat;
-				return <a href={`/category/${cat}`}>{displayName}</a>;
-			})}
-		</nav>
-
 		<div class="post-list">
 			{sortedPosts.map(post => (
 				<article class="post-card">
