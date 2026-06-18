@@ -1,0 +1,140 @@
+---
+// SkyFi reading list page
+import SiteLayout from '@/components/SiteLayout.astro';
+import { SITE_TITLE } from '@/consts';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const skyfiPosts = allPosts
+	.filter(post => post.data.categories.includes('skyfi'))
+	.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+---
+
+<SiteLayout title="SkyFi :: A Reading List | {SITE_TITLE}">
+	<head>
+		<title>SkyFi :: A Reading List | {SITE_TITLE}</title>
+	</head>
+
+	<main class="skyfi-page">
+		<h1>📚 SkyFi :: Reading List</h1>
+
+		<section>
+			<h2>🏢 Club Overview</h2>
+			<ul>
+				<li><strong>Name:</strong> SkyFi</li>
+				<li><strong>Focus:</strong> Primarily science fiction, blended with philosophy, music, horror, surrealism, and post-modern literature.</li>
+				<li><strong>Demographics:</strong> NYC-based group, predominantly architects.</li>
+				<li><strong>Purpose:</strong> Collaborative book club with spinoff explorations and curated reading radars.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>📅 Currently Reading (October 2020)</h2>
+			<ul>
+				<li>📖 <strong>Pseudo Fiction:</strong> <em>Staying with the Trouble: Making Kin in the Chthulucene</em> by Donna Haraway</li>
+				<li>🎬 <strong>Watching:</strong> <em>Alien 3</em></li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>📜 Chronological Club Reads</h2>
+			<ul>
+				<li><em>Ubik</em> — Philip K. Dick</li>
+				<li><em>Altered Carbon</em> — Richard Morgan</li>
+				<li><em>The Old Man and the Wasteland</em></li>
+				<li><em>Mountains of Madness</em> — HP Lovecraft</li>
+				<li><em>Blindsight</em> — Peter Watts</li>
+				<li><em>Embassytown</em> — China Mieville</li>
+				<li><em>REAMDE</em> — Neal Stephenson</li>
+				<li><em>Halting State</em> — Charles Stross</li>
+				<li><em>American Gods</em> — Neil Gaiman</li>
+				<li><em>The Spiral</em> — Paul McEwan</li>
+				<li><em>Left Hand of Darkness</em> — Ursula K LeGuin</li>
+				<li><em>Solaris</em> — Stanislaw Lem</li>
+				<li><em>"The Dream Quest of the Unknown Kadath"</em> — H.P. Lovecraft</li>
+				<li><em>By His Bootstraps</em> — Robert A Heinlein</li>
+				<li><em>All You Zombies</em> — Robert A Heinlein</li>
+				<li><em>City in The City</em> — China Mieville</li>
+				<li><em>Stranger in a Strange Land</em> — Robert A Heinlein</li>
+				<li><em>The Quantum Thief</em> — Hannu Rajaniemi</li>
+				<li><em>Leviathan Wakes</em> — James A Corey</li>
+				<li><em>The Foundation Trilogy</em> — Isaac Asimov</li>
+				<li><em>Rainbow's End</em> — Vernor Vinge</li>
+				<li><em>The Call of Cthulhu</em> — H.P. Lovecraft</li>
+				<li><em>Broken Angels</em> — Richard K Morgan</li>
+				<li><em>The Possibility of an Island</em> — Michel Houellebecq</li>
+				<li><em>Brain Plague</em> — Joan Slonczewski</li>
+				<li><em>Schild's Ladder</em> — Greg Eigen</li>
+				<li><em>In the Dust of This Planet</em> — Eugene Thacker</li>
+				<li><em>Weird Realism</em> — Graham Harmon</li>
+				<li><em>Annihilation</em> — Jeff VanderMeer</li>
+				<li><em>Authority</em> — Jeff VanderMeer</li>
+				<li><em>Acceptance</em> — Jeff VanderMeer</li>
+				<li><em>2312</em> — Kim Stanley Robinson</li>
+				<li><em>Hyperobjects</em> — Timothy Morton</li>
+				<li><em>Oryx and Crake</em> — Margaret Atwood</li>
+				<li><em>Hieroglyph</em> — Various Authors</li>
+				<li><em>Seveneves</em> — Neal Stephenson</li>
+				<li><em>Ready Player One</em> — Ernest Klein</li>
+				<li><em>High Rise</em> — JG Ballard</li>
+				<li><em>The Three Body Problem</em> — Liu Cixin</li>
+				<li><em>The Passage</em> — Justin Cronin</li>
+				<li><em>The Big Sheep</em> — Robert Kroese</li>
+				<li><em>The Last Days of New Paris</em> — China Mieville</li>
+				<li><em>Dark Ecology</em> — Timothy Morton</li>
+				<li><em>The Year of The Flood</em> — Margaret Atwood</li>
+				<li><em>MaddAddam</em> — Margaret Atwood</li>
+				<li><em>The Fifth Season</em> — N.K. Jemisin</li>
+				<li><em>The Girl With All The Gifts</em> — M.R. Carey</li>
+				<li><em>Three Moments of an Explosion</em> — China Mieville</li>
+				<li><em>Infinite Jest</em> — David Foster Wallace</li>
+				<li><em>Lovecraft Country</em> — Matt Ruff</li>
+				<li><em>Snow Crash</em> — Neil Stevenson</li>
+				<li><em>Hyperion</em> — Dan Simmons</li>
+				<li><em>Walkaway</em> — Cory Doctorow</li>
+				<li><em>Rendezvous with Rama</em> — Arthur C. Clarke</li>
+				<li><em>Dhalgren</em> — Samuel R. Delany</li>
+				<li><em>Echopraxia</em> — Peter Watts</li>
+				<li><em>Dune</em> — Frank Herbert</li>
+				<li><em>Ancillary Justice</em> (+ <em>Ancillary Mercy</em> + <em>Ancillary Sword</em>) — Anne Leckie</li>
+				<li><em>Strange Stars</em> — Jason Heller</li>
+				<li><em>The Beast That Shouted Love At The End Of The World</em> — Harlan Ellison (1968)</li>
+				<li><em>Shadowbahn</em> — Steve Erickson</li>
+				<li><em>Star Maker</em> — Olaf Stapledon</li>
+				<li><em>Last and First Men</em> — Olaf Stapledon</li>
+				<li><em>Ninefox Gambit</em> (+ <em>Raven Stratagem</em> + <em>Revenant Gun</em>) — Yoon Ha Lee</li>
+				<li><em>Peripheral</em> — William Gibson</li>
+				<li><em>Agency</em> — William Gibson</li>
+				<li><em>Parable of the Sower</em> — Octavia Butler</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>⭐ Favorites</h2>
+			<ul>
+				<li><em>Altered Carbon</em> series (<em>Broken Angels</em> + <em>Woken Furies</em>) — Richard K. Morgan</li>
+				<li><em>Blindsight</em> — Peter Watts</li>
+				<li><em>Star Maker</em> — Olaf Stapledon</li>
+				<li><em>The Book of Five Rings</em> — Miyamoto Musashi</li>
+				<li><em>Tao Te Ching</em> — Ursula K. LeGuin</li>
+				<li><em>The Watercourse Way</em> — Alan Watts</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>📖 Recent Book Club Posts</h2>
+			<ul>
+				{skyfiPosts.map(post => (
+					<li>
+						<a href={`/blog/${post.slug}`}>
+							<strong>{post.data.title}</strong>
+							<span class="post-date">
+								{post.data.pubDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+							</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		</section>
+	</main>
+</SiteLayout>

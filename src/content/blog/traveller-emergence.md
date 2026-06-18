@@ -1,0 +1,16 @@
+---
+title: "raveller :: Emergence"
+description: ": 'On journaling, meditation, and the Traveller's Log as a device for navigating life's voyage."
+pubDate: 'Dec 24 2019'
+categories: ['drawings']
+---
+
+A journal has been a consistent part of my daily routine for many years now. While I miss a day here and there, especially when travelling or when my schedule makes a major shift, the act of writing through thoughts, goals, dreams, and wild thoughts is a soothing and enlightening practice. I take a lot of joy in the challenge of beginning each day with a blank page and the uncertain choice and responsibility of what to commit to the universe.
+
+On some days this is easy, I reflect on three things that I am grateful for in my life, then lay out a list of priorities for the day with their associated direct tasks, followed by a few affirmations regarding my commitment to developing my mental, physical, spiritual and social being.
+
+There are other days when other spirits inhabit my fingers, on these days I become a Traveller. Inspired by Star Trek and the haunting logs of explorers on long voyages, I express my status in a Traveller's Log. For a time I attempted the cliche Captain's Log, only to discover that I am much more drawn to the winds of fate than the forceful rudder. While I may captain this voyage of my life, I feel that the journey becomes more interesting when I surrender and travel. Many of my experiences have shown me that there is never really anyone steering the ship and that the oars or rudders or any navigation systems are mostly there for our security, our self, our ego. We should learn to handle the course, but also not put too much stock in ever really knowing where we are going, and that there may be much more potential for high adventure if we close our eyes and open our hearts.
+
+These sketches begin to draw into being the device of this voyage. Not a ship of the seas, but one of time and space. A symbiotic organism of observations and subtle trajectories streaming through the cosmos.
+
+As one of my favorite architects, Louis Sullivan, would say, "Remember the Germ". I plant the seed of the Traveller, this year I will nurture its development and ride the gravity waves to new worlds.

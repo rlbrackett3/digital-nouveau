@@ -1,0 +1,66 @@
+---
+// Category page - dynamic route
+import { getCollection } from 'astro:content';
+import SiteLayout from '@/components/SiteLayout.astro';
+import { SITE_TITLE, CATEGORIES } from '@/consts';
+
+export function getStaticPaths() {
+	return CATEGORIES.map((category) => ({
+		params: { category },
+		props: { category },
+	}));
+}
+
+const { category } = Astro.props;
+const allPosts = await getCollection('blog');
+const categoryPosts = allPosts
+	.filter(post => post.data.categories.includes(category))
+	.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const categoryDisplay: Record<string, string> = {
+	design: 'Design',
+	drawings: 'Drawings',
+	readings: 'Readings',
+	skyfi: 'SkyFi',
+	thinkings: 'Thinkings',
+	observings: 'Observings',
+	teachings: 'Teachings',
+	writings: 'Writings',
+};
+
+const displayName = categoryDisplay[category] || category;
+---
+
+<SiteLayout title={`${displayName} | ${SITE_TITLE}`}>
+	<head>
+		<title>{displayName} | {SITE_TITLE}</title>
+	</head>
+
+	<main class="category-page">
+		<h1>{displayName}</h1>
+		<p>Archived posts in the {displayName.toLowerCase()} category.</p>
+
+		<div class="post-list">
+			{categoryPosts.map(post => (
+				<article class="post-preview">
+					<h2>
+						<a href={`/blog/${post.slug}`}>{post.data.title}</a>
+					</h2>
+					<time datetime={post.data.pubDate.toISOString()}>
+						{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+					</time>
+					<p>{post.data.description}</p>
+					<div class="post-categories">
+						{post.data.categories.map(cat => (
+							<a href={`/category/${cat}`} class="category-tag">{cat}</a>
+						))}
+					</div>
+				</article>
+			))}
+		</div>
+
+		{categoryPosts.length === 0 && (
+			<p>No posts in this category yet.</p>
+		)}
+	</main>
+</SiteLayout>

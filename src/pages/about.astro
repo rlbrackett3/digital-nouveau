@@ -1,0 +1,74 @@
+---
+import SiteLayout from '@/components/SiteLayout.astro';
+import { SITE_TITLE } from '@/consts';
+---
+
+<SiteLayout title="About | {SITE_TITLE}">
+	<head>
+		<title>About | {SITE_TITLE}</title>
+	</head>
+
+	<main class="about-page">
+		<h1>About</h1>
+		
+		<p>Digital Nouveau is a feed of design, computation, and fabrication work by Robert Lee Brackett. These musings are happening behind the scenes of Robert's design work with Miscellaneous Projects and teaching as a Professor of Architecture at Pratt Institute in New York.</p>
+		
+		<h2>Miscellaneous Projects</h2>
+		<p>Architecture and design studio focused on computational design, fabrication, and research.</p>
+		
+		<h2>Pratt Institute</h2>
+		<p>Professor of Architecture, teaching design studios and computational design courses.</p>
+		
+		<h2>SkyFi</h2>
+		<p>A NYC-based book club exploring science fiction, philosophy, and speculative literature.</p>
+		
+		<h2>Connect</h2>
+		<ul>
+			<li><a href="https://www.mindfuldrawing.art">Mindful Drawing</a></li>
+			<li><a href="https://www.multiprojects.com">Miscellaneous Projects</a></li>
+			<li><a href="https://www.instagram.com/rooksisfun">@rooksisfun</a></li>
+		</ul>
+	</main>
+
+	<style>
+		.about-page {
+			width: 720px;
+			max-width: calc(100% - 2em);
+			margin: 2rem auto;
+			padding: 0 1em;
+		}
+
+		.about-page h1 {
+			font-size: 2.5rem;
+			color: #fff;
+			margin-bottom: 2rem;
+		}
+
+		.about-page h2 {
+			font-size: 1.5rem;
+			color: #fff;
+			margin-top: 2rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.about-page p {
+			color: #e0e0e0;
+			line-height: 1.8;
+			margin-bottom: 1.5rem;
+		}
+
+		.about-page ul {
+			color: #e0e0e0;
+		}
+
+		.about-page a {
+			color: #64b5f6;
+		}
+
+		@media (max-width: 720px) {
+			.about-page h1 {
+				font-size: 1.75rem;
+			}
+		}
+	</style>
+</SiteLayout>

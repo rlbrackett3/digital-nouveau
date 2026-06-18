@@ -1,0 +1,36 @@
+---
+// Portfolio page
+import SiteLayout from '@/components/SiteLayout.astro';
+import { SITE_TITLE } from '@/consts';
+---
+
+<SiteLayout title="Portfolio | {SITE_TITLE}">
+	<head>
+		<title>Portfolio | {SITE_TITLE}</title>
+	</head>
+
+	<main class="portfolio-page">
+		<h1>Portfolio</h1>
+		<p>A collection of design, fabrication, and research projects.</p>
+
+		<section>
+			<h2>Architecture & Design</h2>
+			<p>Architectural design work from studio practice and professional projects.</p>
+		</section>
+
+		<section>
+			<h2>Fabrication & Making</h2>
+			<p>Laser cutting, 3D printing, and physical prototyping projects.</p>
+		</section>
+
+		<section>
+			<h2>Research & Development</h2>
+			<p>Computational design research and material exploration.</p>
+		</section>
+
+		<section>
+			<h2>Teaching & Pedagogy</h2>
+			<p>Course materials, studio reviews, and educational resources.</p>
+		</section>
+	</main>
+</SiteLayout>
