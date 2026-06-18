@@ -1,8 +1,9 @@
 ---
-title: "kyFi :: October 2020 :: Parable of the Sower - Octavia Butler"
-description: ": 'SkyFi book club discussion on Octavia Butler's prescient dystopia about societal collapse and the philosophy of change."
-pubDate: 'Oct 2020'
+title: "SkyFi :: October 2020 :: Parable of the Sower - Octavia Butler"
+description: "SkyFi book club discussion on Octavia Butler's prescient dystopia about societal collapse and the philosophy of change."
+pubDate: '2020-10-01'
 categories: ['skyfi', 'readings']
+image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 **Prescient Dystopia:** Written ~30 years prior, the novel's depiction of societal collapse, climate crisis, and fragile suburban enclaves feels uncomfortably close to current reality. The author notes it's "almost too close to reality to remain fiction."

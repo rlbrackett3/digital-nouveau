@@ -1,8 +1,9 @@
 ---
-title: "he Onnit 6 Challenge Recap"
-description: ": 'Six weeks of intense focus on body, movement patterns, and daily routines through the Onnit Bodyweight program."
+title: "The Onnit 6 Challenge Recap"
+description: "Six weeks of intense focus on body, movement patterns, and daily routines through the Onnit Bodyweight program."
 pubDate: '2020-03-28'
 categories: ['observings']
+image: "/images/dc9b92_01a98a34c25049c29afa152618cfb14d~mv2.jpg"
 ---
 
 Six weeks seems like almost nothing. As life tends to do here in New York, the time flew by, but it also slowed down.

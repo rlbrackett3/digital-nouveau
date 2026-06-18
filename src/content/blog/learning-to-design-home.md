@@ -1,8 +1,9 @@
 ---
-title: "earning to Design @ Home :: Drawing and Modeling"
-description: ": 'Instructional videos on fundamental drawing and modeling skills for young designers."
+title: "Learning to Design @ Home :: Drawing and Modeling"
+description: "Instructional videos on fundamental drawing and modeling skills for young designers."
 pubDate: '2020-07-01'
 categories: ['drawings', 'teachings']
+image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 During the Fall '19 and Spring '20 semesters at Pratt I was teaching an architectural design course for NYC high school students to have a taste of what an education in architecture could be like as well as build some skills and portfolio pieces. I was co-teaching the course with Olivia Vien and we decided to focus on exposing the students to common design applications, digital workflows, and fabrication technologies. We made several 2D and 3D design explorations in Rhino3D, translated them into laser cut relief and folding models, and were well on our way to 3D printing some interesting volumetric studies when the Coronavirus pandemic shut everything down. Since the students were dealing with enough in the transition of public school to online learning, we postponed our course and shifted gears to produce two series of instructional videos to offer continued learning and development over the summer. Olivia took on the digital side of our work and I went with the analog drawing and modeling as a way to design at home with whatever you have available.

@@ -1,8 +1,9 @@
 ---
-title: "ravel Documents"
-description: ": 'Collection of patches and memories from study abroad travels in France and Europe."
+title: "Travel Documents"
+description: "Collection of patches and memories from study abroad travels in France and Europe."
 pubDate: '2019-01-01'
 categories: ['observings']
+image: "/images/dc9b92_31f261c54b4f4a8082c406816f0ea644~mv2.png"
 ---
 
 Scandinavia

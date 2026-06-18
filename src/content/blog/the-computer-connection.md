@@ -1,8 +1,9 @@
 ---
-title: "he Computer Connection :: Alfred Bester"
-description: ": 'Reading Alfred Bester's 1975 novel exploring time travel, IoT foreshadowing, and post-apocalyptic society."
+title: "The Computer Connection :: Alfred Bester"
+description: "Reading Alfred Bester's 1975 novel exploring time travel, IoT foreshadowing, and post-apocalyptic society."
 pubDate: '2020-03-20'
 categories: ['skyfi', 'readings', 'observings']
+image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 **Context & Stylistic Influence:** Alfred Bester's 1975 novel *The Computer Connection*, read as part of a backward journey through Bester's bibliography.

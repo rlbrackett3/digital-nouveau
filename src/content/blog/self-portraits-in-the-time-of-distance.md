@@ -1,8 +1,9 @@
 ---
-title: "elf Portraits in the Time of Distance"
-description: ": 'Creating altered self-portrait avatars during remote learning and social distancing."
+title: "Self Portraits in the Time of Distance"
+description: "Creating altered self-portrait avatars during remote learning and social distancing."
 pubDate: '2020-04-06'
 categories: ['drawings']
+image: "/images/dc9b92_08f70c2901e8424da794e4a7a3b133a7~mv2.png"
 ---
 
 After just a couple weeks of remote learning and our stay at home social distancing pushing all our meetings into a virtual interface, I begin to see myself in new ways. I can watch my facial expressions and the micro behaviors of my students and colleagues with a finer degree of isolation. The video of the face, the portrait hovering in place, changes how we read each other and the significance of our facial body language.

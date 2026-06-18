@@ -1,8 +1,9 @@
 ---
-title: "ut There :: And All Those Images In There"
-description: ": 'What do we do with all those photos? Reflections on digital archives and forgotten memories."
+title: "Out There :: And All Those Images In There"
+description: "What do we do with all those photos? Reflections on digital archives and forgotten memories."
 pubDate: '2020-01-19'
 categories: ['observings']
+image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 What do we do with all those photos?

@@ -1,8 +1,9 @@
 ---
-title: "uspended"
-description: ": 'On Christopher Alexander's A Timeless Way of Building and Kurosawa's Ikiru — living fully on the wire."
+title: "Suspended"
+description: "On Christopher Alexander's A Timeless Way of Building and Kurosawa's Ikiru — living fully on the wire."
 pubDate: '2019-01-01'
 categories: ['observings']
+image: "/images/dc9b92_6b394a9c22a246c9a31ab1401b735a72~mv2.png"
 ---
 
 Wires

@@ -1,8 +1,9 @@
 ---
-title: "raveller :: Emergence"
-description: ": 'On journaling, meditation, and the Traveller's Log as a device for navigating life's voyage."
+title: "Traveller :: Emergence"
+description: "On journaling, meditation, and the Traveller's Log as a device for navigating life's voyage."
 pubDate: '2019-12-24'
 categories: ['drawings']
+image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 A journal has been a consistent part of my daily routine for many years now. While I miss a day here and there, especially when travelling or when my schedule makes a major shift, the act of writing through thoughts, goals, dreams, and wild thoughts is a soothing and enlightening practice. I take a lot of joy in the challenge of beginning each day with a blank page and the uncertain choice and responsibility of what to commit to the universe.
