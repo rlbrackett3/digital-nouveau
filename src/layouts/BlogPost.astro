@@ -5,14 +5,14 @@ import BaseHead from '../components/BaseHead.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import SiteLayout from '../components/SiteLayout.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & { readTime?: number };
 
-const { title, description, pubDate, updatedDate, categories } = Astro.props;
+const { title, description, pubDate, updatedDate, categories, image, readTime } = Astro.props;
 ---
 
 <SiteLayout title={title}>
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={image} />
 	</head>
 
 	<main class="blog-post">
@@ -21,6 +21,9 @@ const { title, description, pubDate, updatedDate, categories } = Astro.props;
 				<div class="post-header">
 					<div class="post-meta">
 						<FormattedDate date={pubDate} />
+						{readTime && (
+							<span class="read-time">· {readTime} min read</span>
+						)}
 						{
 							updatedDate && (
 								<div class="last-updated-on">
@@ -39,6 +42,11 @@ const { title, description, pubDate, updatedDate, categories } = Astro.props;
 					)}
 					<hr />
 				</div>
+				{image && (
+					<div class="hero-image">
+						<img src={image} alt={`Hero image for ${title}`} width="1200" height="auto" loading="eager" />
+					</div>
+				)}
 				<slot />
 			</div>
 		</article>
@@ -109,6 +117,18 @@ const { title, description, pubDate, updatedDate, categories } = Astro.props;
 		padding-bottom: 1em;
 	}
 
+	.hero-image {
+		margin: 0 -0.5rem 2rem -0.5rem;
+		overflow: hidden;
+	}
+
+	.hero-image img {
+		width: 100%;
+		height: auto;
+		border-radius: 4px;
+		display: block;
+	}
+
 	.post-header h1 {
 		margin: 0.5em 0;
 		font-size: 2.25rem;
@@ -119,6 +139,14 @@ const { title, description, pubDate, updatedDate, categories } = Astro.props;
 	.post-meta {
 		color: var(--text-muted);
 		font-size: 0.875rem;
+		display: flex;
+		gap: 0.3rem;
+		align-items: center;
+	}
+
+	.read-time {
+		font-size: 0.875rem;
+		color: var(--text-muted);
 	}
 
 	.last-updated-on {
@@ -136,19 +164,21 @@ const { title, description, pubDate, updatedDate, categories } = Astro.props;
 
 	.category-tag {
 		display: inline-block;
-		padding: 0.2rem 0.6rem;
-		background: #f0f0f0;
-		color: var(--text-secondary);
+		padding: 0.15rem 0.5rem;
+		background: transparent;
+		color: var(--text-muted);
 		text-decoration: none;
-		border-radius: 2px;
+		border: 1px solid var(--border);
+		border-radius: 0;
 		font-size: 0.7rem;
 		letter-spacing: 0.05em;
 		text-transform: lowercase;
-		transition: background 0.2s;
+		transition: all 0.2s;
 	}
 
 	.category-tag:hover {
-		background: #e0e0e0;
+		border-color: var(--accent);
+		color: var(--accent);
 	}
 
 	@media (max-width: 768px) {

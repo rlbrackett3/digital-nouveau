@@ -52,7 +52,7 @@ const displayName = categoryDisplay[category] || category;
 							</time>
 						</div>
 						<h2>
-							<a href={`/blog/${post.slug}`}>{post.data.title}</a>
+							<a href={`/blog/${post.id}`}>{post.data.title}</a>
 						</h2>
 						<p>{post.data.description}</p>
 						{post.data.categories && post.data.categories.length > 0 && (
