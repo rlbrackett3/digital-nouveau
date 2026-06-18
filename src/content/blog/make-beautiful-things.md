@@ -3,7 +3,7 @@ title: "Make Beautiful Things"
 description: "Thoreau on the earth as impressible by the feet of men — a reminder to make wonderful things."
 pubDate: '2019-01-01'
 categories: ['thinkings']
-image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
 ---
 
 California Cactus, Competition.
