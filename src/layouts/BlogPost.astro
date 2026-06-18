@@ -1,5 +1,5 @@
 ---
-// BlogPost layout using SiteLayout for consistent dark theme
+// BlogPost layout - Wix-inspired light theme
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -18,8 +18,8 @@ const { title, description, pubDate, updatedDate, categories } = Astro.props;
 	<main class="blog-post">
 		<article>
 			<div class="prose">
-				<div class="title">
-					<div class="date">
+				<div class="post-header">
+					<div class="post-meta">
 						<FormattedDate date={pubDate} />
 						{
 							updatedDate && (
@@ -47,15 +47,15 @@ const { title, description, pubDate, updatedDate, categories } = Astro.props;
 
 <style>
 	.blog-post {
-		width: 720px;
-		max-width: calc(100% - 2em);
+		max-width: 740px;
 		margin: 2rem auto;
-		padding: 0 1em;
+		padding: 0 2rem;
 	}
 
 	.prose {
-		color: #e0e0e0;
+		color: var(--text-primary);
 		line-height: 1.8;
+		font-size: 1.05rem;
 	}
 
 	.prose p {
@@ -65,27 +65,32 @@ const { title, description, pubDate, updatedDate, categories } = Astro.props;
 	.prose h1,
 	.prose h2,
 	.prose h3 {
-		color: #fff;
+		color: var(--text-primary);
 		margin-top: 2em;
 	}
 
 	.prose a {
-		color: #64b5f6;
+		color: var(--accent);
 		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
+
+	.prose a:hover {
+		color: var(--text-primary);
 	}
 
 	.prose blockquote {
-		border-left: 3px solid #555;
+		border-left: 3px solid var(--border);
 		padding-left: 1.5em;
 		margin: 1.5em 0;
-		color: #bbb;
+		color: var(--text-secondary);
 		font-style: italic;
 	}
 
 	.prose img {
 		max-width: 100%;
 		height: auto;
-		border-radius: 8px;
+		border-radius: 4px;
 		margin: 1.5em 0;
 	}
 
@@ -99,26 +104,27 @@ const { title, description, pubDate, updatedDate, categories } = Astro.props;
 		margin-bottom: 0.5em;
 	}
 
-	.title {
+	.post-header {
 		margin-bottom: 2em;
 		padding-bottom: 1em;
 	}
 
-	.title h1 {
+	.post-header h1 {
 		margin: 0.5em 0;
-		font-size: 2.5rem;
+		font-size: 2.25rem;
 		line-height: 1.2;
-		color: #fff;
+		color: var(--text-primary);
 	}
 
-	.date {
-		color: #888;
+	.post-meta {
+		color: var(--text-muted);
 		font-size: 0.875rem;
 	}
 
 	.last-updated-on {
 		font-style: italic;
-		color: #666;
+		color: var(--text-muted);
+		margin-top: 0.25rem;
 	}
 
 	.post-categories {
@@ -130,27 +136,32 @@ const { title, description, pubDate, updatedDate, categories } = Astro.props;
 
 	.category-tag {
 		display: inline-block;
-		padding: 0.25rem 0.75rem;
-		background: #2a2a4a;
-		color: #e0e0e0;
+		padding: 0.2rem 0.6rem;
+		background: #f0f0f0;
+		color: var(--text-secondary);
 		text-decoration: none;
-		border-radius: 4px;
-		font-size: 0.75rem;
+		border-radius: 2px;
+		font-size: 0.7rem;
 		letter-spacing: 0.05em;
+		text-transform: lowercase;
 		transition: background 0.2s;
 	}
 
 	.category-tag:hover {
-		background: #3a3a5a;
+		background: #e0e0e0;
 	}
 
-	@media (max-width: 720px) {
+	@media (max-width: 768px) {
 		.blog-post {
-			padding: 0 0.5em;
+			padding: 0 1rem;
 		}
 
-		.title h1 {
+		.post-header h1 {
 			font-size: 1.75rem;
+		}
+
+		.prose {
+			font-size: 1rem;
 		}
 	}
 </style>

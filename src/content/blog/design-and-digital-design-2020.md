@@ -1,7 +1,7 @@
 ---
 title: "esign and Digital Design 2020"
 description: ": 'Course materials and reflections on teaching design and digital fabrication."
-pubDate: '2020'
+pubDate: '2020-01-01'
 categories: ['teachings']
 ---
 

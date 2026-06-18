@@ -1,5 +1,5 @@
 ---
-// Portfolio page
+// Portfolio page - Wix-inspired light theme
 import SiteLayout from '@/components/SiteLayout.astro';
 import { SITE_TITLE } from '@/consts';
 ---
@@ -10,8 +10,10 @@ import { SITE_TITLE } from '@/consts';
 	</head>
 
 	<main class="portfolio-page">
-		<h1>Portfolio</h1>
-		<p>A collection of design, fabrication, and research projects.</p>
+		<div class="section-header">
+			<h1>Portfolio</h1>
+			<p>A collection of design, fabrication, and research projects.</p>
+		</div>
 
 		<section>
 			<h2>Architecture & Design</h2>
@@ -33,4 +35,41 @@ import { SITE_TITLE } from '@/consts';
 			<p>Course materials, studio reviews, and educational resources.</p>
 		</section>
 	</main>
+
+	<style>
+		.portfolio-page {
+			max-width: 740px;
+			margin: 2rem auto;
+			padding: 0 2rem;
+		}
+
+		.portfolio-page section {
+			margin-bottom: 2rem;
+			padding-bottom: 2rem;
+			border-bottom: 1px solid var(--border);
+		}
+
+		.portfolio-page section:last-child {
+			border-bottom: none;
+		}
+
+		.portfolio-page h2 {
+			font-size: 1.5rem;
+			color: var(--text-primary);
+			margin-top: 0;
+			margin-bottom: 0.5rem;
+		}
+
+		.portfolio-page p {
+			color: var(--text-secondary);
+			line-height: 1.8;
+			margin-bottom: 0;
+		}
+
+		@media (max-width: 768px) {
+			.portfolio-page {
+				padding: 0 1rem;
+			}
+		}
+	</style>
 </SiteLayout>

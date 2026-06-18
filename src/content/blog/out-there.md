@@ -1,7 +1,7 @@
 ---
 title: "ut There :: And All Those Images In There"
 description: ": 'What do we do with all those photos? Reflections on digital archives and forgotten memories."
-pubDate: 'Jan 19 2020'
+pubDate: '2020-01-19'
 categories: ['observings']
 ---
 

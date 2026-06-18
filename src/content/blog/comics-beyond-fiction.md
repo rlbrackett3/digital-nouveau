@@ -1,7 +1,7 @@
 ---
 title: "omics Beyond Fiction :: [Trans-] FICTION 2020"
 description: ": 'Exploring comics as a hybrid narrative format in the 2020 volume 6 of [Trans-] FICTION journal."
-pubDate: 'Sep 29 2020'
+pubDate: '2020-09-29'
 categories: ['drawings', 'teachings', 'writings']
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "ithin the Pixels"
 description: ": 'Close-up photography of fungus and mold revealing hyper-real micro worlds of color and form."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['observings']
 ---
 

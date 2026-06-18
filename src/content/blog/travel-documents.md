@@ -1,7 +1,7 @@
 ---
 title: "ravel Documents"
 description: ": 'Collection of patches and memories from study abroad travels in France and Europe."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['observings']
 ---
 

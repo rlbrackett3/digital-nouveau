@@ -1,7 +1,7 @@
 ---
 title: "echnocrafting the Digital Hand"
 description: ": 'On the relationship between digital tools and the creative hand."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['design', 'thinkings']
 ---
 

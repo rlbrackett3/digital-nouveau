@@ -1,7 +1,7 @@
 ---
 title: "ocooning Ring Prototypes"
 description: ": '3D printed jewelry prototypes exploring cocooning ring forms."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['drawings', 'design']
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "HICK SPACE :: MAPPING AMBIGUOUS TERRITORIES"
 description: ": 'Studio prompt for Fall 2019 ARCH 201 :: Intermediate Design I at Pratt School of Architecture."
-pubDate: 'Aug 20 2019'
+pubDate: '2019-08-20'
 categories: ['drawings', 'teachings']
 ---
 

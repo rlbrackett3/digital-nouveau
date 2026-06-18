@@ -1,7 +1,7 @@
 ---
 title: "elf Portraits in the Time of Distance"
 description: ": 'Creating altered self-portrait avatars during remote learning and social distancing."
-pubDate: 'Apr 06 2020'
+pubDate: '2020-04-06'
 categories: ['drawings']
 ---
 

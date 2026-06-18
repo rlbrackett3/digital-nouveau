@@ -1,7 +1,7 @@
 ---
 title: "rawing 018 - Veins"
 description: ": 'Veined cracked surface inspired by a branch found in the desert around Ghost Ranch, NM."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['drawings']
 ---
 

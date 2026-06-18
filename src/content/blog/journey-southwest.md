@@ -1,7 +1,7 @@
 ---
 title: "Journey Through America's Southwest"
 description: ": 'Photography and reflections from a journey through the American Southwest."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['observings']
 ---
 

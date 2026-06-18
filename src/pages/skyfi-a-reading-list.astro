@@ -1,5 +1,5 @@
 ---
-// SkyFi reading list page
+// SkyFi reading list page - Wix-inspired light theme
 import SiteLayout from '@/components/SiteLayout.astro';
 import { SITE_TITLE } from '@/consts';
 import { getCollection } from 'astro:content';
@@ -16,7 +16,9 @@ const skyfiPosts = allPosts
 	</head>
 
 	<main class="skyfi-page">
-		<h1>📚 SkyFi :: Reading List</h1>
+		<div class="section-header">
+			<h1>📚 SkyFi :: Reading List</h1>
+		</div>
 
 		<section>
 			<h2>🏢 Club Overview</h2>
@@ -137,4 +139,54 @@ const skyfiPosts = allPosts
 			</ul>
 		</section>
 	</main>
+
+	<style>
+		.skyfi-page {
+			max-width: 740px;
+			margin: 2rem auto;
+			padding: 0 2rem;
+		}
+
+		.skyfi-page section {
+			margin-bottom: 2.5rem;
+		}
+
+		.skyfi-page h2 {
+			font-size: 1.5rem;
+			color: var(--text-primary);
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		.skyfi-page p {
+			color: var(--text-secondary);
+			line-height: 1.8;
+			margin-bottom: 1.5rem;
+		}
+
+		.skyfi-page ul {
+			color: var(--text-secondary);
+			line-height: 1.7;
+		}
+
+		.skyfi-page li {
+			margin-bottom: 0.35rem;
+		}
+
+		.skyfi-page a {
+			color: var(--accent);
+		}
+
+		.post-date {
+			color: var(--text-muted);
+			font-size: 0.8rem;
+			margin-left: 0.5rem;
+		}
+
+		@media (max-width: 768px) {
+			.skyfi-page {
+				padding: 0 1rem;
+			}
+		}
+	</style>
 </SiteLayout>

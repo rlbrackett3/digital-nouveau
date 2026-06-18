@@ -1,7 +1,7 @@
 ---
 title: "kyFi :: December 2019 :: Ninefox Gambit"
 description: ": 'Pre-holiday book club check-in on Yoon Ha Lee's Ninefox Gambit with its mathematical calendar system."
-pubDate: 'Dec 24 2019'
+pubDate: '2019-12-24'
 categories: ['skyfi', 'readings']
 ---
 

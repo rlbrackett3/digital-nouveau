@@ -1,7 +1,7 @@
 ---
 title: "uspended"
 description: ": 'On Christopher Alexander's A Timeless Way of Building and Kurosawa's Ikiru — living fully on the wire."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['observings']
 ---
 

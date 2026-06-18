@@ -1,7 +1,7 @@
 ---
 title: "Make It Better"
 description: ": 'Just do good work. Whatever commission you have, make it the best youve ever done."
-pubDate: '2020'
+pubDate: '2020-01-01'
 categories: ['teachings']
 ---
 

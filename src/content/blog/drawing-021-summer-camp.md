@@ -1,7 +1,7 @@
 ---
 title: "rawing 021 - Summer Camp Landscapes"
 description: ": 'Representational drawing of summer camp landscapes."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['drawings']
 ---
 

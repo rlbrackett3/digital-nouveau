@@ -1,7 +1,7 @@
 ---
 title: "andforms Craggs"
 description: ": 'Exploration of landform and craggy topographies through drawing."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['drawings']
 ---
 

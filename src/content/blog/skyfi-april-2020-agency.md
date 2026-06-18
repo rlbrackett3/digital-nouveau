@@ -1,7 +1,7 @@
 ---
 title: "kyFi :: April 2020 :: Agency by William Gibson"
 description: ": 'Book club discussion on William Gibson's speculative thriller exploring agency and AI consciousness."
-pubDate: 'May 11 2020'
+pubDate: '2020-05-11'
 categories: ['skyfi', 'readings']
 ---
 

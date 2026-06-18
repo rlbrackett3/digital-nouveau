@@ -1,7 +1,7 @@
 ---
 title: " Mindful Drawing Practice"
 description: ": 'Leading a weekly mindful drawing practice at Pratt Institute and sharing the experience through YouTube."
-pubDate: 'Jan 15 2020'
+pubDate: '2020-01-15'
 categories: ['design']
 ---
 

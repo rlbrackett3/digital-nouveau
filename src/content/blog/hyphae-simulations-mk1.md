@@ -1,7 +1,7 @@
 ---
 title: "yphae Simulations mk1"
 description: ": 'Early experiments with Maya nParticles and dynamics to simulate hyphae growth."
-pubDate: 'Aug 15 2019'
+pubDate: '2019-08-15'
 categories: ['drawings']
 ---
 

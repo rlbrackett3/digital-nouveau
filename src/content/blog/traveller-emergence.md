@@ -1,7 +1,7 @@
 ---
 title: "raveller :: Emergence"
 description: ": 'On journaling, meditation, and the Traveller's Log as a device for navigating life's voyage."
-pubDate: 'Dec 24 2019'
+pubDate: '2019-12-24'
 categories: ['drawings']
 ---
 

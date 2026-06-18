@@ -1,5 +1,5 @@
 ---
-// Updated blog index page
+// Updated blog index page - Wix-inspired light theme
 import SiteLayout from '@/components/SiteLayout.astro';
 import { getCollection } from 'astro:content';
 import { SITE_TITLE } from '@/consts';
@@ -14,27 +14,47 @@ const sortedPosts = allPosts
 		<title>Blog Archive | {SITE_TITLE}</title>
 	</head>
 
-	<main>
-		<h1>Blog Archive</h1>
-		<p>All posts, newest first.</p>
+	<main class="blog-page">
+		<div class="section-header">
+			<h1>Blog Archive</h1>
+			<p>All posts, newest first.</p>
+		</div>
 
 		<div class="post-list">
 			{sortedPosts.map(post => (
-				<article class="post-preview">
+				<article class="post-card">
+					<div class="post-meta">
+						<time datetime={post.data.pubDate.toISOString()}>
+							{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+						</time>
+					</div>
 					<h2>
 						<a href={`/blog/${post.slug}`}>{post.data.title}</a>
 					</h2>
-					<time datetime={post.data.pubDate.toISOString()}>
-						{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-					</time>
 					<p>{post.data.description}</p>
-					<div class="post-categories">
-						{post.data.categories.map(cat => (
-							<a href={`/category/${cat}`} class="category-tag">{cat}</a>
-						))}
-					</div>
+					{post.data.categories && post.data.categories.length > 0 && (
+						<div class="post-categories">
+							{post.data.categories.map(cat => (
+								<a href={`/category/${cat}`} class="category-tag">{cat}</a>
+							))}
+						</div>
+					)}
 				</article>
 			))}
 		</div>
 	</main>
+
+	<style>
+		.blog-page {
+			max-width: 980px;
+			margin: 0 auto;
+			padding: 2rem 2rem;
+		}
+
+		@media (max-width: 768px) {
+			.blog-page {
+				padding: 1.5rem 1rem;
+			}
+		}
+	</style>
 </SiteLayout>

@@ -1,7 +1,7 @@
 ---
 title: "ot Quite Micro Worlds"
 description: ": 'Unexpected results from photographing dandelion seeds stuck on raw asphalt along the Bronx River."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['observings']
 ---
 

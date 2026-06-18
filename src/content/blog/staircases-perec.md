@@ -1,7 +1,7 @@
 ---
 title: "taircases - Georges Perec - Species of Space"
 description: ": 'Georges Perec on the beauty of staircases in old houses and the hostility of modern apartment buildings."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['observings']
 ---
 

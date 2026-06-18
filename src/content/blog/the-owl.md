@@ -1,7 +1,7 @@
 ---
 title: "he Owl"
 description: ": 'Symmetry reveals hidden life — discovering a new species of owl in wireframe packaging designs."
-pubDate: '2020'
+pubDate: '2020-01-01'
 categories: ['drawings']
 ---
 

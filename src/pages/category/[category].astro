@@ -1,5 +1,5 @@
 ---
-// Category page - dynamic route
+// Category page - Wix-inspired light theme
 import { getCollection } from 'astro:content';
 import SiteLayout from '@/components/SiteLayout.astro';
 import { SITE_TITLE, CATEGORIES } from '@/consts';
@@ -37,30 +37,52 @@ const displayName = categoryDisplay[category] || category;
 	</head>
 
 	<main class="category-page">
-		<h1>{displayName}</h1>
-		<p>Archived posts in the {displayName.toLowerCase()} category.</p>
-
-		<div class="post-list">
-			{categoryPosts.map(post => (
-				<article class="post-preview">
-					<h2>
-						<a href={`/blog/${post.slug}`}>{post.data.title}</a>
-					</h2>
-					<time datetime={post.data.pubDate.toISOString()}>
-						{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-					</time>
-					<p>{post.data.description}</p>
-					<div class="post-categories">
-						{post.data.categories.map(cat => (
-							<a href={`/category/${cat}`} class="category-tag">{cat}</a>
-						))}
-					</div>
-				</article>
-			))}
+		<div class="section-header">
+			<h1>{displayName}</h1>
+			<p>Archived posts in the {displayName.toLowerCase()} category.</p>
 		</div>
 
-		{categoryPosts.length === 0 && (
+		{categoryPosts.length > 0 ? (
+			<div class="post-list">
+				{categoryPosts.map(post => (
+					<article class="post-card">
+						<div class="post-meta">
+							<time datetime={post.data.pubDate.toISOString()}>
+								{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+							</time>
+						</div>
+						<h2>
+							<a href={`/blog/${post.slug}`}>{post.data.title}</a>
+						</h2>
+						<p>{post.data.description}</p>
+						{post.data.categories && post.data.categories.length > 0 && (
+							<div class="post-categories">
+								{post.data.categories.map(cat => (
+									<a href={`/category/${cat}`} class="category-tag">{cat}</a>
+								))}
+							</div>
+						)}
+					</article>
+				))}
+			</div>
+		) : (
 			<p>No posts in this category yet.</p>
 		)}
+
+		<a href="/blog" class="view-all">← Back to all posts</a>
 	</main>
+
+	<style>
+		.category-page {
+			max-width: 980px;
+			margin: 0 auto;
+			padding: 2rem 2rem;
+		}
+
+		@media (max-width: 768px) {
+			.category-page {
+				padding: 1.5rem 1rem;
+			}
+		}
+	</style>
 </SiteLayout>

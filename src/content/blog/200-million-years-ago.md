@@ -1,7 +1,7 @@
 ---
 title: "00 Million Years Ago..."
 description: ": 'Textures and patterns from New Mexico Petrified Forest National Park."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['observings']
 ---
 

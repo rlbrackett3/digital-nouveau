@@ -1,7 +1,7 @@
 ---
 title: "esthetic Tuning :: Colony"
 description: ": 'Exploring aesthetic influence through procedural collage and rollage techniques in architectural design."
-pubDate: 'Oct 15 2019'
+pubDate: '2019-10-15'
 categories: ['drawings']
 ---
 

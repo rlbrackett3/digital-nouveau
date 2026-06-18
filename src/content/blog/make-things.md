@@ -1,7 +1,7 @@
 ---
 title: "ake Things"
 description: ": 'This phrase has become a daily motto — the only way I learn and understand things is through making."
-pubDate: '2020'
+pubDate: '2020-01-01'
 categories: ['teachings']
 ---
 

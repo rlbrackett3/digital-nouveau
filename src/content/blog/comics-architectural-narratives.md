@@ -1,7 +1,7 @@
 ---
 title: "omics :: Architectural Narratives"
 description: ": 'A Visual Format for Co-Teaching Design and Writing using comics as a pedagogical device."
-pubDate: 'Mar 07 2020'
+pubDate: '2020-03-07'
 categories: ['drawings', 'teachings']
 ---
 

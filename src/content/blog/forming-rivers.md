@@ -1,7 +1,7 @@
 ---
 title: "orming Rivers"
 description: ": 'Henry David Thoreau on the formation of rivers between water and sand."
-pubDate: '2020'
+pubDate: '2020-01-01'
 categories: ['observings']
 ---
 

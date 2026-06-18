@@ -1,7 +1,7 @@
 ---
 title: "ock Dwellers"
 description: ": 'Tiny creatures covering the shady sides of large rocks and petrified trees across the desert Southwest."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['observings']
 ---
 

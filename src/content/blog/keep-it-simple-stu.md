@@ -1,7 +1,7 @@
 ---
 title: "eep it Simple Stu***"
 description: ": 'On Frei Otto, simplicity, and the K.I.S.S. principle in architecture and design."
-pubDate: 'Jan 06 2020'
+pubDate: '2020-01-06'
 categories: ['teachings']
 ---
 

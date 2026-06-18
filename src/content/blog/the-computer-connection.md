@@ -1,7 +1,7 @@
 ---
 title: "he Computer Connection :: Alfred Bester"
 description: ": 'Reading Alfred Bester's 1975 novel exploring time travel, IoT foreshadowing, and post-apocalyptic society."
-pubDate: 'Mar 20 2020'
+pubDate: '2020-03-20'
 categories: ['skyfi', 'readings', 'observings']
 ---
 

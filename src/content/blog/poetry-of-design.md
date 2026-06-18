@@ -1,7 +1,7 @@
 ---
 title: "oetry of Design"
 description: ": 'Marcos Novak on poetry as warfare against conformity and the architecture of noise."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['thinkings']
 ---
 

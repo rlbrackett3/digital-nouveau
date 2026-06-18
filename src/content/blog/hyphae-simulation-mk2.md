@@ -1,7 +1,7 @@
 ---
 title: "yphae Simulation mk2"
 description: ": 'Two particle systems interacting as force field dynamic emitters in Maya nParticles."
-pubDate: 'Aug 16 2019'
+pubDate: '2019-08-16'
 categories: ['drawings']
 ---
 

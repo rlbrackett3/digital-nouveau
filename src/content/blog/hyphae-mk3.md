@@ -1,7 +1,7 @@
 ---
 title: "yphae Simulation mk3"
 description: ": 'Pushing the particle simulation system further with larger organizing networks and complex rhyzomatic connections."
-pubDate: 'Aug 18 2019'
+pubDate: '2019-08-18'
 categories: ['drawings']
 ---
 

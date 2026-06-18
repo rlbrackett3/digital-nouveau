@@ -1,7 +1,7 @@
 ---
 title: "ake Beautiful Things"
 description: ": 'Thoreau on the earth as impressible by the feet of men — a reminder to make wonderful things."
-pubDate: '2019'
+pubDate: '2019-01-01'
 categories: ['thinkings']
 ---
 

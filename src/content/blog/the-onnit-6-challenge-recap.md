@@ -1,7 +1,7 @@
 ---
 title: "he Onnit 6 Challenge Recap"
 description: ": 'Six weeks of intense focus on body, movement patterns, and daily routines through the Onnit Bodyweight program."
-pubDate: 'Mar 28 2020'
+pubDate: '2020-03-28'
 categories: ['observings']
 ---
 

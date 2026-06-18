@@ -1,7 +1,7 @@
 ---
 title: "yphae Simulation mk3"
 description: ": 'Exploring particle dynamics and hyphal growth simulation in Maya."
-pubDate: 'Aug 18 2019'
+pubDate: '2019-08-18'
 categories: ['drawings']
 ---
 

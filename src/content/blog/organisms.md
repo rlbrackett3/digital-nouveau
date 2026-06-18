@@ -1,7 +1,7 @@
 ---
 title: "RGANISMS :: HYPNO-TOPO-GRAPHY"
 description: ": 'Life emerging from complexity through collage, rollage, and topographic mapping."
-pubDate: 'Nov 07 2019'
+pubDate: '2019-11-07'
 categories: ['drawings', 'skyfi']
 ---
 

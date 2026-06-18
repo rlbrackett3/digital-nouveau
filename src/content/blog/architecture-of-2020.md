@@ -1,7 +1,7 @@
 ---
 title: "he Architecture of 2020"
 description: ": 'Reflections on architecture and design in the year of the pandemic."
-pubDate: '2020'
+pubDate: '2020-01-01'
 categories: ['design', 'thinkings']
 ---
 

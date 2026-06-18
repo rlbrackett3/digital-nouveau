@@ -1,7 +1,7 @@
 ---
 title: "earning to Design @ Home :: Drawing and Modeling"
 description: ": 'Instructional videos on fundamental drawing and modeling skills for young designers."
-pubDate: 'Jul 01 2020'
+pubDate: '2020-07-01'
 categories: ['drawings', 'teachings']
 ---
 

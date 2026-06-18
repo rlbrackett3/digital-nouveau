@@ -1,7 +1,7 @@
 ---
 title: "epresentational Analysis :: Decomposition Drawing & Video"
 description: ": 'Micro-lecture introducing architectural analysis through decompositional drawing and video-based representation."
-pubDate: 'Jan 27 2020'
+pubDate: '2020-01-27'
 categories: ['teachings']
 ---
 

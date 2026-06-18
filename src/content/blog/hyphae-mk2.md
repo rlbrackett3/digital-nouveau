@@ -1,7 +1,7 @@
 ---
 title: "yphae Simulation mk2"
 description: ": 'Two particle systems interacting with color and light pulsing like a sea creature."
-pubDate: 'Aug 16 2019'
+pubDate: '2019-08-16'
 categories: ['drawings']
 ---
 
