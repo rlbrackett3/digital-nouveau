@@ -253,36 +253,6 @@ th {
 	color: var(--accent);
 }
 
-/* Category navigation bar - Wix style */
-.category-nav-horizontal {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0;
-	margin-bottom: 2.5rem;
-	padding-bottom: 0;
-	border-bottom: none;
-	align-items: baseline;
-}
-
-.category-nav-horizontal a {
-	color: var(--text-secondary);
-	text-decoration: none;
-	font-size: 0.875rem;
-	padding: 0.25rem 0.75rem;
-	margin: 0;
-	font-weight: 400;
-	transition: color 0.2s;
-}
-
-.category-nav-horizontal a:first-child {
-	color: var(--text-secondary);
-	padding-left: 0;
-}
-
-.category-nav-horizontal a:hover {
-	color: var(--accent);
-}
-
 /* Section header */
 .section-header {
 	margin-bottom: 2rem;
