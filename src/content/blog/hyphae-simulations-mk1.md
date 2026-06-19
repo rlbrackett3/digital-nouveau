@@ -4,6 +4,7 @@ description: "Early experiments with Maya nParticles and dynamics to simulate hy
 pubDate: '2019-08-15'
 categories: ['drawings']
 image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
+hero_image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
 ---
 
 This blog has been on a long hiatus, primarily due to aging and broken technology and my lack of time commitment to fix it. I took the time this week to transfer everything over to a new platform and I am excited to get back into sharing bits and pieces of the miscellaneous projects that occupy my professional life.

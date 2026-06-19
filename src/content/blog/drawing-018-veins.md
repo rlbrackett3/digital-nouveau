@@ -4,6 +4,7 @@ description: "Veined cracked surface inspired by a branch found in the desert ar
 pubDate: '2019-01-01'
 categories: ['drawings']
 image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
+hero_image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
 ---
 
 Veined cracked surface inspired by a branch found in the desert around Ghost Ranch, NM.

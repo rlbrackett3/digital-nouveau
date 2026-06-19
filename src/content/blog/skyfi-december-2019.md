@@ -4,6 +4,7 @@ description: "Pre-holiday book club check-in on Yoon Ha Lee's Ninefox Gambit wit
 pubDate: '2019-12-24'
 categories: ['skyfi', 'readings']
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 **Purpose:** Pre-holiday book club check-in to evaluate progress on *Ninefox Gambit* by Yoon Ha Lee and select the next group read.

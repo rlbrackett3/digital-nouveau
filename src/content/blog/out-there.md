@@ -4,6 +4,7 @@ description: "What do we do with all those photos? Reflections on digital archiv
 pubDate: '2020-01-19'
 categories: ['observings']
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 What do we do with all those photos?

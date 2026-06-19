@@ -4,6 +4,7 @@ description: "Design sketches and prototyping process for a custom Luna Moth coc
 pubDate: '2020-03-15'
 categories: ['design', 'jewelry']
 image: "/images/dc9b92_8bb5d36db19147d88bce2473267a77d0~mv2.png"
+hero_image: "/images/dc9b92_8bb5d36db19147d88bce2473267a77d0~mv2.png"
 ---
 
 I am designing a new custom ring as a gift for Lauren's birthday. These are the initial design sketches of the process to evolve a new ring form.

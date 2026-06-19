@@ -4,6 +4,7 @@ description: "SkyFi book club discussion on Octavia Butler's prescient dystopia 
 pubDate: '2020-10-01'
 categories: ['skyfi', 'readings']
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 **Prescient Dystopia:** Written ~30 years prior, the novel's depiction of societal collapse, climate crisis, and fragile suburban enclaves feels uncomfortably close to current reality. The author notes it's "almost too close to reality to remain fiction."

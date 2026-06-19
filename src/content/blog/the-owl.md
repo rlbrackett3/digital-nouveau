@@ -4,6 +4,7 @@ description: "Symmetry reveals hidden life — discovering a new species of owl 
 pubDate: '2020-01-01'
 categories: ['drawings']
 image: "/images/dc9b92_722eeea352cb4711921faddc755cb366~mv2.png"
+hero_image: "/images/dc9b92_722eeea352cb4711921faddc755cb366~mv2.png"
 ---
 
 Who Saw-whet

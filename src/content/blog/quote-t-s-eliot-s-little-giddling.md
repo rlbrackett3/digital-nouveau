@@ -4,6 +4,7 @@ description: "A reflection on T.S. Eliot's famous passage from Little Gidding ab
 pubDate: '2020-03-01'
 categories: ['readings', 'poetry']
 image: "/images/dc9b92_31ae27b994504f04803c7307448d6bd8~mv2.jpg"
+hero_image: "/images/dc9b92_31ae27b994504f04803c7307448d6bd8~mv2.jpg"
 ---
 
 We shall not cease from exploration

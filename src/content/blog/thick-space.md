@@ -4,6 +4,7 @@ description: "Studio prompt for Fall 2019 ARCH 201 :: Intermediate Design I at P
 pubDate: '2019-08-20'
 categories: ['drawings', 'teachings']
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 Mapping is a strategy for exploring new frontiers, reconciling the unknown into accessible information. It is an abstraction, providing access to ambiguous territories and generating new organizations in the flowing space of the real and the imagined. We will map through analytical and generative drawing, recombinant animation, and computational models, engaging architecture as a medium of thick space operating within the horizontal constraints of the mat building typology.

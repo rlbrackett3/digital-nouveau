@@ -4,6 +4,7 @@ description: "On Frei Otto, simplicity, and the K.I.S.S. principle in architectu
 pubDate: '2020-01-06'
 categories: ['teachings']
 image: "/images/dc9b92_0f8a898cdecf48649266b7ab9dfc709d~mv2.jpg"
+hero_image: "/images/dc9b92_0f8a898cdecf48649266b7ab9dfc709d~mv2.jpg"
 ---
 
 Everything man is doing in architecture is to try to go against nature. Of course we have to understand nature to know how far we have to go against nature. The secret, I think, of the future is not doing too much. All architects have the tendency to do too much.

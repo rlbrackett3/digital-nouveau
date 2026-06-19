@@ -4,6 +4,7 @@ description: "Exploring aesthetic influence through procedural collage and rolla
 pubDate: '2019-10-15'
 categories: ['drawings']
 image: "/images/dc9b92_767e7569ef864a4daa1b11807a47a453~mv2.jpg"
+hero_image: "/images/dc9b92_767e7569ef864a4daa1b11807a47a453~mv2.jpg"
 ---
 
 "how do we reveal, accept, and filter our aesthetic influence without direct copying or feeble translations?"

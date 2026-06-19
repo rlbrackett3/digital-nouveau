@@ -4,6 +4,7 @@ description: "A critical reflection on Alfred Bester's 1982 sci-fi novel Deceive
 pubDate: '2020-04-20'
 categories: ['readings', 'science-fiction']
 image: "/images/dc9b92_3da3f40f3bec4e2ab58168cf70ed8498~mv2.jpg"
+hero_image: "/images/dc9b92_3da3f40f3bec4e2ab58168cf70ed8498~mv2.jpg"
 ---
 
 ## Discovery & Context

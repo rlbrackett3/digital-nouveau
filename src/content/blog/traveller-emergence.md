@@ -4,6 +4,7 @@ description: "On journaling, meditation, and the Traveller's Log as a device for
 pubDate: '2019-12-24'
 categories: ['drawings']
 image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
+hero_image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
 ---
 
 A journal has been a consistent part of my daily routine for many years now. While I miss a day here and there, especially when travelling or when my schedule makes a major shift, the act of writing through thoughts, goals, dreams, and wild thoughts is a soothing and enlightening practice. I take a lot of joy in the challenge of beginning each day with a blank page and the uncertain choice and responsibility of what to commit to the universe.

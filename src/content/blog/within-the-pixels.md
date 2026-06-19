@@ -4,6 +4,7 @@ description: "Close-up photography of fungus and mold revealing hyper-real micro
 pubDate: '2019-01-01'
 categories: ['observings']
 image: "/images/dc9b92_0e8d39e087c24d5da05d5d19067a92f3~mv2.png"
+hero_image: "/images/dc9b92_0e8d39e087c24d5da05d5d19067a92f3~mv2.png"
 ---
 
 It's like the electric surface of a pool on a sunny day.

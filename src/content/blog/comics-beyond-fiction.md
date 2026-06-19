@@ -4,6 +4,7 @@ description: "Exploring comics as a hybrid narrative format in the 2020 volume 6
 pubDate: '2020-09-29'
 categories: ['drawings', 'teachings', 'writings']
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 Sacha Frey and I continue our exploration of comics as a hybrid narrative format in the 2020 volume 6 of [Trans-] FICTION with Comics Beyond Fiction. You can read a digital version of the journal below or purchase a printed copy to help support future volumes.

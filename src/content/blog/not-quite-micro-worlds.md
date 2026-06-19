@@ -4,6 +4,7 @@ description: "Unexpected results from photographing dandelion seeds stuck on raw
 pubDate: '2019-01-01'
 categories: ['observings']
 image: "/images/dc9b92_526b90dd3787421689664cc3da707bee~mv2.png"
+hero_image: "/images/dc9b92_526b90dd3787421689664cc3da707bee~mv2.png"
 ---
 
 Asphalt and Dandelion Seeds

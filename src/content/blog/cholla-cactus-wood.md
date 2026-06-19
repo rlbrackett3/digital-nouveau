@@ -4,6 +4,7 @@ description: "Internal woven structures of Cholla cactus in Joshua Tree National
 pubDate: '2019-01-01'
 categories: ['observings']
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 Cholla cactus woven micro endo-skeleton.

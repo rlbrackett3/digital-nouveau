@@ -4,6 +4,7 @@ description: "A Visual Format for Co-Teaching Design and Writing using comics as
 pubDate: '2020-03-07'
 categories: ['drawings', 'teachings']
 image: "/images/dc9b92_2e6ddfa7a3db4dbb9b92383087bbd70e~mv2.jpg"
+hero_image: "/images/dc9b92_2e6ddfa7a3db4dbb9b92383087bbd70e~mv2.jpg"
 ---
 
 A Visual Format for Co-Teaching Design and Writing is a collaborative project between Professor Sacha Frey, myself, and many of our shared first-year architecture students at Pratt Undergraduate Architecture. Sacha and I co-taught in the Arch100 Studio + Trans-disciplinary Writing program from 2011-2019. During that time we have explored many formats and resources for creating a shared space of architecture design and writing as a generative and analytical relationship. One thread of research has been through the use of the comic format as a visual image/writing platform for students to explore spatial experience through time, scale, and human occupation. Below is a poster presentation of many student work examples and our primary teaching sources that we presented at Oklahoma University's Schools of Thought: Rethinking Architecture Pedagogy conference in Norman, Oklahoma this week (March 5-6, 2020).

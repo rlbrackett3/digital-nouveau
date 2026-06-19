@@ -4,6 +4,7 @@ description: "Week 1 training log for the Onnit 6 Bodyweight Challenge, starting
 pubDate: '2020-02-16'
 categories: ['training', 'health']
 image: "/images/dc9b92_1099101b1394463f816e92ad247c7c93~mv2.jpg"
+hero_image: "/images/dc9b92_1099101b1394463f816e92ad247c7c93~mv2.jpg"
 ---
 
 ## Overview & Context

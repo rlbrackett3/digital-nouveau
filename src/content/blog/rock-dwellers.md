@@ -4,6 +4,7 @@ description: "Tiny creatures covering the shady sides of large rocks and petrifi
 pubDate: '2019-01-01'
 categories: ['observings']
 image: "/images/dc9b92_30ebf38241bb4ef9964f15234df29cd1~mv2.png"
+hero_image: "/images/dc9b92_30ebf38241bb4ef9964f15234df29cd1~mv2.png"
 ---
 
 I put this up in the patterns post, but feel it deserves a cover.

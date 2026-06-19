@@ -4,6 +4,7 @@ description: "Book club double feature on China Mieville's Exploded View & New D
 pubDate: '2020-06-01'
 categories: ['skyfi', 'readings']
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
 **Format:** Double feature reading session covering two China Mieville collections: *Exploded View* and *New Dark Age*.

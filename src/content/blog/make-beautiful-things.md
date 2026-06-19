@@ -4,6 +4,7 @@ description: "Thoreau on the earth as impressible by the feet of men — a remin
 pubDate: '2019-01-01'
 categories: ['thinkings']
 image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
+hero_image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
 ---
 
 California Cactus, Competition.

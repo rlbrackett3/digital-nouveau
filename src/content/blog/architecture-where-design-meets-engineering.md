@@ -4,6 +4,7 @@ description: "Reflecting on an Isaac Asimov quote that opens Chapter 2 of Marvin
 pubDate: '2020-06-01'
 categories: ['readings', 'philosophy']
 image: "/images/dc9b92_62a114873e4c4583959cb8419727c130~mv2.png"
+hero_image: "/images/dc9b92_62a114873e4c4583959cb8419727c130~mv2.png"
 ---
 
 > It is the nature of the mind that makes individuals kin, and the differences in the shape, form, or manner of the material atoms out of whose intricate relationships that mind is built are altogether trivial.

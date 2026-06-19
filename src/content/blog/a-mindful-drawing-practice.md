@@ -4,6 +4,7 @@ description: "Leading a weekly mindful drawing practice at Pratt Institute and s
 pubDate: '2020-01-15'
 categories: ['design']
 image: "/images/dc9b92_66b3d3ba16fe4e318ab69f920a747352~mv2.jpg"
+hero_image: "/images/dc9b92_66b3d3ba16fe4e318ab69f920a747352~mv2.jpg"
 ---
 
 Sometimes an opportunity comes calling when we need it most. In a recent meeting of the Pratt Resilience, Wellness, and Well-Being Council (a group of faculty, staff, and students dedicated to shifting the culture of Pratt towards a more balanced life experience) I felt compelled to offer to lead a weekly mindful drawing practice. This is not something I had any specific experience with, but when the group put out the call for action the ideas flooded into my mind. Drawing has always been my stead place, I am a doodler, my hands are always moving when there are paper and pen nearby. The connection between my mind, body, and page helps me be present, aware, and focused, it is often automatic. This new adventure seemed like a great chance to bring more attention to my hobby (or quirk).
