@@ -1,191 +1,369 @@
 ---
-// SkyFi reading list page - Wix-inspired light theme
+// SkyFi reading list - exact copy from blog.digitalnouveau.com/skyfi-a-reading-list
 import SiteLayout from '@/components/SiteLayout.astro';
 import { SITE_TITLE } from '@/consts';
-import { getCollection } from 'astro:content';
-
-const allPosts = await getCollection('blog');
-const skyfiPosts = allPosts
-	.filter(post => post.data.categories.includes('skyfi'))
-	.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 ---
 
-<SiteLayout title="SkyFi :: A Reading List | {SITE_TITLE}">
+<SiteLayout title="skyfi :: a reading list | {SITE_TITLE}">
 	<head>
-		<title>SkyFi :: A Reading List | {SITE_TITLE}</title>
+		<title>skyfi :: a reading list | {SITE_TITLE}</title>
 	</head>
 
 	<main class="skyfi-page">
-		<div class="section-header">
-			<h1>📚 SkyFi :: Reading List</h1>
+		<h1 class="skyfi-intro">SkyFi is a mostly science fiction focused (with a mix of philosophy, music, horror, surrealism, and post-modern literature) book club made up of a group of people mostly based in new york city who mostly operate in the field of architecture. The lists below are some of the books we have read together and spinoffs they have inspired me to explore.</h1>
+
+		<div class="skyfi-section">
+			<h1>Currently Reading :: October 2020</h1>
+			<h1></h1>
+			<h1>Psuedo Fiction :: Staying with the Trouble: Making Kin in the Chthulucene by Donna Haraway</h1>
+			<h1>Watching :: Alien 3</h1>
 		</div>
 
-		<section>
-			<h2>🏢 Club Overview</h2>
-			<ul>
-				<li><strong>Name:</strong> SkyFi</li>
-				<li><strong>Focus:</strong> Primarily science fiction, blended with philosophy, music, horror, surrealism, and post-modern literature.</li>
-				<li><strong>Demographics:</strong> NYC-based group, predominantly architects.</li>
-				<li><strong>Purpose:</strong> Collaborative book club with spinoff explorations and curated reading radars.</li>
-			</ul>
-		</section>
+		<div class="skyfi-section">
+			<p>SKYFI :: BOOKS WE HAVE READ (chronological)</p>
+			<p></p>
+			<p>Ubik - Philip K. Dick</p>
+			<p>Altered Carbon - Richard Morgan</p>
+			<p>The Old Man and the Wasteland</p>
+			<p>Mountains of Madness - HP Lovecraft</p>
+			<p>Blindsight - Peter Watts</p>
+			<p>Emabssytown - China Mieville</p>
+			<p>REAMDE - NealStephenson</p>
+			<p>Halting State - Charles Stross</p>
+			<p>American Gods - Niel Gaiman</p>
+			<p>The Spiral - Paul McEwan</p>
+			<p>Left Hand of Darkness - Ursula K LeGuin</p>
+			<p>Solaris - Stanislaw Lem</p>
+			<p>"The Dream Quest of the Unknown Kadath" - H.P. Lovecraft</p>
+			<p>By His Bootstraps - Robert A Heinlein</p>
+			<p>All You Zombies - Robert A Heinlein</p>
+			<p>City in The City - China Mieville</p>
+			<p>Stranger in a Strange Land - Robert A Heinlein</p>
+			<p>The Quantum Theif - Hannu Rajaniemi</p>
+			<p>Leviathan Wakes - James A Corey</p>
+			<p>The Foundation Trilogy - Isaac Asimov</p>
+			<p>Rainbow's End - Vernor Vinge</p>
+			<p>The Call of Cthulu - H.P. Lovecraft</p>
+			<p>Broken Angels - Richard K Morgan</p>
+			<p>The Possibility of an Island - Michel Houellebecq</p>
+			<p>Brain Plague - Joan Slonczewski</p>
+			<p>Our Cosmin Habitat - Martic Rees</p>
+			<p>Schild's Ladder - Greg Eigen</p>
+			<p>In the Dust of This Planet - Eugene Thacker</p>
+			<p>Weird Realism - Graham Harmon</p>
+			<p>Annihilation - Jeff Vandermeer</p>
+			<p>Authority - Jeff Vandermeer</p>
+			<p>Acceptance - Jeff Vandermeer</p>
+			<p>2312 - Kim Stanley Robinson</p>
+			<p>Hyperobjects: Philosophy and Ecology after the End of the World (Posthumanities) - Timothy Morton</p>
+			<p>Oryx and Crake - Margaret Atwood</p>
+			<p>Hieroglyph: Stories and Visions for a Better Future - Various Authors</p>
+			<p>Seveneves - Neal Stephenson</p>
+			<p>Ready Player One - Ernest Klein</p>
+			<p>High Rise - JG Ballard</p>
+			<p>The Three Body Problem - Liu Cixin</p>
+			<p>The Passage - Justin Cronin</p>
+			<p>The Big Sheep - Robert Kroese</p>
+			<p>The Last Days of New Paris - China Mieville</p>
+			<p>Dark Ecology - Timothy Morton</p>
+			<p>The Year of The Flood - Margaret Atwood</p>
+			<p>MaddAddam - Margaret Atwood</p>
+			<p>The Fifth Season - N.K. Jemisin</p>
+			<p>The Girl With All The Gifts - M.R. Carey</p>
+			<p>Three Moments of an Explosion - China Mieville</p>
+			<p>Infinite Jest - David Foster Wallace</p>
+			<p>Lovecraft Country - Matt Ruff</p>
+			<p>Snow Crash - Neil Stevenson</p>
+			<p>Hyperion - Dan Simmons</p>
+			<p>Walkaway - Cory Doctorow</p>
+			<p>Rendezvous with Rama - Arthur C. Clarke</p>
+			<p>Dhalgren - Samuel R. Delany</p>
+			<p>Echopraxia - Peter Watts</p>
+			<p>Dune - Frank Herbert</p>
+			<p>Ancillary Justice (+ Ancillary Mercy + Ancillary Sword) - Anne Leckie</p>
+			<p>Strange Stars - Jason Heller</p>
+			<p>The Beast That Shouted Love At The End Of The World - Harlan Ellison (1968)</p>
+			<p>Shadowbahn - Steve Erickson</p>
+			<p>Star Maker - Olaf Stapledon</p>
+			<p>Last and First Men - Olaf Stapledon</p>
+			<p>Ninefox Gambit (+ Raven Stratagem + Revenant Gun) - Yoon Ha Lee</p>
+			<p>Peripheral - William Gibson</p>
+			<p>Agency - William Gibson</p>
+			<p>Parable of the Sower - Octavia Butler</p>
+		</div>
 
-		<section>
-			<h2>📅 Currently Reading (October 2020)</h2>
-			<ul>
-				<li>📖 <strong>Pseudo Fiction:</strong> <em>Staying with the Trouble: Making Kin in the Chthulucene</em> by Donna Haraway</li>
-				<li>🎬 <strong>Watching:</strong> <em>Alien 3</em></li>
-			</ul>
-		</section>
+		<div class="skyfi-section">
+			<p>SCIFI :: BOOKS I HAVE READ (under construction)</p>
+			<p>Neuromancer - William Gibson</p>
+			<p>Count Zero - William Gibson</p>
+			<p>Mona Lisa Overdrive - William Gibson</p>
+			<p>All Tomorrows - C.M. Kosemen</p>
+			<p>The Difference Engine - William Gibson / Bruce Sterling</p>
+			<p>Jonathan Strange & Mr Norrell - Susanna Clarke</p>
+			<p>The Diamond Age - Neal Stephenson</p>
+			<p>Cronos - Stephen King</p>
+			<p>11/22/63 - Stephen King</p>
+			<p>The Windup Girl - Paolo Bacigalupi</p>
+			<p>The Water Knife - Paolo Bacigalupi</p>
+			<p>The Martian - Andy Weir</p>
+			<p>Artemis - Andy Weir</p>
+			<p>Ender's Game - Orson Scott Card</p>
+			<p>Xenocide - Orson Scott Card</p>
+			<p>Speaker for the Dead - Orson Scott Card</p>
+			<p>Ender's Shadow - Orson Scott Card</p>
+			<p>Shadow of the Hegemon - Orson Scott Card</p>
+			<p>Shadows in Flight - Orson Scott Card</p>
+			<p>Childhood's End - Arthur C. Clarke</p>
+			<p>Rendezvous with Rama - Arthur C. Clarke</p>
+			<p>The City and the Stars - Arthur C. Clarke</p>
+			<p>2001: A Space Odyssey - Arthur C. Clarke</p>
+			<p>2010 - Arthur C. Clarke</p>
+			<p>2061 - Arthur C. Clarke</p>
+			<p>3001 - Arthur C. Clarke</p>
+			<p>Fahrenheit 451 - Ray Bradbury</p>
+			<p>The Martian Chronicles - Ray Bradbury</p>
+			<p>Slaughterhouse-Five - Kurt Vonnegut</p>
+			<p>Cat's Cradle - Kurt Vonnegut</p>
+			<p>Player Piano - Kurt Vonnegut</p>
+			<p>Deadeye Dick - Don DeLillo</p>
+			<p>White Noise - Don DeLillo</p>
+			<p>Underworld - Don DeLillo</p>
+			<p>Ratner's Star - Thomas Pynchon</p>
+			<p>Gravity's Rainbow - Thomas Pynchon</p>
+			<p>V - Thomas Pynchon</p>
+			<p>Mason & Dixon - Thomas Pynchon</p>
+			<p>Au Revoir See You Later - J.G. Ballard</p>
+			<p>Crash - J.G. Ballard</p>
+			<p>High-Rise - J.G. Ballard</p>
+			<p>The Drowned World - J.G. Ballard</p>
+			<p>The Atrocity Exhibition - J.G. Ballard</p>
+			<p>Congress of the Animals - Nevil Shute</p>
+			<p>On the Beach - Nevil Shute</p>
+			<p>The Terminal Man - Michael Crichton</p>
+			<p>The Andromeda Strain - Michael Crichton</p>
+			<p>Predators - Michael Crichton</p>
+			<p>Timeline - Michael Crichton</p>
+			<p>West of Eden - Michael Crichton</p>
+			<p>Next - Michael Crichton</p>
+			<p>State of Fear - Michael Crichton</p>
+			<p>The Bourne Identity - Robert Ludlum</p>
+			<p>The Bourne Supremacy - Robert Ludlum</p>
+			<p>The Bourne Ultimatum - Robert Ludlum</p>
+			<p>The Ipcress File - Len Deighton</p>
+			<p>The Spy Who Came In From The Cold - John le Carré</p>
+			<p>Tinker Tailor Soldier Spy - John le Carré</p>
+			<p>The Honorable Schoolboy - John le Carré</p>
+			<p>The Little Drummer Girl - John le Carré</p>
+			<p>The Night Manager - John le Carré</p>
+			<p>The Secret Agent - Joseph Conrad</p>
+			<p>Nostromo - Joseph Conrad</p>
+			<p>Heart of Darkness - Joseph Conrad</p>
+			<p>Lord of the Flies - William Golding</p>
+			<p>Brave New World - Aldous Huxley</p>
+			<p>1984 - George Orwell</p>
+			<p>Animal Farm - George Orwell</p>
+			<p>Fahrenheit 451 - Ray Bradbury</p>
+			<p>A Canticle for Leibowitz - Walter M. Miller Jr.</p>
+			<p>The Left Hand of Darkness - Ursula K. Le Guin</p>
+			<p>The Dispossessed - Ursula K. Le Guin</p>
+			<p>The Word for World is Forest - Ursula K. Le Guin</p>
+			<p>Always Coming Home - Ursula K. Le Guin</p>
+			<p>Darkness Takes Me - Ursula K. Le Guin</p>
+			<p>The Lathe of Heaven - Ursula K. Le Guin</p>
+			<p>Other Lands, Other Lives - Ursula K. Le Guin</p>
+			<p>The Telling - Ursula K. Le Guin</p>
+			<p>Four Ways to Forgiveness - Ursula K. Le Guin</p>
+			<p>The Wild Robots - Peter Brown</p>
+		</div>
 
-		<section>
-			<h2>📜 Chronological Club Reads</h2>
-			<ul>
-				<li><em>Ubik</em> — Philip K. Dick</li>
-				<li><em>Altered Carbon</em> — Richard Morgan</li>
-				<li><em>The Old Man and the Wasteland</em></li>
-				<li><em>Mountains of Madness</em> — HP Lovecraft</li>
-				<li><em>Blindsight</em> — Peter Watts</li>
-				<li><em>Embassytown</em> — China Mieville</li>
-				<li><em>REAMDE</em> — Neal Stephenson</li>
-				<li><em>Halting State</em> — Charles Stross</li>
-				<li><em>American Gods</em> — Neil Gaiman</li>
-				<li><em>The Spiral</em> — Paul McEwan</li>
-				<li><em>Left Hand of Darkness</em> — Ursula K LeGuin</li>
-				<li><em>Solaris</em> — Stanislaw Lem</li>
-				<li><em>"The Dream Quest of the Unknown Kadath"</em> — H.P. Lovecraft</li>
-				<li><em>By His Bootstraps</em> — Robert A Heinlein</li>
-				<li><em>All You Zombies</em> — Robert A Heinlein</li>
-				<li><em>City in The City</em> — China Mieville</li>
-				<li><em>Stranger in a Strange Land</em> — Robert A Heinlein</li>
-				<li><em>The Quantum Thief</em> — Hannu Rajaniemi</li>
-				<li><em>Leviathan Wakes</em> — James A Corey</li>
-				<li><em>The Foundation Trilogy</em> — Isaac Asimov</li>
-				<li><em>Rainbow's End</em> — Vernor Vinge</li>
-				<li><em>The Call of Cthulhu</em> — H.P. Lovecraft</li>
-				<li><em>Broken Angels</em> — Richard K Morgan</li>
-				<li><em>The Possibility of an Island</em> — Michel Houellebecq</li>
-				<li><em>Brain Plague</em> — Joan Slonczewski</li>
-				<li><em>Schild's Ladder</em> — Greg Eigen</li>
-				<li><em>In the Dust of This Planet</em> — Eugene Thacker</li>
-				<li><em>Weird Realism</em> — Graham Harmon</li>
-				<li><em>Annihilation</em> — Jeff VanderMeer</li>
-				<li><em>Authority</em> — Jeff VanderMeer</li>
-				<li><em>Acceptance</em> — Jeff VanderMeer</li>
-				<li><em>2312</em> — Kim Stanley Robinson</li>
-				<li><em>Hyperobjects</em> — Timothy Morton</li>
-				<li><em>Oryx and Crake</em> — Margaret Atwood</li>
-				<li><em>Hieroglyph</em> — Various Authors</li>
-				<li><em>Seveneves</em> — Neal Stephenson</li>
-				<li><em>Ready Player One</em> — Ernest Klein</li>
-				<li><em>High Rise</em> — JG Ballard</li>
-				<li><em>The Three Body Problem</em> — Liu Cixin</li>
-				<li><em>The Passage</em> — Justin Cronin</li>
-				<li><em>The Big Sheep</em> — Robert Kroese</li>
-				<li><em>The Last Days of New Paris</em> — China Mieville</li>
-				<li><em>Dark Ecology</em> — Timothy Morton</li>
-				<li><em>The Year of The Flood</em> — Margaret Atwood</li>
-				<li><em>MaddAddam</em> — Margaret Atwood</li>
-				<li><em>The Fifth Season</em> — N.K. Jemisin</li>
-				<li><em>The Girl With All The Gifts</em> — M.R. Carey</li>
-				<li><em>Three Moments of an Explosion</em> — China Mieville</li>
-				<li><em>Infinite Jest</em> — David Foster Wallace</li>
-				<li><em>Lovecraft Country</em> — Matt Ruff</li>
-				<li><em>Snow Crash</em> — Neil Stevenson</li>
-				<li><em>Hyperion</em> — Dan Simmons</li>
-				<li><em>Walkaway</em> — Cory Doctorow</li>
-				<li><em>Rendezvous with Rama</em> — Arthur C. Clarke</li>
-				<li><em>Dhalgren</em> — Samuel R. Delany</li>
-				<li><em>Echopraxia</em> — Peter Watts</li>
-				<li><em>Dune</em> — Frank Herbert</li>
-				<li><em>Ancillary Justice</em> (+ <em>Ancillary Mercy</em> + <em>Ancillary Sword</em>) — Anne Leckie</li>
-				<li><em>Strange Stars</em> — Jason Heller</li>
-				<li><em>The Beast That Shouted Love At The End Of The World</em> — Harlan Ellison (1968)</li>
-				<li><em>Shadowbahn</em> — Steve Erickson</li>
-				<li><em>Star Maker</em> — Olaf Stapledon</li>
-				<li><em>Last and First Men</em> — Olaf Stapledon</li>
-				<li><em>Ninefox Gambit</em> (+ <em>Raven Stratagem</em> + <em>Revenant Gun</em>) — Yoon Ha Lee</li>
-				<li><em>Peripheral</em> — William Gibson</li>
-				<li><em>Agency</em> — William Gibson</li>
-				<li><em>Parable of the Sower</em> — Octavia Butler</li>
-			</ul>
-		</section>
+		<div class="skyfi-section">
+			<p>PHILOSOPHY :: BOOKS I HAVE READ (under construction)</p>
+			<p>Tao: The Watercourse Way - Alan Watts</p>
+			<p>Lao Tzu: Tao Te Ching: A Book About the Way and the Power of the Way - Ursula K. LE Guin</p>
+			<p>The Book of Five Rings - Miyamoto Musashi</p>
+			<p>The Art of War - Sun Tzu</p>
+			<p>Meditations - Marcus Aurelius</p>
+		</div>
 
-		<section>
-			<h2>⭐ Favorites</h2>
-			<ul>
-				<li><em>Altered Carbon</em> series (<em>Broken Angels</em> + <em>Woken Furies</em>) — Richard K. Morgan</li>
-				<li><em>Blindsight</em> — Peter Watts</li>
-				<li><em>Star Maker</em> — Olaf Stapledon</li>
-				<li><em>The Book of Five Rings</em> — Miyamoto Musashi</li>
-				<li><em>Tao Te Ching</em> — Ursula K. LeGuin</li>
-				<li><em>The Watercourse Way</em> — Alan Watts</li>
-			</ul>
-		</section>
+		<div class="skyfi-section">
+			<p>FICTION :: BOOKS I HAVE READ (under construction)</p>
+		</div>
 
-		<section>
-			<h2>📖 Recent Book Club Posts</h2>
-			<ul>
-				{skyfiPosts.map(post => (
-					<li>
-						<a href={`/blog/${post.slug}`}>
-							<strong>{post.data.title}</strong>
-							<span class="post-date">
-								{post.data.pubDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
-							</span>
-						</a>
-					</li>
-				))}
-			</ul>
-		</section>
+		<h1>SKYFI BOOKS :: EXTRA CURRICULAR</h1>
+
+		<div class="skyfi-section">
+			<h1>SKYFI :: BOOKS ON OUR RADAR (under construction)</h1>
+		</div>
+
+		<div class="skyfi-section">
+			<p>CLASSICS (Pre 2000)</p>
+			<p>War In The Air - Hg Wells (1907)</p>
+			<p>When The Sleeper Wakes - H.G. Wells (1899)</p>
+			<p>The Time Machine - H.G. Wells (1895)</p>
+			<p>The War of the Worlds - H.G. Wells (1898)</p>
+			<p>The Invisible Man - H.G. Wells (1897)</p>
+			<p>The Island of Dr. Moreau - H.G. Wells (1896)</p>
+			<p>First and Last Things - Olaf Stapledon</p>
+			<p>Last and First Men - Olaf Stapledon</p>
+			<p>Star Maker - Olaf Stapledon</p>
+			<p>The Singing Sand - Olaf Stapledon</p>
+			<p>The Last and the First Men - Olaf Stapledon</p>
+			<p>Odd John - Olaf Stapledon</p>
+			<p>Sister Carrie - Theodore Dreiser</p>
+			<p>An American Tragedy - Theodore Dreiser</p>
+			<p>The Finneygan Wake - James Joyce</p>
+			<p>Ulysses - James Joyce</p>
+			<p>Portrait of the Artist as a Young Man - James Joyce</p>
+			<p>Finnegan's Wake - James Joyce</p>
+			<p>The Waste Land - T.S. Eliot</p>
+			<p>4.48 Psychosis - Sarah Kane</p>
+			<p>Clean House - Sarah Kane</p>
+			<p>Blasted - Sarah Kane</p>
+			<p>Crimes of the Heart - Beth Henley</p>
+			<p>The Glass Menagerie - Tennessee Williams</p>
+			<p>A Streetcar Named Desire - Tennessee Williams</p>
+			<p>Cat on a Hot Tin Roof - Tennessee Williams</p>
+			<p>Death of a Salesman - Arthur Miller</p>
+			<p>The Crucible - Arthur Miller</p>
+			<p>All My Sons - Arthur Miller</p>
+			<p>Waiting for Godot - Samuel Beckett</p>
+			<p>Endgame - Samuel Beckett</p>
+			<p>King Lear - William Shakespeare</p>
+			<p>Hamlet - William Shakespeare</p>
+			<p>Macbeth - William Shakespeare</p>
+			<p>Othello - William Shakespeare</p>
+			<p>The Tempest - William Shakespeare</p>
+			<p>A Midsummer Night's Dream - William Shakespeare</p>
+			<p>Romeo and Juliet - William Shakespeare</p>
+			<p>As You Like It - William Shakespeare</p>
+			<p>Twelfth Night - William Shakespeare</p>
+			<p>The Merchant of Venice - William Shakespeare</p>
+			<p>The Taming of the Shrew - William Shakespeare</p>
+			<p>The Comedy of Errors - William Shakespeare</p>
+			<p>Richard III - William Shakespeare</p>
+			<p>Henry V - William Shakespeare</p>
+			<p>Julius Caesar - William Shakespeare</p>
+			<p>Antony and Cleopatra - William Shakespeare</p>
+			<p>Coriolanus - William Shakespeare</p>
+			<p>Timon of Athens - William Shakespeare</p>
+			<p>Pericles - William Shakespeare</p>
+			<p>Cymbeline - William Shakespeare</p>
+			<p>The Winter's Tale - William Shakespeare</p>
+			<p>The Two Gentlemen of Verona - William Shakespeare</p>
+			<p>Measure for Measure - William Shakespeare</p>
+			<p>All's Well That Ends Well - William Shakespeare</p>
+		</div>
+
+		<div class="skyfi-section">
+			<p>POST 2000</p>
+			<p>The Windup Girl - Paolo Bacigalupi</p>
+			<p>The Water Knife - Paolo Bacigalupi</p>
+			<p>The Ministry for the Future - Kim Stanley Robinson</p>
+			<p>New York 2140 - Kim Stanley Robinson</p>
+			<p>Aurora - Kim Stanley Robinson</p>
+			<p>Audacity - Kim Stanley Robinson</p>
+			<p>Martin Eden - Jack London</p>
+			<p>The Call of the Wild - Jack London</p>
+			<p>White Fang - Jack London</p>
+			<p>The Iron Heel - Jack London</p>
+			<p>To Build a Fire - Jack London</p>
+			<p>John Barleycorn - Jack London</p>
+			<p>The Sea-Wolf - Jack London</p>
+			<p>Burned Daylight - Jack London</p>
+			<p>The Sea Wolf - Jack London</p>
+			<p>Love Life - Jack London</p>
+			<p>The Star Rover - Jack London</p>
+			<p>Jim the Scoundrel - Jack London</p>
+			<p>The Mutiny of the Elsinore - Jack London</p>
+			<p>The People of the Abyss - Jack London</p>
+			<p>The Iron Heel - Jack London</p>
+			<p>Springfield Field and Flo - Jack London</p>
+			<p>Before Adam - Jack London</p>
+			<p>My First Year as a Postman - Jack London</p>
+			<p>The Son's Return - Jack London</p>
+			<p>The Little Lady of the Big House - Jack London</p>
+			<p>The Cruise of the Snark - Jack London</p>
+			<p>The Valley of the Moon - Jack London</p>
+			<p>The Abysmal Brute - Jack London</p>
+			<p>The Strength of the Strong - Jack London</p>
+			<p>The Scarlet Plague - Jack London</p>
+			<p>The Mutiny of the Elsinore - Jack London</p>
+			<p>The Jazz Singer - Samson Raphaelson</p>
+			<p>The Birth of a Nation - Thomas Dixon</p>
+			<p>Gone With the Wind - Margaret Mitchell</p>
+			<p>The Help - Kathryn Stockett</p>
+			<p>The Color Purple - Alice Walker</p>
+			<p>The Bluest Eye - Toni Morrison</p>
+			<p>Sula - Toni Morrison</p>
+			<p>Song of Solomon - Toni Morrison</p>
+			<p>Jazz - Toni Morrison</p>
+			<p>Paradise - Toni Morrison</p>
+			<p>A Beloved Community - Toni Morrison</p>
+			<p>The Source - Toni Morrison</p>
+			<p>Homo Ludens - Johan Huizinga</p>
+			<p>The Denial of Death - Ernest Becker</p>
+			<p>The Body Keeps The Score - Bessel van der Kolk</p>
+			<p>What Happened To You - Bruce D. Perry</p>
+			<p>The Boy Who Was Raised As A Dog - Bruce D. Perry</p>
+		</div>
 	</main>
 
 	<style>
 		.skyfi-page {
-			max-width: 740px;
-			margin: 2rem auto;
-			padding: 0 2rem;
+			max-width: var(--post-max-width);
+			margin: 0 auto;
+			padding: 1.5rem var(--header-padding-x);
 		}
 
-		.skyfi-page section {
-			margin-bottom: 2.5rem;
-		}
-
-		.skyfi-page h2 {
-			font-size: 1.5rem;
+		.skyfi-intro {
+			font-size: 1rem;
+			font-weight: 300;
+			line-height: 1.6;
 			color: var(--text-primary);
-			margin-top: 2rem;
-			margin-bottom: 1rem;
+			margin-bottom: 2rem;
+			padding-top: 1rem;
 		}
 
-		.skyfi-page p {
-			color: var(--text-secondary);
-			line-height: 1.8;
-			margin-bottom: 1.5rem;
+		.skyfi-section {
+			margin-bottom: 2rem;
 		}
 
-		.skyfi-page ul {
-			color: var(--text-secondary);
-			line-height: 1.7;
+		.skyfi-section h1 {
+			font-size: 1.1rem;
+			font-weight: 300;
+			line-height: 1.4;
+			color: var(--text-primary);
+			margin: 0.5rem 0;
 		}
 
-		.skyfi-page li {
-			margin-bottom: 0.35rem;
+		.skyfi-section p {
+			font-size: 0.95rem;
+			font-weight: 300;
+			line-height: 1.6;
+			color: var(--text-primary);
+			margin: 0.25rem 0;
+		}
+
+		.skyfi-page > h1 {
+			font-size: 1.1rem;
+			font-weight: 300;
+			line-height: 1.4;
+			color: var(--text-primary);
+			margin: 1.5rem 0 0.5rem 0;
 		}
 
 		.skyfi-page a {
-			color: var(--accent);
+			color: var(--text-link);
+			text-decoration: none;
 		}
 
-		.post-date {
-			color: var(--text-muted);
-			font-size: 0.8rem;
-			margin-left: 0.5rem;
+		.skyfi-page a:hover {
+			color: var(--text-link-hover);
 		}
 
 		@media (max-width: 768px) {
 			.skyfi-page {
-				padding: 0 1rem;
+				padding: 1rem var(--header-padding-x);
 			}
 		}
 	</style>

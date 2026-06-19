@@ -1,8 +1,8 @@
 ---
-// Digital Nouveau - Index page (Wix-inspired light theme)
+// Digital Nouveau - Index page matching Wix blog.home structure
 import SiteLayout from '@/components/SiteLayout.astro';
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, SITE_DESCRIPTION, CATEGORIES } from '@/consts';
+import { SITE_TITLE, CATEGORIES } from '@/consts';
 const VALID_CATEGORIES = new Set(CATEGORIES);
 
 const allPosts = await getCollection('blog');
@@ -11,56 +11,233 @@ const sortedPosts = allPosts
 	.map(post => {
 		const words = (post.body || '').trim().split(/\s+/).filter(Boolean).length;
 		return { ...post, readTime: Math.max(1, Math.ceil(words / 200)) };
-	})
-	.slice(0, 12);
+	});
+
+const homepagePosts = sortedPosts.slice(0, 12);
+const featuredPost = homepagePosts[0];
+const remainingPosts = homepagePosts.slice(1);
 ---
 
-<SiteLayout title={SITE_TITLE}>
+<SiteLayout title={"Digital Nouveau"}>
 	<head>
-		<title>{SITE_TITLE}</title>
-		<meta name="description" content={SITE_DESCRIPTION} />
+		<title>Digital Nouveau</title>
+		<meta name="description" content="A feed of design, computation, and fabrication work by Robert Lee Brackett. These musings are happening behind the scenes of Robert's design work with Miscellaneous Projects and teaching as a Professor of Architecture at Pratt Institute in New York." />
 	</head>
 
+	<!-- Category navigation - Wix style -->
+	<nav class="category-nav" aria-label="Blog categories">
+		<a href="/blog" class="category-link">&gt; everything ~</a>
+		{CATEGORIES.map((cat) => (
+			<a href={`/category/${cat}`} class="category-link">{cat}</a>
+		))}
+	</nav>
+
 	<main class="index-page">
+		<!-- Featured post (first article) - matching Wix single-column layout -->
+		{featuredPost && (
+			<article class="featured-post">
+				<h2 class="featured-post-title">
+					<a href={`/blog/${featuredPost.id}`}>{featuredPost.data.title}</a>
+				</h2>
+				<div class="featured-post-meta">
+					<time datetime={featuredPost.data.pubDate.toISOString()}>
+						{featuredPost.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+					</time>
+					{featuredPost.readTime && <span class="read-time">&middot; {featuredPost.readTime} min read</span>}
+				</div>
+				<p class="featured-post-desc">{featuredPost.data.description}</p>
+				{featuredPost.data.image && (
+					<figure class="featured-post-image">
+						<img
+							src={featuredPost.data.image}
+							alt={featuredPost.data.title}
+							width="740"
+							height="493"
+							loading="eager"
+						/>
+					</figure>
+				)}
+				{featuredPost.data.categories && featuredPost.data.categories.length > 0 && (
+					<div class="post-item-meta">
+						{featuredPost.data.categories.filter(c => VALID_CATEGORIES.has(c)).map(cat => (
+							<a href={`/category/${cat}`} class="post-item-meta-category">{cat}</a>
+						))}
+					</div>
+				)}
+			</article>
+		)}
+
+		<!-- Remaining posts - single column, no grid -->
 		<div class="post-list">
-			{sortedPosts.map(post => (
-				<article class="post-card">
-					<div class="post-meta">
+			{remainingPosts.map(post => (
+				<article class="post-item">
+					<h2 class="post-item-title">
+						<a href={`/blog/${post.id}`}>{post.data.title}</a>
+					</h2>
+					<div class="post-item-meta">
 						<time datetime={post.data.pubDate.toISOString()}>
 							{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
 						</time>
-						{post.readTime && (
-							<span class="read-time">· {post.readTime} min read</span>
+						{post.readTime && <span class="read-time">&middot; {post.readTime} min read</span>}
+						{post.data.categories && post.data.categories.length > 0 && (
+							<span>
+								{post.data.categories.filter(c => VALID_CATEGORIES.has(c)).join(', ')}
+							</span>
 						)}
 					</div>
-					<h2>
-						<a href={`/blog/${post.id}`}>{post.data.title}</a>
-					</h2>
-					<p>{post.data.description}</p>
-					{post.data.categories && post.data.categories.length > 0 && (
-						<div class="post-categories">
-							{post.data.categories.filter(c => VALID_CATEGORIES.has(c)).map(cat => (
-								<a href={`/category/${cat}`} class="category-tag">{cat}</a>
-							))}
-						</div>
-					)}
+					<p class="post-item-desc">{post.data.description}</p>
 				</article>
 			))}
 		</div>
 
-		<a href="/blog" class="view-all">View All Posts →</a>
+		<!-- View all link -->
+		{homepagePosts.length > 0 && (
+			<a href="/blog" class="view-all">view all posts &gt;</a>
+		)}
 	</main>
 
 	<style>
 		.index-page {
-			max-width: 980px;
+			max-width: var(--content-max-width);
 			margin: 0 auto;
-			padding: 2rem 2rem;
+			padding: 1.5rem var(--header-padding-x);
+		}
+
+		/* Featured post */
+		.featured-post {
+			margin-top: 1.5rem;
+			padding: 1.5rem 0;
+			border-top: 1px solid var(--border);
+			border-bottom: 1px solid var(--border);
+			max-width: var(--post-max-width);
+		}
+
+		.featured-post-title {
+			font-size: 1.75rem;
+			font-weight: 300;
+			line-height: 1.2;
+			margin-bottom: 0.5rem;
+		}
+
+		.featured-post-title a {
+			color: var(--text-primary);
+			text-decoration: none;
+		}
+
+		.featured-post-title a:hover {
+			color: var(--text-link);
+		}
+
+		.featured-post-meta {
+			font-size: 0.8rem;
+			color: var(--text-muted);
+			display: flex;
+			gap: 0.5rem;
+			align-items: center;
+			margin-bottom: 1rem;
+		}
+
+		.featured-post-desc {
+			font-size: 1.125rem;
+			color: var(--text-secondary);
+			line-height: 1.5;
+			margin-bottom: 1rem;
+		}
+
+		.featured-post-image {
+			width: 100%;
+			margin-top: 1rem;
+		}
+
+		.featured-post-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		/* Post list - single column */
+		.post-list {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.post-item {
+			padding: 1.5rem 0;
+			border-bottom: 1px solid var(--border);
+		}
+
+		.post-item-title {
+			font-size: 1.5rem;
+			font-weight: 300;
+			line-height: 1.2;
+			margin-bottom: 0.5rem;
+		}
+
+		.post-item-title a {
+			color: var(--text-primary);
+			text-decoration: none;
+		}
+
+		.post-item-title a:hover {
+			color: var(--text-link);
+		}
+
+		.post-item-meta {
+			font-size: 0.8rem;
+			color: var(--text-muted);
+			display: flex;
+			gap: 0.5rem;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.post-item-meta-category {
+			font-size: 0.75rem;
+			color: var(--text-muted);
+			text-decoration: none;
+		}
+
+		.post-item-meta-category:hover {
+			color: var(--text-link);
+		}
+
+		.post-item-desc {
+			font-size: 1rem;
+			color: var(--text-secondary);
+			line-height: 1.5;
+			margin: 0.75rem 0 0 0;
+		}
+
+		/* View all */
+		.view-all {
+			display: inline-block;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			color: var(--text-muted);
+			font-size: 0.875rem;
+			text-decoration: none;
+			transition: color 0.2s;
+		}
+
+		.view-all:hover {
+			color: var(--text-link);
 		}
 
 		@media (max-width: 768px) {
 			.index-page {
-				padding: 1.5rem 1rem;
+				padding: 1rem var(--header-padding-x);
+			}
+
+			.featured-post-title {
+				font-size: 1.35rem;
+			}
+
+			.post-item-title {
+				font-size: 1.25rem;
+			}
+
+			.featured-post-desc {
+				font-size: 1rem;
 			}
 		}
 	</style>

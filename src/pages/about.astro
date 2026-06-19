@@ -1,4 +1,5 @@
 ---
+// About page - dark theme matching Wix aesthetic
 import SiteLayout from '@/components/SiteLayout.astro';
 import { SITE_TITLE } from '@/consts';
 ---
@@ -10,7 +11,7 @@ import { SITE_TITLE } from '@/consts';
 
 	<main class="about-page">
 		<div class="section-header">
-			<h1>About</h1>
+			<h1>&gt; about ~</h1>
 		</div>
 
 		<p>Digital Nouveau is a feed of design, computation, and fabrication work by Robert Lee Brackett. These musings are happening behind the scenes of Robert's design work with Miscellaneous Projects and teaching as a Professor of Architecture at Pratt Institute in New York.</p>
@@ -34,16 +35,29 @@ import { SITE_TITLE } from '@/consts';
 
 	<style>
 		.about-page {
-			max-width: 740px;
+			max-width: var(--post-max-width);
 			margin: 2rem auto;
-			padding: 0 2rem;
+			padding: 0 var(--header-padding-x);
+		}
+
+		.section-header {
+			margin-bottom: 1.5rem;
+			padding-top: 1rem;
+		}
+
+		.section-header h1 {
+			margin: 0;
+			font-size: 1.75rem;
+			font-weight: 300;
+			color: var(--accent);
 		}
 
 		.about-page h2 {
-			font-size: 1.5rem;
+			font-size: 1.35rem;
 			color: var(--text-primary);
 			margin-top: 2rem;
 			margin-bottom: 0.5rem;
+			font-weight: 300;
 		}
 
 		.about-page p {
@@ -54,15 +68,24 @@ import { SITE_TITLE } from '@/consts';
 
 		.about-page ul {
 			color: var(--text-secondary);
+			padding-left: 1.5em;
+		}
+
+		.about-page li {
+			margin-bottom: 0.5rem;
 		}
 
 		.about-page a {
-			color: var(--accent);
+			color: var(--text-link);
+		}
+
+		.about-page a:hover {
+			color: var(--text-link-hover);
 		}
 
 		@media (max-width: 768px) {
 			.about-page {
-				padding: 0 1rem;
+				padding: 0 var(--header-padding-x);
 			}
 		}
 	</style>

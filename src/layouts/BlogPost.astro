@@ -1,5 +1,5 @@
 ---
-// BlogPost layout - Wix-inspired light theme
+// BlogPost layout - dark theme matching Wix blog structure
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -19,20 +19,18 @@ const { title, description, pubDate, updatedDate, categories, image, readTime } 
 		<article>
 			<div class="prose">
 				<div class="post-header">
+					<h2>{title}</h2>
 					<div class="post-meta">
 						<FormattedDate date={pubDate} />
 						{readTime && (
-							<span class="read-time">· {readTime} min read</span>
+							<span class="read-time">&middot; {readTime} min read</span>
 						)}
-						{
-							updatedDate && (
-								<div class="last-updated-on">
-									Last updated on <FormattedDate date={updatedDate} />
-								</div>
-							)
-						}
 					</div>
-					<h1>{title}</h1>
+					{updatedDate && (
+						<div class="last-updated-on">
+							Last updated on <FormattedDate date={updatedDate} />
+						</div>
+					)}
 					{categories && categories.length > 0 && (
 						<div class="post-categories">
 							{categories.map(cat => (
@@ -40,158 +38,183 @@ const { title, description, pubDate, updatedDate, categories, image, readTime } 
 							))}
 						</div>
 					)}
-					<hr />
 				</div>
 				{image && (
 					<div class="hero-image">
-						<img src={image} alt={`Hero image for ${title}`} width="1200" height="auto" loading="eager" />
+						<img src={image} alt={`Hero image for ${title}`} width="740" height="493" loading="eager" />
 					</div>
 				)}
 				<slot />
 			</div>
 		</article>
 	</main>
-</SiteLayout>
 
-<style>
-	.blog-post {
-		max-width: 740px;
-		margin: 2rem auto;
-		padding: 0 2rem;
-	}
-
-	.prose {
-		color: var(--text-primary);
-		line-height: 1.8;
-		font-size: 1.05rem;
-	}
-
-	.prose p {
-		margin-bottom: 1.5em;
-	}
-
-	.prose h1,
-	.prose h2,
-	.prose h3 {
-		color: var(--text-primary);
-		margin-top: 2em;
-	}
-
-	.prose a {
-		color: var(--accent);
-		text-decoration: underline;
-		text-underline-offset: 2px;
-	}
-
-	.prose a:hover {
-		color: var(--text-primary);
-	}
-
-	.prose blockquote {
-		border-left: 3px solid var(--border);
-		padding-left: 1.5em;
-		margin: 1.5em 0;
-		color: var(--text-secondary);
-		font-style: italic;
-	}
-
-	.prose img {
-		max-width: 100%;
-		height: auto;
-		border-radius: 4px;
-		margin: 1.5em 0;
-	}
-
-	.prose ul,
-	.prose ol {
-		margin-bottom: 1.5em;
-		padding-left: 1.5em;
-	}
-
-	.prose li {
-		margin-bottom: 0.5em;
-	}
-
-	.post-header {
-		margin-bottom: 2em;
-		padding-bottom: 1em;
-	}
-
-	.hero-image {
-		margin: 0 -0.5rem 2rem -0.5rem;
-		overflow: hidden;
-	}
-
-	.hero-image img {
-		width: 100%;
-		height: auto;
-		border-radius: 4px;
-		display: block;
-	}
-
-	.post-header h1 {
-		margin: 0.5em 0;
-		font-size: 2.25rem;
-		line-height: 1.2;
-		color: var(--text-primary);
-	}
-
-	.post-meta {
-		color: var(--text-muted);
-		font-size: 0.875rem;
-		display: flex;
-		gap: 0.3rem;
-		align-items: center;
-	}
-
-	.read-time {
-		font-size: 0.875rem;
-		color: var(--text-muted);
-	}
-
-	.last-updated-on {
-		font-style: italic;
-		color: var(--text-muted);
-		margin-top: 0.25rem;
-	}
-
-	.post-categories {
-		display: flex;
-		gap: 0.5rem;
-		flex-wrap: wrap;
-		margin-top: 1em;
-	}
-
-	.category-tag {
-		display: inline-block;
-		padding: 0.15rem 0.5rem;
-		background: transparent;
-		color: var(--text-muted);
-		text-decoration: none;
-		border: 1px solid var(--border);
-		border-radius: 0;
-		font-size: 0.7rem;
-		letter-spacing: 0.05em;
-		text-transform: lowercase;
-		transition: all 0.2s;
-	}
-
-	.category-tag:hover {
-		border-color: var(--accent);
-		color: var(--accent);
-	}
-
-	@media (max-width: 768px) {
+	<style>
 		.blog-post {
-			padding: 0 1rem;
-		}
-
-		.post-header h1 {
-			font-size: 1.75rem;
+			max-width: var(--post-max-width);
+			margin: 2rem auto;
+			padding: 0 var(--header-padding-x);
 		}
 
 		.prose {
-			font-size: 1rem;
+			color: var(--text-primary);
+			line-height: 1.5;
+			font-size: 1.125rem;
 		}
-	}
-</style>
+
+		.prose p {
+			margin-bottom: 1.25em;
+			color: var(--text-secondary);
+		}
+
+		.prose h1,
+		.prose h2,
+		.prose h3 {
+			color: var(--text-primary);
+			margin-top: 2em;
+			margin-bottom: 0.75em;
+			font-weight: 300;
+		}
+
+		.prose h1 { font-size: 2.25rem; }
+		.prose h2 { font-size: 1.75rem; }
+		.prose h3 { font-size: 1.35rem; }
+
+		.prose a {
+			color: var(--text-link);
+			text-decoration: underline;
+			text-underline-offset: 2px;
+		}
+
+		.prose a:hover {
+			color: var(--text-link-hover);
+		}
+
+		.prose blockquote {
+			border-left: 2px solid var(--accent);
+			padding-left: 1.5em;
+			margin: 1.5em 0;
+			color: var(--text-secondary);
+			font-style: italic;
+		}
+
+		.prose img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin: 1.5em 0;
+		}
+
+		.prose ul,
+		.prose ol {
+			margin-bottom: 1.5em;
+			padding-left: 1.5em;
+		}
+
+		.prose li {
+			margin-bottom: 0.5em;
+			color: var(--text-secondary);
+		}
+
+		.prose figure {
+			margin: 1.5em 0;
+		}
+
+		.prose figure img {
+			margin: 0;
+		}
+
+		.prose figure figcaption {
+			font-size: 0.85rem;
+			color: var(--text-muted);
+			margin-top: 0.5em;
+		}
+
+		.prose hr {
+			border: none;
+			border-top: 1px solid var(--border);
+			margin: 2em 0;
+		}
+
+		.post-header {
+			margin-bottom: 2em;
+		}
+
+		.post-header h1 {
+			margin: 0 0 0.5em 0;
+			font-size: 2.25rem;
+			line-height: 1.2;
+			color: var(--text-primary);
+			font-weight: 300;
+		}
+
+		.post-meta {
+			color: var(--text-muted);
+			font-size: 0.85rem;
+			display: flex;
+			gap: 0.3rem;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.read-time {
+			font-size: 0.85rem;
+			color: var(--text-muted);
+		}
+
+		.last-updated-on {
+			font-style: italic;
+			color: var(--text-muted);
+			margin-top: 0.25rem;
+		}
+
+		.post-categories {
+			display: flex;
+			gap: 0.5rem;
+			flex-wrap: wrap;
+			margin-top: 1em;
+		}
+
+		.category-tag {
+			display: inline-block;
+			padding: 0.15rem 0.5rem;
+			background: transparent;
+			color: var(--text-muted);
+			text-decoration: none;
+			border: none;
+			font-size: 0.7rem;
+			letter-spacing: 0.05em;
+			text-transform: lowercase;
+			transition: color 0.2s;
+		}
+
+		.category-tag:hover {
+			color: var(--text-link);
+		}
+
+		.hero-image {
+			margin: 0 0 2rem 0;
+		}
+
+		.hero-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		@media (max-width: 768px) {
+			.blog-post {
+				padding: 0 var(--header-padding-x);
+				margin: 1.5rem auto;
+			}
+
+			.post-header h1 {
+				font-size: 1.75rem;
+			}
+
+			.prose {
+				font-size: 1rem;
+			}
+		}
+	</style>
+</SiteLayout>

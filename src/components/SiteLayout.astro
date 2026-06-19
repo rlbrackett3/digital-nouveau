@@ -1,73 +1,107 @@
 ---
+// SiteLayout - Master layout matching Wix blog.digitalnouveau.com structure
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_COPYRIGHT, CATEGORIES } from '../consts';
 ---
 
-<link rel="stylesheet" href="/global.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/gif" href="/arnica_CB_sections_02.gif" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="/global.css" />
+		<slot name="head" />
+	</head>
+	<body>
+		<!-- SITE HEADER - 3 column layout matching Wix -->
+		<header class="site-header">
+			<div class="header-banner">
+				<!-- Column 1: Text block -->
+				<div class="header-text">
+					<h6 class="site-title"><a href="/">Digital Nouveau ~</a></h6>
+					<p class="header-tagline"><a href="/">initiating drone connection ~</a></p>
+					<p class="header-tagline"><a href="/blog">blog ~</a></p>
+					<p class="header-sub">design|computation |fabrication ::make things ~</p>
+					<p class="header-sub">we came here to do something, so let's do something ~</p>
+				</div>
 
-<header class="site-header">
-	<div class="header-banner">
-		<div class="header-text">
-			<h6 class="site-title"><a href="/">&gt; Digital Nouveau ~</a></h6>
-			<p class="header-tagline"><a href="/">&gt; initiating drone connection ~</a></p>
-			<p class="header-tagline"><a href="/blog">&gt; blog ~</a></p>
-			<p class="header-sub">&gt; design|computation |fabrication ::make things ~</p>
-			<p class="header-sub">&gt; we came here to do something, so let's do something ~</p>
-		</div>
-		<div class="header-gif">
-			<a href="/"><img src="/arnica_CB_sections_02.gif" alt="Digital Nouveau" /></a>
-		</div>
-	</div>
-	<nav class="top-nav">
-		<a href="/" class="nav-link">feed</a>
-		<a href="/portfolio" class="nav-link">portfolio</a>
-		<a href="/skyfi-a-reading-list" class="nav-link">skyfi :: a reading list</a>
-	</nav>
-	</header>
+				<!-- Column 2: GIF logo -->
+				<div class="header-gif">
+					<a href="/"><img src="/arnica_CB_sections_02.gif" alt="Digital Nouveau" width="60" height="60" /></a>
+				</div>
 
-	<!-- Category navigation - Wix style: in main content area, not in header -->
-	<nav class="category-nav">
-		<span class="category-nav-label">browse:</span>
-		<a href="/blog" class="category-link">&gt; everything ~</a>
-		<span class="category-sep">/</span>
-		{CATEGORIES.map((cat, i) => (
-			<>
-				<a href={`/category/${cat}`} class="category-link">{cat}</a>
-				{i < CATEGORIES.length - 1 && <span class="category-sep">/</span>}
-			</>
-		))}
-	</nav>
+				<!-- Column 3: Social bar (Twitter/X) - desktop -->
+				<div class="social-bar social-bar-desktop">
+					<a href="https://twitter.com/rooksisfun" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
 
-	<slot />
+			<!-- Social bar (Twitter/X) - mobile only -->
+			<div class="social-bar social-bar-mobile">
+				<a href="https://twitter.com/rooksisfun" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+					</svg>
+				</a>
+			</div>
 
-<footer class="site-footer">
-	<div class="footer-inner">
-		<div class="newsletter">
-			<h3>&gt; follow along~</h3>
-			<form action="#" method="post">
-				<input type="text" placeholder="name" aria-label="Name" />
-				<input type="email" placeholder="e-mail" aria-label="Email" />
-				<button type="submit">&gt;intiate drone connection~</button>
-			</form>
-		</div>
-		<p class="copyright">{SITE_COPYRIGHT}</p>
-		<p class="footer-email">digital[dot[nouveau[@]gmail[dot]com</p>
-	</div>
-</footer>
+			<!-- Top navigation - matching Wix dropdown menu -->
+			<nav class="top-nav" aria-label="Site">
+				<a href="/" class="nav-link" aria-current="page">feed</a>
+				<a href="https://www.digitalnouveau.com" target="_blank" rel="noopener noreferrer" class="nav-link">portfolio</a>
+				<a href="/skyfi-a-reading-list" class="nav-link">skyfi :: a reading list</a>
+			</nav>
+		</header>
 
-<style>
-	/* Header - Wix style: black background */
+		<!-- Main content slot -->
+		<slot />
+
+		<!-- FOOTER - matching Wix structure -->
+		<footer class="site-footer">
+			<div class="footer-inner">
+				<!-- Newsletter signup - matching Wix footer form -->
+				<div class="newsletter">
+					<h3>&gt; follow along~</h3>
+					<form action="#" method="post" class="newsletter-form">
+						<input type="text" placeholder="name" aria-label="Name" />
+						<input type="email" placeholder="e-mail" aria-label="Email" />
+						<button type="submit">&gt;intiate drone connection~</button>
+					</form>
+				</div>
+				<!-- Copyright - matching Wix monospace footer -->
+				<div class="footer-copyright">
+					<p class="copyright-line">&gt; copyright Robert Lee Brackett 2025 |</p>
+					<p class="copyright-line">all rights reserved |</p>
+					<p class="copyright-line">new york / tokyo ~</p>
+				</div>
+				<!-- Social link -->
+				<div class="footer-social">
+					<a href="https://twitter.com/rooksisfun" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+						<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+
+<style is:global>
+/* Header */
 	.site-header {
 		background: var(--bg-header);
-		padding: 1.5rem 2rem 1rem;
-		border-bottom: none;
-		margin-bottom: 0;
+		padding: var(--header-padding-y) var(--header-padding-x);
 	}
 
 	.header-banner {
-		max-width: 1200px;
+		max-width: var(--content-max-width);
 		margin: 0 auto;
 		display: flex;
 		align-items: flex-start;
@@ -80,10 +114,11 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_COPYRIGHT, CATEGORIES } from '../con
 	}
 
 	.site-title {
-		margin: 0 0 0.25rem 0;
+		margin: 0 0 0.15rem 0;
 		font-size: 1.75rem;
-		font-weight: 400;
+		font-weight: 300;
 		color: var(--accent);
+		line-height: 1.1;
 	}
 
 	.site-title a {
@@ -91,10 +126,16 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_COPYRIGHT, CATEGORIES } from '../con
 		text-decoration: none;
 	}
 
-	.header-tagline {
-		margin: 0 0 0.25rem 0;
-		font-size: 0.875rem;
+	.site-title a:hover {
 		color: var(--accent);
+	}
+
+	.header-tagline {
+		margin: 0;
+		font-size: 0.875rem;
+		font-weight: 300;
+		color: var(--accent);
+		line-height: 1.1em;
 	}
 
 	.header-tagline a {
@@ -102,36 +143,66 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_COPYRIGHT, CATEGORIES } from '../con
 		text-decoration: none;
 	}
 
+	.header-tagline a:hover {
+		color: var(--text-link-hover);
+	}
+
 	.header-sub {
 		margin: 0;
-		font-size: 0.8rem;
-		color: #888888;
+		font-size: 0.875rem;
+		font-weight: 300;
+		color: var(--accent);
+		line-height: 1.1em;
 	}
 
 	.header-gif {
 		flex-shrink: 0;
-		width: 200px;
 	}
 
 	.header-gif img {
-		width: 100%;
-		height: auto;
-		border-radius: 0;
+		width: 60px;
+		height: 60px;
+		object-fit: contain;
 	}
 
-	/* Top navigation - white text on black header */
+	/* Social bars */
+	.social-bar {
+		display: flex;
+		gap: 0.5rem;
+	}
+
+	.social-bar a {
+		display: flex;
+		align-items: center;
+		color: rgba(255, 255, 255, 0.5);
+		transition: color 0.2s;
+	}
+
+	.social-bar a:hover {
+		color: var(--accent);
+	}
+
+	.social-bar-desktop {
+		display: flex;
+	}
+
+	.social-bar-mobile {
+		display: none;
+	}
+
+	/* Top nav */
 	.top-nav {
-		max-width: 1200px;
+		max-width: var(--content-max-width);
 		margin: 0.75rem auto 0;
 		display: flex;
-		gap: 2rem;
+		gap: 1.5rem;
 	}
 
 	.nav-link {
 		color: #ffffff;
 		text-decoration: none;
 		font-size: 0.875rem;
-		font-weight: 400;
+		font-weight: 300;
 		transition: color 0.2s;
 	}
 
@@ -139,55 +210,12 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_COPYRIGHT, CATEGORIES } from '../con
 		color: var(--accent);
 	}
 
-	.nav-link[aria-current="page"] {
-		color: var(--accent);
-	}
-
-	/* Category navigation - white background, Wix style */
-	.category-nav {
-		max-width: 1200px;
-		margin: 1rem auto 0;
-		padding: 0.5rem 2rem;
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		flex-wrap: wrap;
-		border-top: 1px solid var(--border);
-		border-bottom: 1px solid var(--border);
-	}
-
-	.category-nav-label {
-		font-size: 0.7rem;
-		color: var(--text-muted);
-		text-transform: lowercase;
-		letter-spacing: 0.05em;
-		margin-right: 0.25rem;
-	}
-
-	.category-link {
-		color: var(--text-secondary);
-		text-decoration: none;
-		font-size: 0.75rem;
-		font-weight: 400;
-		transition: color 0.2s;
-	}
-
-	.category-link:hover {
-		color: var(--accent);
-	}
-
-	.category-sep {
-		font-size: 0.7rem;
-		color: var(--text-muted);
-		user-select: none;
-	}
-
-	/* Footer - Wix style: white background */
+	/* Footer */
 	.site-footer {
-		background: #ffffff;
+		background: var(--bg-footer);
+		padding: 2rem var(--header-padding-x);
+		margin-top: 3rem;
 		border-top: 1px solid var(--border);
-		padding: 3rem 2rem;
-		margin-top: 4rem;
 	}
 
 	.footer-inner {
@@ -196,38 +224,48 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_COPYRIGHT, CATEGORIES } from '../con
 		text-align: center;
 	}
 
+	.newsletter {
+		margin-bottom: 2rem;
+	}
+
 	.newsletter h3 {
 		font-size: 0.875rem;
 		text-transform: lowercase;
 		letter-spacing: 0.1em;
 		margin: 0 0 1rem 0;
 		color: var(--text-secondary);
-		font-weight: 400;
+		font-weight: 300;
 	}
 
-	.newsletter form {
+	.newsletter-form {
 		display: flex;
 		gap: 0.5rem;
 		justify-content: center;
 		flex-wrap: wrap;
 	}
 
-	.newsletter input {
+	.newsletter-form input {
 		padding: 0.5rem 1rem;
 		border: 1px solid var(--border);
 		background: transparent;
 		color: var(--text-primary);
 		font-size: 0.875rem;
-		font-family: var(--font-sans);
+		font-family: var(--font-body);
+		font-weight: 300;
 		outline: none;
 		transition: border-color 0.2s;
+		min-width: 120px;
 	}
 
-	.newsletter input:focus {
+	.newsletter-form input::placeholder {
+		color: var(--text-muted);
+	}
+
+	.newsletter-form input:focus {
 		border-color: var(--accent);
 	}
 
-	.newsletter button {
+	.newsletter-form button {
 		padding: 0.5rem 1rem;
 		border: 1px solid var(--border);
 		background: transparent;
@@ -235,57 +273,100 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_COPYRIGHT, CATEGORIES } from '../con
 		font-size: 0.75rem;
 		letter-spacing: 0.05em;
 		cursor: pointer;
-		font-family: var(--font-sans);
+		font-family: var(--font-body);
+		font-weight: 300;
 		transition: all 0.2s;
 	}
 
-	.newsletter button:hover {
-		background: var(--bg-secondary);
-		border-color: var(--text-muted);
+	.newsletter-form button:hover {
+		border-color: var(--accent);
+		color: var(--accent);
 	}
 
-	.copyright {
-		margin-top: 2rem;
-		font-size: 0.75rem;
+	.footer-copyright {
+		font-family: var(--font-mono);
+		font-size: 0.875rem;
 		color: var(--text-muted);
+		line-height: 1.5;
 	}
 
-	.footer-email {
-		margin-top: 0.5rem;
-		font-size: 0.7rem;
+	.copyright-line {
+		margin: 0;
+	}
+
+	.footer-social {
+		margin-top: 1.5rem;
+	}
+
+	.footer-social a {
 		color: var(--text-muted);
+		transition: color 0.2s;
 	}
 
+	.footer-social a:hover {
+		color: var(--accent);
+	}
+
+	/* Responsive */
 	@media (max-width: 768px) {
 		.site-header {
-			padding: 1rem;
+			padding: 1rem var(--header-padding-x);
 		}
 
 		.header-banner {
 			flex-direction: column;
 			gap: 1rem;
+			align-items: flex-start;
 		}
 
 		.header-gif {
-			width: 120px;
+			width: 48px;
+			height: 48px;
+		}
+
+		.header-gif img {
+			width: 48px;
+			height: 48px;
 		}
 
 		.site-title {
 			font-size: 1.35rem;
 		}
 
-		.top-nav {
-			gap: 1rem;
-			font-size: 0.8rem;
+		.header-tagline,
+		.header-sub {
+			font-size: 0.75rem;
 		}
 
-		.category-nav {
-			margin-top: 0.3rem;
-			gap: 0.3rem;
+		.social-bar-desktop {
+			display: none;
+		}
+
+		.social-bar-mobile {
+			display: flex;
+			padding: 0.5rem 0;
 		}
 
 		.site-footer {
-			padding: 2rem 1rem;
+			padding: 2rem var(--header-padding-x);
+		}
+
+		.newsletter-form {
+			flex-direction: column;
+		}
+
+		.newsletter-form input {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.header-banner {
+			gap: 0.75rem;
+		}
+
+		.site-title {
+			font-size: 1.15rem;
 		}
 	}
 </style>

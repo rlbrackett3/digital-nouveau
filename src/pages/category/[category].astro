@@ -1,5 +1,5 @@
 ---
-// Category page - Wix-inspired light theme
+// Category page - single column matching Wix blog structure
 import { getCollection } from 'astro:content';
 import SiteLayout from '@/components/SiteLayout.astro';
 import { SITE_TITLE, CATEGORIES } from '@/consts';
@@ -16,7 +16,11 @@ const { category } = Astro.props;
 const allPosts = await getCollection('blog');
 const categoryPosts = allPosts
 	.filter(post => post.data.categories.includes(category))
-	.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+	.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+	.map(post => {
+		const words = (post.body || '').trim().split(/\s+/).filter(Boolean).length;
+		return { ...post, readTime: Math.max(1, Math.ceil(words / 200)) };
+	});
 
 const categoryDisplay: Record<string, string> = {
 	design: 'Design',
@@ -37,52 +41,97 @@ const displayName = categoryDisplay[category] || category;
 		<title>{displayName} | {SITE_TITLE}</title>
 	</head>
 
-	<main class="category-page">
-		<div class="section-header">
-			<h1>{displayName}</h1>
-			<p>Archived posts in the {displayName.toLowerCase()} category.</p>
-		</div>
+	<!-- Category navigation - Wix style -->
+	<nav class="category-nav" aria-label="Blog categories">
+		<a href="/blog" class="category-link">&gt; everything ~</a>
+		{CATEGORIES.map((cat) => (
+			<a href={`/category/${cat}`} class={`category-link${cat === category ? ' active' : ''}`}>{cat}</a>
+		))}
+	</nav>
 
+	<main class="category-page">
 		{categoryPosts.length > 0 ? (
 			<div class="post-list">
 				{categoryPosts.map(post => (
-					<article class="post-card">
-						<div class="post-meta">
+					<article class="post-item">
+						<h2 class="post-item-title">
+							<a href={`/blog/${post.id}`}>{post.data.title}</a>
+						</h2>
+						<div class="post-item-meta">
 							<time datetime={post.data.pubDate.toISOString()}>
 								{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
 							</time>
+							{post.readTime && <span class="read-time">&middot; {post.readTime} min read</span>}
 						</div>
-						<h2>
-							<a href={`/blog/${post.id}`}>{post.data.title}</a>
-						</h2>
-						<p>{post.data.description}</p>
-						{post.data.categories && post.data.categories.length > 0 && (
-							<div class="post-categories">
-								{post.data.categories.filter(c => VALID_CATEGORIES.has(c)).map(cat => (
-									<a href={`/category/${cat}`} class="category-tag">{cat}</a>
-								))}
-							</div>
-						)}
+						<p class="post-item-desc">{post.data.description}</p>
 					</article>
 				))}
 			</div>
 		) : (
 			<p>No posts in this category yet.</p>
 		)}
-
-		<a href="/blog" class="view-all">← Back to all posts</a>
 	</main>
 
 	<style>
 		.category-page {
-			max-width: 980px;
+			max-width: var(--content-max-width);
 			margin: 0 auto;
-			padding: 2rem 2rem;
+			padding: 0 var(--header-padding-x);
+		}
+
+		.post-list {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.post-item {
+			padding: 1.5rem 0;
+			border-bottom: 1px solid var(--border);
+		}
+
+		.post-item:first-child {
+			margin-top: 1rem;
+		}
+
+		.post-item-title {
+			font-size: 1.5rem;
+			font-weight: 300;
+			line-height: 1.2;
+			margin-bottom: 0.5rem;
+		}
+
+		.post-item-title a {
+			color: var(--text-primary);
+			text-decoration: none;
+		}
+
+		.post-item-title a:hover {
+			color: var(--text-link);
+		}
+
+		.post-item-meta {
+			font-size: 0.8rem;
+			color: var(--text-muted);
+			display: flex;
+			gap: 0.5rem;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.post-item-desc {
+			font-size: 1rem;
+			color: var(--text-secondary);
+			line-height: 1.5;
+			margin: 0.75rem 0 0 0;
 		}
 
 		@media (max-width: 768px) {
 			.category-page {
-				padding: 1.5rem 1rem;
+				padding: 0 var(--header-padding-x);
+			}
+
+			.post-item-title {
+				font-size: 1.25rem;
 			}
 		}
 	</style>

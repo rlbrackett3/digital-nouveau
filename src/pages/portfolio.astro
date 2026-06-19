@@ -1,5 +1,5 @@
 ---
-// Portfolio page - Wix-inspired light theme
+// Portfolio page - dark theme matching Wix aesthetic
 import SiteLayout from '@/components/SiteLayout.astro';
 import { SITE_TITLE } from '@/consts';
 ---
@@ -11,36 +11,53 @@ import { SITE_TITLE } from '@/consts';
 
 	<main class="portfolio-page">
 		<div class="section-header">
-			<h1>Portfolio</h1>
+			<h1>&gt; portfolio ~</h1>
 			<p>A collection of design, fabrication, and research projects.</p>
 		</div>
 
 		<section>
-			<h2>Architecture & Design</h2>
+			<h2>Architecture &amp; Design</h2>
 			<p>Architectural design work from studio practice and professional projects.</p>
 		</section>
 
 		<section>
-			<h2>Fabrication & Making</h2>
+			<h2>Fabrication &amp; Making</h2>
 			<p>Laser cutting, 3D printing, and physical prototyping projects.</p>
 		</section>
 
 		<section>
-			<h2>Research & Development</h2>
+			<h2>Research &amp; Development</h2>
 			<p>Computational design research and material exploration.</p>
 		</section>
 
 		<section>
-			<h2>Teaching & Pedagogy</h2>
+			<h2>Teaching &amp; Pedagogy</h2>
 			<p>Course materials, studio reviews, and educational resources.</p>
 		</section>
 	</main>
 
 	<style>
 		.portfolio-page {
-			max-width: 740px;
+			max-width: var(--post-max-width);
 			margin: 2rem auto;
-			padding: 0 2rem;
+			padding: 0 var(--header-padding-x);
+		}
+
+		.section-header {
+			margin-bottom: 1.5rem;
+			padding-top: 1rem;
+		}
+
+		.section-header h1 {
+			margin: 0 0 0.25rem 0;
+			font-size: 1.75rem;
+			font-weight: 300;
+			color: var(--accent);
+		}
+
+		.section-header p {
+			font-size: 0.9rem;
+			color: var(--text-muted);
 		}
 
 		.portfolio-page section {
@@ -54,10 +71,11 @@ import { SITE_TITLE } from '@/consts';
 		}
 
 		.portfolio-page h2 {
-			font-size: 1.5rem;
+			font-size: 1.35rem;
 			color: var(--text-primary);
 			margin-top: 0;
 			margin-bottom: 0.5rem;
+			font-weight: 300;
 		}
 
 		.portfolio-page p {
@@ -68,7 +86,7 @@ import { SITE_TITLE } from '@/consts';
 
 		@media (max-width: 768px) {
 			.portfolio-page {
-				padding: 0 1rem;
+				padding: 0 var(--header-padding-x);
 			}
 		}
 	</style>

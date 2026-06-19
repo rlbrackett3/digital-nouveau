@@ -1,5 +1,5 @@
 ---
-// Updated blog index page - Wix-inspired light theme
+// Blog archive page - single column matching Wix blog.feed structure
 import SiteLayout from '@/components/SiteLayout.astro';
 import { getCollection } from 'astro:content';
 import { SITE_TITLE, CATEGORIES } from '@/consts';
@@ -14,53 +14,39 @@ const sortedPosts = allPosts
 	});
 ---
 
-<SiteLayout title={"Blog Archive | " + SITE_TITLE}>
+<SiteLayout title="Feed | Digital Nouveau">
 	<head>
-		<title>Blog Archive | {SITE_TITLE}</title>
+		<title>Feed | {SITE_TITLE}</title>
 	</head>
 
-	<main class="blog-page">
-		<div class="section-header">
-			<h1>Blog Archive</h1>
-			<p>All posts, newest first.</p>
-		</div>
+	<!-- Category navigation - Wix style -->
+	<nav class="category-nav" aria-label="Blog categories">
+		<a href="/blog" class="category-link active">&gt; everything ~</a>
+		{CATEGORIES.map((cat) => (
+			<a href={`/category/${cat}`} class="category-link">{cat}</a>
+		))}
+	</nav>
 
+	<main class="blog-page">
+		<!-- Post list - single column, no grid -->
 		<div class="post-list">
 			{sortedPosts.map(post => (
-				<article class="post-card">
-					{post.data.image && (
-						<a href={`/blog/${post.id}`} class="post-thumbnail-link">
-							<img
-								src={post.data.image}
-								alt={post.data.title}
-								class="post-thumbnail"
-								loading="lazy"
-								width="240"
-								height="180"
-							/>
-						</a>
-					)}
-					<div class="post-content">
-						<div class="post-meta">
-							<time datetime={post.data.pubDate.toISOString()}>
-								{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-							</time>
-							{post.readTime && (
-								<span class="read-time">· {post.readTime} min read</span>
-							)}
-						</div>
-						<h2>
-							<a href={`/blog/${post.id}`}>{post.data.title}</a>
-						</h2>
-						<p>{post.data.description}</p>
+				<article class="post-item">
+					<h2 class="post-item-title">
+						<a href={`/blog/${post.id}`}>{post.data.title}</a>
+					</h2>
+					<div class="post-item-meta">
+						<time datetime={post.data.pubDate.toISOString()}>
+							{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+						</time>
+						{post.readTime && <span class="read-time">&middot; {post.readTime} min read</span>}
 						{post.data.categories && post.data.categories.length > 0 && (
-							<div class="post-categories">
-								{post.data.categories.filter(c => VALID_CATEGORIES.has(c)).map(cat => (
-									<a href={`/category/${cat}`} class="category-tag">{cat}</a>
-								))}
-							</div>
+							<span>
+								{post.data.categories.filter(c => VALID_CATEGORIES.has(c)).join(', ')}
+							</span>
 						)}
 					</div>
+					<p class="post-item-desc">{post.data.description}</p>
 				</article>
 			))}
 		</div>
@@ -68,93 +54,64 @@ const sortedPosts = allPosts
 
 	<style>
 		.blog-page {
-			max-width: 980px;
+			max-width: var(--content-max-width);
 			margin: 0 auto;
-			padding: 2rem 2rem;
-		}
-
-		@media (max-width: 768px) {
-			.blog-page {
-				padding: 1.5rem 1rem;
-			}
+			padding: 0 var(--header-padding-x);
 		}
 
 		.post-list {
 			display: flex;
 			flex-direction: column;
-			gap: 2rem;
 		}
 
-		.post-card {
-			display: flex;
-			gap: 1.5rem;
-			padding: 1.5rem;
-			background: #fff;
-			border: 1px solid var(--border);
-			border-radius: 4px;
-			transition: box-shadow 0.2s;
+		.post-item {
+			padding: 1.5rem 0;
+			border-bottom: 1px solid var(--border);
 		}
 
-		.post-card:hover {
-			box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+		.post-item:first-child {
+			margin-top: 1rem;
 		}
 
-		.post-thumbnail-link {
-			flex-shrink: 0;
-			width: 240px;
-			height: 180px;
-			overflow: hidden;
-			border-radius: 3px;
+		.post-item-title {
+			font-size: 1.5rem;
+			font-weight: 300;
+			line-height: 1.2;
+			margin-bottom: 0.5rem;
 		}
 
-		.post-thumbnail {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			display: block;
-			transition: transform 0.3s ease;
-		}
-
-		.post-thumbnail-link:hover .post-thumbnail {
-			transform: scale(1.05);
-		}
-
-		.post-content {
-			flex: 1;
-			min-width: 0;
-		}
-
-		.post-content h2 {
-			margin: 0.3rem 0;
-			font-size: 1.3rem;
-			font-weight: 500;
-			line-height: 1.3;
-		}
-
-		.post-content h2 a {
+		.post-item-title a {
 			color: var(--text-primary);
 			text-decoration: none;
 		}
 
-		.post-content h2 a:hover {
-			color: var(--accent);
+		.post-item-title a:hover {
+			color: var(--text-link);
 		}
 
-		.post-content p {
+		.post-item-meta {
+			font-size: 0.8rem;
+			color: var(--text-muted);
+			display: flex;
+			gap: 0.5rem;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.post-item-desc {
+			font-size: 1rem;
 			color: var(--text-secondary);
-			font-size: 0.9rem;
-			line-height: 1.6;
-			margin: 0.5rem 0;
+			line-height: 1.5;
+			margin: 0.75rem 0 0 0;
 		}
 
-		@media (max-width: 600px) {
-			.post-card {
-				flex-direction: column;
-				padding: 1rem;
+		@media (max-width: 768px) {
+			.blog-page {
+				padding: 0 var(--header-padding-x);
 			}
-			.post-thumbnail-link {
-				width: 100%;
-				height: 200px;
+
+			.post-item-title {
+				font-size: 1.25rem;
 			}
 		}
 	</style>
