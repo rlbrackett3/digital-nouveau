@@ -1,6 +1,6 @@
 /* Digital Nouveau - Global CSS
  * Cloned from blog.digitalnouveau.com (Wix)
- * Dark terminal aesthetic: black background, white text, cyan/red accents
+ * Light theme: white background, dark text, cyan title, blue links
  * Brandon Grotesque Light font (Montserrat as free alternative)
  */
 
@@ -8,16 +8,16 @@
 	/* Colors - from Wix computed styles */
 	--accent: #1cebf4;
 	--accent-red: #ff4040;
-	--text-primary: #ffffff;
-	--text-secondary: rgba(255, 255, 255, 0.7);
-	--text-muted: rgba(255, 255, 255, 0.45);
-	--text-link: #1cebf4;
-	--text-link-hover: #ff4040;
-	--bg-primary: #000000;
-	--bg-secondary: #0a0a0a;
-	--bg-header: #000000;
-	--bg-footer: #000000;
-	--border: rgba(255, 255, 255, 0.12);
+	--text-primary: #181818;
+	--text-secondary: rgba(0, 0, 0, 0.7);
+	--text-muted: rgba(0, 0, 0, 0.45);
+	--text-link: #0000EE;
+	--text-link-hover: #1cebf4;
+	--bg-primary: #FFFFFF;
+	--bg-secondary: #f5f5f5;
+	--bg-header: #FFFFFF;
+	--bg-footer: #FFFFFF;
+	--border: rgba(0, 0, 0, 0.12);
 
 	/* Typography - Brandon Grotesque Light (Montserrat as free alternative) */
 	--font-heading: 'Montserrat', sans-serif;
