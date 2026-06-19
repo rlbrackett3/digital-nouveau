@@ -1,10 +1,18 @@
 ---
 title: "Motervation"
-description: "On the intersection of motivation and servitude in creative practice."
-pubDate: '2019-01-01'
-categories: ['thinkings']
-image: "/images/dc9b92_9a449be6a6994b278e7ef2a4a5a99b45~mv2.jpg"
-hero_image: "/images/dc9b92_9a449be6a6994b278e7ef2a4a5a99b45~mv2.jpg"
+description: "People who are unable to motivate themselves must be content with mediocrity no matter how impressive their other talents. ::Andrew..."
+pubDate: '2015-06-18'
+categories: ["observings", "skyfi", "teachings"]
+image: "/images/dc9b92_f3708c106cd646d2a1251db54e846a91~mv2.jpg"
+readTime: 1
+views: 5
 ---
 
-On the intersection of motivation and servitude in creative practice.
+<figure>
+![](dc9b92_f3708c106cd646d2a1251db54e846a91~mv2.jpg)
+
+</figure>
+
+::Andrew Carnegie
+
+This reminded me of a recent reading of Flowers for Algernon by Daniel Keyes on the great SciFi Podcast, Escape Pod.  Beautiful narration for a touching story.

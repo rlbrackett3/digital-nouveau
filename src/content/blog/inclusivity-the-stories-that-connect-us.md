@@ -1,48 +1,29 @@
 ---
 title: "Inclusivity :: The Stories That Connect Us"
-description: "Reflections on neurodiversity, inclusivity, and the power of storytelling through the Escape Pod podcast."
-pubDate: '2020-05-10'
-categories: ['readings', 'inclusivity']
-image: "/images/dc9b92_7e1dc4fe82e04629ac481dbfe3f83873~mv2.jpg"
-hero_image: "/images/dc9b92_7e1dc4fe82e04629ac481dbfe3f83873~mv2.jpg"
+description: "Some mornings during my shower and while I prepare and eat my breakfast I like to listen to a podcast. This is usually something..."
+pubDate: '2020-02-05'
+categories: ["skyfi", "thinkings"]
+readTime: 4
+views: 19
+likes: 2
 ---
 
-## Featured Story
+Some mornings during my shower and while I prepare and eat my breakfast I like to listen to a podcast. This is usually something inspiring about human performance optimization or when I am feeling really indulgent, a short story from my favorite SciFi podcast, Escape Pod. I have been a fan of this podcast for the last seven years or so, since very early in their existence. I have taken many wonderful books and author recommendations from the stories to introduce in our sci-fi book club. Many of the short stories have touched me deeply due to the variety of creative themes, eccentric and committed narrators, and exuberant hosts and editors. I found myself wiping tears from my face while consulting onsite at a large office during a reading of Flowers For Algernon due to both the superb narration and the powerful story of a tragic friendship. I had a similar experience this morning (though in my own home) with episode number 689, Spectrum of Acceptance by Nyla Bright and narrated by Maxine Moore.
 
-- **Podcast:** Escape Pod (Episode 689)
-- **Title:** *Spectrum of Acceptance*
-- **Author:** Nyla Bright | **Narrator:** Maxine Moore
-- **Setting/Plot:** A distant Earth colony designed as a sanctuary for neuro-atypical individuals. Explores alternative social structures and interaction models aimed at meaningful, fulfilling lives. Technology is heavily integrated to support diverse needs, smooth self-reliance challenges, and foster a culture of authentic acceptance.
+The story of a faraway colony of Earth that has become a bastion for the neuro-atypicals to explore alternative models of social organization and interaction in pursuit of a meaningful fulfilling life. Since this is a sci-fi story and it takes place on a faraway planet that is set up to support human life, it is no surprise that technology plays a significant role in supporting the complex and diverse society of slightly off baseline people looking for a culture of acceptance.  I like that technology integration helps to smooth out some of the more complicated issues with people who may have a harder time being self-reliant without support forming a culture around being who you really are in service of the whole. This allowed me to focus on the subtle quirks of the main character trying to navigate the complexity of her NT emotions in a very foreign environment and calling to attention many things like subtle touch and eye contact that it is easy to take for granted. I also felt uncomfortable (in the good self-reflective kind of way) as the story made me think a lot about how these things, touching and eye contact, along with long drawn out emotional narratives that obfuscate intentions and distract from clarity, cause me a lot of anxiety each day.
 
-## Key Excerpts & Quotes
+Probably my favorite aspect of the story is the protagonist's quirky manner of reminding herself to clarify her thoughts and speech when it comes to metaphors. I couldn't help myself from experiencing the Earth ambassador as slimy and dense, but no he is just narrow-minded, self-important, and unovservant. Or are those metaphors too. The fun game of language, of the imagery that plays in our minds, and the question of are those inferences, interpretations, flashes of insight and predictive models even in the slightest degree-based in words. Words themselves each being a symbol of meaning far greater than the combination of letters and correct pronunciation. It would have bee nice if she began to discover through her encounter with the slimy dense earth man that she need not judge and correct her figurative language, but that there is also value in self-reflection and working through the metaphor to get at deeper meaning that can be shared with others on common ground.
 
-> We cared for people's needs on Acceptance. You need, really need, you ask. Otherwise, you serve.
+The sacrifice her mother makes to offer her daughter what she knows she needs really got to me, though maybe from the opposite direction, as I greatly appreciate love and affection from a distance. Often just being in silence is completely fulfilling and speaks volumes to me, but probably not everyone. Different strokes for different folks, as they say, and as long as we say it with complete acceptance of those differences as both valuable and meaningful to the richness of life.
 
-> Infinite diversity in infinite combinations.
+As the Vulcans say, infinite diversity in infinite combinations.
 
-> ...the gap between where a student begins and where I think they should be is crossed not by a bridge or zipline to answers, but filled in with questions and discoveries.
+I repeat this line to myself quite often during my teaching. I look at the diverse and complex students each day with fresh eyes and optimism in the potential for unique and unexpected thinking. While I am charged with making sure they can in some way be versed in specific skills and concepts, the thing I enjoy most about teaching is guiding them to those outcomes with a broad and gentle hand. Experiencing the journey and trusting that with time and effort the gap between where a student begins and where I think they should be is crossed not by a bridge or zipline to answers, but filled in with questions and discoveries.
 
-## Core Themes & Story Insights
+...and one more thing from the story (i hope by now you have taken the time to listen to it for yourself so I am not spoiling anything).
 
-- **Neurodiversity & Social Defaults:** Highlights how neurotypical (NT) norms like eye contact, physical touch, and extended emotional narratives can cause significant anxiety for neuro-atypical individuals. Encourages recognizing these as cultural habits rather than universal standards.
-- **Language & Metaphor:** The protagonist frequently clarifies her figurative language to avoid miscommunication. The author reflects on the deeper value of working through metaphors to uncover shared meaning, rather than strictly correcting or judging them.
-- **Technology as an Enabler:** Tech integration facilitates a supportive ecosystem that allows individuals with complex needs to thrive, focus on authentic self-expression, and contribute to the community.
-- **Self-Reliance vs. Mutual Service:** The colony operates on an aspirational cultural model: rugged independence paired with a strong ethic of service. Asking for help is normalized, and contributing to others is expected when not in need.
+This line comes toward the end of the story and is something I really connected to as a frontier outlook on life with the twist of service. Everyone is making their own way in their own way and respects that as a culture enough not to abuse support systems. Likewise, it is perfectly acceptable to ask for any help you need since the entire culture is devoted to being of service whenever necessary. The dichotomy of rugged self-reliance and a devotion to service is aspirational. It would require a lot of discipline and I dream would offer exceptional freedom as the story suggests.
 
-## Personal & Professional Reflections
+This story also made me remember some of the storylines from Peter Watts's Blindsight. Many of his main characters have conditions of neuro-atypical expression, but the society of the future has found ways to accept them and give them meaning through occupations that take fuller advantage of the evolutionary potential of conditions like multiple personality and sociopathy.  Blindsight was one of our favorite books in SkyFi and I should probably go back to it for a deeper dissection. Interestingly, when I went to Escape Pod's site to link to the story I saw that episode 690 just so happened to be The Things by Peter Watts. I know what I will be listening to tomorrow morning.
 
-- **Emotional Resonance:** The story deeply moved the author, evoking similar emotional responses to past experiences with *Flowers For Algernon*. The mother's sacrifice also resonated, aligning with a personal preference for quiet, distant affection and silence.
-- **Teaching Philosophy:** Applies the Vulcan mantra to education. Approaches diverse students with optimism, prioritizing guided discovery over direct instruction. Believes learning is best facilitated through a broad and gentle hand that trusts the journey of questions and discoveries.
-- **Inclusivity in Practice:** Advocates for fully accepting different communication and emotional styles as valuable, meaningful contributions to life's richness.
-
-## Related Works & Recommendations
-
-- **Peter Watts's *Blindsight*:** Explores a future society that integrates neuro-atypical traits (e.g., multiple personality, sociopathy) into meaningful occupations, leveraging their evolutionary potential.
-- **Next Listen:** Escape Pod Episode 690 features *The Things* by Peter Watts.
-
-## Key Takeaways
-
-- Normalize help-seeking while maintaining personal accountability and service to others.
-- Use discovery-based, question-driven methods in teaching/mentoring rather than direct answer-giving.
-- Recognize and accommodate diverse communication styles (e.g., reduced eye contact, literal language, preference for silence) as valid and valuable.
-- Leverage technology to build supportive ecosystems that enable neurodiverse individuals to achieve self-reliance and community integration.
+End of Log

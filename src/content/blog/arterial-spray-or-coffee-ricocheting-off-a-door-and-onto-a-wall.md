@@ -1,0 +1,16 @@
+---
+title: "Arterial Spray or Coffee Ricocheting Off a Door and Onto a Wall"
+description: "
+
+cafe sur le mur
+"
+pubDate: '2013-11-05'
+categories: ["drawings"]
+image: "/images/dc9b92_6196be220961431fa201dd9539c8bc81~mv2_d_2000_1500_s_2.png/dc9b92_6196be220961431fa201dd9539c8bc81~mv2_d_2000_1500_s_2.png"
+views: 2
+---
+
+<figure>
+![cafe sur le mur](dc9b92_6196be220961431fa201dd9539c8bc81~mv2_d_2000_1500_s_2.png)
+<figcaption>cafe sur le mur</figcaption>
+</figure>

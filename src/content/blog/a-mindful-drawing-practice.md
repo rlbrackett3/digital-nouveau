@@ -1,24 +1,52 @@
 ---
 title: "A Mindful Drawing Practice"
-description: "Leading a weekly mindful drawing practice at Pratt Institute and sharing the experience through YouTube."
-pubDate: '2021-04-11'
+description: "Sometimes an opportunity comes calling when we need it most. In a recent meeting of the Pratt Resilience, Wellness, and Well-Being..."
+pubDate: '2021-04-12'
 categories: ['design']
-image: "/images/dc9b92_66b3d3ba16fe4e318ab69f920a747352~mv2.jpg"
-hero_image: "/images/dc9b92_66b3d3ba16fe4e318ab69f920a747352~mv2.jpg"
+image: "/images/dc9b92_71a00c91b27b476b82f7f7eadf832eae~mv2.jpg"
+readTime: 3
+views: 43
+likes: 2
 ---
 
-Sometimes an opportunity comes calling when we need it most. In a recent meeting of the Pratt Resilience, Wellness, and Well-Being Council (a group of faculty, staff, and students dedicated to shifting the culture of Pratt towards a more balanced life experience) I felt compelled to offer to lead a weekly mindful drawing practice. This is not something I had any specific experience with, but when the group put out the call for action the ideas flooded into my mind. Drawing has always been my stead place, I am a doodler, my hands are always moving when there are paper and pen nearby. The connection between my mind, body, and page helps me be present, aware, and focused, it is often automatic. This new adventure seemed like a great chance to bring more attention to my hobby (or quirk).
+Sometimes an opportunity comes calling when we need it most. In a recent meeting of the Pratt Resilience, Wellness, and Well-Being Council (a group of faculty, staff, and students dedicated to shifting the culture of Pratt towards a more balanced life experience) I felt compelled to offer to lead a weekly mindful drawing practice. This is not something I had any specific experience with, but when the group put out the call for action the ideas flooded into my mind.  Drawing has always been my stead place, I am a doodler, my hands are always moving when there are paper and pen nearby. The connection between my mind, body, and page helps me be present, aware, and focused, it is often automatic. This new adventure seemed like a great chance to bring more attention to my hobby (or quirk).
+
+<figure>
+![](dc9b92_71a00c91b27b476b82f7f7eadf832eae~mv2.jpg)
+
+</figure>
 
 I was aware that there are many creative mindful practices and have participated in a few activities that use drawing to still the mind and express emotion, but I was not aware that Mindful Drawing was a thing. I have since explored some of the space of shared mindful drawing practices on YouTube and various blogs. I recognized many of the exercises in my own on-again-off-again daily drawing exercises. It is exciting to know there is a community around this technique and I am eager to discover a space of drawing and meditation for myself and share that with others.
 
-For twelve weeks now I have held an open Mindful Drawing session every Wednesday morning and 9 am EST. A small group of regulars drop by each week and warm my heart as we share a practice together. A few new people come and go, and I have even seen a couple of students give themselves the time to take a break from their busy schedules and just draw for thirty minutes. I want this to be something I can build upon, something to engage a community and be of service with my lifetime of practice creating a connection between the mind and the hand through the medium of drawing.
+<figure>
+![](dc9b92_adc67114c7f04762954862e9fee83633~mv2.jpg)
+
+</figure>
+
+For twelve weeks now I have held an open Mindful Drawing session every Wednesday morning and 9 am EST. A small group of regulars drop by each week and warm my heart as we share a practice together. A few new people come and go, and I have even seen a couple of students give themselves the time to take a break from their busy schedules and just draw for thirty minutes.  I want this to be something I can build upon, something to engage a community and be of service with my lifetime of practice creating a connection between the mind and the hand through the medium of drawing.
+
+<figure>
+![](dc9b92_9acb1c8d5dde4f71bb2a4fb2d851f127~mv2.jpg)
+
+</figure>
 
 I record each session and practice my video editing and streaming skills to put together an experience of each session on YouTube. This feels right, it feels like what my alternate persona, RooksIsFun, is meant to create. I love working with video and find myself sinking into the flow and getting excited to test new techniques each week. It took a few sessions to get the camera setup working and the audio was rough for a while, but I am in a zone now. I have even been able to begin adding other videos exploring drawing as a generative device for design. I am excited to grow the content and put this channel out there, even if it is just to share with friends and family (and hopefully as a resource for students).
 
 Check out the channel here: RooksIsFun :: Mindful Drawing and other Creative Practices
 
+<figure>
+![](dc9b92_66b3d3ba16fe4e318ab69f920a747352~mv2.jpg)
+
+</figure>
+
 The images in this post are some of the creations that manifest from the weekly sessions. Each is a reflection of mind and body, of breath and medium. There is no form, no intention to the drawings, yet the space of the page emerges from the process. This is a practice, grounding me to a rhythm and exploring my creativity and curiosity.
 
+Here is the most recent session exploring the space and flow of breath:
+
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/pZlr43FuJgw" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
+
 If you stumble upon this or one of the hopefully many future posts, I hope these are of some service to having a wonderful day. Happy Drawing.
+
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/t6PrpCM8qdg" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
 
 :: RooksIsFun

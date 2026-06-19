@@ -1,16 +1,26 @@
 ---
 title: "200 Million Years Ago..."
-description: "Textures and patterns from New Mexico Petrified Forest National Park."
-pubDate: '2019-01-01'
-categories: ['observings']
-image: "/images/dc9b92_4b352277802f4534a224c506d76ff8f4~mv2.png"
-hero_image: "/images/dc9b92_4b352277802f4534a224c506d76ff8f4~mv2.png"
+description: "Some textures and patterns found on a stroll through New Mexico&#x27;s Petrified Forest National Park."
+pubDate: '2013-06-04'
+categories: ["readings", "thinkings"]
+image: "/images/dc9b92_c4e01ef246f0493a9c96ed8a8bd2b389~mv2.png"
+readTime: 1
+views: 1
 ---
 
-This 200 million year old tree doesn't look a day over 90.
+<figure>
+![This 200 million year old tree doesn't look a day over 90.](dc9b92_c4e01ef246f0493a9c96ed8a8bd2b389~mv2.png)
+<figcaption>This 200 million year old tree doesn't look a day over 90.</figcaption>
+</figure>
 
-New growth on an old growth forest.
+<figure>
+![New growth on an old growth forest.](dc9b92_f780ea5c046045ad9e552727d7d08296~mv2.png)
+<figcaption>New growth on an old growth forest.</figcaption>
+</figure>
 
-Vibrant colors paint this resinscape.
+<figure>
+![Vibrant colors paint this resinscape.](dc9b92_4b352277802f4534a224c506d76ff8f4~mv2.png)
+<figcaption>Vibrant colors paint this resinscape.</figcaption>
+</figure>
 
 Some textures and patterns found on a stroll through New Mexico's Petrified Forest National Park.

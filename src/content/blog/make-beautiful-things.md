@@ -1,16 +1,18 @@
 ---
-title: "Make Beautiful Things"
-description: "Thoreau on the earth as impressible by the feet of men — a reminder to make wonderful things."
-pubDate: '2019-01-01'
-categories: ['thinkings']
-image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
-hero_image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
+title: "Make {Beautiful} Things"
+description: "The surface of the earth is soft and impressible by the feet of men :: Henry David Thoreau, Walden pg. 489 A reminder that what we do..."
+pubDate: '2015-04-09'
+categories: ["readings", "thinkings"]
+image: "/images/dc9b92_9cb67210e1bf4702907b00868dc15302~mv2.png"
+readTime: 1
+views: 2
 ---
 
-California Cactus, Competition.
+<figure>
+![California Cactus, Competition.](dc9b92_9cb67210e1bf4702907b00868dc15302~mv2.png)
+<figcaption>California Cactus, Competition.</figcaption>
+</figure>
 
-The surface of the earth is soft and impressible by the feet of men
-
-:: Henry David Thoreau, Walden pg. 489
+:: Henry David Thoreau, Walden pg. 489
 
 A reminder that what we do makes an impression and that we should be critical in our actions, striving to make wonderful and beautiful things.

@@ -1,16 +1,16 @@
 ---
 title: "Forming Rivers"
-description: "Henry David Thoreau on the formation of rivers between water and sand."
-pubDate: '2020-01-01'
-categories: ['observings']
-image: "/images/dc9b92_23c94e81c41c45bf856c34e40370a67b~mv2.jpg"
-hero_image: "/images/dc9b92_23c94e81c41c45bf856c34e40370a67b~mv2.jpg"
+description: "&quot;Feeling its way slowly and blindly downward, until at last with more heat and moisture, as the sun gets higher, the most fluid portion,..."
+pubDate: '2015-02-25'
+categories: ["observings"]
+readTime: 1
+views: 1
 ---
 
 "Feeling its way slowly and blindly downward, until at last with more heat and moisture, as the sun gets higher, the most fluid portion, in its effort to obey the law to which the most inert also yields, separates from the latter and forms for itself a meandering channel or artery within that, in which is seen a little silvery stream glancing like lightning from one stage of pulpy leaves or branches to another, and ever and anon swallowed up in the sand. It is wonderful how rapidly yet perfectly the sand organizes itself as it flows, using the best material its mass affords to form the sharp edges of its channel. Such are the sources of rivers."
 
 :: Henry David Thoreau, Walden
 
-Came across this while cleaning and organizing some old notes. Such a succulent description of the process of formation between water & sand to make flowing rivers. It also goes well with the previous drawing.
+Came across this while cleaning and organizing some old notes.  Such a succulent description of the process of formation between water & sand to make flowing rivers.  It also goes well with the previous drawing.
 
 I also want to say Happy Birthday to my father, 66 fruitful years in flow.

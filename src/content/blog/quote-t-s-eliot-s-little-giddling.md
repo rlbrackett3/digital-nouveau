@@ -1,10 +1,10 @@
 ---
-title: "Quote - T.S. Eliot's Little Gidding"
-description: "A reflection on T.S. Eliot's famous passage from Little Gidding about exploration and knowing."
-pubDate: '2020-03-01'
-categories: ['readings', 'poetry']
-image: "/images/dc9b92_31ae27b994504f04803c7307448d6bd8~mv2.jpg"
-hero_image: "/images/dc9b92_31ae27b994504f04803c7307448d6bd8~mv2.jpg"
+title: "Quote - T.S. Eliot&#x27;s &quot;Little Giddling&quot;"
+description: "We shall not cease from exploration And the end of all our exploring Will be to arrive where we started And know the place for the first..."
+pubDate: '2015-03-18'
+categories: ["observings", "teachings"]
+readTime: 1
+views: 5
 ---
 
 We shall not cease from exploration
@@ -15,4 +15,4 @@ Will be to arrive where we started
 
 And know the place for the first time
 
-:: T.S. Eliot, "Little Gidding"
+::T.S. Eliot, "Little Giddling"

@@ -1,13 +1,42 @@
 ---
 title: "Keep it Simple Stu***"
-description: "On Frei Otto, simplicity, and the K.I.S.S. principle in architecture and design."
-pubDate: '2020-01-06'
-categories: ['teachings']
-image: "/images/dc9b92_0f8a898cdecf48649266b7ab9dfc709d~mv2.jpg"
-hero_image: "/images/dc9b92_0f8a898cdecf48649266b7ab9dfc709d~mv2.jpg"
+description: "Everything man is doing in architecture is to try to go against nature. Of course we have to understand nature to know how far we have to..."
+pubDate: '2016-01-06'
+categories: ["teachings"]
+image: "/images/dc9b92_e284dea86fcc4be0b0605e8b3f9ad159~mv2_d_3671_2754_s_4_2.jpg/dc9b92_e284dea86fcc4be0b0605e8b3f9ad159~mv2_d_3671_2754_s_4_2.jpg"
+readTime: 2
+views: 19
 ---
 
-Everything man is doing in architecture is to try to go against nature. Of course we have to understand nature to know how far we have to go against nature. The secret, I think, of the future is not doing too much. All architects have the tendency to do too much.
+<figure>
+![Frei Otto self organization strategies in fibers](dc9b92_e284dea86fcc4be0b0605e8b3f9ad159~mv2_d_3671_2754_s_4_2.jpg)
+<figcaption>Frei Otto self organization strategies in fibers</figcaption>
+</figure>
+
+<figure>
+![Frei Otto self organization fibers](dc9b92_4ee9da074946485ba15410f4b91cc9fa~mv2.jpg)
+<figcaption>Frei Otto self organization fibers</figcaption>
+</figure>
+
+<figure>
+![Frei Otto Self Organization Structures](dc9b92_4d4de5db7c054704905935444329aecd~mv2.jpg)
+<figcaption>Frei Otto Self Organization Structures</figcaption>
+</figure>
+
+<figure>
+![3D printed parts from a clock for my mother](dc9b92_c754d4ef6b7545a38934b24b00fa9dd5~mv2_d_1800_1350_s_2.jpg)
+<figcaption>3D printed parts from a clock for my mother</figcaption>
+</figure>
+
+<figure>
+![Frei Otto Funicular Geometry](dc9b92_0f8a898cdecf48649266b7ab9dfc709d~mv2.jpg)
+<figcaption>Frei Otto Funicular Geometry</figcaption>
+</figure>
+
+<figure>
+![Frei Otto](dc9b92_31ae27b994504f04803c7307448d6bd8~mv2.jpg)
+<figcaption>Frei Otto</figcaption>
+</figure>
 
 :: Frei Otto
 
@@ -16,3 +45,5 @@ A colleague used this quote in a lecture during Pratt's Technics course for firs
 His work explores the performance and simplicity of nature, discovering novel methods for building with existing and new materials. The simplicity of his methods and rigor of testing and discovery remind me of the acronym, K.I.S.S. or Keep It Simple Stupid (or as I like to phrase is, Keep It Stupid Simple). I try to remind myself of this daily, as it is easy for projects to bloat and diverge on tangents.
 
 I think I will head over to Amazon and pick up some resources on his work and career to beef up my own understanding, and get some elegant inspiration for the new year.
+
+If you are interested in more of Frei Otto's quotes you can find many here.

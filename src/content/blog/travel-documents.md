@@ -1,22 +1,36 @@
 ---
 title: "Travel Documents"
-description: "Collection of patches and memories from study abroad travels in France and Europe."
-pubDate: '2019-01-01'
-categories: ['observings']
-image: "/images/dc9b92_31f261c54b4f4a8082c406816f0ea644~mv2.png"
-hero_image: "/images/dc9b92_31f261c54b4f4a8082c406816f0ea644~mv2.png"
+description: "During a SkyFi (yes, that is the correct pronunciation, inspired by my time with Francois Roche) book club session last Tuesday the..."
+pubDate: '2015-01-24'
+categories: ["readings", "thinkings"]
+image: "/images/dc9b92_b05f96d692064151a999669d28f62233~mv2_d_1600_1200_s_2.png/dc9b92_b05f96d692064151a999669d28f62233~mv2_d_1600_1200_s_2.png"
+readTime: 1
+views: 1
 ---
 
-Scandinavia
+<figure>
+![Scandinavia](dc9b92_b05f96d692064151a999669d28f62233~mv2_d_1600_1200_s_2.png)
+<figcaption>Scandinavia</figcaption>
+</figure>
 
-France
+<figure>
+![France](dc9b92_bad8a0c3f5c44b509078b8ce26c3a1f3~mv2_d_1600_1200_s_2.png)
+<figcaption>France</figcaption>
+</figure>
 
-The Mediterranean
+<figure>
+![The Mediterranean](dc9b92_31f261c54b4f4a8082c406816f0ea644~mv2.png)
+<figcaption>The Mediterranean</figcaption>
+</figure>
 
-Europe
+<figure>
+![Europe](dc9b92_e4e8b39393a148398897427f3237a73e~mv2_d_1304_1600_s_2.png)
+<figcaption>Europe</figcaption>
+</figure>
 
-Footyboots Coat of Arms
+<figure>
+![Footyboots Coat of Arms](dc9b92_8bb5d36db19147d88bce2473267a77d0~mv2.png)
+<figcaption>Footyboots Coat of Arms</figcaption>
+</figure>
 
-During a SkyFi book club session last Tuesday the discussion took a tangent into travel. It reminded me that somewhere, in a dark dark closet, in a dark dark box, in a dark dark envelope, I had a collection of patches that I picked up during my study abroad in France. I was there for architecture and we were fortunate to have a lot of time to travel and discover. One of the things I would always do when i got to a new place was seek out a tourist shop or town hall that sold patches. I didn't always find them, but came away with a good collection that brought back some great memories.
-
-Maybe we can get it turned into a patch :)
+During a SkyFi (yes, that is the correct pronunciation, inspired by my time with Francois Roche) book club session last Tuesday the discussion took a tangent into travel.  It reminded me that somewhere, in a dark dark closet, in a dark dark box, in a dark dark envelope, I had a collection of patches that I picked up during my study abroad in France.  I was there for architecture and we were fortunate to have a lot of time to travel and discover.  One of the things I would always do when i got to a new place was seek out a tourist shop or town hall that sold patches.  I didn't always find them, but came away with a good collection that brought back some great memories.  After pulling all these out I felt silly for not doing it earlier since we recently completed an Identity Design project at Miscellaneous Projects that was inspired by Coat of Arms (the last photo).  Maybe we can get it turned into a patch :)

@@ -1,12 +1,11 @@
 ---
 title: "Poetry of Design"
-description: "Marcos Novak on poetry as warfare against conformity and the architecture of noise."
-pubDate: '2019-01-01'
-categories: ['thinkings']
-image: "/images/dc9b92_9a449be6a6994b278e7ef2a4a5a99b45~mv2.jpg"
-hero_image: "/images/dc9b92_9a449be6a6994b278e7ef2a4a5a99b45~mv2.jpg"
+description: "The poet proceeds in full knowledge of the fact that &#x27;this is not the way we do things around here&#x27;...to create is to break the silence..."
+pubDate: '2015-03-25'
+categories: ["observings", "teachings"]
+readTime: 1
+views: 12
+likes: 1
 ---
-
-The poet proceeds in full knowledge of the fact that 'this is not the way we do things around here'...to create is to break the silence of conformity. It is to make a noise. Poetry is war, not with one another, but with ourselves, and effort to expand the territory of the known; to make is to break the known so as to cross the border into the unknown. The desire to create is a desire to surpass, not as an utopian dream, but in order to make manifest a difference between how things are and the mere possibility that they can be otherwise.
 
 :: Marcos Novak, 'The PanTopican and the Architecture of Noise' Center vol 9 / 2995 University of Texas Austin

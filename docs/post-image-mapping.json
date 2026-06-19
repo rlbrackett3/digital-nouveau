@@ -1,0 +1,890 @@
+{
+  "concept-sketches-for-a-lighthouse": {
+    "title": "Concept Sketches for a Lighthouse",
+    "date": "2015-05-26",
+    "image": "/images/dc9b92_35258d145bcd494ab50fc637782efe6a~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "In Progress...",
+    "plain_content": "In Progress..."
+  },
+  "drawing-020-laminar-erosion-process": {
+    "title": "Drawing 020 :: Laminar Erosion Process",
+    "date": "2015-01-25",
+    "image": "/images/dc9b92_3389cbbef5a84535ba02c9ae128d28c9~mv2.png",
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "Start with a blank page. Draw two roughly parallel squiggly curves from the top center to lower left corner. Draw progressively smoothing...",
+    "plain_content": "Start with a blank page. Draw two roughly parallel squiggly curves from the top center to lower left corner. Draw progressively smoothing curves roughly parallel to the originals moving outward to the edges of the page. Introduce slight expansions and contractions as you see fit. No curves should cross. Leave the space between the origin curves empty. To the left of the left origin curve perform these operations on the sequence of laminations:  Hatch with perpendicular evenly spaced lines | Fill"
+  },
+  "travel-documents": {
+    "title": "Travel Documents",
+    "date": "2015-01-24",
+    "image": null,
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "During a SkyFi (yes, that is the correct pronunciation, inspired by my time with Francois Roche) book club session last Tuesday the...",
+    "plain_content": "During a SkyFi (yes, that is the correct pronunciation, inspired by my time with Francois Roche) book club session last Tuesday the discussion took a tangent into travel.  It reminded me that somewhere, in a dark dark closet, in a dark dark box, in a dark dark envelope, I had a collection of patches that I picked up during my study abroad in France.  I was there for architecture and we were fortunate to have a lot of time to travel and discover.  One of the things I would always do when i got to"
+  },
+  "hyphae-simulations-mk1": {
+    "title": "Hyphae Simulations mk1",
+    "date": "2019-08-15",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "This blog has been on a long hiatus, primarily due to aging and broken technology and my lack of time commitment to fix it. I took the...",
+    "plain_content": "This blog has been on a long hiatus, primarily due to aging and broken technology and my lack of time commitment to fix it. I took the time this week to transfer everything over to a new platform and I am excited to get back into sharing bits and pieces of the miscellaneous projects (shameless plug to another website that lacks the content that it should have, phase 2 of this reengaged web presence) that occupy my professional life. The video above is an early experiment with Maya nParticles and"
+  },
+  "make-it-better-1": {
+    "title": "Make It Better",
+    "date": "2019-09-05",
+    "image": null,
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17aea198c5cc00160844c0\"]",
+    "excerpt": "Back when Laura and I started working together on Miscellaneous Projects, circa 2012, we were also sharing our fledgling interest in...",
+    "plain_content": "Back when Laura and I started working together on Miscellaneous Projects, circa 2012, we were also sharing our fledgling interest in human performance and optimization. We read Christopher McDougall's, Born To Run, a journey into our natural ability to run and perform feats of endurance as a part of everyday life for survival and fun. Much of the book focuses on ultra-marathoners and the anthropological study of the Tarahumara Indians of Mexico\u2019s Copper Canyons. Neither of us were,or are, big ru"
+  },
+  "drawing-004": {
+    "title": "Drawing 004",
+    "date": "2013-02-13",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "a-texas-thistle": {
+    "title": "A Texas Thistle",
+    "date": "2019-08-20",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "Image development for a poster. Theme to address the alienating and discouraging situation afflicting humans crossing arbitrary borders....",
+    "plain_content": "Image development for a poster. Theme to address the alienating and discouraging situation afflicting humans crossing arbitrary borders. Families divided, treated as enemies, alien invaders. Laura and I worked to reveal something beautiful, something isolated and along, but still presenting wonder. The Texas Thistle,  Cirsium texanum, with its fine spines to bring a prickle to our hands, manifests it fervent growth in a delicately unfurling flower. spines softened, colors iridescent and thick. A"
+  },
+  "drawing-001": {
+    "title": "Drawing 001",
+    "date": "2013-02-18",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "The first in a series of daily (or semi-daily) drawing exercises to calm the mind and free the hand.",
+    "plain_content": "The first in a series of daily (or semi-daily) drawing exercises to calm the mind and free the hand."
+  },
+  "landforms-craggs": {
+    "title": "Landforms - Craggs",
+    "date": "2014-05-29",
+    "image": "/images/dc9b92_abffbfd765dd4b4ca8dede58a9cd0e79~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "Early design tests for a craggy landscape.  These employ Maya's nParticles and dynamic fields as a platform for generating turbulent...",
+    "plain_content": "Early design tests for a craggy landscape.  These employ Maya's nParticles and dynamic fields as a platform for generating turbulent landscape deformations.  In this series of preliminary tests we are searching for a desired intensity and strategy for deforming a uniform grid (particles) with a moving distortion force (turbulence field).  The particles are linked by a woven spring system to expand local effect across the entire surface and find a space between explicit control and emergent behav"
+  },
+  "thick-envelopes-scanning-synthetic-realities": {
+    "title": "Thick Envelopes :: Scanning Synthetic Realities",
+    "date": "2020-01-08",
+    "image": "/images/dc9b92_4c5f6231d256461da6f98d7ca774ea82~mv2.gif",
+    "categories": "[]",
+    "excerpt": "As we approach another semester at Pratt it is time for planning and designing a provocative and meaningful studio prompt. This Spring I...",
+    "plain_content": "As we approach another semester at Pratt it is time for planning and designing a provocative and meaningful studio prompt. This Spring I am teaching our arch201 Intermediate Design studio, which is a second-year, fourth semester, undergraduate architecture design course.  The students are coming out of the Fall with a foundation in plan organization and programming at the scall of a small institutional extension.  This brief focusses on developing architecture as a vertical paradigm within the f"
+  },
+  "drawing-016": {
+    "title": "Drawing 016",
+    "date": "2013-04-01",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "comics-architectural-narratives": {
+    "title": "Comics :: Architectural Narratives",
+    "date": "2020-03-07",
+    "image": "/images/dc9b92_2e6ddfa7a3db4dbb9b92383087bbd70e~mv2.jpg",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\",\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "A Visual Format for Co-Teaching Design and Writing is a collaborative project between Professor Sacha Frey, myself, and many of our...",
+    "plain_content": "A Visual Format for Co-Teaching Design and Writing is a collaborative project between Professor Sacha Frey, myself, and many of our shared first-year architecture students at Pratt Undergraduate Architecture. Sacha and I co-taught in the Arch100 Studio + Trans-disciplinary Writing program from 2011-2019. During that time we have explored many formats and resources for creating a shared space of architecture design and writing as a generative and analytical relationship. One thread of research ha"
+  },
+  "skyfi-july-2019-strange-stars": {
+    "title": "SkyFi :: July 2019 :: Strange Stars",
+    "date": "2019-07-26",
+    "image": "/images/dc9b92_300c897f8e2a4147b6759aaca0060113~mv2.gif",
+    "categories": "[\"5d17ae2709fd900016e34619\"]",
+    "excerpt": "I was under the weather for this month's meeting of the Sky-Fi Bookclub, but we did get a report of the meeting including the...",
+    "plain_content": "I was under the weather for this month's meeting of the Sky-Fi Bookclub, but we did get a report of the meeting including the constellations forming around Strange Stars by  Jason Heller. I have to say that this was not a book I was able to get into. While it dives deep into the parallels between the growth of Science Fiction in literature and music during the 60's, 70's and 80's (maybe more but I gave up reading at some point). The content is interesting, and broadly researched, but the writing"
+  },
+  "skyfi-september-2019-shadowbahn-by-steve-erickson": {
+    "title": "SkyFi :: September 2019 :: Shadowbahn by Steve Erickson",
+    "date": "2019-09-30",
+    "image": "/images/dc9b92_6495f1a11e9f483fa6420767342e2490~mv2.jpg",
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17ae2709fd900016e34619\"]",
+    "excerpt": "Since 2011 or so I have been a part of a generally Science Fiction  themed book club in Brooklyn. Most of us are architects, but we have...",
+    "plain_content": "Since 2011 or so I have been a part of a generally Science Fiction  themed book club in Brooklyn. Most of us are architects, but we have a few other friends to bring some much needed escape from our insular community. I try to write up a record of our meetings and the shimmering cloud of discussion and reference sparked by the books we read each month. SkyFi September 2019 On the subject of Shadowbahn. Steve Erickson's disassociated melancholic journey through a fragmented disintegration of alte"
+  },
+  "inspiring-june-flowers": {
+    "title": "Inspiring June Flowers",
+    "date": "2014-07-02",
+    "image": "/images/dc9b92_be6cdfcc4b68496d8218349537e50c0f~mv2.png",
+    "categories": "[\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "I like to take close up photos of flowers that I find in my daily travels.  I generally share some of them on Instagram @rooksisfun, but...",
+    "plain_content": "I like to take close up photos of flowers that I find in my daily travels.  I generally share some of them on Instagram @rooksisfun, but I wanted to keep a record of what I find each week/month so here is an installment from June."
+  },
+  "drawing-005": {
+    "title": "Drawing 005",
+    "date": "2013-02-15",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "A short time motion capture as this wasp approaches its prey.  Primarily a graphic exercise, the introduction of time begins to generate...",
+    "plain_content": "A short time motion capture as this wasp approaches its prey.  Primarily a graphic exercise, the introduction of time begins to generate spatial transformation in the blur between the components."
+  },
+  "drawing-009": {
+    "title": "Drawing 009",
+    "date": "2013-02-25",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "motervation": {
+    "title": "Motervation",
+    "date": "2015-06-18",
+    "image": "/images/dc9b92_f3708c106cd646d2a1251db54e846a91~mv2.jpg",
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17ae2709fd900016e34619\",\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "People who are unable to motivate themselves must be content with mediocrity no matter how impressive their other talents. ::Andrew...",
+    "plain_content": "People who are unable to motivate themselves must be content with mediocrity no matter how impressive their other talents. ::Andrew Carnegie This reminded me of a recent reading of Flowers for Algernon by Daniel Keyes on the great SciFi Podcast, Escape Pod.  Beautiful narration for a touching story."
+  },
+  "forming-rivers": {
+    "title": "Forming Rivers",
+    "date": "2015-02-25",
+    "image": null,
+    "categories": "[\"5d17adac528d9400e68e4c68\"]",
+    "excerpt": "\"Feeling its way slowly and blindly downward, until at last with more heat and moisture, as the sun gets higher, the most fluid portion,...",
+    "plain_content": "\"Feeling its way slowly and blindly downward, until at last with more heat and moisture, as the sun gets higher, the most fluid portion, in its effort to obey the law to which the most inert also yields, separates from the latter and forms for itself a meandering channel or artery within that, in which is seen a little silvery stream glancing like lightning from one stage of pulpy leaves or branches to another, and ever and anon swallowed up in the sand. It is wonderful how rapidly yet perfectly"
+  },
+  "a-butterfly-for-hope": {
+    "title": "A Butterfly For Hope",
+    "date": "2014-02-13",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "A commissioned custom butterfly pendant design to brighten up a young girl\u2019s day.",
+    "plain_content": "A commissioned custom butterfly pendant design to brighten up a young girl\u2019s day."
+  },
+  "have-you-seen-me-new-fossil-found": {
+    "title": "Have you seen me? New fossil found!",
+    "date": "2013-02-19",
+    "image": "/images/dc9b92_2c6ac56071e24c4ba2873cc9c731fc85~mv2.png",
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "We are not yet clear on what creature this may have belonged to. Given its extremely delicate nature we are taking every precaution in...",
+    "plain_content": "We are not yet clear on what creature this may have belonged to. Given its extremely delicate nature we are taking every precaution in excavating the structure from the local strata. The extreme bilateral symmetry suggest some type of cylindrical worm like creature, perhaps with organs situated between the folds of the individual vertebrae. It may even be some type of hybrid organism with an internal spine and armored exoskeleton. We are taking further scans of the skeleton and expanding our sea"
+  },
+  "skyfi-june-2020-exploded-view-new-dark-age-a-double-feature": {
+    "title": "SkyFi :: June 2020 :: Exploded View & New Dark Age :: A Double Feature",
+    "date": "2020-07-02",
+    "image": "/images/dc9b92_9a449be6a6994b278e7ef2a4a5a99b45~mv2.jpg",
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17ae2709fd900016e34619\"]",
+    "excerpt": "A summer double feature to ease us all into the pandemic isolation of New York. Our book pairing turned out to be extremely well aligned...",
+    "plain_content": "A summer double feature to ease us all into the pandemic isolation of New York. Our book pairing turned out to be extremely well aligned in technology, cultural context, and temporal context. The disturbingly dim investigation of human agency in an age of massive data and ubiquitous computation explored in New Dark Age by James Bridle sits well with our current world crisis. Humanity's resistance to the horrors of war and anxiety about the unpredictability of weather kicked off over a century of"
+  },
+  "fossil-updates-new-cell-form": {
+    "title": "Fossil updates :: New cell form",
+    "date": "2013-03-02",
+    "image": "/images/dc9b92_a369befd54394119bd612753e4fbac30~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "We have uncovered a new novel cell form in the Brooklyn dig.  These seem to be made up of approximately half the cell form of the former...",
+    "plain_content": "We have uncovered a new novel cell form in the Brooklyn dig.  These seem to be made up of approximately half the cell form of the former cellulose vertebrae found a couple weeks ago.  The cells have a spiny protuberance that realigns the mass contained within the quad-lobed cell-form.  These images are currently only from deep scanning x-ray microscopy and are several hundred feet beneath the previous sample.  We believe this may be an earlier proto-form of the previously discovered organism, pe"
+  },
+  "proto-flower": {
+    "title": "Proto Flower",
+    "date": "2013-07-08",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "www.shoparnica.com",
+    "plain_content": "www.shoparnica.com"
+  },
+  "arterial-spray-or-coffee-ricocheting-off-a-door-and-onto-a-wall": {
+    "title": "Arterial Spray or Coffee Ricocheting Off a Door and Onto a Wall",
+    "date": "2013-11-05",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "savoring-complexity": {
+    "title": "SAVORING :: COMPLEXITY",
+    "date": "2019-10-30",
+    "image": null,
+    "categories": "[]",
+    "excerpt": "\"Knowledge is not the gradual approach to truth.  The task of the scientist is \"to make the weaker case the stronger\" as the sophists...",
+    "plain_content": "\"Knowledge is not the gradual approach to truth.  The task of the scientist is \"to make the weaker case the stronger\" as the sophists said.  We need a set of alternative assumptions or, as it were, an entire alternative world, we need a dream world in order to discover the real world we think we inhabit (and which may actually just be another dream world).  We must invent a new conceptual system that suspends, or clashes with, the most carefully established observational results...and introduces"
+  },
+  "drawing-014": {
+    "title": "Drawing 014",
+    "date": "2013-03-24",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "skyfi-november-2019-last-and-first-men-star-maker-stories-of-love": {
+    "title": "SkyFi November 2019 :: Last and First Men + Star Maker :: Stories of Love",
+    "date": "2019-11-22",
+    "image": "/images/dc9b92_0fb7efbca5b043a7864af592bc1f09ba~mv2.jpg",
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17ae2709fd900016e34619\"]",
+    "excerpt": "Welcome back travelers, What a journey we took this episode, or at least I took. I encourage others to come along for the ride....",
+    "plain_content": "Welcome back travelers, What a journey we took this episode, or at least I took. I encourage others to come along for the ride. Unfortunately, this round was a bit of a wash on reading our two titles by Olaf Stapledon. I personally found these to be some of the most profound books we have encountered during our explorations and enjoyed the pairing since they are related and unique inquiries into the human condition and consciousness. The true stuff Science Fiction is made of. Both Last and First"
+  },
+  "drawing-008": {
+    "title": "Drawing 008",
+    "date": "2013-02-22",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "training-the-unit-6-challenge-2020-week-1": {
+    "title": "Training :: The Onnit 6 Challenge 2020 :: Week 1",
+    "date": "2020-02-17",
+    "image": "/images/dc9b92_229767fa10d64bd7aaed603780f814f7~mv2.jpeg",
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "Over the last couple of years, I have been really into the products produced by Onnit to support human optimization. I think I originally...",
+    "plain_content": "Over the last couple of years, I have been really into the products produced by Onnit to support human optimization. I think I originally came across the company when I was looking for relaxation and sleep support supplements with 5-HTP, L-Tryptophan, Magnesium, among other things. Their New Mood product seemed to have all the parts so I gave it a shot. Anyway, that got me into their other products, I cycle on and off with Total Human Optimization just to keep all my bases covered, I used the Pl"
+  },
+  "cholla-cactus-wood-joshua-tree-national-park": {
+    "title": "Cholla Cactus Wood - Joshua Tree National Park",
+    "date": "2013-06-05",
+    "image": null,
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "This is a series of shots focusing on the internal structure of a Cholla Cactus in the Joshua Tree National Forest.  Beautiful woven...",
+    "plain_content": "This is a series of shots focusing on the internal structure of a Cholla Cactus in the Joshua Tree National Forest.  Beautiful woven structures encase a central chamber.  The patterns operate at multiple scales utilizing a similar growth patterns form a complex structure and layered landscape for the harsh desert environment.  We came across Cholla cactus garden at sunset on our final day, it was quite a treat to experience the florescence of the glowing spines in the raking light.  The dramatic"
+  },
+  "out-there-and-all-those-images-in-there": {
+    "title": "Out There :: And All Those Images In There",
+    "date": "2020-01-20",
+    "image": "/images/dc9b92_039c5d8362c64eff97ecc9180e632521~mv2.jpg",
+    "categories": "[\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "What do we do with all those photos? On travels, weekend adventures, commutes, and just around the house, I often grab the convenient...",
+    "plain_content": "What do we do with all those photos? On travels, weekend adventures, commutes, and just around the house, I often grab the convenient personal computing device (aka iphone) and point its image capture device (aka camera) at something visually interesting. Those photos get automatically uploaded to the cloud via iCloud and Dropbox (and probably other services I have forgotten to disable) to be saved as bits of data forever. I do quite often pull up recent photographs for reference in conversation"
+  },
+  "skyfi-october-2020-parable-of-the-sower-octavia-butler": {
+    "title": "SkyFi :: October 2020 :: Parable of the Sower- Octavia Butler",
+    "date": "2020-10-27",
+    "image": "/images/dc9b92_79120111607a41e89cc49fd464321de2~mv2.jpg",
+    "categories": "[]",
+    "excerpt": "In a time of troubles aggravated by human malware at a global scale revealing the cracks in our fragile reality we find ourselves taking...",
+    "plain_content": "In a time of troubles aggravated by human malware at a global scale revealing the cracks in our fragile reality we find ourselves taking a journey through a very near what could be with Octavia Butler. A staple of science fiction since the late 80s, Butler's Parable of the Sower sets itself in the here and now as imagined from nearly thirty years ago. The story is almost too close to reality to remain fiction in our upended world. The book certainly pulls no punches and I often found myself only"
+  },
+  "skyfi-april-2019-waning-dune-into-ancillary-justice": {
+    "title": "SkyFi :: April 2019 :: Waning Dune into Ancillary Justice",
+    "date": "2019-04-24",
+    "image": "/images/dc9b92_7ee493a3b0214081b7df8808cd79a8ee~mv2.jpg",
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17ae2709fd900016e34619\"]",
+    "excerpt": "Dear Future Readers, It was great to have such a big turnout last night for Alpna's farewell book tour. It has been a rich eon spanning...",
+    "plain_content": "Dear Future Readers, It was great to have such a big turnout last night for Alpna's farewell book tour. It has been a rich eon spanning journey for the last eight years here at Sky-Fi and your critical reviews, insistence on hard scifi, and a unique perspective that will me missed. Hopefully you can start an LA chapter and once we get our field trip act together we can bring the future of science to both coasts. Speaking of field trips. Rachel has proposed an intriguing possibility for a little "
+  },
+  "make-things": {
+    "title": "Make Things",
+    "date": "2015-10-09",
+    "image": null,
+    "categories": "[\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "This phrase, Make Things, has become a daily motto for me. The only way I learn and understand things is through making things. While it...",
+    "plain_content": "This phrase, Make Things, has become a daily motto for me. The only way I learn and understand things is through making things. While it sounds a little general, things helps  to focus on everything I am doing as a means of making something. My hope and desire is that I am always making something better. One must learn by doing the thing; for though you think you know it, you have no certainty, until you try. :: Sophocles"
+  },
+  "arnica-softly": {
+    "title": "ARNICA (softly)",
+    "date": "2015-03-24",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "It's HERE! After what seems like years (or actually has been years) we have the initial offerings from the ARNICA collection live and...",
+    "plain_content": "It's HERE! After what seems like years (or actually has been years) we have the initial offerings from the ARNICA collection live and available. I hope that they inspire and delight your visual senses and entice your desire for beautiful things. Now...A word from our sponsors (us, ARNICA, www.shoparnica.com, Miscellaneous Projects) Arnica is a collaboration between Laura Coombs and Robert Lee Brackett III. We create Arnica objects through our interest in translating biological forms into rich ma"
+  },
+  "brrrrrraaaaaaiiiiiiiinnnnnsssss": {
+    "title": "BRRRRrraaaaaaiiiiiIIINNNNNSSSSS???",
+    "date": "2014-02-28",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17aea198c5cc00160844c0\"]",
+    "excerpt": "A custom design cufflink hybrid from the Arnica collection.  This little beauty will be gracing the arms of a young documentary director...",
+    "plain_content": "A custom design cufflink hybrid from the Arnica collection.  This little beauty will be gracing the arms of a young documentary director at the Oscars this Sunday.  Super fun! So why the title, well I like zombie movies (old school like Dawn of the Dead) and when I see the intense folding and complexity of reflections in this piece I can\u2019t help but see a gilded brain."
+  },
+  "golden-oldies-strangling-blackness": {
+    "title": "Golden Oldies :: Strangling Blackness",
+    "date": "2013-11-06",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "An animation accompanying a dystopian architectural design studio at Columbia GSAPP back in 2007. Architect, Francois Roche proposed a...",
+    "plain_content": "An animation accompanying a dystopian architectural design studio at Columbia GSAPP back in 2007. Architect, Francois Roche proposed a scenarios of robotic dystopia designed and grown from within the design of the machine. This is a result, a darkness of material and form, a strangling blackness."
+  },
+  "make-it-better": {
+    "title": "Make It Better",
+    "date": "2015-09-11",
+    "image": null,
+    "categories": "[\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "Just do good work. Whatever commission you have, make it the best you\u2019ve ever done. Nothing sells like good work. :: Frank D. Welch,...",
+    "plain_content": "Just do good work. Whatever commission you have, make it the best you\u2019ve ever done. Nothing sells like good work. :: Frank D. Welch, FAIA, Frank Welch and Associates, Dallas"
+  },
+  "cocooning-luna-moth-ring": {
+    "title": "Cocooning Luna Moth Ring",
+    "date": "2015-01-15",
+    "image": "/images/dc9b92_77ddc1d3ec354880b0ddc17978bb80ed~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "This post is coming a little late (the ring did as well :), but I wanted to show off my latest gift for ldweezy.  This is a mutation of...",
+    "plain_content": "This post is coming a little late (the ring did as well :), but I wanted to show off my latest gift for ldweezy.  This is a mutation of the original Luna Moth Pendant for a while back.  Here the creature is within the cocoon, transforming from larva to ethereal moth.  The transforming creature bends around the finger to encapsulated it on the verge of new life. The ring is cast in sterling silver and then plated in Rhodium to add a durable bright finish.  There are two Mexican Fire Opals, one pr"
+  },
+  "organisms-hypno-topo-graphy": {
+    "title": "ORGANISMS :: HYPNO-TOPO-GRAPHY",
+    "date": "2019-11-07",
+    "image": "/images/dc9b92_aec050c034bb4c27b6e136ab689a700b~mv2.gif",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\",\"5d17ae2709fd900016e34619\"]",
+    "excerpt": "Life emerging from complexity. Territories expand and contract in thick organizations around rhythmic structures. Visual music. Hypnotic...",
+    "plain_content": "Life emerging from complexity. Territories expand and contract in thick organizations around rhythmic structures. Visual music. Hypnotic topography. Myriad boundaries. The collage incorporates layers of vertical striation from the three images below (from my previous post). These flowers from the island of Serifos in Greece contribute their vibrant colors and deep formal complexity to the emerging territory of the rollage study. The discreet images offer inputs into a new territory of aesthetic "
+  },
+  "200-million-years-ago": {
+    "title": "200 Million Years Ago...",
+    "date": "2013-06-04",
+    "image": "/images/dc9b92_c4e01ef246f0493a9c96ed8a8bd2b389~mv2.png",
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "Some textures and patterns found on a stroll through New Mexico's Petrified Forest National Park.",
+    "plain_content": "Some textures and patterns found on a stroll through New Mexico's Petrified Forest National Park."
+  },
+  "spring-shell": {
+    "title": "Spring Shell",
+    "date": "2013-05-11",
+    "image": "/images/dc9b92_da588e0492424e6ba84b7615c488fdd7~mv2.png",
+    "categories": "[\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "Ran across this little fellow navigating a treacherous Brooklyn sidewalk.  Looks like it just put on a new shell and a fresh coat of paint.",
+    "plain_content": "Ran across this little fellow navigating a treacherous Brooklyn sidewalk.  Looks like it just put on a new shell and a fresh coat of paint."
+  },
+  "rock-dwellers": {
+    "title": "Rock Dwellers",
+    "date": "2013-06-14",
+    "image": "/images/dc9b92_f780ea5c046045ad9e552727d7d08296~mv2.png",
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "Of the very small and somewhat freakish variety.  These are some samples of tiny creatures that cover the mostly shady sides of large...",
+    "plain_content": "Of the very small and somewhat freakish variety.  These are some samples of tiny creatures that cover the mostly shady sides of large rocks and petrified trees across the desert Southwest.  Amazingly vibrant colors, and with all that folding I start to wonder if you get enough of these little guys together, could they start thinking?"
+  },
+  "drawing-with-glass": {
+    "title": "Drawing With Glass",
+    "date": "2014-01-04",
+    "image": "/images/dc9b92_172532d349c64494a146760bdadfd062~mv2.png",
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "drawing-022-swelling-bud": {
+    "title": "Drawing 022 :: Swelling Bud",
+    "date": "2015-05-31",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "Spring is finally peaking out from the long dark veil of winter. The warming air and crisp refreshment of thawing ground is very welcome...",
+    "plain_content": "Spring is finally peaking out from the long dark veil of winter. The warming air and crisp refreshment of thawing ground is very welcome after this year's prolonged chill. This drawing started at the beginning of march, and looking back, it was likely in a response to all the plants waiting to bud and bring their flowers into spring. Soon their sweet musky fragrance will fill the air."
+  },
+  "luna-moth-cocooning-ring-prototype-v01": {
+    "title": "Luna Moth Cocooning Ring Prototype v01",
+    "date": "2014-09-11",
+    "image": "/images/dc9b92_cd236d8d062d4c2186390cd288e551a0~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "I am designing a new custom ring as a gift for Lauren's birthday.  These are the initial design sketches of the process to evolve a new...",
+    "plain_content": "I am designing a new custom ring as a gift for Lauren's birthday.  These are the initial design sketches of the process to evolve a new ring form.   The goal is to create something with a formal relationship to the Luna Moth pendant I designed last year as a gift, but to also transform that geometry into a new life-cycle of the creature.  I begin with a few snippets of geometry from the initial pendant, proto-forms that I assemble into a new body in search of transformation.  The idea is to have"
+  },
+  "self-portraits-in-the-time-of-distance": {
+    "title": "Self Portraits in the Time of Distance",
+    "date": "2020-04-06",
+    "image": "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png",
+    "categories": "[\"5d17ad910bdf230016d98e95\",\"5d17aea198c5cc00160844c0\"]",
+    "excerpt": "After just a couple weeks of remote learning and our stay at home social distancing pushing all our meetings into a virtual interface, I...",
+    "plain_content": "After just a couple weeks of remote learning and our stay at home social distancing pushing all our meetings into a virtual interface, I begin to see myself in new ways. I can watch my facial expressions and the micro behaviors of my students and colleagues with aa finer degree of isolation. The video of the face, the portrait hovering in place, changes how we read each other and the significance of our facial body language. It is an interesting experience, and for me often a very exhausting one"
+  },
+  "make-beautiful-things": {
+    "title": "Make {Beautiful} Things",
+    "date": "2015-04-09",
+    "image": "/images/dc9b92_9cb67210e1bf4702907b00868dc15302~mv2.png",
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "The surface of the earth is soft and impressible by the feet of men :: Henry David Thoreau, Walden pg. 489 A reminder that what we do...",
+    "plain_content": "The surface of the earth is soft and impressible by the feet of men :: Henry David Thoreau, Walden pg. 489 A reminder that what we do makes an impression and that we should be critical in our actions, striving to make wonderful and beautiful things."
+  },
+  "demon-seed": {
+    "title": "Demon Seed",
+    "date": "2013-04-30",
+    "image": null,
+    "categories": "[\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "A seed pod scavenged by Laura Coombs from the wilds of upstate NY, originally heralding from origins unknown, dark and deep.",
+    "plain_content": "A seed pod scavenged by Laura Coombs from the wilds of upstate NY, originally heralding from origins unknown, dark and deep."
+  },
+  "drawing-006": {
+    "title": "Drawing 006",
+    "date": "2013-02-16",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "A slice through deep earth reveals an ancient fossil locked in time, slowly fracturing & transforming its strata.",
+    "plain_content": "A slice through deep earth reveals an ancient fossil locked in time, slowly fracturing & transforming its strata."
+  },
+  "drawing-019": {
+    "title": "Drawing 019",
+    "date": "2013-07-15",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "suspended": {
+    "title": "Suspended",
+    "date": "2015-07-21",
+    "image": "/images/dc9b92_6b394a9c22a246c9a31ab1401b735a72~mv2.png",
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "Each of us lives most fully 'on the wire' in the face of death, daring to do the very thing which fear prevents us from. :: Akira...",
+    "plain_content": "Each of us lives most fully 'on the wire' in the face of death, daring to do the very thing which fear prevents us from. :: Akira Kurosawa, Ikiru, 1952 I was reading Christopher Alexander's A Timeless Way of Building during a recent trip to Greece and he reference this line from Ikiru. I remember watching this movie with my Father (who is a big Kurosawa fan) as a teenager/young adult and being very touched and engrossed by the story. Kurosawa had an exquisite way of enfolding your with deep char"
+  },
+  "within-the-pixels": {
+    "title": "Within the Pixels",
+    "date": "2013-06-17",
+    "image": "/images/dc9b92_0e8d39e087c24d5da05d5d19067a92f3~mv2.png",
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "After Yesterdays post I kept playing around with the images of fungus (or molds, moss, lichen...) and just for fun threw an inversion...",
+    "plain_content": "After Yesterdays post I kept playing around with the images of fungus (or molds, moss, lichen...) and just for fun threw an inversion filter into the stack.  This gave me some great new insights into adjusting the color and lighting to really bring out the resolution and hyper reality of my phones crazy camera.  There is also the added bonus of two really amazing images that tell a whole new story about this already fascinating micro world of color, form, growth and life."
+  },
+  "skyfi-april-2020-agency-by-william-gibson": {
+    "title": "SkyFi :: April 2020 :: Agency by William Gibson",
+    "date": "2020-05-11",
+    "image": "/images/dc9b92_420843d31a6a44ae92f3dfb4beca3a0d~mv2.png",
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17ae2709fd900016e34619\"]",
+    "excerpt": "Emerging from the black hole of final reviews and the added hustle of wrapping up a semester of challenges I have some time now to get...",
+    "plain_content": "Emerging from the black hole of final reviews and the added hustle of wrapping up a semester of challenges I have some time now to get back to this writeup. Luckily I took some notes and already gathered many of the images and references. Just a bit of writing now. A long gap as the world slowly falls apart and digitally sutures itself back together again into some Frankenstein of AR/VR/NR assemblage of events. The crew joined the virtual meeting flow and came together over Zoom for a couple of "
+  },
+  "staircases-georges-perec-species-of-space": {
+    "title": "Staircases - Georges Perec - Species of Space",
+    "date": "2015-06-28",
+    "image": "/images/dc9b92_4f122d7bc3054d83bb58d5470b580432~mv2.png",
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "\"We don't think enough about staircases. Nothing was more beautiful in old houses than the staircases. Nothing is uglier, colder, more...",
+    "plain_content": "\"We don't think enough about staircases. Nothing was more beautiful in old houses than the staircases. Nothing is uglier, colder, more hostile, meaner, in today's apartment buildings. We should learn to live more on staircases. But how?\" :: Georges Perec (Species of Space, pg. 38)"
+  },
+  "drawing-003": {
+    "title": "Drawing 003",
+    "date": "2013-02-12",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "A journey from the cliff side through the garden path overlooking the sea.  This small dwelling draws its energy from the rolling waves...",
+    "plain_content": "A journey from the cliff side through the garden path overlooking the sea.  This small dwelling draws its energy from the rolling waves below providing a space for contemplation at the intersection of air, earth & water."
+  },
+  "contouring-plywood-landscapes": {
+    "title": "Contouring - Plywood Landscapes",
+    "date": "2015-06-19",
+    "image": "/images/dc9b92_55ff7c13a81644dbaba270a021f35708~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "Word of the day.  Haven't had much time to draw or write recently, but i did make a few things and the photos of these CNC machined...",
+    "plain_content": "Word of the day.  Haven't had much time to draw or write recently, but i did make a few things and the photos of these CNC machined plywood landscapes are naggin at me."
+  },
+  "pratt-final-review-design-1-fa2014": {
+    "title": "Pratt Final Review Design 1 Fa2014",
+    "date": "2014-12-18",
+    "image": null,
+    "categories": "[\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "The following is a collection of the work produced during my First year Architectural Design Studio at Pratt for Fall 2014.  The images...",
+    "plain_content": "The following is a collection of the work produced during my First year Architectural Design Studio at Pratt for Fall 2014.  The images follow a group of 13 students through their initial journey into architecture.  They progressed through a series of Design Exercises that pit them in design conversations with Point & Line, Plane & Surface, Solid & Void, and finally a Hybrid synthesis of techniques into a spatial, architectural concept, a Folly. An Architectural Proposition of\u2026 For the final pro"
+  },
+  "arnica-ring-1090": {
+    "title": "Arnica Ring 1090",
+    "date": "2013-09-12",
+    "image": "/images/dc9b92_c460f23dca1d4712996c99d97e07e4d2~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "A final production sample of the first Arnica (coming soon) ring.  The design is 3D printed in wax and then cast in Sterling Silver by...",
+    "plain_content": "A final production sample of the first Arnica (coming soon) ring.  The design is 3D printed in wax and then cast in Sterling Silver by iMaterialize in the Belgium and plated in 18K gold by Tanury Industriesin RI. More design samples are coming, and the pieces will be available for sale very soon. Now available on Shop Arnica"
+  },
+  "traveller-emergence": {
+    "title": "Traveller :: Emergence",
+    "date": "2019-12-24",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\",\"5d17aea198c5cc00160844c0\"]",
+    "excerpt": "A journal has been a consistent part of my daily routine for many years now. While I miss a day here and there, especially when...",
+    "plain_content": "A journal has been a consistent part of my daily routine for many years now. While I miss a day here and there, especially when travelling or when my schedule makes a major shift, the act of writing through thoughts, goals, dreams, and wild thoughts is a soothing and enlightening practice. I take a lot of joy in the challenge of beginning each day with a blank page and the uncertain choice and responsibility of what to commit to the universe. On some days this is easy, I reflect on three things "
+  },
+  "poetry-of-design": {
+    "title": "Poetry of Design",
+    "date": "2015-03-25",
+    "image": null,
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "The poet proceeds in full knowledge of the fact that 'this is not the way we do things around here'...to create is to break the silence...",
+    "plain_content": "The poet proceeds in full knowledge of the fact that 'this is not the way we do things around here'...to create is to break the silence of conformity. It is to make a noise. Poetry is war, not with one another, but with ourselves, and effort to expand the territory of the known; to make is to break the known so as to cross the border into the unknown. The desire to create is a desire to surpass, not as an utopian dream, but in order to make manifest a difference between how things are and the me"
+  },
+  "representational-analysis-decomposition-drawing-video": {
+    "title": "Representational Analysis :: Decomposition Drawing & Video",
+    "date": "2020-01-27",
+    "image": "/images/dc9b92_0760e25b180047e9ba965ccd71fd3863~mv2.gif",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "The following video was a micro-lecture provided for the ARCH202 Intermediate Design studios at Pratt Institute as an introduction to...",
+    "plain_content": "The following video was a micro-lecture provided for the ARCH202 Intermediate Design studios at Pratt Institute as an introduction to concepts and techniques of architectural analysis through decompositional drawing and video-based representation.  The first segment documents examples of forms of decomposition in architectural analysis drawing such as X-Rays/MRIs or layered transparent systems, scans, overlays, fades, and exploded relationships. I worked with diagrams with a fixed view (oblique "
+  },
+  "the-owl": {
+    "title": "The Owl",
+    "date": "2013-11-19",
+    "image": "/images/dc9b92_722eeea352cb4711921faddc755cb366~mv2.png",
+    "categories": "[\"5d17ad910bdf230016d98e95\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "Symmetry reveals hidden life.  While modeling some packaging materials for Arnica I came across this new species of owl, Aegolius...",
+    "plain_content": "Symmetry reveals hidden life.  While modeling some packaging materials for Arnica I came across this new species of owl, Aegolius acadicus cyberoculus, hiding in the wireframes.  Bionic eyes penetrate deeply."
+  },
+  "the-computer-connection-alfred-bester": {
+    "title": "The Computer Connection :: Alfred Bester",
+    "date": "2020-03-20",
+    "image": "/images/dc9b92_23c94e81c41c45bf856c34e40370a67b~mv2.jpg",
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17ae2709fd900016e34619\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "\"No. No. No. That's gone with the past years. Is there a war? Yes. Yes. Yes. Now listen carefully, Guig. Ten thousand years we lived with ou",
+    "plain_content": "BY the chance of long and deep bookshelves I am working my way backward through the works of sci-fi master, Alfred Bester. I began with The Deceivers, and have now journeyed into the precarious future of sentient machines, exobiological mutations, immortal visionaries, time travel, and cosmic turmoil in his 1975 novel, The Computer Connection. From these two novels, I  can feel the influence of his time spent as a comic script and travel magazine writer. The narratives are fast based, full of ov"
+  },
+  "tictoc-a-gnarly-clock": {
+    "title": "TicToc - A Gnarly Clock",
+    "date": "2016-01-18",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "For years my mother has been asking me to make her a clock. It was always a project that went on the list and then kept moving down the...",
+    "plain_content": "For years my mother has been asking me to make her a clock. It was always a project that went on the list and then kept moving down the list until a few weeks before Christmas. It always seemed like too much of a project to design and fabricate a working clock in a couple weeks, and do it with the quality I would like to present to my mom. This year was the same, with one small change, we added a Form 1+ 3D printer to the office last summer. December and finals at Pratt rolled in quickly after T"
+  },
+  "site-impressions-video-collage": {
+    "title": "Site Impressions :: Video Collage",
+    "date": "2019-10-15",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17aea198c5cc00160844c0\",\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "The site for my ARCH201 studio at Pratt this semester is the MET Cloisters Museum in NYC. We are working on extracting aesthetic and...",
+    "plain_content": "The site for my ARCH201 studio at Pratt this semester is the MET Cloisters Museum in NYC. We are working on extracting aesthetic and contextual influence from the context of the site trough video based analysis and collage. This video is a sample experience I created to demonstrate techniques and ways of seeing through video (AfterEffects)."
+  },
+  "hyphae-simulation-mk3": {
+    "title": "Hyphae Simulation mk3",
+    "date": "2019-08-18",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "Pushed the system a little further, now a larger organizing network. The particles can cross, entangle, and merge into more complex...",
+    "plain_content": "Pushed the system a little further, now a larger organizing network. The particles can cross, entangle, and merge into more complex rhyzomatic connections. I am interested in exploring the organizational voids within the mesh, mixing multiple layers of these simulations into a vast network."
+  },
+  "technocrafting-the-digital-hand": {
+    "title": "TechnoCrafting - The Digital Hand",
+    "date": "2015-05-04",
+    "image": "/images/dc9b92_e22d5327cbf34f47b6a1d718654fd0e5~mv2.png",
+    "categories": "[\"5d17ad910bdf230016d98e95\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "This blog started with a series of drawings. Simple black line renderings in a regularly shaped notebook I had sitting around, lacking...",
+    "plain_content": "This blog started with a series of drawings. Simple black line renderings in a regularly shaped notebook I had sitting around, lacking any definite purpose. I still enjoy the time when I can step out of phase and let ink bleed into the fibers of the paper. Watching my hand deploy a few quick marks that spawn simple pseudo-algorithms of design. I find it a very relaxing process, one that is consuming and renders me into another world. A small, tightly knit world of that page, that pen, that momen"
+  },
+  "patterns-arnica-cb1001": {
+    "title": "Patterns || Arnica CB1001",
+    "date": "2013-09-23",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "Desktop background patterns utilizing a concept rendering of the Arnica Coat Button top view.  The designs tend to form around an X, and...",
+    "plain_content": "Desktop background patterns utilizing a concept rendering of the Arnica Coat Button top view.  The designs tend to form around an X, and these images are a fun test to exploit that crossing geometry at a more intense scale.  This button is designed to work as a single larger coat or jacket button as well as a smaller elegant jacked cuff button series."
+  },
+  "inclusivity-the-stories-that-connect-us": {
+    "title": "Inclusivity :: The Stories That Connect Us",
+    "date": "2020-02-05",
+    "image": null,
+    "categories": "[\"5d17ae2709fd900016e34619\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "Some mornings during my shower and while I prepare and eat my breakfast I like to listen to a podcast. This is usually something...",
+    "plain_content": "Some mornings during my shower and while I prepare and eat my breakfast I like to listen to a podcast. This is usually something inspiring about human performance optimization or when I am feeling really indulgent, a short story from my favorite SciFi podcast, Escape Pod. I have been a fan of this podcast for the last seven years or so, since very early in their existence. I have taken many wonderful books and author recommendations from the stories to introduce in our sci-fi book club. Many of "
+  },
+  "reflections-on-deceivers-by-alfred-bester": {
+    "title": "Reflections on DECEIVERS by Alfred Bester",
+    "date": "2020-02-06",
+    "image": "/images/dc9b92_eb9c56282b8c4af482c5f84e646277c1~mv2.png",
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17ae2709fd900016e34619\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "Since I spend so much time ingesting works of Science Fiction I figure I should start reflecting on how these speculative realities...",
+    "plain_content": "Since I spend so much time ingesting works of Science Fiction I figure I should start reflecting on how these speculative realities influence my perceptions of the world and potentially offer ways forward for us all. (aka book reports) Each yearly visit to Champaign, IL to visit my family is not complete without a lengthy adventure through the maze of books housed within the Jane Addams Bookstore downtown. A charming building from the early development of the railroad town over 100 years ago, it"
+  },
+  "a-mindful-drawing-practice": {
+    "title": "A Mindful Drawing Practice",
+    "date": "2021-04-12",
+    "image": "/images/dc9b92_71a00c91b27b476b82f7f7eadf832eae~mv2.jpg",
+    "categories": "[]",
+    "excerpt": "Sometimes an opportunity comes calling when we need it most. In a recent meeting of the Pratt Resilience, Wellness, and Well-Being...",
+    "plain_content": "Sometimes an opportunity comes calling when we need it most. In a recent meeting of the Pratt Resilience, Wellness, and Well-Being Council (a group of faculty, staff, and students dedicated to shifting the culture of Pratt towards a more balanced life experience) I felt compelled to offer to lead a weekly mindful drawing practice. This is not something I had any specific experience with, but when the group put out the call for action the ideas flooded into my mind.  Drawing has always been my st"
+  },
+  "hello-world": {
+    "title": "Hello World",
+    "date": "2013-02-09",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "\"We came here to do something, so let's do something!\" :: Pillsbury - Land of the Dead Expressions: Synaptic Resistive Skin :: CityTech...",
+    "plain_content": "\"We came here to do something, so let's do something!\" :: Pillsbury - Land of the Dead Expressions: Synaptic Resistive Skin :: CityTech INTERSECTIONS Presentation and exhibition at New York College of Technology(vimeo.com/nycctfab). INTERSECTIONS: Building Interdisciplinary Pedagogy | Building Integrated Practice on June 1st 2012. \nLayered relationships incorporating synaptic impulses, behavioral dependencies, tectonic resistance & temporal latency converge, producing a space of emergent surface"
+  },
+  "ruicci-2-0-a-new-seat": {
+    "title": "Ruicci 2.0 - A New Seat",
+    "date": "2015-05-31",
+    "image": "/images/dc9b92_4084a042cbb94685ab9e2578b425efcc~mv2.jpg",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "A shot from today's (nearly) final install for the transforming Digital Nouveau bed (and now bench) system. More photos to come.",
+    "plain_content": "A shot from today's (nearly) final install for the transforming Digital Nouveau bed (and now bench) system. More photos to come."
+  },
+  "skyfi-december-2019-ninefox-gambit": {
+    "title": "SkyFi :: December 2019 :: Ninefox Gambit",
+    "date": "2019-12-24",
+    "image": null,
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17ae2709fd900016e34619\"]",
+    "excerpt": "Hello Fellow Travellers, We held a quick check-in before the holidays to see if we could set up an epic read to fill the space of travel...",
+    "plain_content": "Hello Fellow Travellers, We held a quick check-in before the holidays to see if we could set up an epic read to fill the space of travel and rest over the next couple of weeks. We didn't quite get the whole crew together, and few of us had made it through the book, Ninefox Gambit by Yoon Ha Lee, so we only made glancing discussion of the military space opera with a body-snatching hive consciousness twist. While we did take a good amount of time to consider what we should dive into next, I have d"
+  },
+  "sterling-luna-moth-transformation-le-dweez-de-luna": {
+    "title": "Sterling Luna Moth Transformation - Le Dweez de Luna",
+    "date": "2013-10-22",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "A fun little design project for that special someone on her birthday.  I call it Le Dweez de Luna. The design focused on translating the...",
+    "plain_content": "A fun little design project for that special someone on her birthday.  I call it Le Dweez de Luna. The design focused on translating the elegant curves of a Luna Moth into digital geometry, then manipulating the latent patterns in trajectory towards transparency.  The final design is 3D printed in wax and cast in sterling silver through a lost wax process.  Finally the sleek curves receive a high polish to grab & trap light from the environment within the unfolding forms."
+  },
+  "hyphae-simulation-mk2": {
+    "title": "Hyphae Simulation mk2",
+    "date": "2019-08-16",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "The system evolves with two particle systems interacting. The original mk1 system is invisible, but active as a force field dynamic...",
+    "plain_content": "The system evolves with two particle systems interacting. The original mk1 system is invisible, but active as a force field dynamic emitter, pulsing and reorganizing the second particle drawing systems. Color and light pulse like a sea creature as the speed and acceleration of the particles change. This one uses four layers in aftereffects: point, multi-point, cloud, and mesh. Each layer is just a playblast from Maya (series of screenshots) with some transparency and blending mode manipulations "
+  },
+  "on-a-trip-to-the-rose-garden": {
+    "title": "On a trip to the rose garden",
+    "date": "2013-02-28",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "I made an afternoon in the Brooklyn Botanical Gardens last fall while the roses were in full bloom.  This is one of a series of drawings...",
+    "plain_content": "I made an afternoon in the Brooklyn Botanical Gardens last fall while the roses were in full bloom.  This is one of a series of drawings exploring the composition of photographs exploring morphological differentiation between varieties.  The drawing, as they do, took on its own form, expanding into a topographical field.  The individual flowers act as seeds for expanding and converging curves, populating the page with islands.  Each region maintains a structure and resemblance to its original va"
+  },
+  "learning-to-design-home-drawing-and-modeling": {
+    "title": "Learning to Design @ Home :: Drawing and Modeling",
+    "date": "2020-07-01",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\",\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "During the Fall '19 and Spring '20 semesters at Pratt I was teaching an architectural design course for NYC high school students to have...",
+    "plain_content": "During the Fall '19 and Spring '20 semesters at Pratt I was teaching an architectural design course for NYC high school students to have a taste of what an education in architecture could be like as well as build some skills and portfolio pieces. I was co-teaching the course with Olivia Vien and we decided to focus on exposing the students to common design applications, digital workflows, and fabrication technologies. We made several 2D and 3D design explorations in Rhino3D, translated them into"
+  },
+  "drawing-013": {
+    "title": "Drawing 013",
+    "date": "2013-03-15",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "A fleshy vegetal node springing from a bifurcating rhyzomatic structure.  This demi-flower only blooms at night utilizing pungent odor to...",
+    "plain_content": "A fleshy vegetal node springing from a bifurcating rhyzomatic structure.  This demi-flower only blooms at night utilizing pungent odor to attract nocturnal pollinators into its muscular grasp.  Once the flower has spread adequate amounts of its sticky pollen it will clamp down on its prey, incorporating the nutrients into its ever expanding network."
+  },
+  "drawing-012": {
+    "title": "Drawing 012",
+    "date": "2013-03-14",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "drawing-021-summer-camp-landscapes": {
+    "title": "Drawing 021 :: Summer Camp Landscapes",
+    "date": "2015-03-01",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "Many of my evening drawings start without an established trajectory or predetermined intent.  This one began from nine open dots spaced...",
+    "plain_content": "Many of my evening drawings start without an established trajectory or predetermined intent.  This one began from nine open dots spaced somewhat evenly, but misaligned across the field of the page.  I then worked through layers of loosely guided procedures to create relationships between the dots.   Vectors spin off from the orbiting perimeter, fleeing the page or terminating into on another.  These collision produce angles and arcs, triggering further subdivision along the lines.  The arcs cont"
+  },
+  "thick-space-mapping-ambiguous-territories": {
+    "title": "THICK SPACE :: MAPPING AMBIGUOUS TERRITORIES",
+    "date": "2019-08-20",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\",\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "'--- Mapping is a strategy for exploring new frontiers, reconciling the unknown into accessible information. It is an abstraction,...",
+    "plain_content": "'--- Mapping is a strategy for exploring new frontiers, reconciling the unknown into accessible information. It is an abstraction, providing access to ambiguous territories and generating new organizations in the flowing space of the real and the imagined.  We will map through analytical and generative drawing, recombinant animation, and computational models, engaging architecture as a medium of thick space operating within the horizontal constraints of the mat building typology. Our maps will i"
+  },
+  "drawing-002": {
+    "title": "Drawing 002",
+    "date": "2013-02-11",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "arnica-cb1001-sectional-analysis": {
+    "title": "Arnica CB1001 Sectional Analysis",
+    "date": "2013-10-09",
+    "image": "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "Ok, well maybe just an excuse to take a break and have some fun with animated GIFs.  I do however use the ability to quickly section...",
+    "plain_content": "Ok, well maybe just an excuse to take a break and have some fun with animated GIFs.  I do however use the ability to quickly section complex forms to make quick and precise adjustments to the full 3D model by operating at sectioned moments.  If you want to see it move, follow the link in the post title, I decided to keep the main page static."
+  },
+  "quote-t-s-eliot-s-little-giddling": {
+    "title": "Quote - T.S. Eliot's \"Little Giddling\"",
+    "date": "2015-03-18",
+    "image": null,
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "We shall not cease from exploration And the end of all our exploring Will be to arrive where we started And know the place for the first...",
+    "plain_content": "We shall not cease from exploration And the end of all our exploring Will be to arrive where we started And know the place for the first time ::T.S. Eliot, \"Little Giddling\""
+  },
+  "subterranea-n": {
+    "title": "SubTerranea[N]",
+    "date": "2015-01-21",
+    "image": "/images/dc9b92_18a6de95d54f4a6e9c1bb42cda274647~mv2.png",
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "A quick charcoal drawing that I made during studio at Pratt.  I wanted to give the students a little change of pace and try to loosen...",
+    "plain_content": "A quick charcoal drawing that I made during studio at Pratt.  I wanted to give the students a little change of pace and try to loosen them up with a more fluid medium after all their intense procedural mechanical drawings.  I started here with a crumpled paper bag to demonstrate building tone and highlight, then I just let the emerging forms guide a new landscape.  The result began to take the appearance of a subterranean landscape, so I threw a few figures in to bring a sense of scale to the sc"
+  },
+  "protoform-pod-coagulations": {
+    "title": "Protoform POD Coagulations",
+    "date": "2013-04-14",
+    "image": "/images/dc9b92_36b51e0f35454026b60e62167cecd5b7~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "aesthetic-tuning-colony": {
+    "title": "Aesthetic Tuning :: Colony",
+    "date": "2019-10-15",
+    "image": null,
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "A question I have been exploring for a long time as a designer is, how do we reveal, accept, and filter our aesthetic influence without ...",
+    "plain_content": "A question I have been exploring for a long time as a designer is, how do we reveal, accept, and filter our aesthetic influence without  direct copying or feeble translations? While I was a student (and to some degree still), i would resist looking at precedence or architectural examples during the design of a project to avoid contamination of my thinking. This was not a position against learning from other works, which I also did a lot of through research papers, history classes, sketch trips, "
+  },
+  "the-onnit-6-challenge-recap": {
+    "title": "The Onnit 6 Challenge Recap",
+    "date": "2020-03-28",
+    "image": "/images/dc9b92_a93ab996d61d4844a8dc3df4392c9e3f~mv2.jpg",
+    "categories": "[\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "Six weeks seems like almost nothing. As life tends to do here in New York, the time flew by, but it also slowed down. The Onnit 6...",
+    "plain_content": "Six weeks seems like almost nothing. As life tends to do here in New York, the time flew by, but it also slowed down. The Onnit 6 Challenge brought greater focus to my body, movement patterns, and my daily routines. The hour of intense focus to keep the body in form with strength, flexibility, and stability expanded to all parts of my days. I chose to make time for it, getting up earlier so I could still meditate, journal, and be ready for my day. Sometimes I was sore or fatigued, but I knew why"
+  },
+  "drawing-015": {
+    "title": "Drawing 015",
+    "date": "2013-03-25",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "This started as a simple drawing to work in the space of symmetrical similarity.  Knowing that my hand & eye (without significant desire...",
+    "plain_content": "This started as a simple drawing to work in the space of symmetrical similarity.  Knowing that my hand & eye (without significant desire and attention) will not draw two sides of a symmetrical form the same, I set out to find opportunities in the emergent irregularities.  The drawing maintains a mirroring of the general line/curve structure but allows for local differentiation as each side of the drawings grows into a life of its own.  A living breathing growing structure takes form from the min"
+  },
+  "architecture-where-design-meets-engineering": {
+    "title": "Deep Thoughts from Isaac Asimov",
+    "date": "2016-10-05",
+    "image": null,
+    "categories": "[\"5d17adac528d9400e68e4c68\"]",
+    "excerpt": "The Society of Mind - Marvin Minsky - Cover \"It is the nature of the mind that makes individuals kin, and the differences in the shape,...",
+    "plain_content": "The Society of Mind - Marvin Minsky - Cover \"It is the nature of the mind that makes individuals kin, and the differences in the shape, form, or manner of the material atoms out of whose intricate relationships that mind is built are altogether trivial.\" :: Isaac Asimov This quote kicks off Chapter 2 :: Wholes and Parts in Marvin Minsky's, The Society of Mind. I am working my way through the 270 essays reflecting on the nature of the mind as a collection of autonomous agents that accumulate to a"
+  },
+  "drawing-018-veins": {
+    "title": "Drawing 018 - Veins",
+    "date": "2013-07-14",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "I have had this branch, which I found while hiking in the desert around Ghost Ranch, NM, sitting on my bookshelf for several weeks.  I...",
+    "plain_content": "I have had this branch, which I found while hiking in the desert around Ghost Ranch, NM, sitting on my bookshelf for several weeks.  I was intrigued by both the directional veining pattern enhanced by the brutal sun and dry nights and the extreme red coloration of the local sand has completely permeated the open cell structure of the wood, dying it with a chalky texture to match the surroundings.  This branch was inspiration for a drawing exploring striated and bundled veining across a surface. "
+  },
+  "journey-through-america-s-southwest": {
+    "title": "Journey Through America's Southwest",
+    "date": "2013-06-03",
+    "image": null,
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "The following series of posts will feature photographs and drawings inspired by me & LC's two week road trip excursion through the...",
+    "plain_content": "The following series of posts will feature photographs and drawings inspired by me & LC's two week road trip excursion through the southwestern United States. This series primarily explores the flora that we encountered along the road, depicting a range of climates & adaptations to the environment from supple desert flowers, succulent cacti, supple spring leaves, twisted trees & vibrant burst of color."
+  },
+  "drawing-017": {
+    "title": "Drawing 017",
+    "date": "2013-04-15",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "A detailed look at the section through the fleshy flowering portion of a veining plant.  My students are examining the use of the Comic...",
+    "plain_content": "A detailed look at the section through the fleshy flowering portion of a veining plant.  My students are examining the use of the Comic as a format for displaying multiple levels of scale & detail within the same layout.  This helps to fully integrate multiple understandings of a project and reduce the overall complexity of a large body of work to a few pages.  Here I am using the comic overlay frame to magnify regions of the sectioned flower in order to examine its internal structures in greate"
+  },
+  "fun-with-the-scanner": {
+    "title": "Fun with the scanner",
+    "date": "2013-03-07",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "adrift": {
+    "title": "adrift",
+    "date": "2019-09-18",
+    "image": "/images/dc9b92_3ab0b2ea695a468782ea970874878a95~mv2.gif",
+    "categories": "[\"5d17ae2709fd900016e34619\",\"5d17aea198c5cc00160844c0\"]",
+    "excerpt": "I am a leaf on the wind, watch me soar!",
+    "plain_content": "During my morning meditation and subsequent journaling, I could not escape a feeling of being adrift. A ship in the fog without sense or desire for direction, at the whim of the winds to travel an uncertain path. At first I was unsettled, as much of my work as a designer and teacher must operate in a territory of uncertainty, it is easy to drift off a clear course in order to come at things from new trajectories. The place of creating is a space with no certain outcomes, simultaneity and nothing"
+  },
+  "cocooning-ring-prototypes": {
+    "title": "Cocooning Ring Prototypes",
+    "date": "2014-10-13",
+    "image": "/images/dc9b92_62a114873e4c4583959cb8419727c130~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "Update: A little behind on this project, but getting around to making some changes based on the initial prototypes.  The geometry looks...",
+    "plain_content": "Update: A little behind on this project, but getting around to making some changes based on the initial prototypes.  The geometry looks good, I plan to focus on making the overall form slimmer and more elegant.  The fit is also a little tight so I will open it up some, but the final silver ring will be somewhat flexible doe to the malleability of the metal. You can see mock-ups here of the integration with a Mexican fire opal.  I will work with the digital geometry to mold some of the apertures "
+  },
+  "not-quite-micro-worlds": {
+    "title": "Not Quite Micro Worlds",
+    "date": "2014-07-02",
+    "image": "/images/dc9b92_526b90dd3787421689664cc3da707bee~mv2.png",
+    "categories": "[\"5d17aea198c5cc00160844c0\",\"5d52c93365f8810016f2c9bc\"]",
+    "excerpt": "Unexpected result from a photo of dandelion seeds stuck on some raw asphalt along the Bronx River.",
+    "plain_content": "Unexpected result from a photo of dandelion seeds stuck on some raw asphalt along the Bronx River."
+  },
+  "drawing-010": {
+    "title": "Drawing 010",
+    "date": "2013-02-27",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "drawing-011": {
+    "title": "Drawing 011",
+    "date": "2013-03-04",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "",
+    "plain_content": ""
+  },
+  "start-with-better-dreams": {
+    "title": "Start with better dreams",
+    "date": "2015-05-07",
+    "image": "/images/dc9b92_993e66190b764878b774e19b469c9a6e~mv2.jpg",
+    "categories": "[\"5d17adac528d9400e68e4c68\",\"5d17ae2709fd900016e34619\"]",
+    "excerpt": "Welcome to project hieroglyph, founded by Neal Stevenson and produced by Arizona State University's Center for Science and the...",
+    "plain_content": "Welcome to project hieroglyph, founded by Neal Stevenson and produced by Arizona State University's Center for Science and the Imagination. Our purpose here is to rekindle grand technological ambitions through the power of storytelling. Audacious projects like the Great Pyramids, the Hoover Dam, or a moon landing didn't just happen by accident. Someone had to imagine them and create a narrative that brought that vision to life for others. They are dreams that became real not because they were ea"
+  },
+  "drawing-007": {
+    "title": "Drawing 007",
+    "date": "2013-02-18",
+    "image": null,
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "A series of floral radiations spiraling from a striated mesh.  Each form differentiates and exhibits unique characteristics within its...",
+    "plain_content": "A series of floral radiations spiraling from a striated mesh.  Each form differentiates and exhibits unique characteristics within its petals. This drawings started from a somewhat arbitrary placement of three similar circles on the page.  From there, I began a series of radiating curves converging at a similar radius from the each circle.  This pattern created a folding effect as the single line of the circle was subdivided by the emerging petal forms.  The flowers were constrained to only oper"
+  },
+  "smooth-inspiration": {
+    "title": "Smooth Inspiration",
+    "date": "2015-06-04",
+    "image": null,
+    "categories": "[\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "Visiting a job-site today and seeing all the trades slide around each other trying to bring the project to life reminded me of this...",
+    "plain_content": "Visiting a job-site today and seeing all the trades slide around each other trying to bring the project to life reminded me of this little gem.  The episode The Spirit of Woodcraft from the 2006-2007 season the The Wood Wright Shop on PBS is a staple I share with first year architecture students.  Its primary focus is on how a carpenter interacts with the craft, tools, and material, it is really a wonderful monologue about flow, patience, observation, and attention.  It is also exquisitely nerdy"
+  },
+  "dn-studios-application": {
+    "title": "DN Studios Application",
+    "date": "2013-06-28",
+    "image": "/images/dc9b92_f0a63ac805974a189514dc497cebbaf2~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\",\"5d17aea198c5cc00160844c0\"]",
+    "excerpt": "In a constant search for a way to collect, process, manage and integrate my work teaching architecture and design courses @ Pratt and...",
+    "plain_content": "In a constant search for a way to collect, process, manage and integrate my work teaching architecture and design courses @ Pratt and NYCCT CityTech I have used many available software platforms to collaborate and share information between me and the students.  So far none of these have really hit the nail on the head for my teaching process and desired ease of use for the students and myself.  I have decided to take some time and build my own application.  These images are some initial sketches"
+  },
+  "keep-it-simple-stu": {
+    "title": "Keep it Simple Stu***",
+    "date": "2016-01-06",
+    "image": null,
+    "categories": "[\"5d52e12bc35e8400177a4d99\"]",
+    "excerpt": "Everything man is doing in architecture is to try to go against nature. Of course we have to understand nature to know how far we have to...",
+    "plain_content": "Everything man is doing in architecture is to try to go against nature. Of course we have to understand nature to know how far we have to go against nature. The secret, I think, of the future is not doing too much. All architects have the tendency to do too much. :: Frei Otto A colleague used this quote in a lecture during Pratt's Technics course for first year architecture students. I was reviewing sketches in my notebook and found it scribbled on the edge of the page, without even an attributi"
+  },
+  "interiors-cavescapes": {
+    "title": "Interiors - Cavescapes",
+    "date": "2014-05-25",
+    "image": "/images/dc9b92_15d0e6a5bf4642f6b9a98babfb60f93a~mv2.png",
+    "categories": "[\"5d17ad910bdf230016d98e95\"]",
+    "excerpt": "Spent an hour exploring some Maya particle dynamics.  After generating intense coral blobs I took the camera inside to explore the new...",
+    "plain_content": "Spent an hour exploring some Maya particle dynamics.  After generating intense coral blobs I took the camera inside to explore the new micro environments, cavescapes..  A sprinkle of viewport 2.0 and mentalray materials adds a biological x-ray visual effect to the bifurcating geometry."
+  },
+  "body-transforms-laminar-cloud-folly-2014": {
+    "title": "Body Transforms :: Laminar Cloud :: Folly 2014",
+    "date": "2014-01-16",
+    "image": "/images/dc9b92_2e5c29b8a1684b52bbe9441b326b7560~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "Exploring the intersection of responsive dynamic form & human spatial perception. Light. Space. Position. Speed The stark white cloud...",
+    "plain_content": "Exploring the intersection of responsive dynamic form & human spatial perception. Light. Space. Position. Speed The stark white cloud comes to rest on the green overlooking the park; an alien, yet strangely familiar object in the landscape.  The striated shifting form plays at the intersection between foreboding mass and a moving vapor as it translates dynamic human motion into habitable form.  Layers of Bio Mass undulate and fold across the enveloping surfaces.  Voids emerge, shed their lights "
+  },
+  "bones-flowers-arnica-cufflink-prototypes": {
+    "title": "Bones & Flowers - Arnica Cufflink Prototypes",
+    "date": "2013-09-13",
+    "image": "/images/dc9b92_7d19f03cd2f54109847159dab2e888ed~mv2.png",
+    "categories": "[\"5d17ad2306b28c0016c0fb5c\"]",
+    "excerpt": "Two Cufflink samples testing 22K Gold and Rose Gold finishes (coming soon).  They are resting in a prototype ceramic plate we are...",
+    "plain_content": "Two Cufflink samples testing 22K Gold and Rose Gold finishes (coming soon).  They are resting in a prototype ceramic plate we are developing at Miscellaneous Projects with the collaboration of Choplet Ceramics Studio here in Williamsburb Brooklyn. The design is 3D printed in wax and then cast in Sterling Silver by iMaterialize in the Belgium and plated in 18K gold by Tanury Industriesin RI. More Design Samples will be coming soon, and the pieces will be available for sale very soon."
+  },
+  "comics-beyond-fiction-trans-fiction-2020": {
+    "title": "Comics Beyond Fiction :: [Trans-] FICTION 2020",
+    "date": "2020-09-29",
+    "image": "/images/dc9b92_ced3d4dc90354df2af26b92211adbb58~mv2.jpg",
+    "categories": "[\"5d17ad910bdf230016d98e95\",\"5d17aea198c5cc00160844c0\",\"5d52e12bc35e8400177a4d99\",\"5f73a3919c98400018a08370\"]",
+    "excerpt": "Sacha Frey and I continue our exploration of comics as a hybrid narrative format in the 2020 volume 6 of [Trans-] FICTION with Comics...",
+    "plain_content": "Sacha Frey and I continue our exploration of comics as a hybrid narrative format in the 2020 volume 6 of [Trans-] FICTION with Comics Beyond Fiction.  You can read a digital version of the journal below or purchase a printed copy to help support future volumes. The [Trans-] journal series is edited by Ashley Simone thought the University of Arizona. The FICTION issue asked architects to examine architecture as a creative production of fiction into reality. Our essay and graphic poster examines t"
+  }
+}
