@@ -1,28 +1,68 @@
 ---
-// SiteLayout - Wix clone
+// SiteLayout — Digital Nouveau Wix clone
+// Matching dark theme + neural network background from screenshots
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title, description } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="/global.css" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title ? `${title} | Digital Nouveau` : 'Digital Nouveau'}</title>
+		{description && <meta name="description" content={description} />}
 		<slot name="head" />
 	</head>
 	<body>
 		<header class="site-header">
-			<div class="header-inner">
-				<h6 class="site-title"><a href="/">Digital Nouveau ~</a></h6>
-				<p class="header-tagline"><a href="/">initiating drone connection ~</a></p>
-				<p class="header-tagline"><a href="/blog">blog ~</a></p>
-				<p class="header-sub">design|computation |fabrication ::make things ~</p>
-				<p class="header-sub">we came here to do something, so let's do something ~</p>
+			<div class="header-content">
+				<div class="header-left">
+					<h1 class="site-title"><a href="/">Digital Nouveau ~</a></h1>
+					<p class="header-tagline"><a href="/">loading drone connection...</a></p>
+					<p class="header-sub">brain computation fabrication :: make things</p>
+					<p class="header-sub">we are here to do something, to feel something</p>
+				</div>
+				<div class="header-right">
+					<!-- Aperture / circular graphic -->
+					<svg class="aperture-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="50" cy="50" r="45" fill="none" stroke="rgba(28,235,244,0.3)" stroke-width="1"/>
+						<circle cx="50" cy="50" r="35" fill="none" stroke="rgba(28,235,244,0.25)" stroke-width="0.5"/>
+						<circle cx="50" cy="50" r="25" fill="none" stroke="rgba(28,235,244,0.2)" stroke-width="0.5"/>
+						<circle cx="50" cy="50" r="15" fill="none" stroke="rgba(28,235,244,0.15)" stroke-width="0.5"/>
+						<!-- Connecting dots -->
+						<circle cx="50" cy="5" r="2" fill="rgba(28,235,244,0.5)"/>
+						<circle cx="50" cy="95" r="2" fill="rgba(28,235,244,0.5)"/>
+						<circle cx="5" cy="50" r="2" fill="rgba(28,235,244,0.5)"/>
+						<circle cx="95" cy="50" r="2" fill="rgba(28,235,244,0.5)"/>
+						<circle cx="18" cy="18" r="1.5" fill="rgba(28,235,244,0.4)"/>
+						<circle cx="82" cy="18" r="1.5" fill="rgba(28,235,244,0.4)"/>
+						<circle cx="18" cy="82" r="1.5" fill="rgba(28,235,244,0.4)"/>
+						<circle cx="82" cy="82" r="1.5" fill="rgba(28,235,244,0.4)"/>
+						<!-- Radial lines -->
+						<line x1="50" y1="5" x2="50" y2="95" stroke="rgba(28,235,244,0.1)" stroke-width="0.3"/>
+						<line x1="5" y1="50" x2="95" y2="50" stroke="rgba(28,235,244,0.1)" stroke-width="0.3"/>
+						<line x1="18" y1="18" x2="82" y2="82" stroke="rgba(28,235,244,0.1)" stroke-width="0.3"/>
+						<line x1="82" y1="18" x2="18" y2="82" stroke="rgba(28,235,244,0.1)" stroke-width="0.3"/>
+					</svg>
+				</div>
 			</div>
-
-			<nav class="top-nav">
-				<a href="/" class="nav-link">feed</a>
-				<a href="https://www.digitalnouveau.com" target="_blank" rel="noopener noreferrer" class="nav-link">portfolio</a>
-				<a href="/skyfi-a-reading-list" class="nav-link">skyfi :: a reading list</a>
+			<nav class="site-nav">
+				<a href="/" class="nav-link">everything</a>
+				<a href="/category/design" class="nav-link">design</a>
+				<a href="/category/drawings" class="nav-link">drawings</a>
+				<a href="/category/readings" class="nav-link">readings</a>
+				<a href="/skyfi-a-reading-list" class="nav-link">skyfi</a>
+				<a href="/category/thinkings" class="nav-link">thinkings</a>
+				<a href="/category/observings" class="nav-link">observings</a>
+				<a href="/category/teachings" class="nav-link">teachings</a>
+				<a href="/category/writings" class="nav-link">writings</a>
 			</nav>
 		</header>
 
@@ -31,17 +71,15 @@
 		<footer class="site-footer">
 			<div class="footer-inner">
 				<div class="newsletter">
-					<h3>&gt; follow along~</h3>
-					<form action="#" method="post" class="newsletter-form">
+					<h3 class="newsletter-title">&gt; follow along</h3>
+					<form class="newsletter-form" action="#" method="post">
 						<input type="text" placeholder="name" aria-label="Name" />
 						<input type="email" placeholder="e-mail" aria-label="Email" />
-						<button type="submit">&gt;intiate drone connection~</button>
+						<button type="submit">&gt; initiate drone connection</button>
 					</form>
 				</div>
-				<div class="footer-copyright">
-					<p>&gt; copyright Robert Lee Brackett 2025 |</p>
-					<p>all rights reserved |</p>
-					<p>new york / tokyo ~</p>
+				<div class="footer-copy">
+					<p>&gt; copyright Robert Lee Brackett 2025 | all rights reserved | new york / tokyo</p>
 				</div>
 			</div>
 		</footer>
@@ -49,19 +87,30 @@
 </html>
 
 <style is:global>
+	/* Header */
 	.site-header {
-		padding: 20px 60px 0;
+		position: relative;
+		z-index: 2;
+		padding: 30px var(--header-padding) 0;
 	}
 
-	.header-inner {
-		max-width: 940px;
+	.header-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		max-width: var(--max-width);
 		margin: 0 auto;
 	}
 
+	.header-left {
+		flex: 1;
+	}
+
 	.site-title {
-		margin: 0 0 0.15rem 0;
-		font-size: 28px;
-		font-weight: 300;
+		margin: 0;
+		font-size: 24px;
+		font-family: var(--font-title);
+		font-weight: 400;
 		color: var(--accent);
 		line-height: 1.1;
 	}
@@ -73,84 +122,104 @@
 
 	.header-tagline {
 		margin: 0;
-		font-size: 14px;
-		font-weight: 300;
-		color: var(--accent);
-		line-height: 1.1em;
+		font-size: 12px;
+		font-family: var(--font-body);
+		color: var(--accent-dim);
+		line-height: 1.2;
 	}
 
 	.header-tagline a {
-		color: var(--accent);
+		color: var(--accent-dim);
 		text-decoration: none;
 	}
 
 	.header-sub {
 		margin: 0;
-		font-size: 14px;
-		font-weight: 300;
-		color: var(--accent);
-		line-height: 1.1em;
+		font-size: 11px;
+		font-family: var(--font-body);
+		color: var(--text-muted);
+		line-height: 1.2;
 	}
 
-	.top-nav {
-		max-width: 940px;
-		margin: 20px auto 0;
-		padding: 0 60px;
+	.header-right {
 		display: flex;
-		gap: 30px;
+		align-items: center;
+		padding-top: 10px;
+	}
+
+	.aperture-icon {
+		width: 80px;
+		height: 80px;
+		opacity: 0.6;
+	}
+
+	/* Navigation */
+	.site-nav {
+		max-width: var(--max-width);
+		margin: 15px auto 0;
+		padding: 15px var(--header-padding) 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px 20px;
+		border-top: 1px solid var(--border);
 	}
 
 	.nav-link {
-		color: var(--link);
+		color: var(--text-muted);
+		font-size: 12px;
+		font-family: var(--font-body);
 		text-decoration: none;
-		font-size: 14px;
-		font-weight: 400;
+		transition: color var(--transition-fast);
 	}
 
 	.nav-link:hover {
-		text-decoration: underline;
+		color: var(--accent);
+		opacity: 1;
 	}
 
+	/* Footer */
 	.site-footer {
-		padding: 40px 60px;
+		position: relative;
+		z-index: 2;
+		padding: 40px var(--header-padding);
 		margin-top: 60px;
 		border-top: 1px solid var(--border);
 	}
 
 	.footer-inner {
-		max-width: 800px;
+		max-width: 600px;
 		margin: 0 auto;
 		text-align: center;
 	}
 
 	.newsletter {
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 	}
 
-	.newsletter h3 {
-		font-size: 14px;
-		font-weight: 300;
+	.newsletter-title {
+		font-size: 12px;
+		font-family: var(--font-body);
+		font-weight: 400;
 		margin: 0 0 1rem 0;
 		color: var(--text-muted);
 	}
 
 	.newsletter-form {
 		display: flex;
-		gap: 0.5rem;
+		gap: 8px;
 		justify-content: center;
 		flex-wrap: wrap;
 	}
 
 	.newsletter-form input {
-		padding: 0.5rem 1rem;
+		padding: 6px 12px;
 		border: 1px solid var(--border);
 		background: transparent;
 		color: var(--text);
-		font-size: 14px;
-		font-family: var(--font);
-		font-weight: 300;
+		font-size: 12px;
+		font-family: var(--font-body);
 		outline: none;
-		transition: border-color 0.2s;
+		transition: border-color var(--transition-fast);
 		min-width: 120px;
 	}
 
@@ -163,15 +232,14 @@
 	}
 
 	.newsletter-form button {
-		padding: 0.5rem 1rem;
+		padding: 6px 12px;
 		border: 1px solid var(--border);
 		background: transparent;
-		color: var(--text);
-		font-size: 12px;
+		color: var(--text-muted);
+		font-size: 11px;
 		cursor: pointer;
-		font-family: var(--font);
-		font-weight: 300;
-		transition: all 0.2s;
+		font-family: var(--font-body);
+		transition: all var(--transition-fast);
 	}
 
 	.newsletter-form button:hover {
@@ -179,41 +247,47 @@
 		color: var(--accent);
 	}
 
-	.footer-copyright {
-		font-size: 14px;
+	.footer-copy {
+		font-size: 11px;
 		color: var(--text-muted);
 		line-height: 1.5;
+		font-family: var(--font-body);
 	}
 
-	.footer-copyright p {
+	.footer-copy p {
 		margin: 0;
 	}
 
 	@media (max-width: 768px) {
 		.site-header {
-			padding: 15px 20px 0;
+			padding: 20px 24px 0;
+		}
+
+		.header-content {
+			flex-direction: column;
+		}
+
+		.header-right {
+			display: none;
 		}
 
 		.site-title {
-			font-size: 22px;
+			font-size: 20px;
 		}
 
-		.header-tagline,
-		.header-sub {
-			font-size: 12px;
-		}
-
-		.top-nav {
-			padding: 0 20px;
-			gap: 15px;
+		.site-nav {
+			padding: 12px 24px 0;
+			gap: 6px 12px;
 		}
 
 		.newsletter-form {
 			flex-direction: column;
+			align-items: center;
 		}
 
 		.newsletter-form input {
 			width: 100%;
+			max-width: 300px;
 		}
 	}
 </style>
