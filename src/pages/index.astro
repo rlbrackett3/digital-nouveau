@@ -28,24 +28,33 @@ const recentPosts = sortedPosts.slice(1, 4);
 				<div class="posts-grid">
 					{recentPosts.map(post => (
 						<a href={`/blog/${post.slug}`} class="post-thumbnail">
-							{post.data.image && (
-								<div class="thumbnail-image">
+							<div class="thumbnail-image">
+								{post.data.image ? (
 									<img src={post.data.image} alt={post.data.title} loading="lazy" />
-								</div>
-							)}
+								) : (
+									<div class="thumbnail-placeholder"></div>
+								)}
+							</div>
 							<div class="thumbnail-info">
 								<h4>{post.data.title}</h4>
 								<div class="thumbnail-stats">
 									<span class="stat">
-										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+											<circle cx="12" cy="12" r="3"/>
+										</svg>
 										{post.data.views || 0}
 									</span>
 									<span class="stat">
-										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+										</svg>
 										{post.data.comments || 0}
 									</span>
 									<span class="stat">
-										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+										</svg>
 										{post.data.likes || 0}
 									</span>
 								</div>
@@ -73,159 +82,158 @@ const recentPosts = sortedPosts.slice(1, 4);
 </SiteLayout>
 
 <style is:global>
-	.section-title {
-		font-size: 14px;
-		font-family: var(--font-body);
-		font-weight: 400;
-		color: var(--accent);
-		margin: 0 0 16px 0;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-	}
+.section-title {
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #1ceb f4;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 
-	/* Recent Posts Grid */
-	.recent-posts {
-		margin: 40px 0;
-		padding-top: 30px;
-		border-top: 1px solid var(--border);
-	}
+/* Recent Posts Grid */
+.recent-posts {
+  margin: 40px 0;
+  padding-top: 30px;
+  border-top: 1px solid rgba(28, 235, 244, 0.2);
+}
 
-	.posts-grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 16px;
-	}
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
-	.post-thumbnail {
-		display: block;
-		text-decoration: none;
-		background: var(--card-bg);
-		border: 1px solid var(--border);
-		overflow: hidden;
-		transition: border-color var(--transition-fast);
-		backdrop-filter: blur(4px);
-	}
+.post-thumbnail {
+  display: block;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(28, 235, 244, 0.2);
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
 
-	.post-thumbnail:hover {
-		border-color: var(--accent);
-	}
+.post-thumbnail:hover {
+  border-color: #1ceb f4;
+}
 
-	.thumbnail-image {
-		width: 100%;
-		aspect-ratio: 16 / 10;
-		overflow: hidden;
-	}
+.thumbnail-image {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
 
-	.thumbnail-image img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
+.thumbnail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-	.thumbnail-info {
-		padding: 12px;
-	}
+.thumbnail-placeholder {
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 235, 244, 0.1);
+}
 
-	.thumbnail-info h4 {
-		margin: 0 0 8px 0;
-		font-size: 13px;
-		font-family: var(--font-title);
-		font-weight: 400;
-		color: var(--accent);
-		line-height: 1.3;
-	}
+.thumbnail-info {
+  padding: 12px;
+}
 
-	.thumbnail-stats {
-		display: flex;
-		gap: 10px;
-		font-size: 10px;
-		color: var(--text-muted);
-		font-family: var(--font-body);
-	}
+.thumbnail-info h4 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #1ceb f4;
+  margin: 0 0 8px;
+  line-height: 1.4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
-	.thumbnail-stats .stat {
-		display: flex;
-		align-items: center;
-		gap: 3px;
-	}
+.thumbnail-stats {
+  display: flex;
+  gap: 12px;
+  font-size: 10px;
+  color: #1ceb f4;
+  opacity: 0.6;
+}
 
-	.thumbnail-stats .stat svg {
-		opacity: 0.5;
-	}
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 
-	/* Comments Section */
-	.comments-section {
-		margin: 40px 0;
-		padding-top: 30px;
-		border-top: 1px solid var(--border);
-	}
+/* Comments Section */
+.comments-section {
+  margin: 40px 0;
+  padding-top: 30px;
+  border-top: 1px solid rgba(28, 235, 244, 0.2);
+}
 
-	.comment-form-wrapper {
-		background: var(--card-bg);
-		border: 1px solid var(--border);
-		padding: 20px;
-		backdrop-filter: blur(4px);
-	}
+.comment-form-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
 
-	.comment-author-preview {
-		margin-bottom: 12px;
-	}
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
 
-	.comment-avatar {
-		width: 28px;
-		height: 28px;
-		border-radius: 50%;
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 12px;
-		color: white;
-		font-weight: 600;
-	}
+.comment-form {
+  flex: 1;
+}
 
-	.comment-form textarea {
-		width: 100%;
-		padding: 10px 12px;
-		background: transparent;
-		border: 1px solid var(--border);
-		color: var(--text);
-		font-family: var(--font-body);
-		font-size: 13px;
-		line-height: 1.5;
-		resize: vertical;
-		outline: none;
-		transition: border-color var(--transition-fast);
-		margin-bottom: 10px;
-	}
+.comment-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(28, 235, 244, 0.2);
+  background: rgba(0, 0, 0, 0.8);
+  color: #1ceb f4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  resize: vertical;
+  margin-bottom: 8px;
+}
 
-	.comment-form textarea:focus {
-		border-color: var(--accent);
-	}
+.comment-form textarea::placeholder {
+  color: rgba(28, 235, 244, 0.5);
+}
 
-	.comment-form textarea::placeholder {
-		color: var(--text-muted);
-	}
+.comment-submit {
+  padding: 8px 16px;
+  border: 1px solid rgba(28, 235, 244, 0.3);
+  background: rgba(0, 0, 0, 0.8);
+  color: #1ceb f4;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  transition: all 0.2s;
+}
 
-	.comment-submit {
-		padding: 8px 16px;
-		background: var(--accent);
-		color: var(--bg);
-		border: none;
-		font-family: var(--font-body);
-		font-size: 12px;
-		font-weight: 500;
-		cursor: pointer;
-		transition: opacity var(--transition-fast);
-	}
+.comment-submit:hover {
+  border-color: #1ceb f4;
+  background: rgba(28, 235, 244, 0.1);
+}
 
-	.comment-submit:hover {
-		opacity: 0.85;
-	}
-
-	@media (max-width: 768px) {
-		.posts-grid {
-			grid-template-columns: 1fr;
-		}
-	}
+@media (max-width: 768px) {
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .comment-form-wrapper {
+    flex-direction: column;
+  }
+}
 </style>

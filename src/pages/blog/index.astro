@@ -1,9 +1,9 @@
 ---
-// Blog archive page - single column matching Wix blog.feed structure
+// Blog archive page - matching Wix blog feed structure
 import SiteLayout from '@/components/SiteLayout.astro';
+import BlogCard from '@/components/BlogCard.astro';
 import { getCollection } from 'astro:content';
 import { SITE_TITLE, CATEGORIES } from '@/consts';
-const VALID_CATEGORIES = new Set(CATEGORIES);
 
 const allPosts = await getCollection('blog');
 const sortedPosts = allPosts
@@ -15,10 +15,6 @@ const sortedPosts = allPosts
 ---
 
 <SiteLayout title="Feed | Digital Nouveau">
-	<head>
-		<title>Feed | {SITE_TITLE}</title>
-	</head>
-
 	<!-- Category navigation - Wix style -->
 	<nav class="category-nav" aria-label="Blog categories">
 		<a href="/blog" class="category-link active">&gt; everything ~</a>
@@ -28,90 +24,45 @@ const sortedPosts = allPosts
 	</nav>
 
 	<main class="blog-page">
-		<!-- Post list - single column, no grid -->
-		<div class="post-list">
-			{sortedPosts.map(post => (
-				<article class="post-item">
-					<h2 class="post-item-title">
-						<a href={`/blog/${post.id}`}>{post.data.title}</a>
-					</h2>
-					<div class="post-item-meta">
-						<time datetime={post.data.pubDate.toISOString()}>
-							{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-						</time>
-						{post.readTime && <span class="read-time">&middot; {post.readTime} min read</span>}
-						{post.data.categories && post.data.categories.length > 0 && (
-							<span>
-								{post.data.categories.filter(c => VALID_CATEGORIES.has(c)).join(', ')}
-							</span>
-						)}
-					</div>
-					<p class="post-item-desc">{post.data.description}</p>
-				</article>
-			))}
-		</div>
+		<!-- Post list - using BlogCard component -->
+		{sortedPosts.map(post => (
+			<BlogCard post={post} />
+		))}
 	</main>
 
-	<style>
-		.blog-page {
-			max-width: var(--content-max-width);
+	<style is:global>
+		.category-nav {
+			max-width: 1200px;
 			margin: 0 auto;
-			padding: 0 var(--header-padding-x);
-		}
-
-		.post-list {
+			padding: 20px 20px 0;
 			display: flex;
-			flex-direction: column;
-		}
-
-		.post-item {
-			padding: 1.5rem 0;
-			border-bottom: 1px solid var(--border);
-		}
-
-		.post-item:first-child {
-			margin-top: 1rem;
-		}
-
-		.post-item-title {
-			font-size: 1.5rem;
-			font-weight: 300;
-			line-height: 1.2;
-			margin-bottom: 0.5rem;
-		}
-
-		.post-item-title a {
-			color: var(--text-primary);
-			text-decoration: none;
-		}
-
-		.post-item-title a:hover {
-			color: var(--text-link);
-		}
-
-		.post-item-meta {
-			font-size: 0.8rem;
-			color: var(--text-muted);
-			display: flex;
-			gap: 0.5rem;
-			align-items: center;
+			gap: 24px;
 			flex-wrap: wrap;
 		}
 
-		.post-item-desc {
-			font-size: 1rem;
-			color: var(--text-secondary);
-			line-height: 1.5;
-			margin: 0.75rem 0 0 0;
+		.category-link {
+			color: #1ceb f4;
+			text-decoration: none;
+			font-size: 14px;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			opacity: 0.7;
+			transition: opacity 0.2s;
+		}
+
+		.category-link:hover,
+		.category-link.active {
+			opacity: 1;
+		}
+
+		.blog-page {
+			max-width: 940px;
+			margin: 0 auto;
+			padding: 20px;
 		}
 
 		@media (max-width: 768px) {
 			.blog-page {
-				padding: 0 var(--header-padding-x);
-			}
-
-			.post-item-title {
-				font-size: 1.25rem;
+				padding: 20px 16px;
 			}
 		}
 	</style>

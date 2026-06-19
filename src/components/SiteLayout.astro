@@ -21,49 +21,51 @@ const { title, description } = Astro.props;
 		<slot name="head" />
 	</head>
 	<body>
+		<!-- Neural network background image -->
+		<img 
+			src="/neural-bg.png" 
+			alt="" 
+			class="bg-neural" 
+			loading="eager" 
+			decoding="async"
+		/>
+		
 		<header class="site-header">
-			<div class="header-content">
-				<div class="header-left">
-					<h1 class="site-title"><a href="/">Digital Nouveau ~</a></h1>
-					<p class="header-tagline"><a href="/">loading drone connection...</a></p>
-					<p class="header-sub">brain computation fabrication :: make things</p>
-					<p class="header-sub">we are here to do something, to feel something</p>
+			<div class="container">
+				<div class="header-content">
+					<div class="header-left">
+						<h1 class="site-title">
+							<a href="/">Digital Nouveau ~</a>
+						</h1>
+						<div class="taglines">
+							<p class="tagline">&gt; initiating drone connection ~</p>
+							<p class="tagline">&gt; blog ~</p>
+							<p class="tagline">&gt; design | computation | fabrication :: make things ~</p>
+							<p class="tagline">&gt; we came here to do something, so let's do something ~</p>
+						</div>
+					</div>
+					
+					<div class="header-right">
+						<nav class="utility-nav">
+							<a href="/feed" class="nav-link">feed</a>
+							<a href="/portfolio" class="nav-link">portfolio</a>
+							<a href="/skyfi-a-reading-list" class="nav-link">skyfi :: a reading list</a>
+						</nav>
+					</div>
 				</div>
-				<div class="header-right">
-					<!-- Aperture / circular graphic -->
-					<svg class="aperture-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-						<circle cx="50" cy="50" r="45" fill="none" stroke="rgba(28,235,244,0.3)" stroke-width="1"/>
-						<circle cx="50" cy="50" r="35" fill="none" stroke="rgba(28,235,244,0.25)" stroke-width="0.5"/>
-						<circle cx="50" cy="50" r="25" fill="none" stroke="rgba(28,235,244,0.2)" stroke-width="0.5"/>
-						<circle cx="50" cy="50" r="15" fill="none" stroke="rgba(28,235,244,0.15)" stroke-width="0.5"/>
-						<!-- Connecting dots -->
-						<circle cx="50" cy="5" r="2" fill="rgba(28,235,244,0.5)"/>
-						<circle cx="50" cy="95" r="2" fill="rgba(28,235,244,0.5)"/>
-						<circle cx="5" cy="50" r="2" fill="rgba(28,235,244,0.5)"/>
-						<circle cx="95" cy="50" r="2" fill="rgba(28,235,244,0.5)"/>
-						<circle cx="18" cy="18" r="1.5" fill="rgba(28,235,244,0.4)"/>
-						<circle cx="82" cy="18" r="1.5" fill="rgba(28,235,244,0.4)"/>
-						<circle cx="18" cy="82" r="1.5" fill="rgba(28,235,244,0.4)"/>
-						<circle cx="82" cy="82" r="1.5" fill="rgba(28,235,244,0.4)"/>
-						<!-- Radial lines -->
-						<line x1="50" y1="5" x2="50" y2="95" stroke="rgba(28,235,244,0.1)" stroke-width="0.3"/>
-						<line x1="5" y1="50" x2="95" y2="50" stroke="rgba(28,235,244,0.1)" stroke-width="0.3"/>
-						<line x1="18" y1="18" x2="82" y2="82" stroke="rgba(28,235,244,0.1)" stroke-width="0.3"/>
-						<line x1="82" y1="18" x2="18" y2="82" stroke="rgba(28,235,244,0.1)" stroke-width="0.3"/>
-					</svg>
-				</div>
+				
+				<nav class="main-nav">
+					<a href="/" class="nav-link">&gt; everything ~</a>
+					<a href="/category/design" class="nav-link">design</a>
+					<a href="/category/drawings" class="nav-link">drawings</a>
+					<a href="/category/readings" class="nav-link">readings</a>
+					<a href="/category/skyfi" class="nav-link">skyfi</a>
+					<a href="/category/thinkings" class="nav-link">thinkings</a>
+					<a href="/category/observings" class="nav-link">observings</a>
+					<a href="/category/teachings" class="nav-link">teachings</a>
+					<a href="/category/writings" class="nav-link">writings</a>
+				</nav>
 			</div>
-			<nav class="site-nav">
-				<a href="/" class="nav-link">everything</a>
-				<a href="/category/design" class="nav-link">design</a>
-				<a href="/category/drawings" class="nav-link">drawings</a>
-				<a href="/category/readings" class="nav-link">readings</a>
-				<a href="/skyfi-a-reading-list" class="nav-link">skyfi</a>
-				<a href="/category/thinkings" class="nav-link">thinkings</a>
-				<a href="/category/observings" class="nav-link">observings</a>
-				<a href="/category/teachings" class="nav-link">teachings</a>
-				<a href="/category/writings" class="nav-link">writings</a>
-			</nav>
 		</header>
 
 		<slot />
@@ -87,207 +89,182 @@ const { title, description } = Astro.props;
 </html>
 
 <style is:global>
+	/* Background neural network image - subtle overlay */
+	.bg-neural {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+		opacity: 0.15;
+		pointer-events: none;
+		filter: grayscale(100%) brightness(0.3);
+	}
+	
+	/* Container */
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	
 	/* Header */
 	.site-header {
+		padding: 40px 0 20px;
 		position: relative;
-		z-index: 2;
-		padding: 30px var(--header-padding) 0;
+		z-index: 10;
 	}
-
+	
 	.header-content {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		max-width: var(--max-width);
-		margin: 0 auto;
+		margin-bottom: 20px;
 	}
-
+	
 	.header-left {
-		flex: 1;
+		max-width: 400px;
 	}
-
+	
 	.site-title {
-		margin: 0;
-		font-size: 24px;
-		font-family: var(--font-title);
+		font-size: 28px;
 		font-weight: 400;
-		color: var(--accent);
-		line-height: 1.1;
+		margin: 0 0 8px;
+		line-height: 1.2;
 	}
-
+	
 	.site-title a {
-		color: var(--accent);
+		color: #1ceb f4;
 		text-decoration: none;
 	}
-
-	.header-tagline {
-		margin: 0;
+	
+	.tagline {
 		font-size: 12px;
-		font-family: var(--font-body);
-		color: var(--accent-dim);
-		line-height: 1.2;
+		color: #1ceb f4;
+		margin: 2px 0;
+		opacity: 0.7;
+		font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
-
-	.header-tagline a {
-		color: var(--accent-dim);
-		text-decoration: none;
-	}
-
-	.header-sub {
-		margin: 0;
-		font-size: 11px;
-		font-family: var(--font-body);
-		color: var(--text-muted);
-		line-height: 1.2;
-	}
-
-	.header-right {
+	
+	.utility-nav {
 		display: flex;
-		align-items: center;
-		padding-top: 10px;
+		gap: 24px;
 	}
-
-	.aperture-icon {
-		width: 80px;
-		height: 80px;
-		opacity: 0.6;
-	}
-
-	/* Navigation */
-	.site-nav {
-		max-width: var(--max-width);
-		margin: 15px auto 0;
-		padding: 15px var(--header-padding) 0;
+	
+	.main-nav {
 		display: flex;
+		gap: 24px;
 		flex-wrap: wrap;
-		gap: 8px 20px;
-		border-top: 1px solid var(--border);
+		padding-top: 16px;
+		border-top: 1px solid rgba(28, 235, 244, 0.2);
 	}
-
+	
 	.nav-link {
-		color: var(--text-muted);
-		font-size: 12px;
-		font-family: var(--font-body);
+		color: #1ceb f4;
 		text-decoration: none;
-		transition: color var(--transition-fast);
+		font-size: 14px;
+		font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		transition: opacity 0.2s;
 	}
-
+	
 	.nav-link:hover {
-		color: var(--accent);
-		opacity: 1;
+		opacity: 0.7;
 	}
-
+	
 	/* Footer */
 	.site-footer {
+		padding: 60px 0;
+		text-align: center;
+		border-top: 1px solid rgba(28, 235, 244, 0.1);
 		position: relative;
-		z-index: 2;
-		padding: 40px var(--header-padding);
-		margin-top: 60px;
-		border-top: 1px solid var(--border);
+		z-index: 10;
 	}
-
+	
 	.footer-inner {
 		max-width: 600px;
 		margin: 0 auto;
-		text-align: center;
+		padding: 0 20px;
 	}
-
+	
 	.newsletter {
-		margin-bottom: 1.5rem;
+		margin-bottom: 24px;
 	}
-
+	
 	.newsletter-title {
-		font-size: 12px;
-		font-family: var(--font-body);
+		font-size: 14px;
+		color: #1ceb f4;
+		margin-bottom: 16px;
 		font-weight: 400;
-		margin: 0 0 1rem 0;
-		color: var(--text-muted);
+		letter-spacing: 0.05em;
 	}
-
+	
 	.newsletter-form {
 		display: flex;
 		gap: 8px;
 		justify-content: center;
 		flex-wrap: wrap;
 	}
-
+	
 	.newsletter-form input {
-		padding: 6px 12px;
-		border: 1px solid var(--border);
-		background: transparent;
-		color: var(--text);
+		padding: 10px 14px;
+		border: 1px solid rgba(28, 235, 244, 0.3);
+		background: rgba(0, 0, 0, 0.9);
+		color: #1ceb f4;
 		font-size: 12px;
-		font-family: var(--font-body);
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		outline: none;
-		transition: border-color var(--transition-fast);
-		min-width: 120px;
+		min-width: 160px;
 	}
-
+	
 	.newsletter-form input::placeholder {
-		color: var(--text-muted);
+		color: rgba(28, 235, 244, 0.4);
 	}
-
+	
 	.newsletter-form input:focus {
-		border-color: var(--accent);
+		border-color: #1ceb f4;
 	}
-
+	
 	.newsletter-form button {
-		padding: 6px 12px;
-		border: 1px solid var(--border);
-		background: transparent;
-		color: var(--text-muted);
-		font-size: 11px;
+		padding: 10px 20px;
+		border: 1px solid rgba(28, 235, 244, 0.3);
+		background: rgba(0, 0, 0, 0.9);
+		color: #1ceb f4;
+		font-size: 12px;
 		cursor: pointer;
-		font-family: var(--font-body);
-		transition: all var(--transition-fast);
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		transition: all 0.2s;
+		letter-spacing: 0.05em;
 	}
-
+	
 	.newsletter-form button:hover {
-		border-color: var(--accent);
-		color: var(--accent);
+		border-color: #1ceb f4;
+		background: rgba(28, 235, 244, 0.1);
 	}
-
+	
 	.footer-copy {
 		font-size: 11px;
-		color: var(--text-muted);
+		color: rgba(28, 235, 244, 0.4);
 		line-height: 1.5;
-		font-family: var(--font-body);
 	}
-
+	
 	.footer-copy p {
 		margin: 0;
 	}
-
+	
 	@media (max-width: 768px) {
-		.site-header {
-			padding: 20px 24px 0;
-		}
-
 		.header-content {
 			flex-direction: column;
+			gap: 20px;
 		}
-
-		.header-right {
-			display: none;
+		
+		.header-left {
+			max-width: 100%;
 		}
-
-		.site-title {
-			font-size: 20px;
-		}
-
-		.site-nav {
-			padding: 12px 24px 0;
-			gap: 6px 12px;
-		}
-
-		.newsletter-form {
-			flex-direction: column;
-			align-items: center;
-		}
-
-		.newsletter-form input {
-			width: 100%;
-			max-width: 300px;
+		
+		.main-nav {
+			gap: 16px;
 		}
 	}
 </style>
