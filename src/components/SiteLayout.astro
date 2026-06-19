@@ -1,5 +1,5 @@
 ---
-// SiteLayout - Master layout matching Wix blog.digitalnouveau.com structure
+// SiteLayout - Wix clone
 ---
 
 <html lang="en">
@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<header class="site-header">
-			<div class="header-text">
+			<div class="header-inner">
 				<h6 class="site-title"><a href="/">Digital Nouveau ~</a></h6>
 				<p class="header-tagline"><a href="/">initiating drone connection ~</a></p>
 				<p class="header-tagline"><a href="/blog">blog ~</a></p>
@@ -19,8 +19,8 @@
 				<p class="header-sub">we came here to do something, so let's do something ~</p>
 			</div>
 
-			<nav class="top-nav" aria-label="Site">
-				<a href="/" class="nav-link" aria-current="page">feed</a>
+			<nav class="top-nav">
+				<a href="/" class="nav-link">feed</a>
 				<a href="https://www.digitalnouveau.com" target="_blank" rel="noopener noreferrer" class="nav-link">portfolio</a>
 				<a href="/skyfi-a-reading-list" class="nav-link">skyfi :: a reading list</a>
 			</nav>
@@ -39,9 +39,9 @@
 					</form>
 				</div>
 				<div class="footer-copyright">
-					<p class="copyright-line">&gt; copyright Robert Lee Brackett 2025 |</p>
-					<p class="copyright-line">all rights reserved |</p>
-					<p class="copyright-line">new york / tokyo ~</p>
+					<p>&gt; copyright Robert Lee Brackett 2025 |</p>
+					<p>all rights reserved |</p>
+					<p>new york / tokyo ~</p>
 				</div>
 			</div>
 		</footer>
@@ -50,66 +50,61 @@
 
 <style is:global>
 	.site-header {
-		padding: 12px var(--padding-x);
+		padding: 20px 60px 0;
 	}
 
-	.header-text {
-		margin-bottom: 1rem;
+	.header-inner {
+		max-width: 940px;
+		margin: 0 auto;
 	}
 
 	.site-title {
 		margin: 0 0 0.15rem 0;
-		font-size: 1.75rem;
-		font-weight: 400;
-		color: var(--text);
+		font-size: 28px;
+		font-weight: 300;
+		color: var(--accent);
 		line-height: 1.1;
 	}
 
 	.site-title a {
-		color: var(--text);
+		color: var(--accent);
 		text-decoration: none;
-	}
-
-	.site-title a:hover {
-		color: var(--text);
 	}
 
 	.header-tagline {
 		margin: 0;
-		font-size: 0.875rem;
-		font-weight: 400;
-		color: var(--text);
+		font-size: 14px;
+		font-weight: 300;
+		color: var(--accent);
 		line-height: 1.1em;
 	}
 
 	.header-tagline a {
-		color: var(--text);
+		color: var(--accent);
 		text-decoration: none;
-	}
-
-	.header-tagline a:hover {
-		text-decoration: underline;
 	}
 
 	.header-sub {
 		margin: 0;
-		font-size: 0.875rem;
-		font-weight: 400;
-		color: var(--text);
+		font-size: 14px;
+		font-weight: 300;
+		color: var(--accent);
 		line-height: 1.1em;
 	}
 
 	.top-nav {
+		max-width: 940px;
+		margin: 20px auto 0;
+		padding: 0 60px;
 		display: flex;
-		gap: 1.5rem;
+		gap: 30px;
 	}
 
 	.nav-link {
-		color: var(--text);
+		color: var(--link);
 		text-decoration: none;
-		font-size: 0.875rem;
+		font-size: 14px;
 		font-weight: 400;
-		transition: color 0.2s;
 	}
 
 	.nav-link:hover {
@@ -117,8 +112,8 @@
 	}
 
 	.site-footer {
-		padding: 2rem var(--padding-x);
-		margin-top: 3rem;
+		padding: 40px 60px;
+		margin-top: 60px;
 		border-top: 1px solid var(--border);
 	}
 
@@ -133,12 +128,10 @@
 	}
 
 	.newsletter h3 {
-		font-size: 0.875rem;
-		text-transform: lowercase;
-		letter-spacing: 0.1em;
+		font-size: 14px;
+		font-weight: 300;
 		margin: 0 0 1rem 0;
 		color: var(--text-muted);
-		font-weight: 400;
 	}
 
 	.newsletter-form {
@@ -153,9 +146,9 @@
 		border: 1px solid var(--border);
 		background: transparent;
 		color: var(--text);
-		font-size: 0.875rem;
+		font-size: 14px;
 		font-family: var(--font);
-		font-weight: 400;
+		font-weight: 300;
 		outline: none;
 		transition: border-color 0.2s;
 		min-width: 120px;
@@ -166,7 +159,7 @@
 	}
 
 	.newsletter-form input:focus {
-		border-color: var(--text);
+		border-color: var(--accent);
 	}
 
 	.newsletter-form button {
@@ -174,41 +167,45 @@
 		border: 1px solid var(--border);
 		background: transparent;
 		color: var(--text);
-		font-size: 0.75rem;
-		letter-spacing: 0.05em;
+		font-size: 12px;
 		cursor: pointer;
 		font-family: var(--font);
-		font-weight: 400;
+		font-weight: 300;
 		transition: all 0.2s;
 	}
 
 	.newsletter-form button:hover {
-		border-color: var(--text);
+		border-color: var(--accent);
+		color: var(--accent);
 	}
 
 	.footer-copyright {
-		font-family: var(--font);
-		font-size: 0.875rem;
+		font-size: 14px;
 		color: var(--text-muted);
 		line-height: 1.5;
 	}
 
-	.copyright-line {
+	.footer-copyright p {
 		margin: 0;
 	}
 
 	@media (max-width: 768px) {
 		.site-header {
-			padding: 1rem var(--padding-x);
+			padding: 15px 20px 0;
 		}
 
 		.site-title {
-			font-size: 1.35rem;
+			font-size: 22px;
 		}
 
 		.header-tagline,
 		.header-sub {
-			font-size: 0.75rem;
+			font-size: 12px;
+		}
+
+		.top-nav {
+			padding: 0 20px;
+			gap: 15px;
 		}
 
 		.newsletter-form {
@@ -217,12 +214,6 @@
 
 		.newsletter-form input {
 			width: 100%;
-		}
-	}
-
-	@media (max-width: 480px) {
-		.site-title {
-			font-size: 1.15rem;
 		}
 	}
 </style>
