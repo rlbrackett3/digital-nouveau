@@ -1,9 +1,10 @@
 ---
-// Home page — Feed layout matching Wix screenshot
-// Main featured post + Recent Posts (3 columns) + Comments
-import SiteLayout from '../components/SiteLayout.astro';
-import BlogCard from '../components/BlogCard.astro';
+// Home page - Wix blog feed structure
+import SiteLayout from '@/components/SiteLayout.astro';
+import BlogCard from '@/components/BlogCard.astro';
 import { getCollection } from 'astro:content';
+import { SITE_TITLE, CATEGORIES } from '@/consts';
+import '@/styles/global.css';
 
 const posts = await getCollection('blog', () => true);
 const sortedPosts = posts.sort((a, b) => {
@@ -15,8 +16,8 @@ const recentPosts = sortedPosts.slice(1, 4);
 ---
 
 <SiteLayout>
-	<main>
-		<!-- Featured/first post card -->
+	<main class="blog-page">
+		<!-- Featured post -->
 		{sortedPosts.length > 0 && (
 			<BlogCard post={sortedPosts[0]} />
 		)}
@@ -27,7 +28,7 @@ const recentPosts = sortedPosts.slice(1, 4);
 				<h3 class="section-title">Recent Posts</h3>
 				<div class="posts-grid">
 					{recentPosts.map(post => (
-						<a href={`/blog/${post.slug}`} class="post-thumbnail">
+						<a href={post.url} class="post-thumbnail">
 							<div class="thumbnail-image">
 								{post.data.image ? (
 									<img src={post.data.image} alt={post.data.title} loading="lazy" />
@@ -69,9 +70,7 @@ const recentPosts = sortedPosts.slice(1, 4);
 		<section class="comments-section">
 			<h3 class="section-title">Comments</h3>
 			<div class="comment-form-wrapper">
-				<div class="comment-author-preview">
-					<div class="comment-avatar">R</div>
-				</div>
+				<div class="comment-avatar">R</div>
 				<div class="comment-form">
 					<textarea placeholder="Write a comment..." rows="3"></textarea>
 					<button type="submit" class="comment-submit">Post Comment</button>
@@ -82,158 +81,166 @@ const recentPosts = sortedPosts.slice(1, 4);
 </SiteLayout>
 
 <style is:global>
-.section-title {
-  font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #1ceb f4;
-  margin: 0 0 16px 0;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* Recent Posts Grid */
-.recent-posts {
-  margin: 40px 0;
-  padding-top: 30px;
-  border-top: 1px solid rgba(28, 235, 244, 0.2);
-}
-
-.posts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.post-thumbnail {
-  display: block;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(28, 235, 244, 0.2);
-  overflow: hidden;
-  transition: border-color 0.2s;
-}
-
-.post-thumbnail:hover {
-  border-color: #1ceb f4;
-}
-
-.thumbnail-image {
-  width: 100%;
-  height: 120px;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.thumbnail-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.thumbnail-placeholder {
-  width: 100%;
-  height: 100%;
-  background: rgba(28, 235, 244, 0.1);
-}
-
-.thumbnail-info {
-  padding: 12px;
-}
-
-.thumbnail-info h4 {
-  font-size: 12px;
-  font-weight: 400;
-  color: #1ceb f4;
-  margin: 0 0 8px;
-  line-height: 1.4;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.thumbnail-stats {
-  display: flex;
-  gap: 12px;
-  font-size: 10px;
-  color: #1ceb f4;
-  opacity: 0.6;
-}
-
-.stat {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-/* Comments Section */
-.comments-section {
-  margin: 40px 0;
-  padding-top: 30px;
-  border-top: 1px solid rgba(28, 235, 244, 0.2);
-}
-
-.comment-form-wrapper {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-
-.comment-avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-  flex-shrink: 0;
-}
-
-.comment-form {
-  flex: 1;
-}
-
-.comment-form textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid rgba(28, 235, 244, 0.2);
-  background: rgba(0, 0, 0, 0.8);
-  color: #1ceb f4;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  resize: vertical;
-  margin-bottom: 8px;
-}
-
-.comment-form textarea::placeholder {
-  color: rgba(28, 235, 244, 0.5);
-}
-
-.comment-submit {
-  padding: 8px 16px;
-  border: 1px solid rgba(28, 235, 244, 0.3);
-  background: rgba(0, 0, 0, 0.8);
-  color: #1ceb f4;
-  font-size: 12px;
-  cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  transition: all 0.2s;
-}
-
-.comment-submit:hover {
-  border-color: #1ceb f4;
-  background: rgba(28, 235, 244, 0.1);
-}
-
-@media (max-width: 768px) {
-  .posts-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .comment-form-wrapper {
-    flex-direction: column;
-  }
-}
+	/* Blog page container */
+	.blog-page {
+		max-width: 940px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	
+	/* Recent posts section */
+	.recent-posts {
+		margin: 40px 0;
+		padding-top: 30px;
+		border-top: 1px solid rgba(28, 235, 244, 0.2);
+	}
+	
+	.section-title {
+		font-size: 14px;
+		font-family: 'brandon-grot-w01-light', sans-serif;
+		font-weight: 400;
+		color: #1ceb f4;
+		margin: 0 0 16px;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	
+	.posts-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+	
+	.post-thumbnail {
+		display: block;
+		text-decoration: none;
+		background: rgba(0, 0, 0, 0.8);
+		border: 1px solid rgba(28, 235, 244, 0.2);
+		overflow: hidden;
+		transition: border-color 0.2s;
+	}
+	
+	.post-thumbnail:hover {
+		border-color: #1ceb f4;
+	}
+	
+	.thumbnail-image {
+		width: 100%;
+		height: 120px;
+		overflow: hidden;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	
+	.thumbnail-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	
+	.thumbnail-placeholder {
+		width: 100%;
+		height: 100%;
+		background: rgba(28, 235, 244, 0.1);
+	}
+	
+	.thumbnail-info {
+		padding: 12px;
+	}
+	
+	.thumbnail-info h4 {
+		font-size: 14px;
+		font-weight: 400;
+		color: #1ceb f4;
+		margin: 0 0 8px;
+		line-height: 1.4;
+		font-family: 'brandon-grot-w01-light', sans-serif;
+	}
+	
+	.thumbnail-stats {
+		display: flex;
+		gap: 12px;
+		font-size: 10px;
+		color: #1ceb f4;
+		opacity: 0.6;
+	}
+	
+	.stat {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+	
+	/* Comments section */
+	.comments-section {
+		margin: 40px 0;
+		padding-top: 30px;
+		border-top: 1px solid rgba(28, 235, 244, 0.2);
+	}
+	
+	.comment-form-wrapper {
+		display: flex;
+		gap: 16px;
+		align-items: flex-start;
+	}
+	
+	.comment-avatar {
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-size: 12px;
+		font-weight: 600;
+		flex-shrink: 0;
+	}
+	
+	.comment-form {
+		flex: 1;
+	}
+	
+	.comment-form textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid rgba(28, 235, 244, 0.2);
+		background: rgba(0, 0, 0, 0.8);
+		color: #1ceb f4;
+		font-family: 'brandon-grot-w01-light', sans-serif;
+		font-size: 12px;
+		resize: vertical;
+		margin-bottom: 8px;
+	}
+	
+	.comment-form textarea::placeholder {
+		color: rgba(28, 235, 244, 0.5);
+	}
+	
+	.comment-submit {
+		padding: 8px 16px;
+		border: 1px solid rgba(28, 235, 244, 0.3);
+		background: rgba(0, 0, 0, 0.8);
+		color: #1ceb f4;
+		font-size: 12px;
+		cursor: pointer;
+		font-family: 'brandon-grot-w01-light', sans-serif;
+		transition: all 0.2s;
+	}
+	
+	.comment-submit:hover {
+		border-color: #1ceb f4;
+		background: rgba(28, 235, 244, 0.1);
+	}
+	
+	/* Responsive */
+	@media (max-width: 768px) {
+		.posts-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.comment-form-wrapper {
+			flex-direction: column;
+		}
+	}
 </style>

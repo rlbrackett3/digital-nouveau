@@ -1,0 +1,88 @@
+---
+// Base layout - Wix blog structure
+import '@/styles/global.css';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="/global.css" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title ? `${title} | Digital Nouveau` : 'Digital Nouveau'}</title>
+		{description && <meta name="description" content={description} />}
+		<slot name="head" />
+	</head>
+	<body>
+		<!-- Neural network background -->
+		<img 
+			src="/neural-bg.png" 
+			alt="" 
+			class="bg-neural"
+		/>
+		
+		<header class="site-header">
+			<div class="container">
+				<div class="header-content">
+					<div class="header-left">
+						<h1 class="site-title">
+							<a href="/">Digital Nouveau ~</a>
+						</h1>
+						<div class="taglines">
+							<p class="tagline">&gt; initiating drone connection ~</p>
+							<p class="tagline">&gt; blog ~</p>
+							<p class="tagline">&gt; design | computation | fabrication :: make things ~</p>
+							<p class="tagline">&gt; we came here to do something, so let's do something ~</p>
+						</div>
+					</div>
+					
+					<div class="header-right">
+						<nav class="utility-nav">
+							<a href="/feed" class="nav-link">feed</a>
+							<a href="/portfolio" class="nav-link">portfolio</a>
+							<a href="/skyfi-a-reading-list" class="nav-link">skyfi :: a reading list</a>
+						</nav>
+					</div>
+				</div>
+				
+				<nav class="main-nav">
+					<a href="/" class="nav-link">&gt; everything ~</a>
+					<a href="/category/design" class="nav-link">design</a>
+					<a href="/category/drawings" class="nav-link">drawings</a>
+					<a href="/category/readings" class="nav-link">readings</a>
+					<a href="/category/skyfi" class="nav-link">skyfi</a>
+					<a href="/category/thinkings" class="nav-link">thinkings</a>
+					<a href="/category/observings" class="nav-link">observings</a>
+					<a href="/category/teachings" class="nav-link">teachings</a>
+					<a href="/category/writings" class="nav-link">writings</a>
+				</nav>
+			</div>
+		</header>
+
+		<slot />
+
+		<footer class="site-footer">
+			<div class="footer-inner">
+				<div class="newsletter">
+					<h3 class="newsletter-title">&gt; follow along</h3>
+					<form class="newsletter-form" action="#" method="post">
+						<input type="text" placeholder="name" aria-label="Name" />
+						<input type="email" placeholder="e-mail" aria-label="Email" />
+						<button type="submit">&gt; initiate drone connection</button>
+					</form>
+				</div>
+				<div class="footer-copy">
+					<p>&gt; copyright Robert Lee Brackett 2025 | all rights reserved | new york / tokyo</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
