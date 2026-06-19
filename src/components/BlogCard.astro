@@ -1,0 +1,144 @@
+---
+// Blog post card component
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+	post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+---
+
+<article class="blog-card">
+	<div class="card-header">
+		<div class="author-info">
+			<img src="/avatar.png" alt="Author" class="avatar" />
+			<span class="author-name">~roots /</span>
+		</div>
+		<span class="post-date">{post.data.pubDate?.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) || 'Unknown date'}</span>
+	</div>
+
+	<h2 class="card-title">{post.data.title}</h2>
+
+	{post.data.image && (
+		<figure class="card-image">
+			<img src={post.data.image} alt={post.data.title} />
+			{post.data.imageCaption && (
+				<figcaption class="image-caption">{post.data.imageCaption}</figcaption>
+			)}
+		</figure>
+	)}
+
+	{post.data.excerpt && (
+		<p class="card-excerpt">{post.data.excerpt}</p>
+	)}
+
+	<div class="card-footer">
+		{post.data.tags && post.data.tags.length > 0 && (
+			<div class="card-tags">
+				{post.data.tags.map((tag: string) => (
+					<span class="tag">{tag}</span>
+				))}
+			</div>
+		)}
+
+		<div class="social-stats">
+			<span class="stat">👁️ {post.data.views || 0} views</span>
+			<span class="stat">💬 {post.data.comments || 0} comments</span>
+			<span class="stat">❤️ {post.data.likes || 0}</span>
+		</div>
+	</div>
+</article>
+
+<style is:global>
+	.blog-card {
+		background: var(--card-bg);
+		border: 1px solid var(--border);
+		padding: 20px;
+		margin-bottom: 30px;
+	}
+
+	.card-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	.author-info {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.avatar {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+	}
+
+	.author-name {
+		color: var(--accent);
+		font-size: 0.875rem;
+	}
+
+	.post-date {
+		color: var(--text-muted);
+		font-size: 0.875rem;
+	}
+
+	.card-title {
+		margin: 0 0 15px 0;
+		font-size: 1.5rem;
+		color: var(--accent);
+	}
+
+	.card-image {
+		margin: 0 0 15px 0;
+	}
+
+	.card-image img {
+		width: 100%;
+		border-radius: 4px;
+	}
+
+	.image-caption {
+		margin-top: 8px;
+		font-size: 0.875rem;
+		color: var(--text-muted);
+		text-align: center;
+	}
+
+	.card-excerpt {
+		margin: 0 0 15px 0;
+		line-height: 1.6;
+	}
+
+	.card-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.card-tags {
+		display: flex;
+		gap: 8px;
+	}
+
+	.tag {
+		background: rgba(28, 235, 244, 0.1);
+		color: var(--accent);
+		padding: 2px 8px;
+		border-radius: 12px;
+		font-size: 0.75rem;
+	}
+
+	.social-stats {
+		display: flex;
+		gap: 15px;
+		font-size: 0.75rem;
+		color: var(--text-muted);
+	}
+</style>
