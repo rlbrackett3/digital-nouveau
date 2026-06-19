@@ -2,7 +2,8 @@
 // Digital Nouveau - Index page (Wix-inspired light theme)
 import SiteLayout from '@/components/SiteLayout.astro';
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, SITE_DESCRIPTION } from '@/consts';
+import { SITE_TITLE, SITE_DESCRIPTION, CATEGORIES } from '@/consts';
+const VALID_CATEGORIES = new Set(CATEGORIES);
 
 const allPosts = await getCollection('blog');
 const sortedPosts = allPosts
@@ -38,7 +39,7 @@ const sortedPosts = allPosts
 					<p>{post.data.description}</p>
 					{post.data.categories && post.data.categories.length > 0 && (
 						<div class="post-categories">
-							{post.data.categories.map(cat => (
+							{post.data.categories.filter(c => VALID_CATEGORIES.has(c)).map(cat => (
 								<a href={`/category/${cat}`} class="category-tag">{cat}</a>
 							))}
 						</div>
