@@ -149,8 +149,9 @@ const postsData = sortedPosts.map(post => {
 /* List view (default "everything") - full width, aligned column */
 .feed-container.list-view {
 	grid-template-columns: 1fr;
-	max-width: 1200px;
+	max-width: 960px;
 	margin: 0 auto;
+	gap: 40px;
 }
 
 /* Cards hidden initially, JS reveals */
@@ -177,13 +178,13 @@ const postsData = sortedPosts.map(post => {
 .feed-card-link {
 	text-decoration: none;
 	display: block;
-	background: rgba(0, 0, 0, 0.85);
-	border: 2px solid rgba(28, 235, 244, 0.5);
+	background: transparent;
+	border: 1px solid rgba(28, 235, 244, 0.2);
 	overflow: hidden;
 }
 
 .feed-card-link:hover {
-	border-color: #1cebf4;
+	border-color: rgba(28, 235, 244, 0.4);
 }
 
 /* Grid view (category filter) - compact cards */
