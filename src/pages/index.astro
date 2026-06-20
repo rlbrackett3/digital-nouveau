@@ -16,14 +16,17 @@ const sortedPosts = posts.sort((a, b) => {
 });
 
 const processor = unified()
-	.use(remarkParse)
+	.use(remarkParse, { gfm: true })
 	.use(remarkGfm)
-	.use(remarkRehype)
-	.use(rehypeStringify);
+	.use(remarkRehype, { allowDangerousHtml: true })
+	.use(rehypeStringify, { allowDangerousHtml: true });
 
 // Pre-render all post content to HTML strings
 const postsData = await Promise.all(sortedPosts.map(async (post) => {
-	const html = await processor.process(post.body || '');
+	// Fix body image paths: Wix images are relative, need /images/ prefix
+	let bodyContent = post.body || '';
+	bodyContent = bodyContent.replace(/src="([^\/][^"]*?)"/g, 'src="/images/$1"');
+	const html = await processor.process(bodyContent);
 	const dateStr = post.data.pubDate
 		? new Date(post.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
 		: '';
