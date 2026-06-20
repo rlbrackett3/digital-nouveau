@@ -6,6 +6,7 @@ categories: ["skyfi", "thinkings"]
 readTime: 4
 views: 19
 likes: 2
+comments: 0
 ---
 
 Some mornings during my shower and while I prepare and eat my breakfast I like to listen to a podcast. This is usually something inspiring about human performance optimization or when I am feeling really indulgent, a short story from my favorite SciFi podcast, Escape Pod. I have been a fan of this podcast for the last seven years or so, since very early in their existence. I have taken many wonderful books and author recommendations from the stories to introduce in our sci-fi book club. Many of the short stories have touched me deeply due to the variety of creative themes, eccentric and committed narrators, and exuberant hosts and editors. I found myself wiping tears from my face while consulting onsite at a large office during a reading of Flowers For Algernon due to both the superb narration and the powerful story of a tragic friendship. I had a similar experience this morning (though in my own home) with episode number 689, Spectrum of Acceptance by Nyla Bright and narrated by Maxine Moore.

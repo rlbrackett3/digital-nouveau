@@ -7,6 +7,7 @@ image: "/images/dc9b92_803fce01540f49f8b31e6ed6ee3b7724~mv2.png"
 readTime: 2
 views: 18
 likes: 1
+comments: 0
 ---
 
 <figure>

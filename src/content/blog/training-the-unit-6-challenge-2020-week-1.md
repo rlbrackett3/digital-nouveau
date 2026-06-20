@@ -7,6 +7,7 @@ image: "/images/dc9b92_229767fa10d64bd7aaed603780f814f7~mv2.jpeg"
 readTime: 8
 views: 58
 likes: 1
+comments: 0
 ---
 
 Over the last couple of years, I have been really into the products produced by Onnit to support human optimization. I think I originally came across the company when I was looking for relaxation and sleep support supplements with 5-HTP, L-Tryptophan, Magnesium, among other things. Their New Mood product seemed to have all the parts so I gave it a shot. Anyway, that got me into their other products, I cycle on and off with Total Human Optimization just to keep all my bases covered, I used the Plant and Whey proteins for training recovery, the Mineral Electrolytes work great while playing basketball or rowing and don't pack so much sugar. AlphaBRAIN can really help to kick the creative process into high gear and also deliver fluent eloquent lectures at school. I guess I am a fan, so much so that nearly all of my workout gear has transitioned to Onnit products (as the old stuff wears out, and I do mean wears out, I am sporting some holey shorts). I usually shop the sales to try not to break the bank and they have a nice rewards program that has netted many of my fun graphic t-shirts and sweatshirts at little or no cost. There is a ton more I could go into (the Onnit-Kyle Kingsberry and Aubry Marcus podcats are weekly staples) but I think of all the things I have gotten from them the most beneficial and transformative have been their Onnit 6 training programs.

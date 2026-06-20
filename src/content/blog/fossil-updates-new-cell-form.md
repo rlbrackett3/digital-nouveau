@@ -5,6 +5,9 @@ pubDate: '2013-03-02'
 categories: ["design"]
 image: "/images/dc9b92_a369befd54394119bd612753e4fbac30~mv2.png"
 readTime: 1
+views: 0
+comments: 0
+likes: 0
 ---
 
 <figure>

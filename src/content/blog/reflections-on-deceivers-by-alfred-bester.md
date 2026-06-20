@@ -7,6 +7,7 @@ image: "/images/dc9b92_eb9c56282b8c4af482c5f84e646277c1~mv2.png"
 readTime: 6
 views: 9
 likes: 1
+comments: 0
 ---
 
 Since I spend so much time ingesting works of Science Fiction I figure I should start reflecting on how these speculative realities influence my perceptions of the world and potentially offer ways forward for us all. (aka book reports)

@@ -5,6 +5,9 @@ pubDate: '2015-05-04'
 categories: ["drawings", "thinkings"]
 image: "/images/dc9b92_e22d5327cbf34f47b6a1d718654fd0e5~mv2.png"
 readTime: 2
+views: 0
+comments: 0
+likes: 0
 ---
 
 This blog started with a series of drawings. Simple black line renderings in a regularly shaped notebook I had sitting around, lacking any definite purpose. I still enjoy the time when I can step out of phase and let ink bleed into the fibers of the paper. Watching my hand deploy a few quick marks that spawn simple pseudo-algorithms of design. I find it a very relaxing process, one that is consuming and renders me into another world. A small, tightly knit world of that page, that pen, that moment, those marks, and of course, that me.

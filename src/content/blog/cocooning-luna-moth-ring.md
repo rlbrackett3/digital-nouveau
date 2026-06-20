@@ -6,6 +6,8 @@ categories: ["design"]
 image: "/images/dc9b92_77ddc1d3ec354880b0ddc17978bb80ed~mv2.png"
 readTime: 1
 views: 3
+comments: 0
+likes: 0
 ---
 
 This post is coming a little late (the ring did as well :), but I wanted to show off my latest gift for ldweezy.  This is a mutation of the original Luna Moth Pendant for a while back.  Here the creature is within the cocoon, transforming from larva to ethereal moth.  The transforming creature bends around the finger to encapsulated it on the verge of new life.

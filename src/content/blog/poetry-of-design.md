@@ -6,6 +6,7 @@ categories: ["observings", "teachings"]
 readTime: 1
 views: 12
 likes: 1
+comments: 0
 ---
 
 :: Marcos Novak, 'The PanTopican and the Architecture of Noise' Center vol 9 / 2995 University of Texas Austin

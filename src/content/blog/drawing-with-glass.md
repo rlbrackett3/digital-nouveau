@@ -8,6 +8,8 @@ pubDate: '2014-01-04'
 categories: ["drawings"]
 image: "/images/dc9b92_172532d349c64494a146760bdadfd062~mv2.png"
 views: 2
+comments: 0
+likes: 0
 ---
 
 <figure>

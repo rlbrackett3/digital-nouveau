@@ -6,6 +6,8 @@ categories: ["drawings", "thinkings"]
 image: "/images/dc9b92_722eeea352cb4711921faddc755cb366~mv2.png"
 readTime: 1
 views: 2
+comments: 0
+likes: 0
 ---
 
 <figure>

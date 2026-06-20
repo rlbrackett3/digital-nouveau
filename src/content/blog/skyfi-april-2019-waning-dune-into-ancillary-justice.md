@@ -6,6 +6,8 @@ categories: ["observings", "skyfi"]
 image: "/images/dc9b92_7ee493a3b0214081b7df8808cd79a8ee~mv2.jpg"
 readTime: 4
 views: 4
+comments: 0
+likes: 0
 ---
 
 Dear Future Readers,

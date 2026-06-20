@@ -7,6 +7,7 @@ image: "/images/dc9b92_ced3d4dc90354df2af26b92211adbb58~mv2.jpg"
 readTime: 1
 views: 42
 likes: 3
+comments: 0
 ---
 
 Sacha Frey and I continue our exploration of comics as a hybrid narrative format in the 2020 volume 6 of [Trans-] FICTION with Comics Beyond Fiction.  You can read a digital version of the journal below or purchase a printed copy to help support future volumes.

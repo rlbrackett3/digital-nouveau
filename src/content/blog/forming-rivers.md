@@ -5,6 +5,8 @@ pubDate: '2015-02-25'
 categories: ["observings"]
 readTime: 1
 views: 1
+comments: 0
+likes: 0
 ---
 
 "Feeling its way slowly and blindly downward, until at last with more heat and moisture, as the sun gets higher, the most fluid portion, in its effort to obey the law to which the most inert also yields, separates from the latter and forms for itself a meandering channel or artery within that, in which is seen a little silvery stream glancing like lightning from one stage of pulpy leaves or branches to another, and ever and anon swallowed up in the sand. It is wonderful how rapidly yet perfectly the sand organizes itself as it flows, using the best material its mass affords to form the sharp edges of its channel. Such are the sources of rivers."

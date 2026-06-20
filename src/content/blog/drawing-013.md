@@ -6,6 +6,8 @@ categories: ["drawings"]
 image: "/images/dc9b92_73943202763341c7825bd1a02d8525ab~mv2_d_1737_2795_s_2.png/dc9b92_73943202763341c7825bd1a02d8525ab~mv2_d_1737_2795_s_2.png"
 readTime: 1
 views: 1
+comments: 0
+likes: 0
 ---
 
 <figure>

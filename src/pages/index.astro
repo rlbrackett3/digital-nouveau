@@ -1,246 +1,222 @@
 ---
-// Home page - Wix blog feed structure
+// Main feed — infinite scroll reveal, category filters, 3-column grid
 import SiteLayout from '@/components/SiteLayout.astro';
-import BlogCard from '@/components/BlogCard.astro';
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, CATEGORIES } from '@/consts';
-import '@/styles/global.css';
 
 const posts = await getCollection('blog', () => true);
 const sortedPosts = posts.sort((a, b) => {
-	const dateA = a.data.pubDate ? a.data.pubDate.getTime() : 0;
-	const dateB = b.data.pubDate ? b.data.pubDate.getTime() : 0;
+	const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+	const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
 	return dateB - dateA;
 });
-const recentPosts = sortedPosts.slice(1, 4);
+
+const categorySet = new Set<string>();
+for (const p of sortedPosts) {
+	if (p.data.categories) {
+		for (const c of p.data.categories) categorySet.add(c);
+	}
+}
+const categories = Array.from(categorySet).sort();
 ---
 
 <SiteLayout>
-	<main class="blog-page">
-		<!-- Featured post -->
-		{sortedPosts.length > 0 && (
-			<BlogCard post={sortedPosts[0]} />
-		)}
+	<main class="feed-page">
+		<nav class="filter-bar">
+			<button class="filter-btn active" data-filter="all">everything</button>
+			{categories.map(cat => (
+				<button class="filter-btn" data-filter={cat}>{cat}</button>
+			))}
+		</nav>
 
-		<!-- Recent posts section -->
-		{recentPosts.length > 0 && (
-			<section class="recent-posts">
-				<h3 class="section-title">Recent Posts</h3>
-				<div class="posts-grid">
-					{recentPosts.map(post => (
-						<a href={post.url} class="post-thumbnail">
-							<div class="thumbnail-image">
-								{post.data.image ? (
+		<div class="feed-grid" id="feed-grid">
+			{sortedPosts.map(post => {
+				const dateStr = post.data.pubDate
+					? new Date(post.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+					: '';
+				const excerpt = post.data.description
+					? (post.data.description.length > 140 ? post.data.description.substring(0, 140) + '...' : post.data.description)
+					: '';
+
+				return (
+					<article class="grid-card" data-cats={JSON.stringify(post.data.categories || [])}>
+						<a href={post.url} class="grid-card-link">
+							{post.data.image ? (
+								<div class="grid-card-image">
 									<img src={post.data.image} alt={post.data.title} loading="lazy" />
-								) : (
-									<div class="thumbnail-placeholder"></div>
-								)}
-							</div>
-							<div class="thumbnail-info">
-								<h4>{post.data.title}</h4>
-								<div class="thumbnail-stats">
-									<span class="stat">
-										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-											<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-											<circle cx="12" cy="12" r="3"/>
-										</svg>
-										{post.data.views || 0}
-									</span>
-									<span class="stat">
-										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-											<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-										</svg>
-										{post.data.comments || 0}
-									</span>
-									<span class="stat">
-										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-											<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-										</svg>
-										{post.data.likes || 0}
-									</span>
+								</div>
+							) : (
+								<div class="grid-card-image grid-card-no-image"></div>
+							)}
+							<div class="grid-card-body">
+								<span class="grid-card-date">{dateStr}{post.data.readTime ? ` · ${post.data.readTime}` : ''}</span>
+								<h3 class="grid-card-title">{post.data.title}</h3>
+								{excerpt ? <p class="grid-card-excerpt">{excerpt}</p> : ''}
+								<div class="grid-card-footer">
+									<div class="grid-card-stats">
+										<span class="grid-stat">
+											<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+											{(post.data.views as number) || 0}
+										</span>
+										<span class="grid-stat">
+											<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+											{(post.data.comments as number) || 0}
+										</span>
+										<span class="grid-stat">
+											<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+											{(post.data.likes as number) || 0}
+										</span>
+									</div>
+									<div class="grid-card-share">
+										<button class="share-btn" title="Share" onclick="event.stopPropagation();">
+											<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231z"/></svg>
+										</button>
+										<button class="share-btn" title="Copy link" onclick="event.stopPropagation();">
+											<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+										</button>
+									</div>
 								</div>
 							</div>
 						</a>
-					))}
-				</div>
-			</section>
-		)}
+					</article>
+				);
+			})}
+		</div>
 
-		<!-- Comments section -->
-		<section class="comments-section">
-			<h3 class="section-title">Comments</h3>
-			<div class="comment-form-wrapper">
-				<div class="comment-avatar">R</div>
-				<div class="comment-form">
-					<textarea placeholder="Write a comment..." rows="3"></textarea>
-					<button type="submit" class="comment-submit">Post Comment</button>
-				</div>
-			</div>
-		</section>
+		<div class="scroll-sentinel" id="scroll-sentinel"></div>
+		<div class="load-more" id="load-more"><span class="loading-dots">loading ~</span></div>
 	</main>
 </SiteLayout>
 
 <style is:global>
-	/* Blog page container */
-	.blog-page {
-		max-width: 940px;
-		margin: 0 auto;
-		padding: 20px;
-	}
-	
-	/* Recent posts section */
-	.recent-posts {
-		margin: 40px 0;
-		padding-top: 30px;
-		border-top: 1px solid rgba(28, 235, 244, 0.2);
-	}
-	
-	.section-title {
-		font-size: 14px;
-		font-family: 'brandon-grot-w01-light', sans-serif;
-		font-weight: 400;
-		color: #1cebf4;
-		margin: 0 0 16px;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-	}
-	
-	.posts-grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
-	}
-	
-	.post-thumbnail {
-		display: block;
-		text-decoration: none;
-		background: rgba(0, 0, 0, 0.8);
-		border: 1px solid rgba(28, 235, 244, 0.2);
-		overflow: hidden;
-		transition: border-color 0.2s;
-	}
-	
-	.post-thumbnail:hover {
-		border-color: #1cebf4;
-	}
-	
-	.thumbnail-image {
-		width: 100%;
-		height: 120px;
-		overflow: hidden;
-		background: rgba(0, 0, 0, 0.5);
-	}
-	
-	.thumbnail-image img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-	
-	.thumbnail-placeholder {
-		width: 100%;
-		height: 100%;
-		background: rgba(28, 235, 244, 0.1);
-	}
-	
-	.thumbnail-info {
-		padding: 12px;
-	}
-	
-	.thumbnail-info h4 {
-		font-size: 14px;
-		font-weight: 400;
-		color: #1cebf4;
-		margin: 0 0 8px;
-		line-height: 1.4;
-		font-family: 'brandon-grot-w01-light', sans-serif;
-	}
-	
-	.thumbnail-stats {
-		display: flex;
-		gap: 12px;
-		font-size: 10px;
-		color: #1cebf4;
-		opacity: 0.6;
-	}
-	
-	.stat {
-		display: flex;
-		align-items: center;
-		gap: 4px;
-	}
-	
-	/* Comments section */
-	.comments-section {
-		margin: 40px 0;
-		padding-top: 30px;
-		border-top: 1px solid rgba(28, 235, 244, 0.2);
-	}
-	
-	.comment-form-wrapper {
-		display: flex;
-		gap: 16px;
-		align-items: flex-start;
-	}
-	
-	.comment-avatar {
-		width: 32px;
-		height: 32px;
-		border-radius: 50%;
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: white;
-		font-size: 12px;
-		font-weight: 600;
-		flex-shrink: 0;
-	}
-	
-	.comment-form {
-		flex: 1;
-	}
-	
-	.comment-form textarea {
-		width: 100%;
-		padding: 12px;
-		border: 1px solid rgba(28, 235, 244, 0.2);
-		background: rgba(0, 0, 0, 0.8);
-		color: #1cebf4;
-		font-family: 'brandon-grot-w01-light', sans-serif;
-		font-size: 12px;
-		resize: vertical;
-		margin-bottom: 8px;
-	}
-	
-	.comment-form textarea::placeholder {
-		color: rgba(28, 235, 244, 0.5);
-	}
-	
-	.comment-submit {
-		padding: 8px 16px;
-		border: 1px solid rgba(28, 235, 244, 0.3);
-		background: rgba(0, 0, 0, 0.8);
-		color: #1cebf4;
-		font-size: 12px;
-		cursor: pointer;
-		font-family: 'brandon-grot-w01-light', sans-serif;
-		transition: all 0.2s;
-	}
-	
-	.comment-submit:hover {
-		border-color: #1cebf4;
-		background: rgba(28, 235, 244, 0.1);
-	}
-	
-	/* Responsive */
-	@media (max-width: 768px) {
-		.posts-grid {
-			grid-template-columns: 1fr;
-		}
-		
-		.comment-form-wrapper {
-			flex-direction: column;
-		}
-	}
+.feed-page { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+.filter-bar {
+	display: flex; flex-wrap: wrap; gap: 8px;
+	padding: 16px 0; margin-bottom: 24px;
+	border-bottom: 1px solid rgba(28, 235, 244, 0.15);
+	position: sticky; top: 0; z-index: 50;
+	background: rgba(0, 0, 0, 0.92); backdrop-filter: blur(8px);
+}
+
+.filter-btn {
+	padding: 6px 14px;
+	border: 1px solid rgba(28, 235, 244, 0.25);
+	background: transparent; color: rgba(28, 235, 244, 0.6);
+	font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 300;
+	cursor: pointer; transition: all 0.2s;
+	text-transform: lowercase; letter-spacing: 0.03em;
+}
+.filter-btn:hover { border-color: rgba(28, 235, 244, 0.6); color: #1cebf4; }
+.filter-btn.active { border-color: #1cebf4; color: #1cebf4; background: rgba(28, 235, 244, 0.08); }
+
+.feed-grid {
+	display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+
+/* Cards hidden, JS reveals */
+.grid-card { display: none; }
+.grid-card.visible { display: block; animation: cardIn 0.3s ease-out forwards; }
+@keyframes cardIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+.grid-card-link {
+	text-decoration: none; display: block;
+	background: rgba(0, 0, 0, 0.85); border: 1px solid rgba(28, 235, 244, 0.15);
+	overflow: hidden; transition: border-color 0.2s, transform 0.15s;
+}
+.grid-card-link:hover { border-color: rgba(28, 235, 244, 0.5); transform: translateY(-2px); }
+
+.grid-card-image { width: 100%; height: 160px; overflow: hidden; background: rgba(28, 235, 244, 0.04); }
+.grid-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+.grid-card-link:hover .grid-card-image img { transform: scale(1.03); }
+.grid-card-no-image { background: linear-gradient(135deg, rgba(28, 235, 244, 0.06), rgba(28, 235, 244, 0.02)); }
+
+.grid-card-body { padding: 16px; }
+.grid-card-date { font-size: 11px; color: rgba(28, 235, 244, 0.5); font-family: 'DM Sans', sans-serif; font-weight: 300; display: block; margin-bottom: 6px; }
+.grid-card-title { font-size: 15px; font-weight: 400; color: #1cebf4; margin: 0 0 8px; line-height: 1.35; font-family: 'DM Sans', sans-serif; }
+.grid-card-excerpt { font-size: 12px; color: rgba(28, 235, 244, 0.55); margin: 0 0 12px; line-height: 1.5; font-family: 'DM Sans', sans-serif; font-weight: 300; }
+
+.grid-card-footer { display: flex; align-items: center; justify-content: space-between; }
+.grid-card-stats { display: flex; gap: 10px; }
+.grid-stat { display: flex; align-items: center; gap: 4px; font-size: 10px; color: rgba(28, 235, 244, 0.45); }
+.grid-stat svg { opacity: 0.6; }
+.grid-card-share { display: flex; gap: 6px; }
+.share-btn {
+	background: none; border: 1px solid rgba(28, 235, 244, 0.15);
+	color: rgba(28, 235, 244, 0.4); padding: 4px; cursor: pointer;
+	transition: all 0.2s; display: flex; align-items: center;
+}
+.share-btn:hover { border-color: rgba(28, 235, 244, 0.5); color: #1cebf4; }
+
+.scroll-sentinel { height: 1px; }
+.load-more { text-align: center; padding: 32px 0; display: none; }
+.loading-dots { color: #1cebf4; font-size: 13px; animation: pulse 1.5s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+
+@media (max-width: 900px) { .feed-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .feed-grid { grid-template-columns: 1fr; } .filter-bar { position: relative; top: 0; } }
 </style>
+
+<!-- Client: infinite scroll reveal + category filtering -->
+<script is:inline>
+(function() {
+	var BATCH = 12;
+	var grid = document.getElementById('feed-grid');
+	var sentinel = document.getElementById('scroll-sentinel');
+	var loadMore = document.getElementById('load-more');
+	var allCards = Array.prototype.slice.call(grid.querySelectorAll('.grid-card'));
+	var filterBtns = document.querySelectorAll('.filter-btn');
+	var visibleCards = allCards; // current filtered set
+	var shown = 0;
+
+	function showBatch() {
+		var end = Math.min(shown + BATCH, visibleCards.length);
+		for (var i = shown; i < end; i++) {
+			visibleCards[i].style.display = '';
+			visibleCards[i].classList.add('visible');
+		}
+		shown = end;
+	}
+
+	function resetAndShow(filter) {
+		// Hide all
+		allCards.forEach(function(c) { c.classList.remove('visible'); c.style.display = 'none'; });
+		shown = 0;
+
+		// Filter
+		if (filter === 'all') {
+			visibleCards = allCards.slice();
+		} else {
+			visibleCards = allCards.filter(function(c) {
+				var cats = JSON.parse(c.getAttribute('data-cats') || '[]');
+				return cats.indexOf(filter) >= 0;
+			});
+		}
+
+		// Sort by date (DOM order is already sorted)
+		showBatch();
+	}
+
+	// Filter buttons
+	filterBtns.forEach(function(btn) {
+		btn.addEventListener('click', function() {
+			filterBtns.forEach(function(b) { b.classList.remove('active'); });
+			btn.classList.add('active');
+			var filter = btn.getAttribute('data-filter');
+			resetAndShow(filter);
+		});
+	});
+
+	// Infinite scroll
+	if (sentinel) {
+		var observer = new IntersectionObserver(function(entries) {
+			if (entries[0].isIntersecting && shown < visibleCards.length) {
+				showBatch();
+			}
+		}, { rootMargin: '200px' });
+		observer.observe(sentinel);
+	}
+
+	// Initial render
+	resetAndShow('all');
+})();
+</script>

@@ -7,6 +7,7 @@ image: "/images/dc9b92_0760e25b180047e9ba965ccd71fd3863~mv2.gif"
 readTime: 5
 views: 13
 likes: 1
+comments: 0
 ---
 
 The following video was a micro-lecture provided for the ARCH202 Intermediate Design studios at Pratt Institute as an introduction to concepts and techniques of architectural analysis through decompositional drawing and video-based representation.  The first segment documents examples of forms of decomposition in architectural analysis drawing such as X-Rays/MRIs or layered transparent systems, scans, overlays, fades, and exploded relationships. I worked with diagrams with a fixed view (oblique or axonometric) and began to reconstitute the decomposed elements and systems into primitive video compositions.

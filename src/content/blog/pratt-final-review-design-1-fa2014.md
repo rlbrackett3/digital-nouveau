@@ -6,6 +6,8 @@ categories: ["teachings"]
 image: "/images/dc9b92_cd80d774c5eb4bb585a645ecf67b3368~mv2_d_1664_5986_s_2.jpg/dc9b92_cd80d774c5eb4bb585a645ecf67b3368~mv2_d_1664_5986_s_2.jpg"
 readTime: 1
 views: 8
+comments: 0
+likes: 0
 ---
 
 <figure>

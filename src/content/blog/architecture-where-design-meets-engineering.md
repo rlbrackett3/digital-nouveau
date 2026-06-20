@@ -6,6 +6,8 @@ categories: ["observings"]
 image: "/images/dc9b92_781effb97d1d48a693a382e5f18476df~mv2_d_2000_2667_s_2.jpg/dc9b92_781effb97d1d48a693a382e5f18476df~mv2_d_2000_2667_s_2.jpg"
 readTime: 1
 views: 8
+comments: 0
+likes: 0
 ---
 
 <figure>

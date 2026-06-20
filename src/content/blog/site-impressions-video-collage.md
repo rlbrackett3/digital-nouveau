@@ -5,6 +5,8 @@ pubDate: '2019-10-15'
 categories: ["design", "readings", "teachings"]
 readTime: 1
 views: 8
+comments: 0
+likes: 0
 ---
 
 <div class="video-embed"><iframe src="https://player.vimeo.com/video/366495785" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>

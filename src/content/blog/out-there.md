@@ -5,6 +5,9 @@ pubDate: '2020-01-19'
 categories: ['observings']
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+views: 1
+comments: 0
+likes: 1
 ---
 
 What do we do with all those photos?

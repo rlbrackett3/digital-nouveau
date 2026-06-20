@@ -7,6 +7,7 @@ image: "/images/dc9b92_039c5d8362c64eff97ecc9180e632521~mv2.jpg"
 readTime: 2
 views: 1
 likes: 1
+comments: 0
 ---
 
 What do we do with all those photos?

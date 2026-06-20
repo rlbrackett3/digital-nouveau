@@ -6,6 +6,8 @@ categories: ["observings", "skyfi", "teachings"]
 image: "/images/dc9b92_f3708c106cd646d2a1251db54e846a91~mv2.jpg"
 readTime: 1
 views: 5
+comments: 0
+likes: 0
 ---
 
 <figure>

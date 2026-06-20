@@ -6,6 +6,8 @@ categories: ["readings", "thinkings"]
 image: "/images/dc9b92_c4e01ef246f0493a9c96ed8a8bd2b389~mv2.png"
 readTime: 1
 views: 1
+comments: 0
+likes: 0
 ---
 
 <figure>

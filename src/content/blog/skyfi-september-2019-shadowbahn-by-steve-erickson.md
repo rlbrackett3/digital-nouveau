@@ -7,6 +7,7 @@ image: "/images/dc9b92_6495f1a11e9f483fa6420767342e2490~mv2.jpg"
 readTime: 3
 views: 9
 comments: 3
+likes: 0
 ---
 
 Since 2011 or so I have been a part of a generally Science Fiction  themed book club in Brooklyn. Most of us are architects, but we have a few other friends to bring some much needed escape from our insular community. I try to write up a record of our meetings and the shimmering cloud of discussion and reference sparked by the books we read each month.

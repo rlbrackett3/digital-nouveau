@@ -6,6 +6,7 @@ categories: ["observings", "skyfi"]
 readTime: 5
 views: 12
 likes: 1
+comments: 0
 ---
 
 Hello Fellow Travellers,

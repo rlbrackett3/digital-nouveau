@@ -7,6 +7,7 @@ image: "/images/dc9b92_0fb7efbca5b043a7864af592bc1f09ba~mv2.jpg"
 readTime: 8
 views: 29
 likes: 1
+comments: 0
 ---
 
 Welcome back travelers,

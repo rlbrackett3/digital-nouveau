@@ -7,6 +7,7 @@ image: "/images/dc9b92_a93ab996d61d4844a8dc3df4392c9e3f~mv2.jpg"
 readTime: 3
 views: 19
 likes: 1
+comments: 0
 ---
 
 Six weeks seems like almost nothing. As life tends to do here in New York, the time flew by, but it also slowed down.

@@ -6,6 +6,8 @@ categories: ["design", "readings"]
 image: "/images/dc9b92_f0a63ac805974a189514dc497cebbaf2~mv2.png"
 readTime: 1
 views: 3
+comments: 0
+likes: 0
 ---
 
 <figure>

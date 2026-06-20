@@ -5,6 +5,9 @@ pubDate: '2014-05-25'
 categories: ["drawings"]
 image: "/images/dc9b92_15d0e6a5bf4642f6b9a98babfb60f93a~mv2.png"
 readTime: 1
+views: 0
+comments: 0
+likes: 0
 ---
 
 <figure>

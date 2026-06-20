@@ -6,6 +6,7 @@ categories: ["design", "drawings"]
 readTime: 1
 views: 1
 likes: 1
+comments: 0
 ---
 
 <div class="video-embed"><iframe src="https://player.vimeo.com/video/293231826" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>

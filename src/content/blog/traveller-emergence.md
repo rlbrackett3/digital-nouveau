@@ -7,6 +7,7 @@ image: "/images/dc9b92_54613c9dd1724cddaa80993590eba4ec~mv2_d_2789_3488_s_4_2.jp
 readTime: 2
 views: 10
 likes: 1
+comments: 0
 ---
 
 A journal has been a consistent part of my daily routine for many years now. While I miss a day here and there, especially when travelling or when my schedule makes a major shift, the act of writing through thoughts, goals, dreams, and wild thoughts is a soothing and enlightening practice. I take a lot of joy in the challenge of beginning each day with a blank page and the uncertain choice and responsibility of what to commit to the universe. On some days this is easy, I reflect on three things that I am grateful for in my life, then lay out a list of priorities for the day with their associated direct tasks, followed by a few affirmations regarding my commitment to developing my mental, physical, spiritual and social being.  I leave a portion of the page for an end of day reflection on what went well and what could have gone better (this is a part that I am much less consistent with, perhaps a goal for 2020). This is a stable foundation, it starts the writing, brings joy and positive emotion from the gratitude and structures my day.

@@ -5,6 +5,8 @@ pubDate: '2015-03-18'
 categories: ["observings", "teachings"]
 readTime: 1
 views: 5
+comments: 0
+likes: 0
 ---
 
 We shall not cease from exploration

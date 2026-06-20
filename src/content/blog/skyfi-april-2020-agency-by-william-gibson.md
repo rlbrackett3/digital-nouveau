@@ -7,6 +7,7 @@ image: "/images/dc9b92_420843d31a6a44ae92f3dfb4beca3a0d~mv2.png"
 readTime: 4
 views: 39
 likes: 1
+comments: 0
 ---
 
 Emerging from the black hole of final reviews and the added hustle of wrapping up a semester of challenges I have some time now to get back to this writeup. Luckily I took some notes and already gathered many of the images and references. Just a bit of writing now.

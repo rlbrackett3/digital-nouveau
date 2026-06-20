@@ -7,6 +7,7 @@ image: "/images/dc9b92_23c94e81c41c45bf856c34e40370a67b~mv2.jpg"
 readTime: 7
 views: 14
 likes: 1
+comments: 0
 ---
 
 BY the chance of long and deep bookshelves I am working my way backward through the works of sci-fi master, Alfred Bester. I began with The Deceivers, and have now journeyed into the precarious future of sentient machines, exobiological mutations, immortal visionaries, time travel, and cosmic turmoil in his 1975 novel, The Computer Connection. From these two novels, I  can feel the influence of his time spent as a comic script and travel magazine writer. The narratives are fast based, full of over the top events and high adventure. Characters speak larger than life in the flamboyant dialog with the abilities to back it all up.  I am developing a bit of a fascination with Bester and his enigmatic relationship with SciFi. This little history was an enjoyable read and I hope to continue to discover him through his work. The book was an entertaining and deeply thought-provoking experience, primarily due to the bizarre mix of sci-fi concepts and cultural critiques.  I hope to convince Sky-Fi Bookclub to dig into his more prominent work (The Demolished Man & The Stars My Destination) soon.

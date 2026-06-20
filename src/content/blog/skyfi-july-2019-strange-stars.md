@@ -6,6 +6,8 @@ categories: ["skyfi"]
 image: "/images/dc9b92_300c897f8e2a4147b6759aaca0060113~mv2.gif"
 readTime: 2
 views: 1
+comments: 0
+likes: 0
 ---
 
 I was under the weather for this month's meeting of the Sky-Fi Bookclub, but we did get a report of the meeting including the constellations forming around Strange Stars by  Jason Heller. I have to say that this was not a book I was able to get into. While it dives deep into the parallels between the growth of Science Fiction in literature and music during the 60's, 70's and 80's (maybe more but I gave up reading at some point). The content is interesting, and broadly researched, but the writing is repetitive and drawn out.

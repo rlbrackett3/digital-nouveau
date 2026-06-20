@@ -5,6 +5,8 @@ pubDate: '2013-02-09'
 categories: ["design"]
 readTime: 2
 views: 6
+comments: 0
+likes: 0
 ---
 
 <div class="video-embed"><iframe src="https://player.vimeo.com/video/44754265" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>

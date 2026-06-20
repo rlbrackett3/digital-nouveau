@@ -6,6 +6,8 @@ categories: ["design", "drawings"]
 image: "/images/dc9b92_abffbfd765dd4b4ca8dede58a9cd0e79~mv2.png"
 readTime: 2
 views: 5
+comments: 0
+likes: 0
 ---
 
 <div class="video-embed"><iframe src="https://player.vimeo.com/video/96807804" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>

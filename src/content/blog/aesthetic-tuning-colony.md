@@ -6,6 +6,8 @@ categories: ["design", "drawings"]
 image: "/images/dc9b92_19d6480cc7144133a7f45fcbc443216b~mv2_d_1599_1599_s_2.jpg/dc9b92_19d6480cc7144133a7f45fcbc443216b~mv2_d_1599_1599_s_2.jpg"
 readTime: 3
 views: 22
+comments: 0
+likes: 0
 ---
 
 A question I have been exploring for a long time as a designer is, how do we reveal, accept, and filter our aesthetic influence without  direct copying or feeble translations? While I was a student (and to some degree still), i would resist looking at precedence or architectural examples during the design of a project to avoid contamination of my thinking. This was not a position against learning from other works, which I also did a lot of through research papers, history classes, sketch trips, and summer / winter break reading (looking at pictures and drawings). It was an anxiety about creativity, a purity of concept and ideation from a process of the project. As a teacher I have leaned that this was perhaps quite naive, as I see my students struggle to extract much influence from even highly focused precedent studies, much less and interesting drawing or project screaming past on the internet.

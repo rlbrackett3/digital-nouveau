@@ -5,6 +5,9 @@ pubDate: '2019-11-07'
 categories: ['drawings', 'skyfi']
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+views: 71
+comments: 1
+likes: 1
 ---
 
 Life emerging from complexity.

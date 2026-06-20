@@ -5,6 +5,9 @@ pubDate: '2020-03-20'
 categories: ['skyfi', 'readings', 'observings']
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
+views: 14
+comments: 0
+likes: 1
 ---
 
 **Context & Stylistic Influence:** Alfred Bester's 1975 novel *The Computer Connection*, read as part of a backward journey through Bester's bibliography.
