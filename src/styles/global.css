@@ -115,7 +115,7 @@ p {
 
 .site-title {
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 100;
   margin: 0;
   letter-spacing: 0.02em;
 }
@@ -363,7 +363,7 @@ p {
 
 .post-title {
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1.2;
   margin: 0 0 12px;
 }
