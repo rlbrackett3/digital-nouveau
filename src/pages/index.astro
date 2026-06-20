@@ -1,7 +1,12 @@
 ---
-// Main feed — infinite scroll, category filters, 3-column grid
+// Main feed — full posts, list view, infinite scroll
 import SiteLayout from '@/components/SiteLayout.astro';
 import { getCollection } from 'astro:content';
+import { unified } from 'unified';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import rehypeStringify from 'rehype-stringify';
+import remarkGfm from 'remark-gfm';
 
 const posts = await getCollection('blog', () => true);
 const sortedPosts = posts.sort((a, b) => {
@@ -10,23 +15,21 @@ const sortedPosts = posts.sort((a, b) => {
 	return dateB - dateA;
 });
 
-const categorySet = new Set<string>();
-for (const p of sortedPosts) {
-	if (p.data.categories) {
-		for (const c of p.data.categories) categorySet.add(c);
-	}
-}
-const categories = Array.from(categorySet).sort();
+const processor = unified()
+	.use(remarkParse)
+	.use(remarkGfm)
+	.use(remarkRehype)
+	.use(rehypeStringify);
 
-// JSON data for inline script
-const postsData = sortedPosts.map(post => {
+// Pre-render all post content to HTML strings
+const postsData = await Promise.all(sortedPosts.map(async (post) => {
+	const html = await processor.process(post.body || '');
 	const dateStr = post.data.pubDate
 		? new Date(post.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
 		: '';
 	return {
-		url: `/blog/${post.id}`,
+		id: post.id,
 		title: post.data.title,
-		description: post.data.description,
 		image: post.data.image,
 		date: dateStr,
 		readTime: post.data.readTime,
@@ -34,55 +37,54 @@ const postsData = sortedPosts.map(post => {
 		views: (post.data.views as number) || 0,
 		likes: (post.data.likes as number) || 0,
 		comments: (post.data.comments as number) || 0,
+		contentHTML: String(html.value),
 	};
-});
+}));
 ---
 
 <SiteLayout>
-				<main class="feed-page">
-						<div class="feed-container" id="feed-container">
-			{postsData.map(post => (
-							<article class="feed-card" data-cats={JSON.stringify(post.categories)}>
-								<a href={post.url} class="feed-card-link">
-									{post.image ? (
-										<div class="feed-card-image">
-											<img src={post.image} alt={post.title} loading="lazy" />
-										</div>
-									) : (
-										<div class="feed-card-image feed-card-no-image"></div>
-									)}
-									<div class="feed-card-body">
-										<time class="feed-card-date">{post.date}{post.readTime ? ` · ${post.readTime}` : ''}</time>
-										<h2 class="feed-card-title">{post.title}</h2>
-										{post.description ? <p class="feed-card-excerpt">{post.description}</p> : ''}
-									</div>
-								</a>
-								<div class="feed-card-meta">
-									<div class="feed-card-stats">
-										<span class="feed-stat">
-											<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-											{post.views}
-										</span>
-										<span class="feed-stat">
-											<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-											{post.comments}
-										</span>
-										<span class="feed-stat">
-											<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-											{post.likes}
-										</span>
-									</div>
-									<div class="feed-card-share">
-										<button class="share-btn" title="Share" onclick="event.stopPropagation();">
-											<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231z"/></svg/></svg>
-										</button>
-										<button class="share-btn" title="Copy link" onclick="event.stopPropagation();">
-											<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-										</button>
-									</div>
-								</div>
-							</article>
-						))}
+		<main class="feed-page">
+			<div class="feed-container" id="feed-container">
+		{postsData.map(pc => (
+			<article class="feed-card" data-cats={JSON.stringify(pc.categories)} data-post-id={pc.id}>
+				<a href={`/blog/${pc.id}`} class="feed-card-link">
+					{pc.image ? (
+						<div class="feed-card-image">
+							<img src={pc.image} alt={pc.title} loading="lazy" />
+						</div>
+					) : ''}
+					<div class="feed-card-body">
+						<time class="feed-card-date">{pc.date}{pc.readTime ? ` · ${pc.readTime}` : ''}</time>
+						<h2 class="feed-card-title">{pc.title}</h2>
+						<div class="feed-card-content" set:html={pc.contentHTML}></div>
+					</div>
+				</a>
+				<div class="feed-card-meta">
+					<div class="feed-card-stats">
+						<span class="feed-stat">
+							<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+							{pc.views}
+						</span>
+						<span class="feed-stat">
+							<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+							{pc.comments}
+						</span>
+						<span class="feed-stat">
+							<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+							{pc.likes}
+						</span>
+					</div>
+					<div class="feed-card-share">
+						<button class="share-btn" title="Share" onclick="event.stopPropagation();">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231z"/></svg>
+						</button>
+						<button class="share-btn" title="Copy link" onclick="event.stopPropagation();">
+							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+						</button>
+					</div>
+				</div>
+			</article>
+		))}
 		</div>
 
 		<div class="scroll-sentinel" id="scroll-sentinel"></div>
@@ -214,7 +216,7 @@ const postsData = sortedPosts.map(post => {
 	min-height: 0;
 }
 
-.grid-view .feed-card-excerpt {
+.grid-view .feed-card-content {
 	flex: 1;
 	overflow: hidden;
 	display: -webkit-box;
@@ -257,20 +259,70 @@ const postsData = sortedPosts.map(post => {
 	font-family: 'DM Sans', sans-serif;
 }
 
-.list-view .feed-card-excerpt {
+.list-view .feed-card-content {
 	font-size: 14px;
-	color: rgba(28, 235, 244, 0.65);
-	margin: 0 0 16px;
-	line-height: 1.6;
+	color: rgba(28, 235, 244, 0.85);
+	line-height: 1.7;
 	font-family: 'DM Sans', sans-serif;
-	font-weight: 300;
+	font-weight: 100;
+}
+
+.list-view .feed-card-content p {
+	margin: 0 0 1em;
+}
+
+.list-view .feed-card-content p:last-child {
+	margin-bottom: 0;
+}
+
+.list-view .feed-card-content img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 1.5em 0;
+}
+
+.list-view .feed-card-content h1,
+.list-view .feed-card-content h2,
+.list-view .feed-card-content h3 {
+	color: #1cebf4;
+	font-weight: 100;
+	margin: 1.5em 0 0.75em;
+	line-height: 1.3;
+}
+
+.list-view .feed-card-content h1 { font-size: 1.5em; }
+.list-view .feed-card-content h2 { font-size: 1.25em; }
+.list-view .feed-card-content h3 { font-size: 1.1em; }
+
+.list-view .feed-card-content a {
+	color: #1cebf4;
+	text-decoration: underline;
+}
+
+.list-view .feed-card-content blockquote {
+	border-left: 2px solid rgba(28, 235, 244, 0.4);
+	padding-left: 1em;
+	margin: 1em 0;
+	color: rgba(28, 235, 244, 0.65);
+	font-style: italic;
+}
+
+.list-view .feed-card-content ul,
+.list-view .feed-card-content ol {
+	margin: 0.5em 0 1em;
+	padding-left: 1.5em;
+}
+
+.list-view .feed-card-content li {
+	margin-bottom: 0.4em;
 }
 
 .list-view .feed-card-date {
 	font-size: 12px;
 	color: rgba(28, 235, 244, 0.5);
 	font-family: 'DM Sans', sans-serif;
-	font-weight: 300;
+	font-weight: 100;
 	display: block;
 	margin-bottom: 8px;
 }
@@ -287,7 +339,7 @@ const postsData = sortedPosts.map(post => {
 	font-size: 11px;
 	color: rgba(28, 235, 244, 0.5);
 	font-family: 'DM Sans', sans-serif;
-	font-weight: 300;
+	font-weight: 100;
 	display: block;
 	margin-bottom: 6px;
 }
@@ -301,13 +353,13 @@ const postsData = sortedPosts.map(post => {
 	font-family: 'DM Sans', sans-serif;
 }
 
-.feed-card-excerpt {
+.feed-card-content {
 	font-size: 12px;
 	color: rgba(28, 235, 244, 0.55);
 	margin: 0 0 12px;
 	line-height: 1.5;
 	font-family: 'DM Sans', sans-serif;
-	font-weight: 300;
+	font-weight: 100;
 }
 
 .feed-card-meta {
