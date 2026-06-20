@@ -32,7 +32,7 @@ a:hover {
 
 /* ── Typography ── */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 100;
   color: #1cebf4;
   line-height: 1.2;
 }
@@ -77,6 +77,16 @@ p {
 	border-top: 2px solid #1cebf4;
 	border-bottom: 2px solid #1cebf4;
 	background: rgba(0, 0, 0, 0.95);
+}
+
+.site-header::after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background: #1cebf4;
 }
 
 .site-header .container {
@@ -133,7 +143,7 @@ p {
 
 .utility-nav a {
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 100;
   color: rgba(28, 235, 244, 0.7);
 }
 
@@ -157,18 +167,17 @@ p {
 	color: rgba(28, 235, 244, 0.8);
 }
 
-/* ── Animated logo (top center, absolute) ── */
+/* ── Animated logo (inline with title/nav) ── */
 .header-logo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px;
 }
 
 .logo-animated {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   background: transparent;
   display: block;
