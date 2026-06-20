@@ -24,7 +24,7 @@ const postsData = sortedPosts.map(post => {
 		? new Date(post.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
 		: '';
 	return {
-		url: post.url,
+		url: `/blog/${post.id}`,
 		title: post.data.title,
 		description: post.data.description,
 		image: post.data.image,
@@ -92,7 +92,7 @@ const postsData = sortedPosts.map(post => {
 
 <style is:global>
 .feed-page {
-	max-width: 1200px;
+	max-width: 960px;
 	margin: 0 auto;
 	padding: 20px;
 }

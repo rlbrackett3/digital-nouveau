@@ -9,15 +9,15 @@
 
 /* ── Body ── */
 body {
-  background-color: #000000;
-  color: #1cebf4;
-  font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 200;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+	background-color: #000000;
+	color: #1cebf4;
+	font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 }
 
 /* ── Links ── */
@@ -64,9 +64,9 @@ p {
 
 /* ── Container ── */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
 }
 
 /* ── Header ── */
@@ -146,9 +146,15 @@ p {
 }
 
 .main-nav a {
-  font-size: 13px;
-  font-weight: 300;
-  color: rgba(28, 235, 244, 0.8);
+	font-size: 13px;
+	font-weight: 100;
+	color: rgba(28, 235, 244, 0.8);
+}
+
+.nav-link {
+	font-size: 13px;
+	font-weight: 100;
+	color: rgba(28, 235, 244, 0.8);
 }
 
 /* ── Animated logo (top center, absolute) ── */
