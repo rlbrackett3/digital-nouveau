@@ -39,16 +39,8 @@ const postsData = sortedPosts.map(post => {
 ---
 
 <SiteLayout>
-	<main class="feed-page">
-		<!-- Navigation filter bar (integrated with existing nav style) -->
-		<nav class="feed-filters">
-			<button class="feed-filter-btn active" data-filter="all">everything</button>
-			{categories.map(cat => (
-				<button class="feed-filter-btn" data-filter={cat}>{cat}</button>
-			))}
-		</nav>
-
-		<div class="feed-container" id="feed-container">
+				<main class="feed-page">
+						<div class="feed-container" id="feed-container">
 			{postsData.map(post => (
 				<article class="feed-card" data-cats={JSON.stringify(post.categories)}>
 					<a href={post.url} class="feed-card-link">
@@ -387,7 +379,7 @@ const postsData = sortedPosts.map(post => {
 }
 </style>
 
-<!-- Client: infinite scroll reveal + category filtering -->
+<!-- Client: infinite scroll reveal + category filtering via header nav -->
 <script is:inline>
 (function() {
 	var BATCH = 12;
@@ -395,7 +387,7 @@ const postsData = sortedPosts.map(post => {
 	var sentinel = document.getElementById('scroll-sentinel');
 	var loadMore = document.getElementById('load-more');
 	var allCards = Array.prototype.slice.call(grid.querySelectorAll('.feed-card'));
-	var filterBtns = document.querySelectorAll('.feed-filter-btn');
+	var mainNavLinks = document.querySelectorAll('.main-nav a');
 	var visibleCards = allCards; // current filtered set
 	var shown = 0;
 
@@ -406,6 +398,15 @@ const postsData = sortedPosts.map(post => {
 			visibleCards[i].classList.add('visible');
 		}
 		shown = end;
+	}
+
+	function setActive(link) {
+		mainNavLinks.forEach(function(l) {
+			l.classList.remove('active');
+			l.style.color = '';
+		});
+		link.classList.add('active');
+		link.style.color = '#1cebf4';
 	}
 
 	function resetAndShow(filter) {
@@ -430,18 +431,21 @@ const postsData = sortedPosts.map(post => {
 			});
 		}
 
-		// Sort by date (DOM order is already sorted)
 		showBatch();
 	}
 
-	// Filter buttons
-	filterBtns.forEach(function(btn) {
-		btn.addEventListener('click', function() {
-			filterBtns.forEach(function(b) {
-				b.classList.remove('active');
-			});
-			btn.classList.add('active');
-			var filter = btn.getAttribute('data-filter');
+	// Intercept header nav clicks to filter in place
+	mainNavLinks.forEach(function(link) {
+		link.addEventListener('click', function(e) {
+			e.preventDefault();
+			var href = link.getAttribute('href');
+			var filter = 'all';
+			if (href && href !== '/' && href !== '#') {
+				// Extract category from /category/design -> design
+				var parts = href.split('/');
+				filter = parts[parts.length - 1] || 'all';
+			}
+			setActive(link);
 			resetAndShow(filter);
 		});
 	});
@@ -459,7 +463,8 @@ const postsData = sortedPosts.map(post => {
 		observer.observe(sentinel);
 	}
 
-	// Initial render
+	// Initial render (set first nav link active)
+	if (mainNavLinks.length > 0) setActive(mainNavLinks[0]);
 	resetAndShow('all');
 })();
 </script>
