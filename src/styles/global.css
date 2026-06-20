@@ -1,76 +1,57 @@
-/* Digital Nouveau - Wix clone global styles */
+/* Digital Nouveau — Wix clone styles
+   Spec: cyan #1cebf4 on #000000, DM Sans Light, neural bg
+*/
 
-/* Body - match Wix exactly */
-body {
-  background-color: #000000;
-  color: #1ceb f4;
-  font-family: 'brandon-grot-w01-light', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Typography - Brandon Grotesque Light */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'brandon-grot-w01-light', sans-serif;
-  font-weight: 400;
-  margin: 0 0 0.5em;
-  color: #1ceb f4;
-}
-
-h1 {
-  font-size: 28px;
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: 28px;
-  line-height: 1.2;
-}
-
-h3 {
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-h4 {
-  font-size: 18px;
-  line-height: 1.2;
-}
-
-h5 {
-  font-size: 16px;
-  line-height: 1.2;
-}
-
-h6 {
+/* ── Body ── */
+body {
+  background-color: #000000;
+  color: #1cebf4;
+  font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.2;
-}
-
-p {
-  font-family: 'brandon-grot-w01-light', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
-  color: #1ceb f4;
-  margin: 0 0 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Links - match Wix exactly */
+/* ── Links — ALL cyan, no blue ── */
 a {
-  color: #1ceb f4;
+  color: #1cebf4;
   text-decoration: none;
-  transition: opacity 0.2s;
 }
 
 a:hover {
   opacity: 0.8;
 }
 
-/* Neural network background */
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  color: #1cebf4;
+  line-height: 1.2;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 28px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+/* ── Neural network background ── */
 .bg-neural {
   position: fixed;
   top: 0;
@@ -83,14 +64,14 @@ a:hover {
   pointer-events: none;
 }
 
-/* Container */
+/* ── Container ── */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Header */
+/* ── Header ── */
 .site-header {
   padding: 40px 0 20px;
   position: relative;
@@ -109,32 +90,17 @@ a:hover {
 }
 
 .site-title {
-  margin: 0;
   font-size: 28px;
-  font-family: 'brandon-grot-w01-light', sans-serif;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-.site-title a {
-  color: #1ceb f4;
-  text-decoration: none;
-}
-
-.site-title a:hover {
-  opacity: 0.8;
+  font-weight: 300;
+  margin: 0;
 }
 
 .tagline {
   font-size: 14px;
-  color: #1ceb f4;
+  color: rgba(28, 235, 244, 0.6);
   margin: 2px 0;
-  opacity: 0.7;
-  font-family: 'brandon-grot-w01-light', sans-serif;
-  font-weight: 400;
 }
 
-/* Navigation */
 .utility-nav {
   display: flex;
   gap: 24px;
@@ -142,15 +108,7 @@ a:hover {
 
 .utility-nav a {
   font-size: 14px;
-  color: #1ceb f4;
-  text-decoration: none;
-  font-family: 'brandon-grot-w01-light', sans-serif;
-  font-weight: 400;
-  transition: opacity 0.2s;
-}
-
-.utility-nav a:hover {
-  opacity: 0.8;
+  font-weight: 300;
 }
 
 .main-nav {
@@ -163,29 +121,15 @@ a:hover {
 
 .main-nav a {
   font-size: 14px;
-  color: #1ceb f4;
-  text-decoration: none;
-  font-family: 'brandon-grot-w01-light', sans-serif;
-  font-weight: 400;
-  transition: opacity 0.2s;
+  font-weight: 300;
 }
 
-.main-nav a:hover {
-  opacity: 0.8;
-}
-
-/* Blog post card - Wix match */
+/* ── Blog Card ── */
 .blog-post-card {
   background: rgba(0, 0, 0, 0.95);
-  border: 1px solid #1ceb f4;
+  border: 1px solid #1cebf4;
   margin-bottom: 40px;
   overflow: hidden;
-  font-family: 'brandon-grot-w01-light', sans-serif;
-}
-
-.post-image-link {
-  display: block;
-  width: 100%;
 }
 
 .post-image {
@@ -231,30 +175,26 @@ a:hover {
 }
 
 .author-name {
-  color: #1ceb f4;
+  color: #1cebf4;
   font-size: 12px;
-  font-weight: 400;
-  font-family: 'brandon-grot-w01-light', sans-serif;
+  font-weight: 300;
 }
 
 .post-date {
-  color: #1ceb f4;
+  color: rgba(28, 235, 244, 0.6);
   font-size: 12px;
-  font-weight: 400;
-  font-family: 'brandon-grot-w01-light', sans-serif;
+  font-weight: 300;
 }
 
 .post-title {
-  margin: 0 0 12px;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
-  color: #1ceb f4;
-  font-family: 'brandon-grot-w01-light', sans-serif;
+  margin: 0 0 12px;
 }
 
 .post-title a {
-  color: #1ceb f4;
+  color: #1cebf4;
   text-decoration: none;
 }
 
@@ -263,13 +203,13 @@ a:hover {
 }
 
 .post-excerpt {
-  margin: 0 0 20px;
   font-size: 14px;
   line-height: 1.5;
-  color: #1ceb f4;
-  font-family: 'brandon-grot-w01-light', sans-serif;
+  margin: 0 0 20px;
+  color: rgba(28, 235, 244, 0.8);
 }
 
+/* ── Social buttons ── */
 .social-actions {
   display: flex;
   gap: 12px;
@@ -279,13 +219,13 @@ a:hover {
 .social-btn {
   background: none;
   border: none;
-  color: #1ceb f4;
+  color: #1cebf4;
   cursor: pointer;
   padding: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.7;
+  opacity: 0.6;
   transition: opacity 0.2s;
 }
 
@@ -293,12 +233,12 @@ a:hover {
   opacity: 1;
 }
 
+/* ── Post stats ── */
 .post-stats {
   display: flex;
   gap: 16px;
   font-size: 12px;
-  color: #1ceb f4;
-  opacity: 0.7;
+  color: rgba(28, 235, 244, 0.6);
 }
 
 .stat {
@@ -307,11 +247,7 @@ a:hover {
   gap: 4px;
 }
 
-.stat svg {
-  opacity: 0.6;
-}
-
-/* Recent posts section */
+/* ── Recent posts grid ── */
 .recent-posts {
   margin: 40px 0;
   padding-top: 30px;
@@ -320,9 +256,8 @@ a:hover {
 
 .section-title {
   font-size: 14px;
-  font-family: 'brandon-grot-w01-light', sans-serif;
-  font-weight: 400;
-  color: #1ceb f4;
+  font-weight: 300;
+  color: #1cebf4;
   margin: 0 0 16px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -344,14 +279,14 @@ a:hover {
 }
 
 .post-thumbnail:hover {
-  border-color: #1ceb f4;
+  border-color: #1cebf4;
 }
 
 .thumbnail-image {
   width: 100%;
   height: 120px;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(28, 235, 244, 0.1);
 }
 
 .thumbnail-image img {
@@ -360,34 +295,26 @@ a:hover {
   object-fit: cover;
 }
 
-.thumbnail-placeholder {
-  width: 100%;
-  height: 100%;
-  background: rgba(28, 235, 244, 0.1);
-}
-
 .thumbnail-info {
   padding: 12px;
 }
 
 .thumbnail-info h4 {
   font-size: 14px;
-  font-weight: 400;
-  color: #1ceb f4;
+  font-weight: 300;
+  color: #1cebf4;
   margin: 0 0 8px;
   line-height: 1.4;
-  font-family: 'brandon-grot-w01-light', sans-serif;
 }
 
 .thumbnail-stats {
   display: flex;
   gap: 12px;
   font-size: 10px;
-  color: #1ceb f4;
-  opacity: 0.6;
+  color: rgba(28, 235, 244, 0.6);
 }
 
-/* Comments section */
+/* ── Comments ── */
 .comments-section {
   margin: 40px 0;
   padding-top: 30px;
@@ -423,8 +350,8 @@ a:hover {
   padding: 12px;
   border: 1px solid rgba(28, 235, 244, 0.2);
   background: rgba(0, 0, 0, 0.8);
-  color: #1ceb f4;
-  font-family: 'brandon-grot-w01-light', sans-serif;
+  color: #1cebf4;
+  font-family: 'DM Sans', sans-serif;
   font-size: 12px;
   resize: vertical;
   margin-bottom: 8px;
@@ -438,19 +365,20 @@ a:hover {
   padding: 8px 16px;
   border: 1px solid rgba(28, 235, 244, 0.3);
   background: rgba(0, 0, 0, 0.8);
-  color: #1ceb f4;
+  color: #1cebf4;
   font-size: 12px;
   cursor: pointer;
-  font-family: 'brandon-grot-w01-light', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
   transition: all 0.2s;
 }
 
 .comment-submit:hover {
-  border-color: #1ceb f4;
+  border-color: #1cebf4;
   background: rgba(28, 235, 244, 0.1);
 }
 
-/* Footer */
+/* ── Footer ── */
 .site-footer {
   padding: 60px 0;
   text-align: center;
@@ -471,11 +399,10 @@ a:hover {
 
 .newsletter-title {
   font-size: 14px;
-  color: #1ceb f4;
+  color: #1cebf4;
   margin-bottom: 16px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.05em;
-  font-family: 'brandon-grot-w01-light', sans-serif;
 }
 
 .newsletter-form {
@@ -489,9 +416,10 @@ a:hover {
   padding: 10px 14px;
   border: 1px solid rgba(28, 235, 244, 0.3);
   background: rgba(0, 0, 0, 0.9);
-  color: #1ceb f4;
+  color: #1cebf4;
   font-size: 12px;
-  font-family: 'brandon-grot-w01-light', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
   outline: none;
   min-width: 160px;
 }
@@ -501,23 +429,24 @@ a:hover {
 }
 
 .newsletter-form input:focus {
-  border-color: #1ceb f4;
+  border-color: #1cebf4;
 }
 
 .newsletter-form button {
   padding: 10px 20px;
   border: 1px solid rgba(28, 235, 244, 0.3);
   background: rgba(0, 0, 0, 0.9);
-  color: #1ceb f4;
+  color: #1cebf4;
   font-size: 12px;
   cursor: pointer;
-  font-family: 'brandon-grot-w01-light', sans-serif;
-  transition: all 0.2s;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
   letter-spacing: 0.05em;
+  transition: all 0.2s;
 }
 
 .newsletter-form button:hover {
-  border-color: #1ceb f4;
+  border-color: #1cebf4;
   background: rgba(28, 235, 244, 0.1);
 }
 
@@ -529,9 +458,10 @@ a:hover {
 
 .footer-copy p {
   margin: 0;
+  color: rgba(28, 235, 244, 0.4);
 }
 
-/* Responsive */
+/* ── Responsive ── */
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
@@ -552,5 +482,10 @@ a:hover {
   
   .comment-form-wrapper {
     flex-direction: column;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
   }
 }
