@@ -34,6 +34,13 @@ const { title, description } = Astro.props;
 		
 		<header class="site-header">
 			<div class="container">
+				<!-- Hamburger menu button (mobile) -->
+				<button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
 				<div class="header-content">
 					<div class="header-left">
 						<h1 class="site-title">
@@ -47,6 +54,11 @@ const { title, description } = Astro.props;
 						</div>
 					</div>
 					
+					<!-- Animated logo - center (from Wix) -->
+					<div class="header-logo">
+						<img src="/logo-animated.gif" alt="" class="logo-animated" />
+					</div>
+
 					<div class="header-right">
 						<nav class="utility-nav">
 							<a href="/feed" class="nav-link">feed</a>
@@ -70,6 +82,26 @@ const { title, description } = Astro.props;
 			</div>
 		</header>
 
+		<!-- Mobile slide-out menu -->
+		<div class="mobile-menu" id="mobileMenu">
+			<nav class="mobile-nav">
+				<a href="/" class="mobile-nav-link">&gt; everything ~</a>
+				<a href="/category/design" class="mobile-nav-link">design</a>
+				<a href="/category/drawings" class="mobile-nav-link">drawings</a>
+				<a href="/category/readings" class="mobile-nav-link">readings</a>
+				<a href="/category/skyfi" class="mobile-nav-link">skyfi</a>
+				<a href="/category/skyfi-a-reading-list" class="mobile-nav-link">skyfi :: a reading list</a>
+				<a href="/category/thinkings" class="mobile-nav-link">thinkings</a>
+				<a href="/category/observings" class="mobile-nav-link">observings</a>
+				<a href="/category/teachings" class="mobile-nav-link">teachings</a>
+				<a href="/category/writings" class="mobile-nav-link">writings</a>
+				<div class="mobile-nav-divider"></div>
+				<a href="/feed" class="mobile-nav-link">feed</a>
+				<a href="/portfolio" class="mobile-nav-link">portfolio</a>
+			</nav>
+		</div>
+		<div class="mobile-overlay" id="mobileOverlay"></div>
+
 		<slot />
 
 		<footer class="site-footer">
@@ -87,5 +119,17 @@ const { title, description } = Astro.props;
 				</div>
 			</div>
 		</footer>
+
+		<script>
+			// Hamburger menu toggle
+			document.getElementById('hamburgerBtn').addEventListener('click', () => {
+				document.getElementById('mobileMenu').classList.toggle('active');
+				document.getElementById('mobileOverlay').classList.toggle('active');
+			});
+			document.getElementById('mobileOverlay').addEventListener('click', () => {
+				document.getElementById('mobileMenu').classList.remove('active');
+				document.getElementById('mobileOverlay').classList.remove('active');
+			});
+		</script>
 	</body>
 </html>

@@ -1,6 +1,4 @@
-/* Digital Nouveau — Wix clone styles
-   Spec: cyan #1cebf4 on #000000, DM Sans Light, neural bg
-*/
+/* Digital Nouveau — Wix clone global styles */
 
 /* ── Reset ── */
 *, *::before, *::after {
@@ -19,12 +17,14 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-/* ── Links — ALL cyan, no blue ── */
+/* ── Links ── */
 a {
   color: #1cebf4;
   text-decoration: none;
+  transition: opacity 0.2s;
 }
 
 a:hover {
@@ -42,8 +42,6 @@ h1 { font-size: 28px; }
 h2 { font-size: 28px; }
 h3 { font-size: 20px; }
 h4 { font-size: 16px; }
-h5 { font-size: 14px; }
-h6 { font-size: 12px; }
 
 p {
   font-size: 14px;
@@ -51,7 +49,7 @@ p {
   margin-bottom: 1em;
 }
 
-/* ── Neural network background ── */
+/* ── Neural background ── */
 .bg-neural {
   position: fixed;
   top: 0;
@@ -60,8 +58,9 @@ p {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.25;
   pointer-events: none;
+  filter: contrast(1.1) brightness(1.1);
 }
 
 /* ── Container ── */
@@ -73,7 +72,7 @@ p {
 
 /* ── Header ── */
 .site-header {
-  padding: 40px 0 20px;
+  padding: 30px 0 20px;
   position: relative;
   z-index: 10;
 }
@@ -82,54 +81,188 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .header-left {
-  max-width: 400px;
+  max-width: 380px;
 }
 
 .site-title {
   font-size: 28px;
   font-weight: 300;
   margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.site-title a {
+  color: #1cebf4;
+}
+
+.taglines {
+  margin-top: 8px;
 }
 
 .tagline {
-  font-size: 14px;
-  color: rgba(28, 235, 244, 0.6);
+  font-size: 13px;
+  color: rgba(28, 235, 244, 0.5);
   margin: 2px 0;
+  line-height: 1.4;
 }
 
 .utility-nav {
   display: flex;
-  gap: 24px;
+  gap: 20px;
+  align-items: center;
 }
 
 .utility-nav a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
+  color: rgba(28, 235, 244, 0.7);
 }
 
 .main-nav {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   flex-wrap: wrap;
-  padding-top: 16px;
-  border-top: 1px solid rgba(28, 235, 244, 0.2);
+  padding-top: 12px;
+  border-top: 1px solid rgba(28, 235, 244, 0.15);
 }
 
 .main-nav a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
+  color: rgba(28, 235, 244, 0.8);
 }
 
-/* ── Blog Card ── */
-.blog-post-card {
+/* ── Animated logo (center) ── */
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.logo-animated {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* ── Hamburger menu ── */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: 1px solid rgba(28, 235, 244, 0.3);
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #1cebf4;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  transition: all 0.2s;
+}
+
+.hamburger-btn:hover {
+  border-color: #1cebf4;
+  background: rgba(28, 235, 244, 0.1);
+}
+
+/* ── Mobile menu ── */
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.mobile-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 280px;
+  height: 100%;
   background: rgba(0, 0, 0, 0.95);
-  border: 1px solid #1cebf4;
+  border-left: 1px solid rgba(28, 235, 244, 0.2);
+  z-index: 999;
+  padding: 60px 30px 30px;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: 1px solid rgba(28, 235, 244, 0.3);
+  color: #1cebf4;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+.mobile-menu-close:hover {
+  border-color: #1cebf4;
+}
+
+.mobile-nav-section {
+  margin-bottom: 24px;
+}
+
+.mobile-nav-label {
+  font-size: 11px;
+  color: rgba(28, 235, 244, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.mobile-nav-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #1cebf4;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(28, 235, 244, 0.1);
+}
+
+.mobile-nav-link:last-child {
+  border-bottom: none;
+}
+
+/* ── Blog post card ── */
+.blog-post-card {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(28, 235, 244, 0.3);
   margin-bottom: 40px;
   overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.blog-post-card:hover {
+  border-color: rgba(28, 235, 244, 0.6);
 }
 
 .post-image {
@@ -153,7 +286,7 @@ p {
 .author-info {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .avatar {
@@ -166,24 +299,19 @@ p {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
-
-.avatar-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
 }
 
 .author-name {
   color: #1cebf4;
   font-size: 12px;
-  font-weight: 300;
 }
 
 .post-date {
-  color: rgba(28, 235, 244, 0.6);
+  color: rgba(28, 235, 244, 0.5);
   font-size: 12px;
-  font-weight: 300;
 }
 
 .post-title {
@@ -195,24 +323,19 @@ p {
 
 .post-title a {
   color: #1cebf4;
-  text-decoration: none;
-}
-
-.post-title a:hover {
-  opacity: 0.8;
 }
 
 .post-excerpt {
   font-size: 14px;
   line-height: 1.5;
   margin: 0 0 20px;
-  color: rgba(28, 235, 244, 0.8);
+  color: rgba(28, 235, 244, 0.7);
 }
 
 /* ── Social buttons ── */
 .social-actions {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 16px;
 }
 
@@ -222,9 +345,6 @@ p {
   color: #1cebf4;
   cursor: pointer;
   padding: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   opacity: 0.6;
   transition: opacity 0.2s;
 }
@@ -238,7 +358,7 @@ p {
   display: flex;
   gap: 16px;
   font-size: 12px;
-  color: rgba(28, 235, 244, 0.6);
+  color: rgba(28, 235, 244, 0.5);
 }
 
 .stat {
@@ -251,42 +371,42 @@ p {
 .recent-posts {
   margin: 40px 0;
   padding-top: 30px;
-  border-top: 1px solid rgba(28, 235, 244, 0.2);
+  border-top: 1px solid rgba(28, 235, 244, 0.15);
 }
 
 .section-title {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   color: #1cebf4;
   margin: 0 0 16px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 16px;
 }
 
 .post-thumbnail {
   display: block;
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(28, 235, 244, 0.2);
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(28, 235, 244, 0.15);
   overflow: hidden;
   transition: border-color 0.2s;
 }
 
 .post-thumbnail:hover {
-  border-color: #1cebf4;
+  border-color: rgba(28, 235, 244, 0.5);
 }
 
 .thumbnail-image {
   width: 100%;
-  height: 120px;
+  height: 100px;
   overflow: hidden;
-  background: rgba(28, 235, 244, 0.1);
+  background: rgba(28, 235, 244, 0.08);
 }
 
 .thumbnail-image img {
@@ -296,34 +416,34 @@ p {
 }
 
 .thumbnail-info {
-  padding: 12px;
+  padding: 10px;
 }
 
 .thumbnail-info h4 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   color: #1cebf4;
-  margin: 0 0 8px;
-  line-height: 1.4;
+  margin: 0 0 6px;
+  line-height: 1.3;
 }
 
 .thumbnail-stats {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   font-size: 10px;
-  color: rgba(28, 235, 244, 0.6);
+  color: rgba(28, 235, 244, 0.4);
 }
 
 /* ── Comments ── */
 .comments-section {
   margin: 40px 0;
   padding-top: 30px;
-  border-top: 1px solid rgba(28, 235, 244, 0.2);
+  border-top: 1px solid rgba(28, 235, 244, 0.15);
 }
 
 .comment-form-wrapper {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   align-items: flex-start;
 }
 
@@ -337,7 +457,6 @@ p {
   justify-content: center;
   color: white;
   font-size: 12px;
-  font-weight: 600;
   flex-shrink: 0;
 }
 
@@ -347,7 +466,7 @@ p {
 
 .comment-form textarea {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid rgba(28, 235, 244, 0.2);
   background: rgba(0, 0, 0, 0.8);
   color: #1cebf4;
@@ -355,15 +474,16 @@ p {
   font-size: 12px;
   resize: vertical;
   margin-bottom: 8px;
+  outline: none;
 }
 
 .comment-form textarea::placeholder {
-  color: rgba(28, 235, 244, 0.5);
+  color: rgba(28, 235, 244, 0.4);
 }
 
 .comment-submit {
-  padding: 8px 16px;
-  border: 1px solid rgba(28, 235, 244, 0.3);
+  padding: 8px 14px;
+  border: 1px solid rgba(28, 235, 244, 0.25);
   background: rgba(0, 0, 0, 0.8);
   color: #1cebf4;
   font-size: 12px;
@@ -398,7 +518,7 @@ p {
 }
 
 .newsletter-title {
-  font-size: 14px;
+  font-size: 13px;
   color: #1cebf4;
   margin-bottom: 16px;
   font-weight: 300;
@@ -414,7 +534,7 @@ p {
 
 .newsletter-form input {
   padding: 10px 14px;
-  border: 1px solid rgba(28, 235, 244, 0.3);
+  border: 1px solid rgba(28, 235, 244, 0.25);
   background: rgba(0, 0, 0, 0.9);
   color: #1cebf4;
   font-size: 12px;
@@ -425,7 +545,7 @@ p {
 }
 
 .newsletter-form input::placeholder {
-  color: rgba(28, 235, 244, 0.4);
+  color: rgba(28, 235, 244, 0.35);
 }
 
 .newsletter-form input:focus {
@@ -433,8 +553,8 @@ p {
 }
 
 .newsletter-form button {
-  padding: 10px 20px;
-  border: 1px solid rgba(28, 235, 244, 0.3);
+  padding: 10px 16px;
+  border: 1px solid rgba(28, 235, 244, 0.25);
   background: rgba(0, 0, 0, 0.9);
   color: #1cebf4;
   font-size: 12px;
@@ -452,28 +572,36 @@ p {
 
 .footer-copy {
   font-size: 11px;
-  color: rgba(28, 235, 244, 0.4);
+  color: rgba(28, 235, 244, 0.35);
   line-height: 1.5;
 }
 
 .footer-copy p {
   margin: 0;
-  color: rgba(28, 235, 244, 0.4);
+  color: rgba(28, 235, 244, 0.35);
 }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
   }
   
   .header-left {
     max-width: 100%;
   }
   
+  .utility-nav {
+    display: none;
+  }
+  
   .main-nav {
-    gap: 16px;
+    display: none;
+  }
+  
+  .hamburger-btn {
+    display: block;
   }
   
   .posts-grid {
