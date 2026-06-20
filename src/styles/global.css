@@ -71,22 +71,26 @@ p {
 
 /* ── Header ── */
 .site-header {
-  padding: 60px 0 30px;
-  position: relative;
-  z-index: 10;
+	padding: 0;
+	position: relative;
+	z-index: 10;
+	border-top: 2px solid #1cebf4;
+	border-bottom: 2px solid #1cebf4;
+	background: rgba(0, 0, 0, 0.95);
 }
 
 .site-header .container {
-  position: relative;
+	position: relative;
+	padding: 20px 20px 0;
 }
 
 .header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  margin-bottom: 0;
-  margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 50px;
 }
 
 .header-left {
@@ -134,11 +138,11 @@ p {
 }
 
 .main-nav {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding-top: 12px;
-  border-top: 1px solid rgba(28, 235, 244, 0.15);
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	padding: 12px 0 20px;
+	border-top: 1px solid rgba(28, 235, 244, 0.15);
 }
 
 .main-nav a {
