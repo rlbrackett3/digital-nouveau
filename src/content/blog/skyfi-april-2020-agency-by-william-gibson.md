@@ -12,7 +12,7 @@ likes: 1
 Emerging from the black hole of final reviews and the added hustle of wrapping up a semester of challenges I have some time now to get back to this writeup. Luckily I took some notes and already gathered many of the images and references. Just a bit of writing now.
 
 <figure>
-![](dc9b92_420843d31a6a44ae92f3dfb4beca3a0d~mv2.png)
+<img src="dc9b92_420843d31a6a44ae92f3dfb4beca3a0d~mv2.png" alt="">
 
 </figure>
 
@@ -21,7 +21,7 @@ A long gap as the world slowly falls apart and digitally sutures itself back tog
 Agency is the second book in Gibson's current trilogy, building upon the multi-threaded realities, or stubs, introduced in The Peripheral. In the long gap, several people decided to start with The Peripheral before going into Agency. I feel I probably should have (and will soon) reread it myself after our discussion. The Peripheral is a more complex and driven story as it builds out the near (and slightly further)  future with cataclysmic change and significantly advanced technology allowing for the branching of time and reality from past events through computational simulations. The future cast of characters returns in Agency to dig deeper into our more immediate present as autonomous systems and emergent reforming militaristic AI start to transcend the will and understanding of their human creators. The two books live in the same universe but are completely different explorations through the speculative lens. A light (lite) version of time travel based on communication and a multiverse of possibilities. Agency hits much closer to home building a new world from the slight shift in the 2016 US presidential election.
 
 <figure>
-![](dc9b92_a86716ccf69e4ee388f960e0d9af3cac~mv2.png)
+<img src="dc9b92_a86716ccf69e4ee388f960e0d9af3cac~mv2.png" alt="">
 
 </figure>
 
@@ -36,7 +36,7 @@ Careful who you pick on:
 Gibson's gentle tweak to our current technologies opens up a frightening potential for invasion. This subterfuge to our sovereignty that appropriates and transforms our own tools may quickly leave us in the dust. It is never clear if Eunice is benevolent or malevolent or even concerned with those distinctions as she gains greater integration with her self.  The emergence of a self-aware computational network with near-limitless (from a human perspective) processing power could perpetrate extreme disruptions and manipulation to agency.
 
 <figure>
-![](dc9b92_693dc00386ca4cb289518145a5669973~mv2.jpg)
+<img src="dc9b92_693dc00386ca4cb289518145a5669973~mv2.jpg" alt="">
 
 </figure>
 
@@ -45,7 +45,7 @@ The book is really just the word, Agency, with all its baggage and complexity. W
 So, while I agree that The Peripheral is a more exciting and dynamic story, I think that the blurred and ambiguous complexity of Agency is for more thought-provoking and evquietly menacing.  It seems that perhaps the cover designer understood this best of all. I look forward eagerly to the third addition to this storyline.
 
 <figure>
-![](dc9b92_6834b52260de456ca169f0fa122132a0~mv2.jpg)
+<img src="dc9b92_6834b52260de456ca169f0fa122132a0~mv2.jpg" alt="">
 
 </figure>
 
@@ -95,14 +95,14 @@ Vero's Top Picks:
 2. The Texas Chainsaw Massacre
 
 <figure>
-![](dc9b92_a0ff5d1c8f324907a44b81049ad10f9a~mv2.jpg)
+<img src="dc9b92_a0ff5d1c8f324907a44b81049ad10f9a~mv2.jpg" alt="">
 
 </figure>
 
 3. The Thing
 
 <figure>
-![](dc9b92_d6e894a676fa4eb6a49859c477f47f24~mv2.jpg)
+<img src="dc9b92_d6e894a676fa4eb6a49859c477f47f24~mv2.jpg" alt="">
 
 </figure>
 
@@ -134,7 +134,7 @@ The Beach
 Red Dawn (1984)
 
 <figure>
-![](dc9b92_478de289817d4d4cbda4ad07f4c941c9~mv2.jpg)
+<img src="dc9b92_478de289817d4d4cbda4ad07f4c941c9~mv2.jpg" alt="">
 
 </figure>
 
@@ -149,7 +149,7 @@ Devs
 West World Season 3
 
 <figure>
-![](dc9b92_87cf851446ba4c48b395787a9ec93c8a~mv2.jpg)
+<img src="dc9b92_87cf851446ba4c48b395787a9ec93c8a~mv2.jpg" alt="">
 
 </figure>
 
@@ -162,12 +162,12 @@ The Adventures of Brisco County Jr.
 We are all very excited for Dune
 
 <figure>
-![](dc9b92_c0c59ef0841c4e6db4c17ae482b9e9b0~mv2.jpg)
+<img src="dc9b92_c0c59ef0841c4e6db4c17ae482b9e9b0~mv2.jpg" alt="">
 
 </figure>
 
 <figure>
-![](dc9b92_4c38f2ea4e054346b68bf6d722711698~mv2.jpg)
+<img src="dc9b92_4c38f2ea4e054346b68bf6d722711698~mv2.jpg" alt="">
 
 </figure>
 
@@ -198,14 +198,14 @@ Our next book is actually two books, one SkyFi Detective and the other Non-ficti
 (primarily selected for the headshot)
 
 <figure>
-![](dc9b92_69afc6d07fa5478eb91326570757e83a~mv2.jpg)
+<img src="dc9b92_69afc6d07fa5478eb91326570757e83a~mv2.jpg" alt="">
 
 </figure>
 
 ## Non-Fiction :: New Dark Age by James Brindle
 
 <figure>
-![](dc9b92_a5fbe32ce4d0432fba6949fba0a2eb8c~mv2.jpg)
+<img src="dc9b92_a5fbe32ce4d0432fba6949fba0a2eb8c~mv2.jpg" alt="">
 
 </figure>
 

@@ -14,7 +14,7 @@ Six weeks seems like almost nothing. As life tends to do here in New York, the t
 The Onnit 6 Challenge brought greater focus to my body, movement patterns, and my daily routines.
 
 <figure>
-![](dc9b92_5d4c902433c5462dabcd2dd86ecbf368~mv2.jpg)
+<img src="dc9b92_5d4c902433c5462dabcd2dd86ecbf368~mv2.jpg" alt="">
 
 </figure>
 
@@ -35,13 +35,13 @@ After six weeks I feel stronger, more mobile, and free to move without fear of p
 I continue to move, to bring together all the tools I have gained, to become the best version of myself that I can.
 
 <figure>
-![](dc9b92_a93ab996d61d4844a8dc3df4392c9e3f~mv2.jpg)
+<img src="dc9b92_a93ab996d61d4844a8dc3df4392c9e3f~mv2.jpg" alt="">
 
 </figure>
 
 Onward
 
 <figure>
-![](dc9b92_a627de89d876434b9490002e62090d3e~mv2.jpg)
+<img src="dc9b92_a627de89d876434b9490002e62090d3e~mv2.jpg" alt="">
 
 </figure>

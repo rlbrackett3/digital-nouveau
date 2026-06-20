@@ -12,7 +12,7 @@ likes: 3
 Sacha Frey and I continue our exploration of comics as a hybrid narrative format in the 2020 volume 6 of [Trans-] FICTION with Comics Beyond Fiction.  You can read a digital version of the journal below or purchase a printed copy to help support future volumes.
 
 <figure>
-![](dc9b92_ced3d4dc90354df2af26b92211adbb58~mv2.jpg)
+<img src="dc9b92_ced3d4dc90354df2af26b92211adbb58~mv2.jpg" alt="">
 
 </figure>
 
@@ -21,6 +21,6 @@ The [Trans-] journal series is edited by Ashley Simone thought the University of
 You can purchase a physical printed copy of the journal here to support the production of future volumes.
 
 <figure>
-![](dc9b92_d8f4c1bcbe444f8f9c9b0ae34ad3064a~mv2.jpg)
+<img src="dc9b92_d8f4c1bcbe444f8f9c9b0ae34ad3064a~mv2.jpg" alt="">
 
 </figure>

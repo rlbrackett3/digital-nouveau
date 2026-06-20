@@ -30,7 +30,7 @@ This will come back around https://www.rollingstone.com/culture/culture-news/dav
 ---
 
 <figure>
-![](dc9b92_6495f1a11e9f483fa6420767342e2490~mv2.jpg)
+<img src="dc9b92_6495f1a11e9f483fa6420767342e2490~mv2.jpg" alt="">
 
 </figure>
 
@@ -51,7 +51,7 @@ There were a few references (I think initiated by Rachel) to the How Did This Ge
 https://www.earwolf.com/show/how-did-this-get-made/
 
 <figure>
-![](dc9b92_37589a7cf11b44848ee361f851f7ff77~mv2.jpeg)
+<img src="dc9b92_37589a7cf11b44848ee361f851f7ff77~mv2.jpeg" alt="">
 
 </figure>
 
@@ -60,7 +60,7 @@ https://www.earwolf.com/show/how-did-this-get-made/
 Amazon released a mini-series adaptation of China Mieville's The City & The City that is pretty good. strange and noir with an interesting take on the overlapping realities of two cities in one place. An interesting parallel to the disassociated time lines of Shadowbahn, perhaps The Country & the Country.
 
 <figure>
-![](dc9b92_d6139b9325e74639b5de7d82a6ca6f72~mv2.jpg)
+<img src="dc9b92_d6139b9325e74639b5de7d82a6ca6f72~mv2.jpg" alt="">
 
 </figure>
 
@@ -79,7 +79,7 @@ https://www.gq.com/story/david-foster-wallace-essays-end-of-the-tour
 Alfred Bester made it into potential discussion for our next reading, the Stars My Destination has been on our list for a awhile and a few people have read dome of his work in The Demolished Man and The Deceivers. I am particularly interested in hi Virtual Unrealities short story collection, perhaps a post Halloween experience.
 
 <figure>
-![](dc9b92_d50f462a3b974e9bb78b33ea5d902633~mv2.jpg)
+<img src="dc9b92_d50f462a3b974e9bb78b33ea5d902633~mv2.jpg" alt="">
 
 </figure>
 
@@ -98,19 +98,19 @@ We went classic for this month with Olaf Stapledon
 Last and Fist Men & Star Maker
 
 <figure>
-![](dc9b92_c3123dce0631416b972bebb74403f257~mv2.jpg)
+<img src="dc9b92_c3123dce0631416b972bebb74403f257~mv2.jpg" alt="">
 
 </figure>
 
 <figure>
-![](dc9b92_56eeb4598fef4cbc85047f64bccd3d0b~mv2.jpg)
+<img src="dc9b92_56eeb4598fef4cbc85047f64bccd3d0b~mv2.jpg" alt="">
 
 </figure>
 
 We originally chose Star Maker, but it is pretty short, so if you are so inclined we can do a double feature with the related novel - Last and First Men. They come conveniently bundled here: https://www.amazon.com/gp/product/0486219623/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
 
 <figure>
-![](dc9b92_90cb385121e34b7bbd42ca57cea23215~mv2.jpg)
+<img src="dc9b92_90cb385121e34b7bbd42ca57cea23215~mv2.jpg" alt="">
 
 </figure>
 
@@ -119,6 +119,6 @@ Next meeting on Thursday October 31st?
 Until next time, keep looking up, or in, or over there.
 
 <figure>
-![](dc9b92_c1fffa69619b470a96275f048516245c~mv2.jpg)
+<img src="dc9b92_c1fffa69619b470a96275f048516245c~mv2.jpg" alt="">
 
 </figure>

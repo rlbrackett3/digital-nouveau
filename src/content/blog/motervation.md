@@ -9,7 +9,7 @@ views: 5
 ---
 
 <figure>
-![](dc9b92_f3708c106cd646d2a1251db54e846a91~mv2.jpg)
+<img src="dc9b92_f3708c106cd646d2a1251db54e846a91~mv2.jpg" alt="">
 
 </figure>
 

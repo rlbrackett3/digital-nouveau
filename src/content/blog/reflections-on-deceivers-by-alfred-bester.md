@@ -12,7 +12,7 @@ likes: 1
 Since I spend so much time ingesting works of Science Fiction I figure I should start reflecting on how these speculative realities influence my perceptions of the world and potentially offer ways forward for us all. (aka book reports)
 
 <figure>
-![](dc9b92_eb9c56282b8c4af482c5f84e646277c1~mv2.png)
+<img src="dc9b92_eb9c56282b8c4af482c5f84e646277c1~mv2.png" alt="">
 
 </figure>
 
@@ -21,7 +21,7 @@ Each yearly visit to Champaign, IL to visit my family is not complete without a 
 This year while navigating the two-layer deep shelves of the SciFi room on the second floor I can across two books by Alfred Bester. We have had a couple of his classic science fiction novels on our list for SkyFi book club for many years, but have never gotten around to it (its a long and ever-growing list). The front layer of books reveled The Computer Connection from 1975 and sneakily placed behind it, Deceivers from 1982. Both are old, wonderful smelling mass-market paperbacks with cracking flaking covers and yellowing pages. Perfect indulgences for travel and the gaps of time on trains and Sunday mornings.
 
 <figure>
-![](dc9b92_157c65cba34841ceae33bf6444dfdb88~mv2.png)
+<img src="dc9b92_157c65cba34841ceae33bf6444dfdb88~mv2.png" alt="">
 
 </figure>
 
@@ -30,7 +30,7 @@ My initial impression of Deceivers, straight from the cover (that is what they a
 (I have copied the text below for easier reading)
 
 <figure>
-![](dc9b92_995eff12a76e4ff6a6c9a9c914fac53d~mv2.png)
+<img src="dc9b92_995eff12a76e4ff6a6c9a9c914fac53d~mv2.png" alt="">
 
 </figure>
 
@@ -63,7 +63,7 @@ When all is said and done, it was an entertaining and thought-provoking yarn. It
 While that should probably be the final note, I will say that the story presents some very exciting ideas about computers in this strange future. They are organic machine hybrids, enslaved or nourished in tanks of vital fluid forming a network through the stars with their own secret society, only slightly revealed in the post-climax cooldown. I am now very interested to dig into The Computer Connection to both have a deeper glimpse at Bester's psyche and see where his speculations of future computer systems were going nearly fifty years ago.
 
 <figure>
-![](dc9b92_8146e096dc09427397ebb7a644e4310a~mv2.png)
+<img src="dc9b92_8146e096dc09427397ebb7a644e4310a~mv2.png" alt="">
 
 </figure>
 

@@ -14,7 +14,7 @@ Welcome back travelers,
 What a journey we took this episode, or at least I took. I encourage others to come along for the ride.
 
 <figure>
-![](dc9b92_0fb7efbca5b043a7864af592bc1f09ba~mv2.jpg)
+<img src="dc9b92_0fb7efbca5b043a7864af592bc1f09ba~mv2.jpg" alt="">
 
 </figure>
 
@@ -63,21 +63,21 @@ Some of our emergent tangents:
 We are potentially shifting the focus of the book club for the next year while we explore the highly acclaimed best works of Christopher Pike - starting with Remember Me.
 
 <figure>
-![](dc9b92_e66c0ceaba284c798ebc9ed34d4c020f~mv2.jpg)
+<img src="dc9b92_e66c0ceaba284c798ebc9ed34d4c020f~mv2.jpg" alt="">
 
 </figure>
 
 also known as...
 
 <figure>
-![](dc9b92_e674bbb9cbe34a038a23ae4d0c31dfcd~mv2.jpg)
+<img src="dc9b92_e674bbb9cbe34a038a23ae4d0c31dfcd~mv2.jpg" alt="">
 
 </figure>
 
 And more recently seen wearing this subtle shade of murder red...
 
 <figure>
-![](dc9b92_28225dbee8dd4d3b9f0be43963701b63~mv2.jpg)
+<img src="dc9b92_28225dbee8dd4d3b9f0be43963701b63~mv2.jpg" alt="">
 
 </figure>
 
@@ -98,19 +98,19 @@ I especially resonated with this one, since sometimes I wonder what all these wo
 Movie Recommendations (or Critiques?):
 
 <figure>
-![](dc9b92_8607cc374f7b43adad1d2626b97c35c6~mv2.jpg)
+<img src="dc9b92_8607cc374f7b43adad1d2626b97c35c6~mv2.jpg" alt="">
 
 </figure>
 
 <figure>
-![](dc9b92_027dd1cd742e43929db88ba38ef50e12~mv2.gif)
+<img src="dc9b92_027dd1cd742e43929db88ba38ef50e12~mv2.gif" alt="">
 
 </figure>
 
 Jason X - A fantastic space horror extravaganza staring this prime specimen of cybernetic enhanced genetic terror:
 
 <figure>
-![](dc9b92_c091052557bf426b99b9be41e70966c7~mv2_d_2806_1857_s_2.jpg)
+<img src="dc9b92_c091052557bf426b99b9be41e70966c7~mv2_d_2806_1857_s_2.jpg" alt="">
 
 </figure>
 
@@ -119,12 +119,12 @@ Jason X - A fantastic space horror extravaganza staring this prime specimen of c
 C.H.U.D. - Caniobalistic Humanoid Underground Dwellers - A fun look at NY Cities underbelly.
 
 <figure>
-![](dc9b92_373fe3c3704440b08115ab204c801a0e~mv2.jpg)
+<img src="dc9b92_373fe3c3704440b08115ab204c801a0e~mv2.jpg" alt="">
 
 </figure>
 
 <figure>
-![](dc9b92_1781cc3fb9b645ddba8d63eefcb49606~mv2.png)
+<img src="dc9b92_1781cc3fb9b645ddba8d63eefcb49606~mv2.png" alt="">
 
 </figure>
 
@@ -135,7 +135,7 @@ C.H.U.D. - Caniobalistic Humanoid Underground Dwellers - A fun look at NY Cities
 Basket Case - a stain on the retinas?
 
 <figure>
-![](dc9b92_029a5a097cdd419aa6f291f1fe936b9d~mv2.jpg)
+<img src="dc9b92_029a5a097cdd419aa6f291f1fe936b9d~mv2.jpg" alt="">
 
 </figure>
 
@@ -144,7 +144,7 @@ Basket Case - a stain on the retinas?
 They even made a few sequels, and with litters like this how could you not.
 
 <figure>
-![](dc9b92_60750844582b4e35b97c091b54995eed~mv2.jpg)
+<img src="dc9b92_60750844582b4e35b97c091b54995eed~mv2.jpg" alt="">
 
 </figure>
 
@@ -153,14 +153,14 @@ They even made a few sequels, and with litters like this how could you not.
 Terminator gets back to its roots in Dark Fate - Almost Human or Almost Machine - A Metal Mother Fucker of a ride
 
 <figure>
-![](dc9b92_2176b277ce194acda6d1496fa1808233~mv2_d_1200_1874_s_2.jpg)
+<img src="dc9b92_2176b277ce194acda6d1496fa1808233~mv2_d_1200_1874_s_2.jpg" alt="">
 
 </figure>
 
 Such a badass, then and now, or both, since this is a time travel thing. I think the casting, outside of the tried and true originals in new roles as aging cyborg time wars veterans, was very well considered on the physical and emotional level. The new Terminator is uncanny in his blend of every human and subtle empathetic responses, very creepy. Grace is powerfully and jacked to the gills on adrenaline and purpose.  The future of humanity is another every woman, discovering a way in the rapidly changing world of the 21st century, and coming into her confidence and purpose through adversity and resilient self-determination.
 
 <figure>
-![](dc9b92_5ff4700a76d54cf0a68a4a76430f5ebd~mv2.jpg)
+<img src="dc9b92_5ff4700a76d54cf0a68a4a76430f5ebd~mv2.jpg" alt="">
 
 </figure>
 
@@ -169,21 +169,21 @@ Such a badass, then and now, or both, since this is a time travel thing. I think
 Great particle simulation effects for the dualistic machine: T1 + T2 hybrid.
 
 <figure>
-![](dc9b92_8ba032fe7d6c4f22bef426f46fc4832d~mv2.gif)
+<img src="dc9b92_8ba032fe7d6c4f22bef426f46fc4832d~mv2.gif" alt="">
 
 </figure>
 
 It takes our face
 
 <figure>
-![](dc9b92_a1dd00db300c400b9cffb0c9807db057~mv2.png)
+<img src="dc9b92_a1dd00db300c400b9cffb0c9807db057~mv2.png" alt="">
 
 </figure>
 
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/rHE3BSRusTI" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
 
 <figure>
-![](dc9b92_f9eb32a039c54921b9025de6a684db3e~mv2.jpg)
+<img src="dc9b92_f9eb32a039c54921b9025de6a684db3e~mv2.jpg" alt="">
 
 </figure>
 
@@ -198,21 +198,21 @@ George Lucas just can't leave well enough alone as he reworks the infamous scene
 A couple of us had gotten into the new Star Wars series, The Mandalorian, which is a. great idea since Boba Fett has always been the coolest character from that series. Plus the cast is pretty fantastic, Werner Herzog and baby Yoda thing.
 
 <figure>
-![](dc9b92_c8db33b4610a46c59dbd241c094f8fdc~mv2.jpg)
+<img src="dc9b92_c8db33b4610a46c59dbd241c094f8fdc~mv2.jpg" alt="">
 
 </figure>
 
 Joe also mentioned getting into the new Watchmen series:
 
 <figure>
-![](dc9b92_127cafceec0c47d8ac4480d15e40dd45~mv2.jpg)
+<img src="dc9b92_127cafceec0c47d8ac4480d15e40dd45~mv2.jpg" alt="">
 
 </figure>
 
 Oh wait! not that one!
 
 <figure>
-![](dc9b92_eb7e383d14a44ebbb87091323da7af74~mv2.jpg)
+<img src="dc9b92_eb7e383d14a44ebbb87091323da7af74~mv2.jpg" alt="">
 
 </figure>
 
@@ -221,42 +221,42 @@ Oh wait! not that one!
 Demolition Man:
 
 <figure>
-![](dc9b92_5eaa971ac1694e34ba2d7cb97a6df5ed~mv2.jpg)
+<img src="dc9b92_5eaa971ac1694e34ba2d7cb97a6df5ed~mv2.jpg" alt="">
 
 </figure>
 
 The biggest question of the night - is she his daughter?
 
 <figure>
-![](dc9b92_f37eead0084f429eb7875fef5907e90d~mv2.jpg)
+<img src="dc9b92_f37eead0084f429eb7875fef5907e90d~mv2.jpg" alt="">
 
 </figure>
 
 ...or is it the three seashells thing?
 
 <figure>
-![](dc9b92_865449c0ec1e4e658d61f8a4bb7c8b54~mv2.jpg)
+<img src="dc9b92_865449c0ec1e4e658d61f8a4bb7c8b54~mv2.jpg" alt="">
 
 </figure>
 
 Judge DREDD:
 
 <figure>
-![](dc9b92_927570d5c5de4a30bb8445bc7cfd35dd~mv2.jpg)
+<img src="dc9b92_927570d5c5de4a30bb8445bc7cfd35dd~mv2.jpg" alt="">
 
 </figure>
 
 Again with the face, what is with these robots trying to be so human? Think he works out with Mecha Jason in space?
 
 <figure>
-![](dc9b92_725b99833e234915857a19ee3a5a049f~mv2.jpg)
+<img src="dc9b92_725b99833e234915857a19ee3a5a049f~mv2.jpg" alt="">
 
 </figure>
 
 Cliffhanger:
 
 <figure>
-![](dc9b92_3bd47b693b3c42bfb25496f4b8f72f50~mv2.jpg)
+<img src="dc9b92_3bd47b693b3c42bfb25496f4b8f72f50~mv2.jpg" alt="">
 
 </figure>
 
@@ -269,7 +269,7 @@ Nate shared his amazing Army of Darkness Ash costume and fun Halloween trickery.
 The entire Sam Raimi series, Evil Dead, Evil Dead 2, and Army of Darkness are must watch for the Halloween season, or just about any time you need to work on your melodramatic one-liners, and fight evil.
 
 <figure>
-![](dc9b92_5b287a74caf44cd99e8f97492a41b34e~mv2_d_1500_2204_s_2.jpg)
+<img src="dc9b92_5b287a74caf44cd99e8f97492a41b34e~mv2_d_1500_2204_s_2.jpg" alt="">
 
 </figure>
 
@@ -278,21 +278,21 @@ The entire Sam Raimi series, Evil Dead, Evil Dead 2, and Army of Darkness are mu
 Wings of Design and Faraway so Close, directed by Wim Wenders are film classics with an outstanding cast and chilling inhabitation of the emerging Berlin.
 
 <figure>
-![](dc9b92_9bcd84c876a54a2ba9de62addf7bacff~mv2.jpg)
+<img src="dc9b92_9bcd84c876a54a2ba9de62addf7bacff~mv2.jpg" alt="">
 
 </figure>
 
 including this guy...
 
 <figure>
-![](dc9b92_ead5193d221243b3a4ef6cb2161ca763~mv2.jpg)
+<img src="dc9b92_ead5193d221243b3a4ef6cb2161ca763~mv2.jpg" alt="">
 
 </figure>
 
 Who had some Bostonian connection with these cats. I forget  (Nate or Joe) brought up this music connection.
 
 <figure>
-![](dc9b92_31e038f8f013473690ad216117be30b0~mv2.jpg)
+<img src="dc9b92_31e038f8f013473690ad216117be30b0~mv2.jpg" alt="">
 
 </figure>
 
@@ -303,7 +303,7 @@ Future Reads:
 I was speaking to my friend John on Friday after our meeting and he shared an exciting recommendation for our mostly architecture nerd book club.
 
 <figure>
-![](dc9b92_7bcbc636c15348bc8bd85bd89f28b8ae~mv2.jpg)
+<img src="dc9b92_7bcbc636c15348bc8bd85bd89f28b8ae~mv2.jpg" alt="">
 
 </figure>
 
@@ -330,7 +330,7 @@ Now Reading:
 Ninefox Gambit by Yoon Ha Lee
 
 <figure>
-![](dc9b92_78e2d754d6b64d90bcf26c5bb22e5a40~mv2_d_1400_2161_s_2.jpg)
+<img src="dc9b92_78e2d754d6b64d90bcf26c5bb22e5a40~mv2_d_1400_2161_s_2.jpg" alt="">
 
 </figure>
 
