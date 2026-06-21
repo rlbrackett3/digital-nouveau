@@ -17,25 +17,25 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 
 	<main class="blog-post">
 		<article class="post-card">
+			{image && (
+				<figure class="hero-image">
+					<img src={image} alt={`Hero image for ${title}`} loading="eager" />
+					{imageCaption && <figcaption class="image-caption">{imageCaption}</figcaption>}
+				</figure>
+			)}
+
 			<div class="post-header">
 				<div class="author-info">
 					<div class="avatar">R</div>
 					<span class="author-name">~rooks /l</span>
 				</div>
-				<time class="post-date">{pubDate ? pubDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : ''}</time>
+				<time class="post-date">{pubDate ? pubDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : ''}{readTime ? ` · ${readTime}` : ''}</time>
 			</div>
 
 			<h1 class="post-title">{title}</h1>
 
 			{updatedDate && (
 				<p class="last-updated">Last updated on <FormattedDate date={updatedDate} /></p>
-			)}
-
-			{image && (
-				<figure class="hero-image">
-					<img src={image} alt={`Hero image for ${title}`} width="740" height="493" loading="eager" />
-					{imageCaption && <figcaption class="image-caption">{imageCaption}</figcaption>}
-				</figure>
 			)}
 
 			<div class="post-content">
@@ -87,80 +87,85 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 
 <style>
 	.blog-post {
-		max-width: 740px;
+		max-width: 960px;
 		margin: 0 auto;
-		padding: 20px var(--content-padding) 60px;
+		padding: 20px 20px 60px;
 	}
 
 	.post-card {
-		background: var(--card-bg);
-		border: 1px solid var(--border);
-		padding: 24px;
-		backdrop-filter: blur(4px);
+		background: rgba(0, 0, 0, 0.95);
+		border: 1px solid #1cebf4;
+		padding: 0;
+		overflow: hidden;
 	}
 
 	.post-header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 16px;
+		margin-bottom: 12px;
 		font-size: 12px;
+		padding: 20px 24px 0;
 	}
 
 	.author-info {
 		display: flex;
 		align-items: center;
-		gap: 8px;
+		gap: 10px;
 	}
 
 	.avatar {
-		width: 28px;
-		height: 28px;
+		width: 32px;
+		height: 32px;
 		border-radius: 50%;
 		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 12px;
+		font-size: 14px;
 		color: white;
-		font-weight: 600;
+		font-weight: 400;
 	}
 
 	.author-name {
-		color: var(--accent);
+		color: #1cebf4;
 		font-size: 12px;
-		font-family: var(--font-body);
+		font-family: 'DM Sans', sans-serif;
 	}
 
 	.post-date {
-		color: var(--text-muted);
+		color: #1cebf4;
 		font-size: 12px;
-		font-family: var(--font-body);
+		font-family: 'DM Sans', sans-serif;
 	}
 
 	.post-title {
-		margin: 0 0 12px 0;
-		font-size: 1.75rem;
-		font-family: var(--font-title);
-		font-weight: 400;
-		color: var(--accent);
-		line-height: 1.25;
+		margin: 0;
+		font-size: 28px;
+		font-family: 'DM Sans', sans-serif;
+		font-weight: 100;
+		color: #1cebf4;
+		line-height: 1.2;
+		padding: 12px 24px 0;
 	}
 
 	.last-updated {
 		font-size: 11px;
-		color: var(--text-muted);
+		color: rgba(28, 235, 244, 0.5);
 		font-style: italic;
-		margin: 0 0 20px 0;
-		font-family: var(--font-body);
+		margin: 0;
+		padding: 0 24px;
+		font-family: 'DM Sans', sans-serif;
 	}
 
 	.hero-image {
-		margin: 0 0 24px 0;
+		margin: 0;
 	}
 
 	.hero-image img {
 		width: 100%;
+		height: auto;
+		display: block;
 	}
 
 	.image-caption {
@@ -172,32 +177,34 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 	}
 
 	.post-content {
-		color: var(--text);
+		color: #1cebf4;
 		line-height: 1.7;
-		font-size: 15px;
-		font-family: var(--font-body);
+		font-size: 14px;
+		font-family: 'DM Sans', sans-serif;
+		font-weight: 100;
+		padding: 0 24px 24px;
 	}
 
 	.post-content p {
 		margin-bottom: 1.25em;
-		color: var(--text);
+		color: rgba(28, 235, 244, 0.85);
 	}
 
 	.post-content h1,
 	.post-content h2,
 	.post-content h3 {
-		color: var(--accent);
+		color: #1cebf4;
 		margin-top: 2em;
 		margin-bottom: 0.75em;
-		font-weight: 400;
+		font-weight: 100;
 	}
 
-	.post-content h1 { font-size: 2rem; }
-	.post-content h2 { font-size: 1.5rem; }
-	.post-content h3 { font-size: 1.25rem; }
+	.post-content h1 { font-size: 28px; }
+	.post-content h2 { font-size: 22px; }
+	.post-content h3 { font-size: 18px; }
 
 	.post-content a {
-		color: var(--accent);
+		color: #1cebf4;
 		text-decoration: underline;
 		text-underline-offset: 2px;
 	}
@@ -207,10 +214,10 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 	}
 
 	.post-content blockquote {
-		border-left: 2px solid var(--accent);
+		border-left: 2px solid rgba(28, 235, 244, 0.4);
 		padding-left: 1.5em;
 		margin: 1.5em 0;
-		color: var(--text-muted);
+		color: rgba(28, 235, 244, 0.65);
 		font-style: italic;
 	}
 
@@ -258,21 +265,23 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 		flex-wrap: wrap;
 		margin-top: 24px;
 		padding-top: 20px;
-		border-top: 1px solid var(--border);
+		border-top: 1px solid rgba(28, 235, 244, 0.15);
+		padding-left: 24px;
+		padding-right: 24px;
 	}
 
 	.category-tag {
-		color: var(--accent);
+		color: #1cebf4;
 		font-size: 12px;
-		font-family: var(--font-body);
+		font-family: 'DM Sans', sans-serif;
 		text-decoration: none;
 		padding: 2px 0;
-		border-bottom: 1px solid var(--border);
-		transition: border-color var(--transition-fast);
+		border-bottom: 1px solid rgba(28, 235, 244, 0.15);
+		transition: border-color 0.2s;
 	}
 
 	.category-tag:hover {
-		border-color: var(--accent);
+		border-color: #1cebf4;
 		opacity: 1;
 	}
 
@@ -282,36 +291,39 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 		align-items: center;
 		margin-top: 20px;
 		padding-top: 16px;
-		border-top: 1px solid var(--border-subtle);
+		padding-left: 24px;
+		padding-right: 24px;
+		border-top: 1px solid rgba(28, 235, 244, 0.15);
 	}
 
 	.social-actions {
 		display: flex;
-		gap: 8px;
+		gap: 12px;
 	}
 
 	.social-btn {
 		background: none;
 		border: none;
-		color: var(--text-muted);
+		color: #1cebf4;
 		cursor: pointer;
 		padding: 4px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		transition: color var(--transition-fast);
+		opacity: 0.7;
+		transition: opacity 0.2s;
 	}
 
 	.social-btn:hover {
-		color: var(--accent);
+		opacity: 1;
 	}
 
 	.post-stats {
 		display: flex;
-		gap: 14px;
-		font-size: 11px;
-		color: var(--text-muted);
-		font-family: var(--font-body);
+		gap: 16px;
+		font-size: 12px;
+		color: rgba(28, 235, 244, 0.5);
+		font-family: 'DM Sans', sans-serif;
 	}
 
 	.stat {
@@ -321,24 +333,40 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 	}
 
 	.stat svg {
-		opacity: 0.5;
+		opacity: 0.6;
 	}
 
 	@media (max-width: 768px) {
 		.blog-post {
-			padding: 16px var(--content-padding) 40px;
+			padding: 16px 20px 40px;
 		}
 
 		.post-card {
-			padding: 16px;
+			padding: 0;
+		}
+
+		.post-header {
+			padding: 16px 16px 0;
 		}
 
 		.post-title {
-			font-size: 1.375rem;
+			font-size: 22px;
+			padding: 12px 16px 0;
 		}
 
 		.post-content {
 			font-size: 14px;
+			padding: 0 16px 16px;
+		}
+
+		.post-footer {
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+
+		.post-tags {
+			padding-left: 16px;
+			padding-right: 16px;
 		}
 	}
 </style>

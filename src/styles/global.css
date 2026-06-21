@@ -66,7 +66,7 @@ p {
 .container {
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 0 20px;
 }
 
 /* ── Header ── */
@@ -74,24 +74,12 @@ p {
 	padding: 0;
 	position: relative;
 	z-index: 10;
-	border-top: 2px solid #1cebf4;
-	border-bottom: 2px solid #1cebf4;
-	background: rgba(0, 0, 0, 0.95);
-}
-
-.site-header::after {
-	content: '';
-	position: absolute;
-	bottom: -2px;
-	left: 0;
-	right: 0;
-	height: 2px;
-	background: #1cebf4;
+	background: transparent;
 }
 
 .site-header .container {
 	position: relative;
-	padding: 20px 20px 0;
+	padding: 20px 20px 12px;
 }
 
 .header-content {
@@ -99,8 +87,8 @@ p {
 	justify-content: space-between;
 	align-items: flex-start;
 	width: 100%;
-	margin-bottom: 20px;
-	margin-top: 50px;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .header-left {
@@ -152,7 +140,7 @@ p {
 	gap: 20px;
 	flex-wrap: wrap;
 	padding: 12px 0 20px;
-	border-top: 1px solid rgba(28, 235, 244, 0.15);
+	border-top: 1px solid #1cebf4;
 }
 
 .main-nav a {
@@ -319,7 +307,7 @@ p {
 }
 
 .post-content {
-  padding: 24px;
+	padding: 20px;
 }
 
 .post-meta {
