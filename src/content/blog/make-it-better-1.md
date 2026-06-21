@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-<img src="dc9b92_cb48f3c5b7504a6687e46b744590cb6a~mv2_d_2048_1280_s_2.jpg" alt="">
+<img src="/images/dc9b92_cb48f3c5b7504a6687e46b744590cb6a~mv2_d_2048_1280_s_2.jpg" alt="">
 
 </figure>
 
@@ -26,6 +26,6 @@ To set ourselves up for practice and growth each day, we look at our work critic
 For anyone interested, you can use the branded image above, or feel free to grab the more general version below to set as your desktop background.
 
 <figure>
-<img src="dc9b92_55be657cc6ef4f3492213876f0bd12a8~mv2_d_2048_1280_s_2.jpg" alt="">
+<img src="/images/dc9b92_55be657cc6ef4f3492213876f0bd12a8~mv2_d_2048_1280_s_2.jpg" alt="">
 
 </figure>

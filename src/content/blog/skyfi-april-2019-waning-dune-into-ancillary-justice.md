@@ -19,7 +19,7 @@ Speaking of field trips. Rachel has proposed an intriguing possibility for a lit
 This months meeting was more of a social check in and a chance to catch up around the slow burn of Dune for some of us and the leap into deep space with Ancillary Justice. Since many had not made significant progress with AJ, we will postpone major discussion until next meeting. Based on, our special guest's, Kutan, analysis, it seems that the biggest mystery is trying to wrap our heads around how a massive ship scale AI with thousands of distributed interconnected human computation nodes could possibly fit into the brain of a single zombie body. And would we be able to classify this organic-digital hybrid as a Soft Robot or some kind of transcendent state of being to spark a new trajectory of human-machine consciousness. For those just getting started, enjoy the detail, layered word building, and gender shattering pronoun comedy. This one really challenges assumptions of characters in a written work, forcing a deep look inside how we construct our social perceptions. If you have ready AJ, then you may want to move onto AM and AS (Ancillary Mercy and Ancillary Sword) to continue the adventure.
 
 <figure>
-<img src="dc9b92_7ee493a3b0214081b7df8808cd79a8ee~mv2.jpg" alt="">
+<img src="/images/dc9b92_7ee493a3b0214081b7df8808cd79a8ee~mv2.jpg" alt="">
 
 </figure>
 
@@ -28,26 +28,26 @@ What would an evening of literary review be without our profusion of pop-and-alt
 Dune (by Frank Herbert) kicked things off, there is a recent article in SYFYwire looking at the 1960's sky-fi classic from a 2019 perspective of cultural/religious appropriations vs social extrapolation. https://www.syfy.com/syfywire/dune-and-religious-appropriation. My take was that more was focused on the casting and buzz around the new film, but it was a quick interesting read. Outside of Dune's profound ecological perspective and massive world narrative, many of the threads present a somewhat sad multi-millennium evolution of humans into a feudal oligarchy spreading across the galaxy. Could we be somewhere else in 10,000 years, will is be a co-evolution into conscious code as seen in the The Quantum Thief, The Fractal Prince, and The Causal Angel by Hannu Rajaniemi,
 
 <figure>
-<img src="dc9b92_06386851736a4b7bbbfe0e8523281dc2~mv2.jpg" alt="">
+<img src="/images/dc9b92_06386851736a4b7bbbfe0e8523281dc2~mv2.jpg" alt="">
 
 </figure>
 
 <figure>
-<img src="dc9b92_f38eb71a69dc4bcab577e80a64dc8fee~mv2.png" alt="">
+<img src="/images/dc9b92_f38eb71a69dc4bcab577e80a64dc8fee~mv2.png" alt="">
 
 </figure>
 
 or distinct biological differentiation to meet new environments as a hybrid of terrestrial evolution and vacuum mutation like Stevenson's SEVENEVES,
 
 <figure>
-<img src="dc9b92_968f64ae1e8546ef8b3521443a0462ce~mv2.jpg" alt="">
+<img src="/images/dc9b92_968f64ae1e8546ef8b3521443a0462ce~mv2.jpg" alt="">
 
 </figure>
 
 or a body swapping cybernetically enhanced noir on the cusp of discovering our infancy and insignificance in the face or immortality in Altered Carbon, Broken Angels, and Woken Furies by Richard Morgan?
 
 <figure>
-<img src="dc9b92_7a12fd48a3c14f71b76a3b0135e1f450~mv2.jpg" alt="">
+<img src="/images/dc9b92_7a12fd48a3c14f71b76a3b0135e1f450~mv2.jpg" alt="">
 
 </figure>
 
@@ -56,7 +56,7 @@ Howard (welcome to the club) asked if many of the books we read present an optim
 Speaking of Richard Morgan, I picked up several of his other titles at a book store recently. I just started reading Th1rte3n for anyone interested in an interim book.
 
 <figure>
-<img src="dc9b92_9a8a7b2adaa74d328030c5b890a51bdc~mv2.jpg" alt="">
+<img src="/images/dc9b92_9a8a7b2adaa74d328030c5b890a51bdc~mv2.jpg" alt="">
 
 </figure>
 
@@ -69,28 +69,28 @@ High Life by Claire Denis, presenting the end of earth and a journey into space.
 Paul: " High Life is a colossal trip to the void.  Highly recommended. "
 
 <figure>
-<img src="dc9b92_c64270bc8a3b45e59d66fa3e8a21ef16~mv2_d_2025_3000_s_2.jpg" alt="">
+<img src="/images/dc9b92_c64270bc8a3b45e59d66fa3e8a21ef16~mv2_d_2025_3000_s_2.jpg" alt="">
 
 </figure>
 
 Love Death and Robots - visual shorts
 
 <figure>
-<img src="dc9b92_3d16da25bae84b35aaebb0efd780ae9a~mv2.jpg" alt="">
+<img src="/images/dc9b92_3d16da25bae84b35aaebb0efd780ae9a~mv2.jpg" alt="">
 
 </figure>
 
 Electric Dreams, re-imaginings from the mind of Philip K Dick
 
 <figure>
-<img src="dc9b92_0a7f30c68d074507905597d6816f309b~mv2.jpg" alt="">
+<img src="/images/dc9b92_0a7f30c68d074507905597d6816f309b~mv2.jpg" alt="">
 
 </figure>
 
 Naked Lunch, Cronenberg's bizarre take on William Burroughs novel. Perhaps we could toss this one into the reading/watching cycle in the near future, even paired with Cronenberg's own novel, CONSUMED.
 
 <figure>
-<img src="dc9b92_4a0e5d05719c4e11a79bcffb0d788555~mv2_d_1400_2105_s_2.jpg" alt="">
+<img src="/images/dc9b92_4a0e5d05719c4e11a79bcffb0d788555~mv2_d_1400_2105_s_2.jpg" alt="">
 
 </figure>
 
@@ -101,7 +101,7 @@ Paul:
 I Heart Huckabees
 
 <figure>
-<img src="dc9b92_dfc39a17670a4734a8fe17af12548a31~mv2.jpg" alt="">
+<img src="/images/dc9b92_dfc39a17670a4734a8fe17af12548a31~mv2.jpg" alt="">
 
 </figure>
 
@@ -110,14 +110,14 @@ Elle + Gretta
 Demonlover
 
 <figure>
-<img src="dc9b92_730accf1c6a14f43a89492f6e18f969d~mv2.jpg" alt="">
+<img src="/images/dc9b92_730accf1c6a14f43a89492f6e18f969d~mv2.jpg" alt="">
 
 </figure>
 
 I overheard some deep dives into Ian M. Banks Culture series, starting off with Consider Pholebas, a fun read that commences with the protagonist trapped in a sewer dungeon flooded with the excrement of excesses. I think Rachel and Seth have done a little homework here, but there could be some future side reading for all you over achievers.
 
 <figure>
-<img src="dc9b92_da59d58b769447b9a4999825cd4711b9~mv2_d_1300_2054_s_2.jpeg" alt="">
+<img src="/images/dc9b92_da59d58b769447b9a4999825cd4711b9~mv2_d_1300_2054_s_2.jpeg" alt="">
 
 </figure>
 
@@ -126,7 +126,7 @@ Nate threw a couple more possible future reads into the hat:
 Black Leopard Red Wolf - Marlon James
 
 <figure>
-<img src="dc9b92_471e65fa835844dc8c8e481db9dc606a~mv2_d_1684_2560_s_2.jpg" alt="">
+<img src="/images/dc9b92_471e65fa835844dc8c8e481db9dc606a~mv2_d_1684_2560_s_2.jpg" alt="">
 
 </figure>
 
@@ -137,14 +137,14 @@ Paul:
 Strange Stars - Jason Heller,
 
 <figure>
-<img src="dc9b92_2b0e9d30fda7497cb7f255e69f94d4cb~mv2_d_1698_2560_s_2.jpg" alt="">
+<img src="/images/dc9b92_2b0e9d30fda7497cb7f255e69f94d4cb~mv2_d_1698_2560_s_2.jpg" alt="">
 
 </figure>
 
 this one comes with an RPG companion:
 
 <figure>
-<img src="dc9b92_29c9d5f8cefa4666b640cfd8e5b422b6~mv2.jpg" alt="">
+<img src="/images/dc9b92_29c9d5f8cefa4666b640cfd8e5b422b6~mv2.jpg" alt="">
 
 </figure>
 

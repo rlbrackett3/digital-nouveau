@@ -11,7 +11,7 @@ comments: 0
 ---
 
 <figure>
-<img src="dc9b92_4c5f6231d256461da6f98d7ca774ea82~mv2.gif" alt="">
+<img src="/images/dc9b92_4c5f6231d256461da6f98d7ca774ea82~mv2.gif" alt="">
 
 </figure>
 
@@ -54,7 +54,7 @@ We will analyze and extract dense metaphors that capture us in film and deploy t
 <div class="video-embed"><iframe src="https://player.vimeo.com/video/383549002" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 <figure>
-<img src="dc9b92_4c5f6231d256461da6f98d7ca774ea82~mv2.gif" alt="">
+<img src="/images/dc9b92_4c5f6231d256461da6f98d7ca774ea82~mv2.gif" alt="">
 
 </figure>
 
@@ -67,33 +67,33 @@ I grabbed a few gif images from around the web of some of my favorite and archit
 Not all of them made the cut, and I wanted to integrate these aesthetic influences with some of my own, so I started with a base of my recent topographic collage, reoriented as vertical scan lines with a linear transformation down through the square frame.
 
 <figure>
-<img src="dc9b92_deb6ef5e08694abe95d58cadc24cb0ec~mv2.gif" alt="">
+<img src="/images/dc9b92_deb6ef5e08694abe95d58cadc24cb0ec~mv2.gif" alt="">
 
 </figure>
 
 I layered and multiplied that with Blade Runner's face in the sky urban billboard in a horizontal pan. It is dark with shimmering speckles of light and the recognizable face element slightly askew and off-center, punctuated by the vibrant swipe of the flying police car (still one of the best fly car visuals imho).
 
 <figure>
-<img src="dc9b92_3742df22c79643ed9d0b7de1f55d49a8~mv2.gif" alt="">
+<img src="/images/dc9b92_3742df22c79643ed9d0b7de1f55d49a8~mv2.gif" alt="">
 
 </figure>
 
 Then came a couple of vertical scan wipes with some Levels adjustments and heavy Divide layer blending. The motion is just a transform keyframe in AfterEffects.
 
 <figure>
-<img src="dc9b92_563482494a404bf38b3198e1fd573784~mv2.gif" alt="">
+<img src="/images/dc9b92_563482494a404bf38b3198e1fd573784~mv2.gif" alt="">
 
 </figure>
 
 <figure>
-<img src="dc9b92_db884d27150145f7b48a523b42884147~mv2.gif" alt="">
+<img src="/images/dc9b92_db884d27150145f7b48a523b42884147~mv2.gif" alt="">
 
 </figure>
 
 The final layer jumps forward to Balde Runner 2049 with the scene that started this process, Joi's overlay integration.  While I hoped for hyper parallelism with the layer blending and conceptual language, this one uses a Screen blending (rather than Overlay blending which was just too dark) to glide into the thick territory of the flowing pulsating images below. A dreaming floating effect layered with a dreaming floating effect.
 
 <figure>
-<img src="dc9b92_ccfd5760346c441c9c9ceef7144dfe56~mv2.gif" alt="">
+<img src="/images/dc9b92_ccfd5760346c441c9c9ceef7144dfe56~mv2.gif" alt="">
 
 </figure>
 

@@ -13,7 +13,7 @@ likes: 0
 During my morning meditation and subsequent journaling, I could not escape a feeling of being adrift. A ship in the fog without sense or desire for direction, at the whim of the winds to travel an uncertain path. At first I was unsettled, as much of my work as a designer and teacher must operate in a territory of uncertainty, it is easy to drift off a clear course in order to come at things from new trajectories. The place of creating is a space with no certain outcomes, simultaneity and nothing, until there is something. It requires a great trust in both process and intuition, and the persistence to run the work through many iterations.
 
 <figure>
-<img src="dc9b92_3ab0b2ea695a468782ea970874878a95~mv2.gif" alt="">
+<img src="/images/dc9b92_3ab0b2ea695a468782ea970874878a95~mv2.gif" alt="">
 
 </figure>
 

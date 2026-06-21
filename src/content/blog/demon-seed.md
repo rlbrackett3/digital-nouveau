@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-<img src="dc9b92_d23f3e97ad1a46c3851ce684de3fa288~mv2_d_2830_1698_s_2.png" alt="">
+<img src="/images/dc9b92_d23f3e97ad1a46c3851ce684de3fa288~mv2_d_2830_1698_s_2.png" alt="">
 
 </figure>
 

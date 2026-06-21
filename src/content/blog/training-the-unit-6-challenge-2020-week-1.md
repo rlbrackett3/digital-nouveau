@@ -13,24 +13,24 @@ comments: 0
 Over the last couple of years, I have been really into the products produced by Onnit to support human optimization. I think I originally came across the company when I was looking for relaxation and sleep support supplements with 5-HTP, L-Tryptophan, Magnesium, among other things. Their New Mood product seemed to have all the parts so I gave it a shot. Anyway, that got me into their other products, I cycle on and off with Total Human Optimization just to keep all my bases covered, I used the Plant and Whey proteins for training recovery, the Mineral Electrolytes work great while playing basketball or rowing and don't pack so much sugar. AlphaBRAIN can really help to kick the creative process into high gear and also deliver fluent eloquent lectures at school. I guess I am a fan, so much so that nearly all of my workout gear has transitioned to Onnit products (as the old stuff wears out, and I do mean wears out, I am sporting some holey shorts). I usually shop the sales to try not to break the bank and they have a nice rewards program that has netted many of my fun graphic t-shirts and sweatshirts at little or no cost. There is a ton more I could go into (the Onnit-Kyle Kingsberry and Aubry Marcus podcats are weekly staples) but I think of all the things I have gotten from them the most beneficial and transformative have been their Onnit 6 training programs.
 
 <figure>
-<img src="dc9b92_230050bec60f458aba87668f9d6fbde0~mv2.jpg" alt="">
+<img src="/images/dc9b92_230050bec60f458aba87668f9d6fbde0~mv2.jpg" alt="">
 
 </figure>
 
 I have purchased and completed the Bodyweight, Kettle Bell, and Steel Mace (my favorite) programs over the last year or so and have enjoyed the challenge of each one. They offer a wide range of skill level interfaces and are well produced. Coach John Wolf has a wonderful corny sense of humor that keeps things light during the intensity. There is never a workout that does not leave me feeling it, and a little ego crushed. I now have probably too many very heavy objects in my apartment (dreading moving) some of which are both works of art and next-level training gear. If you are like me and do not love going to gyms with people, then these programs are awesome.
 
 <figure>
-<img src="dc9b92_b6e490cc29f84287a336cefc22bc0f8c~mv2.jpg" alt="">
+<img src="/images/dc9b92_b6e490cc29f84287a336cefc22bc0f8c~mv2.jpg" alt="">
 
 </figure>
 
 <figure>
-<img src="dc9b92_bcff79ec775d486dabe0f77aaf62ba93~mv2.gif" alt="">
+<img src="/images/dc9b92_bcff79ec775d486dabe0f77aaf62ba93~mv2.gif" alt="">
 
 </figure>
 
 <figure>
-<img src="dc9b92_45586743b10d4ee9ac0bda4fe19e584f~mv2.jpg" alt="">
+<img src="/images/dc9b92_45586743b10d4ee9ac0bda4fe19e584f~mv2.jpg" alt="">
 
 </figure>
 
@@ -39,7 +39,7 @@ Onnit decided to help people out (and sell some products) by doing an Onnit 6 Ch
 On to the point, a log of my progress over the course of the Onnit 6 Bodyweight program. I began on Monday, February 10th bright and early at 6am.
 
 <figure>
-<img src="dc9b92_229767fa10d64bd7aaed603780f814f7~mv2.jpeg" alt="">
+<img src="/images/dc9b92_229767fa10d64bd7aaed603780f814f7~mv2.jpeg" alt="">
 
 </figure>
 
@@ -48,7 +48,7 @@ On to the point, a log of my progress over the course of the Onnit 6 Bodyweight 
 Day 01 :: Monday 02/10/20 :: Prime The Pump 1
 
 <figure>
-<img src="dc9b92_73858d16dd1c4fe9ac8f746d3f7393da~mv2.jpg" alt="">
+<img src="/images/dc9b92_73858d16dd1c4fe9ac8f746d3f7393da~mv2.jpg" alt="">
 
 </figure>
 
@@ -61,12 +61,12 @@ This commitment will not only continue to build strength, mobility, and resilien
 Day 02 :: Tuesday 02/11/20 :: Blasted By The Basics 1
 
 <figure>
-<img src="dc9b92_9d77a92bc4d649ff9577f5216a20b24a~mv2.jpg" alt="">
+<img src="/images/dc9b92_9d77a92bc4d649ff9577f5216a20b24a~mv2.jpg" alt="">
 
 </figure>
 
 <figure>
-<img src="dc9b92_f182488b4c684900bf4b67ea0f812107~mv2.jpg" alt="">
+<img src="/images/dc9b92_f182488b4c684900bf4b67ea0f812107~mv2.jpg" alt="">
 
 </figure>
 
@@ -77,7 +77,7 @@ The instructors/participants in these videos are amazing. Their ability to keep 
 Day 03 :: Wednesday 02/12/20 :: Yoga 1
 
 <figure>
-<img src="dc9b92_24a4bd0bfddf4d28b11cfa364b3d55a8~mv2.jpg" alt="">
+<img src="/images/dc9b92_24a4bd0bfddf4d28b11cfa364b3d55a8~mv2.jpg" alt="">
 
 </figure>
 
@@ -92,7 +92,7 @@ Rowhouse at 6 am as a warmup for day four, Prime the Pump. Why? Well, I have an 
 I would also like to say that I strongly agree with John Wolf that the froggy exercises are 'love-hate'. I am never sure I am doing them well since I am here at home without a coach, but I do my best to keep everything tight and aligned with a consistent balance and pace. The position really works my hips, which really need it. My hips are extremely tight and cause a lot of other issues with my back and knees so having the frog open them up is helpful in the long run, but quite uncomfortable at first. They also crush and cramp my toes, which is a funny part of the body to have sore after a workout. I am also developing a nice pair of bruises on the insides of my knees from the pressure against the floor. I know they are good for me, but I do not like doing them very much.
 
 <figure>
-<img src="dc9b92_58f1fc4e46da4534addd1c5aefbe915b~mv2.jpeg" alt="">
+<img src="/images/dc9b92_58f1fc4e46da4534addd1c5aefbe915b~mv2.jpeg" alt="">
 
 </figure>
 
@@ -101,7 +101,7 @@ I would also like to say that I strongly agree with John Wolf that the froggy ex
 Day 05 :: Friday 02/14/20 :: Speed Kills 1
 
 <figure>
-<img src="dc9b92_c51c37d829e847c5ae6aefaa4e54f462~mv2.jpeg" alt="">
+<img src="/images/dc9b92_c51c37d829e847c5ae6aefaa4e54f462~mv2.jpeg" alt="">
 
 </figure>
 
@@ -122,7 +122,7 @@ The soreness is abating and I feel ready to head up to Columbia for WBB Alumna W
 Day 07 :: Sunday 02/16/20 :: Recover + Rowhouse
 
 <figure>
-<img src="dc9b92_b3b7cbf644244646b18f3ff02f911f1f~mv2.jpeg" alt="">
+<img src="/images/dc9b92_b3b7cbf644244646b18f3ff02f911f1f~mv2.jpeg" alt="">
 
 </figure>
 

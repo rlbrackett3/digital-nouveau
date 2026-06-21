@@ -13,35 +13,35 @@ comments: 0
 BY the chance of long and deep bookshelves I am working my way backward through the works of sci-fi master, Alfred Bester. I began with The Deceivers, and have now journeyed into the precarious future of sentient machines, exobiological mutations, immortal visionaries, time travel, and cosmic turmoil in his 1975 novel, The Computer Connection. From these two novels, I  can feel the influence of his time spent as a comic script and travel magazine writer. The narratives are fast based, full of over the top events and high adventure. Characters speak larger than life in the flamboyant dialog with the abilities to back it all up.  I am developing a bit of a fascination with Bester and his enigmatic relationship with SciFi. This little history was an enjoyable read and I hope to continue to discover him through his work. The book was an entertaining and deeply thought-provoking experience, primarily due to the bizarre mix of sci-fi concepts and cultural critiques.  I hope to convince Sky-Fi Bookclub to dig into his more prominent work (The Demolished Man & The Stars My Destination) soon.
 
 <figure>
-<img src="dc9b92_23c94e81c41c45bf856c34e40370a67b~mv2.jpg" alt="">
+<img src="/images/dc9b92_23c94e81c41c45bf856c34e40370a67b~mv2.jpg" alt="">
 
 </figure>
 
 Quite a strange and fascinating premise for building a world. A group of historically notable immortals ripped out of time by epilepsy and extreme shock, gifted with molecular invulnerability and limitless life, but constrained by the fear of a supremely hideous brand of Lepricy that will give them a slow torturous death if they suffer significant physical injury. These Molemen can transmute matter into energy and subsist on nearly anything, giving them access to extreme environments and resistance to exposure. They live alongside humans, offering their services and generally looking after the meek and innocent whenever possible while staying safely in the shadows to avoid suspicion.
 
 <figure>
-<img src="dc9b92_cf1b12d2283943a3abd2f8785a96c7d0~mv2.jpg" alt="">
+<img src="/images/dc9b92_cf1b12d2283943a3abd2f8785a96c7d0~mv2.jpg" alt="">
 
 </figure>
 
 The world that these characters inhabit is dark with a frightening similarity to Margaret Atwood's The Year of the Flood trilogy's depiction of humanity devolving into animalistic chaos and self-destruction. The background mood reminds me of the degenerate post-apocalyptic world of Harlan Ellison's, A Boy and His Dog including the strange sentience of an underground machine society.  The immortals even reminded me of benevolent versions of the 'meths' from Richard Morgan's,  Altered Carbon. This is all to say that the small novel packs quite a punch when it comes to very contemporary Science Fiction tropes dating from 45 years ago.
 
 <figure>
-<img src="dc9b92_ddc5cec1d0de4271acb97e07d7943301~mv2.jpg" alt="">
+<img src="/images/dc9b92_ddc5cec1d0de4271acb97e07d7943301~mv2.jpg" alt="">
 
 </figure>
 
 Stereotypes of race, ethnicity, and culture abound in an ambiguous condition of rampant critique or inherent bigotry. The unclarity of this condition is fascinating and seems to be used for intentional effect ti demonstrate the contributing factors to humanity's downfall. The tone is slightly less derogatory than in The Deceivers, but only slightly. Also like Deceivers, the 'meek' have begun to inherit the earth, or parts of it and the solar system. Western, Anglo-Saxon hegemony has dissolved into chaos and in the case of The Computer Connection, the Native Americans have developed a controlling stake in society. Despite the reorganization of world power, the momentum of our current destruction has carried us to the brink of disaster and the precipice of discovery. A ripe place for an exciting adventure to unfold.
 
 <figure>
-<img src="dc9b92_487661de44aa4fc7b2e8a9a64703db53~mv2.jpg" alt="">
+<img src="/images/dc9b92_487661de44aa4fc7b2e8a9a64703db53~mv2.jpg" alt="">
 
 </figure>
 
 The band of immortals led by Edward 'Guig' Curzon, aka The Grand Guignol, get themselves into some over the top adventures spiraling toward the primary provocation of a networked superintelligence against humanity. Most of the characters serve as archetypal depictions of a historical context or personality type, emerging from history to form a merry band of partial personas. The excessive use of stereotypes, and the fuzzy boundaries to which they adhere, begins to produce an inclusive position on diversity that science fiction so eloquently exposes. the differences in the personalities and background reveal differences among us that start to make a difference in the rich tapestry of our human experience. Abstractions to expose and reintegrate.
 
 <figure>
-<img src="dc9b92_e9ac20749fe74eecb90b1d388b2eff95~mv2.jpg" alt="">
+<img src="/images/dc9b92_e9ac20749fe74eecb90b1d388b2eff95~mv2.jpg" alt="">
 
 </figure>
 
@@ -94,7 +94,7 @@ The foundation looked like a squared-off labyrinth; odd-sized boxes, squares, re
 ---
 
 <figure>
-<img src="dc9b92_6b99d03e6a4f4b94bb93bbe31a0b089f~mv2.jpg" alt="">
+<img src="/images/dc9b92_6b99d03e6a4f4b94bb93bbe31a0b089f~mv2.jpg" alt="">
 
 </figure>
 

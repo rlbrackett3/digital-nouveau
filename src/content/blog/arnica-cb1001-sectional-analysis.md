@@ -11,12 +11,12 @@ likes: 0
 ---
 
 <figure>
-<img src="dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif" alt="">
+<img src="/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif" alt="">
 
 </figure>
 
 <figure>
-<img src="dc9b92_2e8bc4960e934245b50424e1b18c14a2~mv2.gif" alt="">
+<img src="/images/dc9b92_2e8bc4960e934245b50424e1b18c14a2~mv2.gif" alt="">
 
 </figure>
 

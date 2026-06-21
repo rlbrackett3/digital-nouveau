@@ -13,21 +13,21 @@ comments: 0
 Sometimes an opportunity comes calling when we need it most. In a recent meeting of the Pratt Resilience, Wellness, and Well-Being Council (a group of faculty, staff, and students dedicated to shifting the culture of Pratt towards a more balanced life experience) I felt compelled to offer to lead a weekly mindful drawing practice. This is not something I had any specific experience with, but when the group put out the call for action the ideas flooded into my mind.  Drawing has always been my stead place, I am a doodler, my hands are always moving when there are paper and pen nearby. The connection between my mind, body, and page helps me be present, aware, and focused, it is often automatic. This new adventure seemed like a great chance to bring more attention to my hobby (or quirk).
 
 <figure>
-<img src="dc9b92_71a00c91b27b476b82f7f7eadf832eae~mv2.jpg" alt="">
+<img src="/images/dc9b92_71a00c91b27b476b82f7f7eadf832eae~mv2.jpg" alt="">
 
 </figure>
 
 I was aware that there are many creative mindful practices and have participated in a few activities that use drawing to still the mind and express emotion, but I was not aware that Mindful Drawing was a thing. I have since explored some of the space of shared mindful drawing practices on YouTube and various blogs. I recognized many of the exercises in my own on-again-off-again daily drawing exercises. It is exciting to know there is a community around this technique and I am eager to discover a space of drawing and meditation for myself and share that with others.
 
 <figure>
-<img src="dc9b92_adc67114c7f04762954862e9fee83633~mv2.jpg" alt="">
+<img src="/images/dc9b92_adc67114c7f04762954862e9fee83633~mv2.jpg" alt="">
 
 </figure>
 
 For twelve weeks now I have held an open Mindful Drawing session every Wednesday morning and 9 am EST. A small group of regulars drop by each week and warm my heart as we share a practice together. A few new people come and go, and I have even seen a couple of students give themselves the time to take a break from their busy schedules and just draw for thirty minutes.  I want this to be something I can build upon, something to engage a community and be of service with my lifetime of practice creating a connection between the mind and the hand through the medium of drawing.
 
 <figure>
-<img src="dc9b92_9acb1c8d5dde4f71bb2a4fb2d851f127~mv2.jpg" alt="">
+<img src="/images/dc9b92_9acb1c8d5dde4f71bb2a4fb2d851f127~mv2.jpg" alt="">
 
 </figure>
 
@@ -36,7 +36,7 @@ I record each session and practice my video editing and streaming skills to put 
 Check out the channel here: RooksIsFun :: Mindful Drawing and other Creative Practices
 
 <figure>
-<img src="dc9b92_66b3d3ba16fe4e318ab69f920a747352~mv2.jpg" alt="">
+<img src="/images/dc9b92_66b3d3ba16fe4e318ab69f920a747352~mv2.jpg" alt="">
 
 </figure>
 
