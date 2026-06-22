@@ -1,13 +1,9 @@
 ---
-title: "Hyphae Simulation mk2"
-description: "The system evolves with two particle systems interacting. The original mk1 system is invisible, but active as a force field dynamic..."
-pubDate: '2019-08-16'
 categories: ["design", "drawings"]
-readTime: 1
-views: 4
-likes: 1
-comments: 0
+image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
+
+
 
 <div class="video-embed"><iframe src="https://player.vimeo.com/video/354272629" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 

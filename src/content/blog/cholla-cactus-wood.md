@@ -1,14 +1,8 @@
 ---
-title: "Cholla Cactus Wood - Joshua Tree National Park"
-description: "Internal woven structures of Cholla cactus in Joshua Tree National Forest at sunset."
-pubDate: '2019-01-01'
-categories: ['observings']
+categories: ["observings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
-hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
-views: 4
-comments: 0
-likes: 0
 ---
+
 
 Cholla cactus woven micro endo-skeleton.
 

@@ -3,7 +3,7 @@ title: "Pratt Final Review Design 1 Fa2014"
 description: "The following is a collection of the work produced during my First year Architectural Design Studio at Pratt for Fall 2014.  The images..."
 pubDate: '2014-12-18'
 categories: ["teachings"]
-image: "/images/dc9b92_cd80d774c5eb4bb585a645ecf67b3368~mv2_d_1664_5986_s_2.jpg/dc9b92_cd80d774c5eb4bb585a645ecf67b3368~mv2_d_1664_5986_s_2.jpg"
+image: ""
 readTime: 1
 views: 8
 comments: 0

@@ -1,14 +1,8 @@
 ---
-title: "SkyFi :: September 2019 :: Shadowbahn by Steve Erickson"
-description: "SkyFi book club discussion on Steve Erickson's Shadowbahn — an epic of 1984 New York."
-pubDate: '2019-09-01'
-categories: ['skyfi', 'readings']
+categories: ["skyfi", "readings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
-hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
-views: 9
-comments: 3
-likes: 0
 ---
+
 
 **Core Premise & Setting:** An epic novel set in **1984 New York**, centered on the **Shadowbahn** — a clandestine subway system that emerges from the **shadow of the World Trade Center** during the Reagan era.
 

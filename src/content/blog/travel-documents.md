@@ -3,7 +3,7 @@ title: "Travel Documents"
 description: "During a SkyFi (yes, that is the correct pronunciation, inspired by my time with Francois Roche) book club session last Tuesday the..."
 pubDate: '2015-01-24'
 categories: ["readings", "thinkings"]
-image: "/images/dc9b92_b05f96d692064151a999669d28f62233~mv2_d_1600_1200_s_2.png/dc9b92_b05f96d692064151a999669d28f62233~mv2_d_1600_1200_s_2.png"
+image: ""
 readTime: 1
 views: 1
 comments: 0

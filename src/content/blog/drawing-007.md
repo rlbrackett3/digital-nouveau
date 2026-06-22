@@ -3,7 +3,7 @@ title: "Drawing 007"
 description: "A series of floral radiations spiraling from a striated mesh.  Each form differentiates and exhibits unique characteristics within its..."
 pubDate: '2013-02-18'
 categories: ["drawings"]
-image: "/images/dc9b92_65edcdfcbd2540debf7a7d67cb7f8c76~mv2_d_2000_2666_s_2.png/dc9b92_65edcdfcbd2540debf7a7d67cb7f8c76~mv2_d_2000_2666_s_2.png"
+image: ""
 readTime: 1
 views: 1
 comments: 0

@@ -3,7 +3,7 @@ title: "Drawing 015"
 description: "This started as a simple drawing to work in the space of symmetrical similarity.  Knowing that my hand &amp; eye (without significant desire..."
 pubDate: '2013-03-25'
 categories: ["drawings"]
-image: "/images/dc9b92_3934bcf335f245e1b97dbbd4b5b2baaf~mv2_d_1811_2414_s_2.png/dc9b92_3934bcf335f245e1b97dbbd4b5b2baaf~mv2_d_1811_2414_s_2.png"
+image: ""
 readTime: 1
 views: 1
 comments: 0

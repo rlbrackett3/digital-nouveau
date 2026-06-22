@@ -1,14 +1,8 @@
 ---
-title: "Thick Envelopes :: Scanning Synthetic Realities"
-description: "As we approach another semester at Pratt it is time for planning and designing a provocative and meaningful studio prompt. This Spring I..."
-pubDate: '2020-01-08'
-categories: ['design']
+categories: ["design"]
 image: "/images/dc9b92_4c5f6231d256461da6f98d7ca774ea82~mv2.gif"
-readTime: 6
-views: 36
-likes: 1
-comments: 0
 ---
+
 
 <figure>
 <img src="/images/dc9b92_4c5f6231d256461da6f98d7ca774ea82~mv2.gif" alt="">

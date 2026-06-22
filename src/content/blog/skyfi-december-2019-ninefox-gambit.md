@@ -1,13 +1,9 @@
 ---
-title: "SkyFi :: December 2019 :: Ninefox Gambit"
-description: "Hello Fellow Travellers, We held a quick check-in before the holidays to see if we could set up an epic read to fill the space of travel..."
-pubDate: '2019-12-24'
 categories: ["observings", "skyfi"]
-readTime: 5
-views: 12
-likes: 1
-comments: 0
+image: "/images/dc9b92_b6a008f6a8c74aa7a33765b18d272ffd~mv2_d_1400_2161_s_2.jpg"
 ---
+
+
 
 Hello Fellow Travellers,
 

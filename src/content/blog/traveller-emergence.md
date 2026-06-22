@@ -3,7 +3,7 @@ title: "Traveller :: Emergence"
 description: "A journal has been a consistent part of my daily routine for many years now. While I miss a day here and there, especially when..."
 pubDate: '2019-12-24'
 categories: ["drawings", "readings"]
-image: "/images/dc9b92_54613c9dd1724cddaa80993590eba4ec~mv2_d_2789_3488_s_4_2.jpg/dc9b92_54613c9dd1724cddaa80993590eba4ec~mv2_d_2789_3488_s_4_2.jpg"
+image: ""
 readTime: 2
 views: 10
 likes: 1

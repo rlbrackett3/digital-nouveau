@@ -40,13 +40,13 @@ const { title, description } = Astro.props;
 				<div class="header-content">
 					<div class="header-left">
 						<h1 class="site-title">
-							<a href="/">Digital Nouveau ~</a>
+							<a href="/">&gt; Digital Nouveau ~</a>
 						</h1>
 						<div class="taglines">
-							<p class="tagline">&gt; initiating drone connection ~</p>
-							<p class="tagline">&gt; blog ~</p>
+							<p class="tagline"><a href="/blog">&gt; initiating drone connection ~</a></p>
+							<p class="tagline"><a href="/blog">&gt; blog ~</a></p>
 							<p class="tagline">&gt; design | computation | fabrication :: make things ~</p>
-							<p class="tagline">&gt; we came here to do something, so let's do something ~</p>
+							<p class="tagline">we came here to do something, so let's do something ~</p>
 						</div>
 					</div>
 				
@@ -124,17 +124,23 @@ const { title, description } = Astro.props;
 
 		<script>
 			// Hamburger menu toggle
+			const mobileMenu = document.getElementById('mobileMenu');
+			const mobileOverlay = document.getElementById('mobileOverlay');
+
+			function closeMenu() {
+				mobileMenu.classList.remove('active');
+				mobileOverlay.classList.remove('active');
+			}
+
 			document.getElementById('hamburgerBtn').addEventListener('click', () => {
-				document.getElementById('mobileMenu').classList.toggle('active');
-				document.getElementById('mobileOverlay').classList.toggle('active');
+				mobileMenu.classList.toggle('active');
+				mobileOverlay.classList.toggle('active');
 			});
-			document.getElementById('mobileOverlay').addEventListener('click', () => {
-				document.getElementById('mobileMenu').classList.remove('active');
-				document.getElementById('mobileOverlay').classList.remove('active');
-			});
-			document.getElementById('mobileMenuClose').addEventListener('click', () => {
-				document.getElementById('mobileMenu').classList.remove('active');
-				document.getElementById('mobileOverlay').classList.remove('active');
+
+			document.getElementById('mobileOverlay').addEventListener('click', closeMenu);
+			document.getElementById('mobileMenuClose').addEventListener('click', closeMenu);
+			document.addEventListener('keydown', (e) => {
+				if (e.key === 'Escape') closeMenu();
 			});
 		</script>
 	</body>

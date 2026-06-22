@@ -3,7 +3,7 @@ title: "ARNICA (softly)"
 description: "It&#x27;s HERE! After what seems like years (or actually has been years) we have the initial offerings from the ARNICA collection live and..."
 pubDate: '2015-03-24'
 categories: ["design"]
-image: "/images/dc9b92_acbbdf3ef61940cca15c506c29ff673f~mv2_d_2000_1500_s_2.png/dc9b92_acbbdf3ef61940cca15c506c29ff673f~mv2_d_2000_1500_s_2.png"
+image: ""
 readTime: 1
 views: 4
 comments: 0

@@ -3,7 +3,7 @@ title: "A Texas Thistle"
 description: "Image development for a poster. Theme to address the alienating and discouraging situation afflicting humans crossing arbitrary borders...."
 pubDate: '2019-08-20'
 categories: ["design"]
-image: "/images/dc9b92_9950a045a4d244abbb0b0204574a1df4~mv2_d_2000_2000_s_2.png/dc9b92_9950a045a4d244abbb0b0204574a1df4~mv2_d_2000_2000_s_2.png"
+image: ""
 readTime: 1
 views: 9
 comments: 0

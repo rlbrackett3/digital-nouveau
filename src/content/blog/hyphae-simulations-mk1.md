@@ -1,13 +1,9 @@
 ---
-title: "Hyphae Simulations mk1"
-description: "This blog has been on a long hiatus, primarily due to aging and broken technology and my lack of time commitment to fix it. I took the..."
-pubDate: '2019-08-15'
 categories: ["design", "drawings"]
-readTime: 1
-views: 1
-likes: 1
-comments: 0
+image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
+
+
 
 <div class="video-embed"><iframe src="https://player.vimeo.com/video/293231826" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 

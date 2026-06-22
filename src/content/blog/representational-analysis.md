@@ -1,14 +1,8 @@
 ---
-title: "Representational Analysis :: Decomposition Drawing & Video"
-description: "Micro-lecture introducing architectural analysis through decompositional drawing and video-based representation."
-pubDate: '2020-01-27'
-categories: ['teachings']
+categories: ["teachings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
-hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
-views: 13
-comments: 0
-likes: 1
 ---
+
 
 ## Overview & Context
 Micro-lecture for Pratt Institute's ARCH202 Intermediate Design studios. Introduce architectural analysis through decompositional drawing and video-based representation. Core premise: Architecture can be analyzed as a functionally integrated system of interconnected and discrete elements using time-based media.

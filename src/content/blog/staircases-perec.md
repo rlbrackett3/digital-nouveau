@@ -1,14 +1,8 @@
 ---
-title: "Staircases - Georges Perec - Species of Space"
-description: "Georges Perec on the beauty of staircases in old houses and the hostility of modern apartment buildings."
-pubDate: '2019-01-01'
-categories: ['observings']
+categories: ["observings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
-hero_image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
-views: 10
-comments: 0
-likes: 0
 ---
+
 
 Horta House Stairs
 

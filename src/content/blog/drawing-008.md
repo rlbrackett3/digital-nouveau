@@ -6,7 +6,7 @@ Dermis Production Line
 "
 pubDate: '2013-02-22'
 categories: ["drawings"]
-image: "/images/dc9b92_1ec06462d5d940c7a018b69c5c4b027e~mv2_d_2000_2955_s_2.png/dc9b92_1ec06462d5d940c7a018b69c5c4b027e~mv2_d_2000_2955_s_2.png"
+image: ""
 views: 1
 comments: 0
 likes: 0

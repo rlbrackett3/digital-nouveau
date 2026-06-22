@@ -1,14 +1,8 @@
 ---
-title: "SAVORING :: COMPLEXITY"
-description: "&quot;Knowledge is not the gradual approach to truth.  The task of the scientist is &quot;to make the weaker case the stronger&quot; as the sophists..."
-pubDate: '2019-10-30'
-categories: ['design']
-image: "/images/dc9b92_a11af88a4e094b0d9bccd01b67540964~mv2_d_2000_1500_s_2.jpg/dc9b92_a11af88a4e094b0d9bccd01b67540964~mv2_d_2000_1500_s_2.jpg"
-readTime: 4
-views: 2
-comments: 0
-likes: 0
+categories: ["design"]
+image: ""
 ---
+
 
 ## "Knowledge is not the gradual approach to truth.  The task of the scientist is "to make the weaker case the stronger" as the sophists said.  We need a set of alternative assumptions or, as it were, an entire alternative world, we need a dream world in order to discover the real world we think we inhabit (and which may actually just be another dream world).  We must invent a new conceptual system that suspends, or clashes with, the most carefully established observational results...and introduces perceptions that cannot form part of the existing perceptual world."
 
