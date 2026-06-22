@@ -22,11 +22,11 @@
 	--text-link: #1cebf4;
 	--text-link-hover: #1cebf4;
 
-	--font-body: 'DM Sans', var(--font-body);
+	--font-body: 'DM Sans', 'Courier New', 'Lucida Console', monospace;
 	--font-size-base: 14px;
 	--font-weight: 100;
 
-	--bg: var(--bg);
+	--bg: #000000;
 	--border: rgba(28, 235, 244, 0.15);
 	--border-subtle: rgba(28, 235, 244, 0.1);
 
