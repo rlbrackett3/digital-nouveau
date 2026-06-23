@@ -1,16 +1,8 @@
 ---
-// Category page - single column matching Wix blog structure
+// Category page - 3-column grid matching Wix blog structure
 import { getCollection } from 'astro:content';
 import SiteLayout from '@/components/SiteLayout.astro';
 import { SITE_TITLE, CATEGORIES } from '@/consts';
-const VALID_CATEGORIES = new Set(CATEGORIES);
-
-export function getStaticPaths() {
-	return CATEGORIES.map((category) => ({
-		params: { category },
-		props: { category },
-	}));
-}
 
 const { category } = Astro.props;
 const allPosts = await getCollection('blog');
@@ -19,7 +11,18 @@ const categoryPosts = allPosts
 	.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
 	.map(post => {
 		const words = (post.body || '').trim().split(/\s+/).filter(Boolean).length;
-		return { ...post, readTime: Math.max(1, Math.ceil(words / 200)) };
+		const image = post.data.image;
+		const dateStr = post.data.pubDate
+			? new Date(post.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+			: '';
+		return {
+			id: post.id,
+			title: post.data.title,
+			image,
+			date: dateStr,
+			readTime: post.data.readTime || Math.max(1, Math.ceil(words / 200)),
+			categories: post.data.categories || [],
+		};
 	});
 
 const categoryDisplay: Record<string, string> = {
@@ -34,126 +37,45 @@ const categoryDisplay: Record<string, string> = {
 };
 
 const displayName = categoryDisplay[category] || category;
+
+export function getStaticPaths() {
+	return CATEGORIES.map((cat) => ({
+		params: { category: cat },
+		props: { category: cat },
+	}));
+}
 ---
 
 <SiteLayout title={`${displayName} | ${SITE_TITLE}`}>
-	<head>
-		<title>{displayName} | {SITE_TITLE}</title>
-	</head>
-
-	<!-- Category navigation - Wix style -->
-	<nav class="category-nav" aria-label="Blog categories">
-		<a href="/" class="category-link">&gt; everything ~</a>
-		{CATEGORIES.map((cat) => (
-			<a href={`/category/${cat}`} class={`category-link${cat === category ? ' active' : ''}`}>{cat}</a>
-		))}
-	</nav>
-
-	<main class="category-page">
-		<div class="feed-container" id="feed-container">
-		{categoryPosts.length > 0 ? (
-			categoryPosts.map(post => {
-				const words = (post.body || '').trim().split(/\s+/).filter(Boolean).length;
-				const readTime = Math.max(1, Math.ceil(words / 200));
-				const dateStr = post.data.pubDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-				const image = post.data.image;
-				return (
-				<article class="feed-card visible" data-cats={JSON.stringify(post.data.categories)} data-post-id={post.id}>
-					<a href={`/blog/${post.id}`} class="feed-card-link">
-						{image ? (
-							<div class="feed-card-image">
-								<img src={image} alt={post.data.title} loading="lazy" />
-							</div>
-						) : ''}
-						<div class="feed-card-body">
-							<time class="feed-card-date">{dateStr} · {readTime} min read</time>
-							<h2 class="feed-card-title">{post.data.title}</h2>
-							<div class="feed-card-content">{post.data.description}</div>
+	<main class="feed-page">
+		<div class="feed-container grid-view" id="feed-container">
+		{categoryPosts.map(pc => (
+			<article class="feed-card" data-cats={JSON.stringify(pc.categories)} data-post-id={pc.id}>
+				<a href={`/blog/${pc.id}`} class="feed-card-link">
+					{pc.image ? (
+						<div class="feed-card-image">
+							<img src={pc.image} alt={pc.title} loading="lazy" />
 						</div>
-					</a>
-					<div class="feed-card-meta">
-						<div class="feed-card-stats">
-							<span class="feed-stat">
-								<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-								0
-							</span>
-							<span class="feed-stat">
-								<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-								0
-							</span>
-						</div>
+					) : ''}
+					<div class="feed-card-body">
+						<h2 class="feed-card-title">{pc.title}</h2>
+						<p class="feed-card-content">{pc.date}</p>
 					</div>
-				</article>
-				);
-			})
-		) : (
-			<p>No posts in this category yet.</p>
-		)}
+				</a>
+				<div class="feed-card-meta">
+					<div class="feed-card-stats">
+						<span class="feed-stat">
+							<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+							{(pc.views as number) || 0}
+						</span>
+						<span class="feed-stat">
+							<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+							0
+						</span>
+					</div>
+				</div>
+			</article>
+		))}
 		</div>
 	</main>
-
-	<style>
-		.category-page {
-			max-width: var(--content-max-width);
-			margin: 0 auto;
-			padding: 20px var(--header-padding-x);
-		}
-
-		.category-nav {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 8px;
-			padding: 12px var(--header-padding-x);
-			border-bottom: 1px solid var(--border);
-			background: var(--bg);
-			max-width: var(--content-max-width);
-			margin: 0 auto;
-		}
-
-		.category-link {
-			font-size: 12px;
-			font-weight: var(--font-weight-body);
-			color: var(--accent-dim);
-			font-family: var(--font-body);
-			text-decoration: none;
-			padding: 6px 14px;
-			border: 1px solid var(--accent-subtle);
-			transition: all 0.2s;
-		}
-
-		.category-link:hover {
-			border-color: var(--accent-dim);
-			color: var(--accent);
-		}
-
-		.category-link.active {
-			border-color: var(--accent);
-			color: var(--accent);
-			background: var(--accent-faint);
-		}
-
-		.feed-container {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 20px;
-			margin-top: 20px;
-		}
-
-		@media (max-width: 600px) {
-			.feed-container {
-				grid-template-columns: 1fr;
-			}
-			.category-nav {
-				overflow-x: auto;
-				flex-wrap: nowrap;
-				scrollbar-width: none;
-			}
-			.category-nav::-webkit-scrollbar {
-				display: none;
-			}
-			.category-link {
-				flex-shrink: 0;
-			}
-		}
-	</style>
 </SiteLayout>
