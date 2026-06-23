@@ -699,42 +699,27 @@ p {
 }
 
 .skyfi-radar {
-	margin-top: 40px;
-	padding-top: 30px;
-	border-top: 1px solid var(--border);
+	margin-top: 0;
+	padding-top: 0;
+	border-top: none;
 }
 
-.skyfi-radar > .radar-layout {
-	display: flex;
-	gap: 55px;
+.skyfi-radar .book-columns {
+	columns: 2;
+	column-gap: 55px;
 }
 
-.skyfi-radar > .radar-layout > h1 {
-	width: 440px;
-	flex-shrink: 0;
-	font-size: 22px;
-	font-family: var(--font-body);
-	font-weight: 200;
-	color: var(--accent);
-	margin: 0;
-	text-align: center;
-}
-
-.radar-list {
-	width: 440px;
-	flex-shrink: 0;
-}
-
-.radar-list p {
+.skyfi-radar .book-text {
 	font-size: 16px;
 	line-height: normal;
 	color: var(--accent);
 	margin: 0 0 4px 0;
 	font-family: var(--font-body);
 	font-weight: 200;
+	break-inside: avoid;
 }
 
-.radar-list p:first-child {
+.skyfi-radar .book-text:first-of-type {
 	font-size: 15px;
 	line-height: 19.5px;
 }

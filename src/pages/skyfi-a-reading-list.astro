@@ -208,11 +208,9 @@ const booksOnRadar = [
 
 		<div class="skyfi-band">
 			<section class="skyfi-radar">
-				<div class="radar-layout">
-					<h1>SKYFI :: BOOKS ON OUR RADAR (under construction)</h1>
-					<div class="radar-list">
-						{booksOnRadar.map(book => <p>{book}</p>)}
-					</div>
+				<h1 class="skyfi-heading">SKYFI :: BOOKS ON OUR RADAR (under construction)</h1>
+				<div class="book-columns">
+					{booksOnRadar.map(book => <p class="book-text">{book}</p>)}
 				</div>
 			</section>
 		</div>
