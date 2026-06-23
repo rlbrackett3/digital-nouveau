@@ -1,13 +1,19 @@
 ---
-// BlogPost layout — matching Wix dark theme + card structure
+// BlogPost layout — matching Wix blog structure
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import SiteLayout from '../components/SiteLayout.astro';
+import { getCollection } from 'astro:content';
 
-type Props = CollectionEntry<'blog'>['data'] & { readTime?: number };
+const { title, description, pubDate, updatedDate, categories, image, imageCaption, readTime, slug } = Astro.props;
 
-const { title, description, pubDate, updatedDate, categories, image, imageCaption, readTime } = Astro.props;
+// Get recent posts for sidebar (exclude current post)
+const allPosts = await getCollection('blog');
+const recentPosts = allPosts
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .filter(p => p.id !== slug)
+  .slice(0, 3);
 ---
 
 <SiteLayout title={title}>
@@ -16,7 +22,23 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 	</head>
 
 	<main class="blog-post">
-		<article class="post-card">
+		<!-- Article (matches Wix: sectionheader → content → sectionfooter) -->
+		<article>
+			<!-- Section Header: Title + Author line -->
+			<header class="section-header">
+				<h1 class="post-title">{title}</h1>
+				<div class="author-line">
+					<div class="avatar">R</div>
+					<span class="author-name">~rooks /l</span>
+					<span class="separator">|</span>
+					<time class="post-date">
+						{pubDate ? pubDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : ''}
+					</time>
+					{readTime && <span class="read-time">{readTime} min read</span>}
+				</div>
+			</header>
+
+			<!-- Hero Image (after title on Wix) -->
 			{image && (
 				<figure class="hero-image">
 					<img src={image} alt={`Hero image for ${title}`} loading="eager" />
@@ -24,33 +46,27 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 				</figure>
 			)}
 
-			<div class="post-header">
-				<div class="author-info">
-					<div class="avatar">R</div>
-					<span class="author-name">~rooks /l</span>
-				</div>
-				<time class="post-date">{pubDate ? pubDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : ''}{readTime ? ` · ${readTime}` : ''}</time>
-			</div>
-
-			<h1 class="post-title">{title}</h1>
-
-			{updatedDate && (
-				<p class="last-updated">Last updated on <FormattedDate date={updatedDate} /></p>
-			)}
-
+			<!-- Body Content -->
 			<div class="post-content">
+				{updatedDate && (
+					<p class="last-updated">Last updated on <FormattedDate date={updatedDate} /></p>
+				)}
 				<slot />
 			</div>
 
-			{categories && categories.length > 0 && (
-				<div class="post-tags">
-					{categories.map(cat => (
-						<a href={`/category/${cat}`} class="category-tag">{cat}</a>
-					))}
-				</div>
-			)}
+			<!-- Section Footer: Tags + Share (matches Wix sectionfooter) -->
+			<footer class="section-footer">
+				{categories && categories.length > 0 && (
+					<div class="post-tags">
+						{categories.map((cat, i) => (
+							<>
+								<a href={`/category/${cat}`} class="category-tag">{cat}</a>
+								{i < categories.length - 1 && <span class="tag-separator">·</span>}
+							</>
+						))}
+					</div>
+				)}
 
-			<div class="post-footer">
 				<div class="social-actions">
 					<button class="social-btn" aria-label="Share on Facebook" title="Share">
 						<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
@@ -65,101 +81,117 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 						<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
 					</button>
 				</div>
-
-				<div class="post-stats">
-					<span class="stat">
-						<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-						{readTime || 0} min
-					</span>
-					<span class="stat">
-						<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-						0
-					</span>
-					<span class="stat">
-						<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-						0
-					</span>
-				</div>
-			</div>
+			</footer>
 		</article>
+
+		<!-- Recent Posts (outside article, like Wix) -->
+		<aside class="recent-posts-section">
+			<div class="recent-header">
+				<h2 class="section-title">Recent Posts</h2>
+				<a href="/blog" class="see-all">See All</a>
+			</div>
+			<div class="recent-grid">
+				{recentPosts.map(post => (
+					<a href={`/blog/${post.id}`} class="recent-card">
+						<div class="recent-card-content">
+							<h3 class="recent-title">{post.data.title}</h3>
+							<div class="recent-stats">
+								{post.data.views > 0 && (
+									<span class="recent-views">
+										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+										{post.data.views} views
+									</span>
+								)}
+								{post.data.likes > 0 && (
+									<span class="recent-likes">
+										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+										{post.data.likes}
+									</span>
+								)}
+							</div>
+						</div>
+					</a>
+				))}
+			</div>
+		</aside>
 	</main>
 </SiteLayout>
 
 <style>
 	.blog-post {
-		max-width: var(--content-max-width);
+		max-width: var(--post-max-width);
 		margin: 0 auto;
 		padding: 20px var(--header-padding-x) 60px;
 	}
 
-	.post-card {
-		background: rgba(0, 0, 0, 0.95);
-		border: 1px solid var(--accent);
-		padding: 0;
-		overflow: hidden;
+	/* Article — no card wrapper, flows on page background like Wix */
+	article {
+		background: transparent;
+		border: none;
 	}
 
-	.post-header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 12px;
-		font-size: 12px;
-		padding: 20px 24px 0;
+	/* Section Header: Title + Author */
+	.section-header {
+		margin-bottom: 20px;
 	}
 
-	.author-info {
-		display: flex;
-		align-items: center;
-		gap: 10px;
-	}
-
-	.avatar {
-		width: 32px;
-		height: 32px;
-		border-radius: 50%;
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 14px;
-		color: white;
-		font-weight: 100;
-	}
-
-	.author-name {
-		color: var(--accent);
-		font-size: 12px;
-		font-family: var(--font-body);
-		}
-
-		.post-date {
-		color: var(--accent);
-		font-size: 12px;
-		font-family: var(--font-body);
-		}
-
-		.post-title {
+	.post-title {
 		margin: 0;
 		font-size: 28px;
 		font-family: var(--font-body);
 		font-weight: var(--font-weight-heading);
 		color: var(--accent);
 		line-height: 1.2;
-		padding: 12px 24px 0;
+		margin-bottom: 8px;
 	}
 
-	.last-updated {
-		font-size: 11px;
-		color: var(--accent-dim);
-		font-style: italic;
-		margin: 0;
-		padding: 0 24px;
-		font-family: var(--font-body);
-		}
+	.author-line {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 12px;
+		color: var(--text-muted);
+	}
 
-		.hero-image {
-		margin: 0;
+	.avatar {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 11px;
+		color: white;
+		font-weight: 100;
+		flex-shrink: 0;
+	}
+
+	.author-name {
+		color: var(--accent);
+		font-size: 12px;
+		font-family: var(--font-body);
+	}
+
+	.separator {
+		color: var(--text-muted);
+	}
+
+	.post-date {
+		color: var(--text-muted);
+		font-size: 12px;
+		font-family: var(--font-body);
+	}
+
+	.read-time {
+		color: var(--text-muted);
+		font-size: 12px;
+		font-family: var(--font-body);
+	}
+
+	/* Hero Image */
+	.hero-image {
+		margin: 0 0 20px;
 	}
 
 	.hero-image img {
@@ -169,20 +201,20 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 	}
 
 	.image-caption {
-		margin-top: 8px;
+		margin-top: 6px;
 		font-size: 12px;
 		color: var(--text-muted);
 		text-align: center;
 		font-family: var(--font-body);
 	}
 
+	/* Body Content */
 	.post-content {
-		color: var(--accent);
+		color: var(--text-secondary);
 		line-height: 1.7;
 		font-size: 14px;
 		font-family: var(--font-body);
 		font-weight: var(--font-weight-body);
-		padding: 0 24px 24px;
 	}
 
 	.post-content p {
@@ -216,7 +248,7 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 	}
 
 	.post-content blockquote {
-		border-left: 2px solid var(--accent-subtle);
+		border-left: 2px solid var(--accent);
 		padding-left: 1.5em;
 		margin: 1.5em 0;
 		color: var(--text-muted);
@@ -268,15 +300,26 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 		margin: 2em 0;
 	}
 
-	.post-tags {
-		display: flex;
-		gap: 12px;
-		flex-wrap: wrap;
+	.last-updated {
+		font-size: 11px;
+		color: var(--accent-dim);
+		font-style: italic;
+		margin-bottom: 1em;
+		font-family: var(--font-body);
+	}
+
+	/* Section Footer: Tags + Share */
+	.section-footer {
 		margin-top: 24px;
 		padding-top: 20px;
 		border-top: 1px solid var(--border);
-		padding-left: 24px;
-		padding-right: 24px;
+	}
+
+	.post-tags {
+		display: flex;
+		gap: 8px;
+		flex-wrap: wrap;
+		margin-bottom: 16px;
 	}
 
 	.category-tag {
@@ -284,27 +327,20 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 		font-size: 12px;
 		font-family: var(--font-body);
 		text-decoration: none;
-		padding: 2px 0;
-		border-bottom: 1px solid var(--border);
-		transition: border-color 0.2s;
+		opacity: 0.8;
+		transition: opacity 0.2s;
 	}
 
 	.category-tag:hover {
-		border-color: var(--accent);
 		opacity: 1;
 	}
 
-	.post-footer {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-top: 20px;
-		padding-top: 16px;
-		padding-left: 24px;
-		padding-right: 24px;
-		border-top: 1px solid var(--border);
+	.tag-separator {
+		color: var(--text-muted);
+		font-size: 12px;
 	}
 
+	/* Social Actions */
 	.social-actions {
 		display: flex;
 		gap: 12px;
@@ -319,7 +355,7 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		opacity: 0.7;
+		opacity: 0.6;
 		transition: opacity 0.2s;
 	}
 
@@ -327,55 +363,94 @@ const { title, description, pubDate, updatedDate, categories, image, imageCaptio
 		opacity: 1;
 	}
 
-	.post-stats {
+	/* Recent Posts Section */
+	.recent-posts-section {
+		margin-top: 40px;
+		padding-top: 30px;
+		border-top: 1px solid var(--border);
+	}
+
+	.recent-header {
 		display: flex;
-		gap: 16px;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 16px;
+	}
+
+	.section-title {
+		font-size: 13px;
+		font-weight: var(--font-weight-heading);
+		color: var(--accent);
+		margin: 0;
+		font-family: var(--font-body);
+	}
+
+	.see-all {
 		font-size: 12px;
 		color: var(--accent-dim);
-		font-family: var(--font-body);
-		}
+		text-decoration: none;
+		transition: color 0.2s;
+	}
 
-		.stat {
+	.see-all:hover {
+		color: var(--accent);
+	}
+
+	.recent-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 16px;
+	}
+
+	.recent-card {
+		display: block;
+		text-decoration: none;
+		background: rgba(0, 0, 0, 0.85);
+		border: 1px solid var(--border);
+		transition: border-color 0.2s;
+		padding: 12px;
+	}
+
+	.recent-card:hover {
+		border-color: var(--accent-dim);
+	}
+
+	.recent-title {
+		font-size: 13px;
+		font-weight: var(--font-weight-heading);
+		color: var(--accent);
+		margin: 0 0 8px;
+		line-height: 1.3;
+		font-family: var(--font-body);
+	}
+
+	.recent-stats {
+		display: flex;
+		gap: 8px;
+		font-size: 10px;
+		color: var(--accent-dim);
+	}
+
+	.recent-views,
+	.recent-likes {
 		display: flex;
 		align-items: center;
-		gap: 4px;
+		gap: 3px;
 	}
 
-	.stat svg {
-		opacity: 0.6;
-	}
-
+	/* Mobile */
 	@media (max-width: 768px) {
 		.blog-post {
-			padding: 16px 20px 40px;
-		}
-
-		.post-card {
-			padding: 0;
-		}
-
-		.post-header {
-			padding: 16px 16px 0;
+			padding: 16px 16px 40px;
 		}
 
 		.post-title {
 			font-size: 22px;
-			padding: 12px 16px 0;
 		}
 
-		.post-content {
-			font-size: 14px;
-			padding: 0 16px 16px;
-		}
-
-		.post-footer {
-			padding-left: 16px;
-			padding-right: 16px;
-		}
-
-		.post-tags {
-			padding-left: 16px;
-			padding-right: 16px;
+		.recent-grid {
+			grid-template-columns: 1fr;
+			gap: 12px;
 		}
 	}
 </style>

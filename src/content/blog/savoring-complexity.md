@@ -1,9 +1,11 @@
 ---
+title: "SAVORING :: COMPLEXITY"
+pubDate: '2019-10-30'
 categories: ["design"]
 image: ""
 ---
 
-## "Knowledge is not the gradual approach to truth.  The task of the scientist is "to make the weaker case the stronger" as the sophists said.  We need a set of alternative assumptions or, as it were, an entire alternative world, we need a dream world in order to discover the real world we think we inhabit (and which may actually just be another dream world).  We must invent a new conceptual system that suspends, or clashes with, the most carefully established observational results...and introduces perceptions that cannot form part of the existing perceptual world."
+> "Knowledge is not the gradual approach to truth.  The task of the scientist is "to make the weaker case the stronger" as the sophists said.  We need a set of alternative assumptions or, as it were, an entire alternative world, we need a dream world in order to discover the real world we think we inhabit (and which may actually just be another dream world).  We must invent a new conceptual system that suspends, or clashes with, the most carefully established observational results...and introduces perceptions that cannot form part of the existing perceptual world."
 
 :: Paul Fayerabend :: Against Method
 
@@ -30,7 +32,7 @@ In all things there is great complexity. Rich strata of information, patterns ov
 
 ---
 
-## "The poet proceeds in full knowledge of the fact that 'this is not the way we do things around here'...to create is to break the silence of conformity. It is to make a noise. Poetry is war, not with one another, but with ourselves, and effort to expand the territory of the known; to make is to break the known so as to cross the border into the unknown. The desire to create is a desire to surpass, not as an utopian dream, but in order to make manifest a difference between how things are and the mere possibility that they can be otherwise."
+> "The poet proceeds in full knowledge of the fact that 'this is not the way we do things around here'...to create is to break the silence of conformity. It is to make a noise. Poetry is war, not with one another, but with ourselves, and effort to expand the territory of the known; to make is to break the known so as to cross the border into the unknown. The desire to create is a desire to surpass, not as an utopian dream, but in order to make manifest a difference between how things are and the mere possibility that they can be otherwise."
 
 :: Marcos Novak, 'The PanTopican and the Architecture of Noise' Center vol 9 / 1995 UT Austin
 

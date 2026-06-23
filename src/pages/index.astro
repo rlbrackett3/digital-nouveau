@@ -155,6 +155,7 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 /* Grid view (category filter) - 3 equal columns of square cards */
 .feed-container.grid-view {
 	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
 	max-width: var(--content-max-width);
 	margin: 0 auto;
 }
@@ -240,6 +241,7 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 
 .grid-view .feed-card-link {
 	height: 100%;
+	aspect-ratio: 1 / 1;
 	display: flex;
 	flex-direction: column;
 }
@@ -339,14 +341,15 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 }
 
 .list-view .feed-card-link {
-	border: none;
+	border: 1px solid var(--accent-subtle);
 	background: transparent;
 }
 
 .list-view .feed-card-link:hover {
-	border: none;
-	box-shadow: none;
-	outline: none;
+	border-color: var(--accent);
+	box-shadow: 0 0 0 1px var(--accent);
+	outline: 1px solid var(--accent);
+	outline-offset: 1px;
 }
 
 .list-view .feed-card-meta {

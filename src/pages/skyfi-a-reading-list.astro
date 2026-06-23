@@ -1,318 +1,212 @@
 ---
 // SkyFi :: A Reading List
-// Matching Wix screenshot: 4-column book list layout
 import SiteLayout from '../components/SiteLayout.astro';
 
-// Data from Wix site extraction
-const clubReads = [
-	'Ubik — Philip K. Dick',
-	'Altered Carbon — Richard K. Morgan',
+const leftCol = [
+	'SKYFI :: BOOKS WE HAVE READ (chronological)',
+	'',
+	'Ubik - Philip K. Dick',
+	'Altered Carbon - Richard Morgan',
 	'The Old Man and the Wasteland',
-	'Mountains of Madness — H.P. Lovecraft',
-	'Blindsight — Peter Watts',
-	'Embassytown — China Miéville',
-	'REAMDE — Neal Stephenson',
-	'Halting State — Charles Stross',
-	'American Gods — Neil Gaiman',
-	'The Spiral — Paul McEwan',
-	'Left Hand of Darkness — Ursula K. LeGuin',
-	'Solaris — Stanislaw Lem',
-	'The Dream Quest of the Unknown Kadath — H.P. Lovecraft',
-	'By His Bootstraps — Robert A. Heinlein',
-	'All You Zombies — Robert A. Heinlein',
-	'City in the City — China Miéville',
-	'Stranger in a Strange Land — Robert A. Heinlein',
-	'The Quantum Thief — Hannu Rajaniemi',
-	'Leviathan Wakes — James S.A. Corey',
-	'The Foundation Trilogy — Isaac Asimov',
-	"Rainbow's End — Vernon Vinge",
-	'The Call of Cthulhu — H.P. Lovecraft',
-	'Broken Angels — Richard K. Morgan',
-	'The Possibility of an Island — Michel Houellebecq',
-	'Brain Plague — Joan Shannawitz',
-	'Our Common Future — Marie-Anne Reese',
-	"Schrödinger's Ladder — Greg Egan",
-	'In the Dust of This Planet — Eugene Thacker',
-	'Weird Realism — Graham Harman',
-	'Annihilation — Jeff VanderMeer',
-	'Authority — Jeff VanderMeer',
-	'Acceptance — Jeff VanderMeer',
-	'2312 — Kim Stanley Robinson',
-	'Hyperobjects: Philosophy and Ecology after the End of the World (Posthumanism) — Timothy Morton',
-	'Oryx and Crake — Margaret Atwood',
-	'Hieroglyph: Stories and Visions for a Better Future — Various Authors',
-	'Seveneves — Neal Stephenson',
-	'Ready Player One — Ernest Cline',
-	'High Rise — J.G. Ballard',
-	'The Three Body Problem — Liu Cixin',
-	'The Passage — Justin Cronin',
-	'The Big Sheep — Robert Kroese',
-	'The Last Days of New Paris — China Miéville',
-	'Dark Ecology — Timothy Morton',
-	'The Year of the Flood — Margaret Atwood',
-	'MaddAddam — Margaret Atwood',
-	'The Fifth Season — N.K. Jemisin',
-	'The Girl With All The Gifts — M.R. Carey',
-	'Three Moments of an Explosion — China Miéville',
-	'Infinite Jest — David Foster Wallace',
-	'Lovecraft Country — Matt Ruff',
-	'Snow Crash — Neal Stephenson',
-	'Hyperion — Dan Simmons',
-	'Walkaway — Cory Doctorow',
-	'Rendezvous with Rama — Arthur C. Clarke',
-	'Dhalgren — Samuel R. Delany',
-	'Echopraxia — Peter Watts',
-	'Dune — Frank Herbert',
-	'Ancillary Justice (trilogy) — Ann Leckie',
-	'Strange Stars — Jason Heller',
-	'The Beast That Shouted Love At The End Of The World — Harlan Ellison (1968)',
-	'Shadowbahn — Steve Erickson',
-	'Star Maker — Olaf Stapledon',
-	'Last and First Men — Olaf Stapledon',
-	'Ninefox Gambit (trilogy) — Yoon Ha Lee',
-	'Peripheral — William Gibson',
-	'Agency — William Gibson',
-	'Parable of the Sower — Octavia Butler',
+	'Mountains of Madness - HP Lovecraft',
+	'Blindsight - Peter Watts',
+	'Emabssytown - China Mieville',
+	'REAMDE - NealStephenson',
+	'Halting State - Charles Stross',
+	'American Gods - Niel Gaiman',
+	'The Spiral - Paul McEwan',
+	'Left Hand of Darkness - Ursula K LeGuin',
+	'Solaris - Stanislaw Lem',
+	'"The Dream Quest of the Unknown Kadath" - H.P. Lovecraft',
+	'By His Bootstraps - Robert A Heinlein',
+	'All You Zombies - Robert A Heinlein',
+	'City in The City - China Mieville',
+	'Stranger in a Strange Land - Robert A Heinlein',
+	'The Quantum Theif - Hannu Rajaniemi',
+	'Leviathan Wakes - James A Corey',
+	'The Foundation Trilogy - Isaac Asimov',
+	"Rainbow's End - Vernor Vinge",
+	'The Call of Cthulu - H.P. Lovecraft',
+	'Broken Angels - Richard K Morgan',
+	'The Possibility of an Island - Michel Houellebecq',
+	'Brain Plague - Joan Slonczewski',
+	'Our Cosmin Habitat - Martic Rees',
+	"Schild's Ladder - Greg Eigen",
+	'In the Dust of This Planet - Eugene Thacker',
+	'Weird Realism - Graham Harmon',
+	'Annihilation - Jeff Vandermeer',
+	'Authority - Jeff Vandermeer',
+	'Acceptance - Jeff VanderMeer',
+	'2312 - Kim Stanley Robinson',
+	'Hyperobjects: Philosophy and Ecology after the End of the World (Posthumanities) - Timothy Morton',
+	'Oryx and Crake - Margaret Atwood',
+	'Hieroglyph: Stories and Visions for a Better Future - Various Authors',
+	'Seveneves - Neal Stephenson',
+	'Ready Player One - Ernest Klein',
+	'High Rise - JG Ballard',
+	'The Three Body Problem - Liu Cixin',
+	'The Passage - Justin Cronin',
+	'The Big Sheep - Robert Kroese',
+	'The Last Days of New Paris - China Mieville',
+	'Dark Ecology - Timothy Morton',
+	'The Year of the Flood - Margaret Atwood',
+	'MaddAddam - Margaret Atwood',
+	'The Fifth Season - N. K. Jemisin',
+	'The Girl With All The Gifts - M. R. Carey',
+	'Three Moments of an Explosion - China Mieville',
+	'Infinite Jest - David Foster Wallace',
+	'Lovecraft Country - Matt Ruff',
+	'Snow Crash - Neal Stephenson',
+	'Hyperion - Dan Simmons',
+	'Walkaway - Cory Doctorow',
+	'Rendezvous with Rama - Arthur C. Clarke',
+	'Dhalgren - Samuel R Delany',
+	'Echopraxia - Peter Watts',
+	'Dune - Frank Herbert',
+	'Ancillary Justice (trilogy) - Ann Leckie',
+	'Strange Stars - Jason Heller',
+	'The Beast That Shouted Love At The End Of The World - Harlan Ellison (1968)',
+	'Shadowbahn - Steve Erickson',
+	'Star Maker - Olaf Stapeldon',
+	'Last and First Men - Olaf Stapeldon',
+	'Ninefox Gambit (trilogy) - Yoon Ha Lee',
+	'Peripheral - William Gibson',
+	'Agency - William Gibson',
+	'Parable of the Sower - Octavia E Butler',
 ];
 
-const favorites = [
-	'Altered Carbon (Broken Angels + Woken Furies) — Richard K. Morgan',
-	'Blindsight — Peter Watts',
-	'Star Maker — Olaf Stapledon',
-	'The Book of Five Rings — Miyamoto Musashi',
-	'Tao Te Ching — Ursula K. LeGuin (trans.)',
-	'The Watercourse Way — Alan Watts',
+const rightCol = [
+	'FAVORITES',
+	'',
+	'Altered Carbon (Broken Angels + Woken Furies) - Richard K Morgan',
+	'Blindsight - Peter Watts',
+	'Star Maker - Olaf Stappeldon',
+	'.',
+	'The Book of Five Rings - Miyamoto Musashi',
+	'The Tao Te Ching - Ursula K. LeGuin',
+	'The Watercourse Way - Alan Watts',
+	'',
+	'SCIFI :: BOOKS I HAVE READ (under construction)',
+	'',
+	'The Computer Connection - Alfred Bester',
+	'Deceivers - Alfred Bester',
+	'',
+	'Neuromancer - William Gibson',
+	'Count Zero - William Gibson',
+	'Idoru - William Gibson',
+	'',
+	'Diamond Age - Neal Stephenson',
+	'Cryptonomicon - Neal Stephenson',
+	'',
+	'The Dispossessed - Ursula K. LeGuin (1994)',
+	'',
+	'Market Forces - Richard K. Morgan',
+	'Thirteen - Richard K. Morgan',
+	'',
+	'Dune Messiah - Frank Herbert',
+	'Children of Dune -  Frank Herbert',
+	'',
+	'The Fall of Hyperion - Dan Simmons',
+	'Endymion - Dan Simmons',
+	'The Rise of Endymion - Dan Simmons',
+	'',
+	"Ender's Game - Orson Scott Card",
+	'Speaker For The Dead - Orson Scott Card',
+	'Xenocide - Orson Scott Card',
+	'Children of the Mind - Orson Scott Card',
+	'',
+	'The Corridors  of Time - Poul Anderson (1965)',
+	'',
+	'PHILOSOPHY :: BOOKS I HAVE READ (under construction)',
+	'',
+	'*The Stack | On Software and Sovereignty - Benjamin Bratton',
+	'The Book of Five Rings - Miyamoto Musashi',
+	'Tao: The Watercourse Way - Alan Watts',
+	'Lao Tzu: Tao Te Ching: A Book About the Way and the Power of the Way - Ursula K. LE Guin',
+	'.',
+	'.',
+	'.',
+	'',
+	'FICTION :: BOOKS I HAVE READ (under construction)',
+	'',
+	'* Lonesome Dove - Larry McMurtry',
+	'Remainder - Tom McCarthy',
+	'.',
+	'.',
+	'.',
 ];
 
-const scifiReads = [
-	'The Computer Connection — Alfred Bester',
-	'Deceivers — Alfred Bester',
-	'Neuromancer — William Gibson',
-	'Count Zero — William Gibson',
-	'Idoru — William Gibson',
-	'Diamond Age — Neal Stephenson',
-	'Cryptonomicon — Neal Stephenson',
-	'The Dispossessed — Ursula K. LeGuin (1994)',
-	'Market Forces — Richard K. Morgan',
-	'Thirteen — Richard K. Morgan',
-	'Dune Messiah — Frank Herbert',
-	'Children of Dune — Frank Herbert',
-	'The Fall of Hyperion — Dan Simmons',
-	'Endymion — Dan Simmons',
-	'The Rise of Endymion — Dan Simmons',
-	"Ender's Game — Orson Scott Card",
-	'Speaker For The Dead — Orson Scott Card',
-	'Xenocide — Orson Scott Card',
-	'Children of the Mind — Orson Scott Card',
-	'The Corridors of Time — Poul Anderson (1965)',
-];
-
-const philosophyReads = [
-	'The Stack [On Software and Sovereignty] — Benjamin Bratton',
-	'The Book of Five Rings — Miyamoto Musashi',
-	'Tao: The Watercourse Way — Alan Watts',
-	'Lao Tzu: Tao Te Ching — Ursula K. LeGuin (trans.)',
-];
-
-const fictionReads = [
-	'Lonesome Dove — Larry McMurtry',
-	'Remainder — Tom McCarthy',
-];
-
-const onRadar = [
-	'Genpei — Kara Dalkey (2000)',
-	"City Come A Walkin' — John Shirley (2001)",
-	'Revelation Space — Alastair Reynolds (2002)',
-	'Down And Out In Magic Kingdom — Cory Doctorow (2003)',
-	'Across The Sea Of Suns — Gregory Benford (2004)',
-	'City and Stars — Arthur C. Clarke (2004)',
-	'The Outback Stars — Sandra McDonald (2007)',
-	'January Dancer — Michael Flynn (2008)',
-	'Blood Music — Greg Bear (2008)',
-	'Fairyland — Paul McAuley (2009)',
-	'Daemon — Daniel Suarez (2009)',
-	'Dark Universe — Daniel F. Galouye (2010)',
-	'Freedom — Daniel Suarez',
+const booksOnRadar = [
+	'CONTEMPORARY (Post 2000)',
+	'Genpei - Kara Dalkey (2000)',
+	"City Come A Walkin – John Shirley (2001)",
+	'Revelation Space – Alastair Reynolds (2002)',
+	'Down And Out In Magic Kingdom – Cory Doctrow (2003)',
+	'Across The Sea Of Suns – Gregory Benford (2004)',
+	'City and Stars - Arthur C Clarke (2004)',
+	'The Outback Stars - Sandra McDonald (2007)',
+	'January Dancer – Michael Flynn (2008)',
+	'Blood Music – Greg Bear (2008)',
+	'Fairyland – Paul Mcauley (2009)',
+	'Daemon -  Daniel Suarez (2009)',
+	'Dark Universe - Daniel F. Galouye (2010)',
+	'Freedom -  Daniel Suarez (2010)',
+	'Windup Girl – Paolo Bacigalupi (2010)',
+	'After the Apocalypse - Maureen F McHugh (2011)',
+	'Robopocalypse – Daniel Wilson (2012)',
+	'Skylark – Meagan Spooner (2012)',
+	'Rule 34 - Charles Stross (2012)',
+	'Throne of the Crescent Moon - Saladin Ahmed (2012)',
+	'Zero Sum Game - S.L. Huang (2014)',
+	'Lagoon - Nnedi Okorafor (2014)',
+	'The Long Way to a Small, Angry Planet - Becky Chambers (2015)',
+	'Arctic Rising - Tobias S. Buckell (2016)',
+	'On the Edge of Gone - Corinne Duyvis (2016)',
+	'Ice - Anna Kavan (2016)',
+	'The Collapsing Empire - John Scalzi (2018)',
+	'Provenance - Anne Leckie (2018)',
+	'Oval - Elvia Wilk (2019)',
+	'Exhalation - Ted Chiang (2019)',
+	'Fall, Or Dodge in Hell - Neal Stephenson (2019)',
+	'Infinite Detail - Tim Maughan (2019)',
+	'.',
+	'.',
+	'.',
 ];
 ---
 
-<SiteLayout title="SkyFi :: A Reading List">
+<SiteLayout title="skyfi :: a reading list">
 	<main class="skyfi-page">
-		<!-- Intro section -->
-		<section class="skyfi-intro">
-			<p class="skyfi-description">
-				SkyFi is a mostly science fiction focused (with a mix of philosophy, music, horror, surrealism, and post-modern literature) book club made up of a group of people mostly based in new york city who mostly operate in the field of architecture. The lists below are some of the books we have read together and spinoffs they have inspired me to explore.
-			</p>
-		</section>
+		<h1 class="skyfi-heading">
+			SkyFi is a mostly science fiction focused (with a mix of philosophy, music, horror, surrealism, and post-modern literature) book club made up of a group of people mostly based in new york city who mostly operate in the field of architecture. The lists below are some of the books we have read together and spinoffs they have inspired me to explore.
+		</h1>
 
-		<!-- Currently reading -->
 		<section class="currently-reading">
-			<h3>Currently Reading :: October 2020</h3>
-			<p class="reading-item">
-				<strong>Pseudo Fiction ::</strong>
-				<a href="#">Staying with the Trouble: Making Kin in the Chthulucene</a> by Donna Haraway
-			</p>
-			<p class="reading-item">
-				<strong>Watching ::</strong>
-				<a href="#">Alien 3</a>
-			</p>
+			<h1>Currently Reading :: October 2020</h1>
+			<h1></h1>
+			<h1>Psuedo Fiction :: Staying with the Trouble: Making Kin in the Chthulucene by Donna Haraway</h1>
+			<h1>Watching :: Alien 3</h1>
 		</section>
 
-		<!-- 3-column book lists matching Wix -->
-		<section class="book-lists">
-			<div class="book-columns">
-				<div class="book-column">
-					<h4>SKYFI :: BOOKS WE HAVE READ (chronological)</h4>
-					<ul>
-						{clubReads.map(book => <li>{book}</li>)}
-					</ul>
+		<section class="skyfi-books">
+			<h1>SKYFI BOOKS :: EXTRA CURRICULAR</h1>
+			<div class="two-column-layout">
+				<div class="left-column">
+					{leftCol.map(book => <p>{book}</p>)}
 				</div>
-
-				<div class="book-column">
-					<h4>FAVORITES</h4>
-					<ul>
-						{favorites.map(book => <li>{book}</li>)}
-					</ul>
-				</div>
-
-				<div class="book-column">
-					<h4>SCIFI :: BOOKS I HAVE READ (under construction)</h4>
-					<ul>
-						{scifiReads.map(book => <li>{book}</li>)}
-					</ul>
-				</div>
-			</div>
-
-			<!-- Secondary columns below -->
-			<div class="book-columns secondary">
-				<div class="book-column">
-					<h4>PHILOSOPHY :: BOOKS I HAVE READ (under construction)</h4>
-					<ul>
-						{philosophyReads.map(book => <li>{book}</li>)}
-					</ul>
-				</div>
-
-				<div class="book-column">
-					<h4>FICTION (under construction)</h4>
-					<ul>
-						{fictionReads.map(book => <li>{book}</li>)}
-					</ul>
-				</div>
-
-				<div class="book-column">
-					<h4>BOOKS ON THE RADAR</h4>
-					<ul>
-						{onRadar.map(book => <li>{book}</li>)}
-					</ul>
+				<div class="right-column">
+					{rightCol.map(book => <p>{book}</p>)}
 				</div>
 			</div>
 		</section>
-		</main>
-		</SiteLayout>
 
-		<style is:global>
-		.skyfi-page {
-			max-width: var(--content-max-width);
-			margin: 0 auto;
-			padding: 20px var(--header-padding-x) 60px;
-		}
-
-		.skyfi-intro {
-			margin-bottom: 40px;
-		}
-
-		.skyfi-description {
-			font-size: 13px;
-			line-height: 1.7;
-			color: var(--text-muted);
-			text-align: center;
-			max-width: 700px;
-			margin: 0 auto;
-			font-family: var(--font-body);
-		}
-
-		.currently-reading {
-			margin-bottom: 40px;
-			text-align: center;
-		}
-
-		.currently-reading h3 {
-			font-size: 14px;
-			font-family: var(--font-body);
-			font-weight: 100;
-			color: var(--accent);
-			margin: 0 0 16px 0;
-			text-transform: uppercase;
-			letter-spacing: 0.05em;
-		}
-
-		.reading-item {
-			font-size: 13px;
-			color: var(--text);
-			margin: 0 0 8px 0;
-			font-family: var(--font-body);
-		}
-
-		.reading-item strong {
-			color: var(--accent-dim);
-			font-weight: 100;
-		}
-
-		.reading-item a {
-			color: var(--accent);
-			text-decoration: underline;
-		}
-
-		.book-lists {
-			margin-top: 40px;
-			padding-top: 30px;
-			border-top: 1px solid var(--border);
-		}
-
-		.book-columns {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 40px;
-		}
-
-		.book-columns.secondary {
-			margin-top: 40px;
-			padding-top: 30px;
-			border-top: 1px solid var(--border);
-		}
-
-		.book-column h4 {
-			font-size: 11px;
-			font-family: var(--font-body);
-			font-weight: 100;
-			color: var(--accent);
-			text-transform: uppercase;
-			letter-spacing: 0.08em;
-			margin: 0 0 16px 0;
-		}
-
-		.book-column ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-		}
-
-		.book-column li {
-			font-size: 12px;
-			line-height: 1.6;
-			color: var(--text-muted);
-			margin: 0 0 4px 0;
-			font-family: var(--font-body);
-		}
-
-		@media (max-width: 768px) {
-			.book-columns {
-				grid-template-columns: 1fr;
-				gap: 30px;
-			}
-
-			.book-columns.secondary {
-				margin-top: 30px;
-			}
-		}
-		</style>
+		<section class="skyfi-radar">
+			<div class="radar-layout">
+				<h1>SKYFI :: BOOKS ON OUR RADAR (under construction)</h1>
+				<div class="radar-list">
+					{booksOnRadar.map(book => <p>{book}</p>)}
+				</div>
+			</div>
+		</section>
+	</main>
+</SiteLayout>

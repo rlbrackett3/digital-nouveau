@@ -13,4 +13,6 @@ Visiting a job-site today and seeing all the trades slide around each other tryi
 
 https://www.pbs.org/video/woodwrights-shop-spirit-woodcraft/
 
+> It's a trick. Get an Axe!
+
 :: Ash, Army of Darkness

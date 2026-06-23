@@ -581,8 +581,140 @@ p {
 }
 
 .comment-submit:hover {
-  border-color: var(--accent);
-  background: var(--border-subtle);
+	border-color: var(--accent);
+	background: var(--border-subtle);
+}
+
+/* ── SkyFi reading list page ── */
+.skyfi-page {
+	max-width: var(--content-max-width);
+	margin: 0 auto;
+	padding: 20px var(--header-padding-x) 60px;
+}
+
+.skyfi-heading {
+	font-size: 22px;
+	font-family: var(--font-body);
+	font-weight: 200;
+	color: var(--accent);
+	line-height: 1.4;
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+.currently-reading {
+	margin-bottom: 40px;
+}
+
+.currently-reading h1 {
+	font-size: 22px;
+	font-family: var(--font-body);
+	font-weight: 200;
+	color: var(--accent);
+	margin: 0 0 8px 0;
+	text-align: center;
+}
+
+.currently-reading h1:empty {
+	display: none;
+}
+
+.currently-reading h1:nth-child(3),
+.currently-reading h1:nth-child(4) {
+	font-size: 22px;
+	color: var(--accent);
+	margin-top: 0;
+}
+
+.skyfi-books {
+	margin-top: 40px;
+	padding-top: 30px;
+	border-top: 1px solid var(--border);
+}
+
+.skyfi-books > h1 {
+	font-size: 22px;
+	font-family: var(--font-body);
+	font-weight: 200;
+	color: var(--accent);
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+.two-column-layout {
+	display: flex;
+	gap: 55px;
+}
+
+.left-column,
+.right-column {
+	width: 440px;
+	flex-shrink: 0;
+}
+
+.left-column p,
+.right-column p {
+	font-size: 16px;
+	line-height: normal;
+	color: var(--accent);
+	margin: 0 0 4px 0;
+	font-family: var(--font-body);
+	font-weight: 200;
+}
+
+.left-column p:first-child,
+.right-column p:first-child {
+	font-size: 15px;
+	line-height: 19.5px;
+}
+
+.scifi-group p:last-child {
+	margin-bottom: 0;
+}
+
+.right-section {
+	margin-bottom: 20px;
+}
+
+.skyfi-radar {
+	margin-top: 40px;
+	padding-top: 30px;
+	border-top: 1px solid var(--border);
+}
+
+.skyfi-radar > .radar-layout {
+	display: flex;
+	gap: 55px;
+}
+
+.skyfi-radar > .radar-layout > h1 {
+	width: 440px;
+	flex-shrink: 0;
+	font-size: 22px;
+	font-family: var(--font-body);
+	font-weight: 200;
+	color: var(--accent);
+	margin: 0;
+	text-align: center;
+}
+
+.radar-list {
+	width: 440px;
+	flex-shrink: 0;
+}
+
+.radar-list p {
+	font-size: 16px;
+	line-height: normal;
+	color: var(--accent);
+	margin: 0 0 4px 0;
+	font-family: var(--font-body);
+	font-weight: 200;
+}
+
+.radar-list p:first-child {
+	font-size: 15px;
+	line-height: 19.5px;
 }
 
 /* ── Footer ── */
@@ -801,6 +933,34 @@ p {
 		padding: 12px 16px 40px;
 	}
 
+	.skyfi-heading {
+		font-size: 13px;
+	}
+
+	.two-column-layout {
+		flex-direction: column;
+		gap: 30px !important;
+	}
+
+	.skyfi-books > h1 {
+		font-size: 13px;
+	}
+
+	.left-column p,
+	.right-column p {
+		font-size: 13px;
+	}
+
+	.radar-list p {
+		font-size: 13px;
+	}
+
+	.radar-list {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	/* Old selectors for backward compat */
 	.skyfi-description {
 		font-size: 13px;
 	}

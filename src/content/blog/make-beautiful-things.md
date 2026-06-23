@@ -15,6 +15,8 @@ likes: 0
 <figcaption>California Cactus, Competition.</figcaption>
 </figure>
 
-:: Henry David Thoreau, Walden pg. 489
+> The surface of the earth is soft and impressible by the feet of men
+
+:: Henry David Thoreau, Walden pg. 489
 
 A reminder that what we do makes an impression and that we should be critical in our actions, striving to make wonderful and beautiful things.

@@ -19,6 +19,6 @@ const words = (post.body || '').trim().split(/\s+/).filter(Boolean).length;
 const readTime = Math.max(1, Math.ceil(words / 200));
 ---
 
-<BlogPost {...post.data} readTime={readTime}>
+<BlogPost {...post.data} readTime={readTime} slug={post.id}>
 	<Content />
 </BlogPost>

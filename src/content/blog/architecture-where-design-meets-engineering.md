@@ -12,7 +12,7 @@ likes: 0
 
 The Society of Mind - Marvin Minsky - Cover
 
-"It is the nature of the mind that makes individuals kin, and the differences in the shape, form, or manner of the material atoms out of whose intricate relationships that mind is built are altogether trivial."
+> "It is the nature of the mind that makes individuals kin, and the differences in the shape, form, or manner of the material atoms out of whose intricate relationships that mind is built are altogether trivial."
 
 :: Isaac Asimov
 

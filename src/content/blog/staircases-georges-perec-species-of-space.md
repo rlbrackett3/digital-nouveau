@@ -25,7 +25,7 @@ likes: 0
 <figcaption>Unknown - Perhaps Hector Guimard</figcaption>
 </figure>
 
-"We don't think enough about staircases.
+> "We don't think enough about staircases.
 
 Nothing was more beautiful in old houses than the staircases. Nothing is uglier, colder, more hostile, meaner, in today's apartment buildings.
 
