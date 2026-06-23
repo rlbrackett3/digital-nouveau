@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Arnica Ring RN1090 Production Sample](dc9b92_c460f23dca1d4712996c99d97e07e4d2~mv2.png)
+![Arnica Ring RN1090 Production Sample](/images/dc9b92_c460f23dca1d4712996c99d97e07e4d2~mv2.png)
 <figcaption>Arnica Ring RN1090 Production Sample</figcaption>
 </figure>
 

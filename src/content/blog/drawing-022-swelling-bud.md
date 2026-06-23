@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![What flower may come?](dc9b92_ae09187bd147436abc56dce98a8769a5~mv2_d_1600_2100_s_2.png)
+
 <figcaption>What flower may come?</figcaption>
 </figure>
 

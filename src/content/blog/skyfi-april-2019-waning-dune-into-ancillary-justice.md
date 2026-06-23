@@ -68,11 +68,6 @@ High Life by Claire Denis, presenting the end of earth and a journey into space.
 
 Paul: " High Life is a colossal trip to the void.  Highly recommended. "
 
-<figure>
-<img src="/images/dc9b92_c64270bc8a3b45e59d66fa3e8a21ef16~mv2_d_2025_3000_s_2.jpg" alt="">
-
-</figure>
-
 Love Death and Robots - visual shorts
 
 <figure>
@@ -88,11 +83,6 @@ Electric Dreams, re-imaginings from the mind of Philip K Dick
 </figure>
 
 Naked Lunch, Cronenberg's bizarre take on William Burroughs novel. Perhaps we could toss this one into the reading/watching cycle in the near future, even paired with Cronenberg's own novel, CONSUMED.
-
-<figure>
-<img src="/images/dc9b92_4a0e5d05719c4e11a79bcffb0d788555~mv2_d_1400_2105_s_2.jpg" alt="">
-
-</figure>
 
 Paul:
 
@@ -116,30 +106,15 @@ Demonlover
 
 I overheard some deep dives into Ian M. Banks Culture series, starting off with Consider Pholebas, a fun read that commences with the protagonist trapped in a sewer dungeon flooded with the excrement of excesses. I think Rachel and Seth have done a little homework here, but there could be some future side reading for all you over achievers.
 
-<figure>
-<img src="/images/dc9b92_da59d58b769447b9a4999825cd4711b9~mv2_d_1300_2054_s_2.jpeg" alt="">
-
-</figure>
-
 Nate threw a couple more possible future reads into the hat:
 
 Black Leopard Red Wolf - Marlon James
-
-<figure>
-<img src="/images/dc9b92_471e65fa835844dc8c8e481db9dc606a~mv2_d_1684_2560_s_2.jpg" alt="">
-
-</figure>
 
 Paul:
 
 " Coincidentally I started reading "Black Leopard, Red Wolf" a few weeks ago.  Its strong - Heard a great interview with Marlon James on the New Yorker Radio hour where he mentions listening to Can as musical inspiration.  Future Days indeed.  There's also a good review in Bookforum penned by Victor Lavalle, who wrote one of my favorite books of last year "The Changeling" https://www.bookforum.com/inprint/025_05/20622"
 
 Strange Stars - Jason Heller,
-
-<figure>
-<img src="/images/dc9b92_2b0e9d30fda7497cb7f255e69f94d4cb~mv2_d_1698_2560_s_2.jpg" alt="">
-
-</figure>
 
 this one comes with an RPG companion:
 

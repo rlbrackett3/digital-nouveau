@@ -11,17 +11,17 @@ likes: 0
 ---
 
 <figure>
-![Initial design information architecture map](dc9b92_f0a63ac805974a189514dc497cebbaf2~mv2.png)
+![Initial design information architecture map](/images/dc9b92_f0a63ac805974a189514dc497cebbaf2~mv2.png)
 <figcaption>Initial design information architecture map</figcaption>
 </figure>
 
 <figure>
-![Concept sketch produced during a planning meeting @ Pratt](dc9b92_ff639d8f4f3b4720b3a5d075b750f304~mv2.png)
+![Concept sketch produced during a planning meeting @ Pratt](/images/dc9b92_ff639d8f4f3b4720b3a5d075b750f304~mv2.png)
 <figcaption>Concept sketch produced during a planning meeting @ Pratt</figcaption>
 </figure>
 
 <figure>
-![Initial design mockups](dc9b92_166715ac507246bcbdea6baaebd1a40d~mv2_d_1674_1296_s_2.png)
+
 <figcaption>Initial design mockups</figcaption>
 </figure>
 

@@ -1,20 +1,13 @@
 ---
 categories: ["observings", "skyfi"]
-image: "/images/dc9b92_b6a008f6a8c74aa7a33765b18d272ffd~mv2_d_1400_2161_s_2.jpg"
+image: ""
 ---
-
-
 
 Hello Fellow Travellers,
 
 We held a quick check-in before the holidays to see if we could set up an epic read to fill the space of travel and rest over the next couple of weeks. We didn't quite get the whole crew together, and few of us had made it through the book, Ninefox Gambit by Yoon Ha Lee, so we only made glancing discussion of the military space opera with a body-snatching hive consciousness twist. While we did take a good amount of time to consider what we should dive into next, I have done some reflecting and feel that we should stick with our mission and get more of the group together around a completed book before getting too far ahead of ourselves.
 
 Ninefox Gambit presents an interesting and wonderfully nerdy world building around the mechanics of a mathematical calendar system that governs all technologies, including the ability to travel the stars and unleash devastating weaponry, but it is all dependant on an extremely rigid, unrelenting, and grotesque social order that casts life aside at the slightest threat to order.  I wanted to know a bit more about the author not that I am halfway through the third book in the series.
-
-<figure>
-<img src="/images/dc9b92_b6a008f6a8c74aa7a33765b18d272ffd~mv2_d_1400_2161_s_2.jpg" alt="">
-
-</figure>
 
 From Locus:
 
@@ -48,11 +41,6 @@ This is a good one about the background of the Machineries of Empire series. Als
 </figure>
 
 I will offer our two primary considerations for our next adventure so that the group can weigh in on the topic and prepare for the decision when we convene next. We oscillated between Jeff Vandermeer's Dead Astronauts and William Gibson's The Peripheral.  Vandermeer's novel has a striking and terrifying cover, not to mention a title full of foreboding. It seems to be a second of a series which means it may need further consideration. A couple of us had already read Gibson's book, but with the imminent release of his next book, Agency, and its connection to The Peripheral, it seems appropriate to bring it into our canon. Gibson also has a propensity for dissecting the present through a grim reflection on our near possible futures. There is also an interview with him in the most recent New Yorker about his flirtations with reality.
-
-<figure>
-<img src="/images/dc9b92_4e12afb3ca094c3c8ba335c3d01c9d91~mv2_d_1500_2250_s_2.jpg" alt="">
-
-</figure>
 
 Along with the accompanying musical interest:
 
@@ -90,11 +78,6 @@ We shared a collective shudder at Disney's appropriation of Hans Christian Ander
 </figure>
 
 with a beautiful and bizarre Russian translation into moving images in 1968
-
-<figure>
-<img src="/images/dc9b92_a56ba708f10b43d5bfd252b99e6ea6e3~mv2_d_1332_2048_s_2.jpg" alt="">
-
-</figure>
 
 The Dark Crystal - Jim Henson's and Frank Oz's 1982 classic of fantasy storytelling through the magic of puppets. This one has always been a touching influence of mine, everything from the ergonomic flowing curves of the furniture of the Mystics to the segmented bodies of the Garthem, to the majestic gate of the Land Striders. My dreams are still haunted by the soul-sucking rays of the corrupted crystal, I still fear that my eyes will sink into a milky void if I spend too much time in front of a screen. I have not yet ventured into the new unfolding world of The Dark Crystal: Age of Resistance, but it sounds like it might be worth the adventure.
 

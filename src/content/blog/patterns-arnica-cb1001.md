@@ -11,17 +11,17 @@ likes: 0
 ---
 
 <figure>
-![Stacking](dc9b92_70ed1e0efd184e1bbf9676e7a0385ef8~mv2_d_2560_1440_s_2.png)
+
 <figcaption>Stacking</figcaption>
 </figure>
 
 <figure>
-![Repeating X](dc9b92_1bdcebb7b9374e71a3330f46ee532d37~mv2_d_2560_1440_s_2.png)
+
 <figcaption>Repeating X</figcaption>
 </figure>
 
 <figure>
-![Gears (Rotating)](dc9b92_232b1b2a7cd34cbc85b563e362cc5ee3~mv2.png)
+![Gears (Rotating)](/images/dc9b92_232b1b2a7cd34cbc85b563e362cc5ee3~mv2.png)
 <figcaption>Gears (Rotating)</figcaption>
 </figure>
 

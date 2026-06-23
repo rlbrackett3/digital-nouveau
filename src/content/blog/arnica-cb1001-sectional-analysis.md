@@ -21,7 +21,7 @@ likes: 0
 </figure>
 
 <figure>
-![What do you see?](dc9b92_25314e0f06244d288d42a6483b26d60a~mv2.png)
+![What do you see?](/images/dc9b92_25314e0f06244d288d42a6483b26d60a~mv2.png)
 <figcaption>What do you see?</figcaption>
 </figure>
 

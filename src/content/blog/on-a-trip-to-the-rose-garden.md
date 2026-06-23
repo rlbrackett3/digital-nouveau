@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Floral Topographies or Islands in the Geometry of Rose](dc9b92_5f03fb2ae08e4fd78a7f932921500c73~mv2_d_2550_2551_s_4_2.png)
+
 <figcaption>Floral Topographies or Islands in the Geometry of Rose</figcaption>
 </figure>
 

@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![A tangled bush exploding with the sunsets of Joshua Tree National Park](dc9b92_b05d6cfc83b0495a9a04172bc2b0b277~mv2_d_1200_1200_s_2.png)
+
 <figcaption>A tangled bush exploding with the sunsets of Joshua Tree National Park</figcaption>
 </figure>
 

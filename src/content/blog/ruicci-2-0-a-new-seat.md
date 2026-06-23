@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Comes with a free massage](dc9b92_4084a042cbb94685ab9e2578b425efcc~mv2.jpg)
+![Comes with a free massage](/images/dc9b92_4084a042cbb94685ab9e2578b425efcc~mv2.jpg)
 <figcaption>Comes with a free massage</figcaption>
 </figure>
 

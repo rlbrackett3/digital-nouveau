@@ -11,17 +11,17 @@ likes: 0
 ---
 
 <figure>
-![Horta House Stairs](dc9b92_4f122d7bc3054d83bb58d5470b580432~mv2.png)
+![Horta House Stairs](/images/dc9b92_4f122d7bc3054d83bb58d5470b580432~mv2.png)
 <figcaption>Horta House Stairs</figcaption>
 </figure>
 
 <figure>
-![Staircase by Victor Horta](dc9b92_adbdd180babb4d1fa8cbcd0e79fd7b4a~mv2.png)
+![Staircase by Victor Horta](/images/dc9b92_adbdd180babb4d1fa8cbcd0e79fd7b4a~mv2.png)
 <figcaption>Staircase by Victor Horta</figcaption>
 </figure>
 
 <figure>
-![Unknown - Perhaps Hector Guimard](dc9b92_b1565d6f32174f1b9bc2c17770790408~mv2.png)
+![Unknown - Perhaps Hector Guimard](/images/dc9b92_b1565d6f32174f1b9bc2c17770790408~mv2.png)
 <figcaption>Unknown - Perhaps Hector Guimard</figcaption>
 </figure>
 

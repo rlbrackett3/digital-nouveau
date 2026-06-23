@@ -3,7 +3,6 @@ categories: ["teachings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
-
 ## Overview & Context
 Micro-lecture for Pratt Institute's ARCH202 Intermediate Design studios. Introduce architectural analysis through decompositional drawing and video-based representation. Core premise: Architecture can be analyzed as a functionally integrated system of interconnected and discrete elements using time-based media.
 

@@ -97,9 +97,9 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 
 <style is:global>
 .feed-page {
-	max-width: 960px;
+	max-width: var(--content-max-width);
 	margin: 0 auto;
-	padding: 20px;
+	padding: 20px var(--header-padding-x);
 }
 
 .feed-filters {
@@ -145,17 +145,18 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	gap: 20px;
 }
 
-/* Grid view (category filter) */
-.feed-container.grid-view {
-	grid-template-columns: repeat(3, 1fr);
+/* Default: single column, full post view */
+.feed-container {
+	grid-template-columns: 1fr;
+	max-width: var(--content-max-width);
+	margin: 0 auto;
 }
 
-/* List view (default "everything") - full width, aligned column */
-.feed-container.list-view {
-	grid-template-columns: 1fr;
-	max-width: var(--post-max-width);
+/* Grid view (category filter) - 3 equal columns of square cards */
+.feed-container.grid-view {
+	grid-template-columns: repeat(3, 1fr);
+	max-width: var(--content-max-width);
 	margin: 0 auto;
-	gap: 40px;
 }
 
 /* Cards hidden initially, JS reveals */
@@ -181,24 +182,29 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 
 .feed-card-link {
 	text-decoration: none;
-	display: block;
+	display: flex;
+	flex-direction: column;
 	background: transparent;
 	border: 1px solid var(--accent-subtle);
 	overflow: hidden;
 	transition: none;
+	height: 100%;
 }
 
 .feed-card-link:hover {
-	border-width: 2px;
 	border-color: var(--accent);
+	box-shadow: 0 0 0 1px var(--accent);
+	outline: 1px solid var(--accent);
+	outline-offset: 1px;
 }
 
-/* Grid view (category filter) - compact cards, consistent tile size */
+/* Unified card style — grid view square cards */
 .grid-view .feed-card-image {
 	width: 100%;
 	height: 160px;
 	overflow: hidden;
 	background: var(--accent-ghost);
+	flex-shrink: 0;
 }
 
 .grid-view .feed-card-image img {
@@ -207,13 +213,8 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	object-fit: cover;
 }
 
-.grid-view .feed-card-link {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-}
-
 .grid-view .feed-card-body {
+	padding: 16px;
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -226,6 +227,11 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
+	font-size: 12px;
+	color: var(--text-muted);
+	line-height: 1.5;
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
 }
 
 .grid-view .feed-card {
@@ -234,9 +240,11 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 
 .grid-view .feed-card-link {
 	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
-/* List view (default "everything") - blog style, full width */
+/* List view (default "everything") — full width, aligned column */
 .list-view .feed-card-image {
 	width: 100%;
 	background: var(--accent-ghost);
@@ -250,7 +258,7 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 }
 
 .list-view .feed-card-body {
-	padding: 24px;
+	padding: 24px 115px;
 }
 
 .list-view .feed-card-title {
@@ -328,6 +336,27 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	font-weight: var(--font-weight-body);
 	display: block;
 	margin-bottom: 8px;
+}
+
+.list-view .feed-card-link {
+	border: none;
+	background: transparent;
+}
+
+.list-view .feed-card-link:hover {
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+.list-view .feed-card-meta {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.list-view .feed-card-body {
+		padding: 16px;
+	}
 }
 
 .grid-card-no-image {
@@ -437,14 +466,8 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	}
 }
 
-@media (max-width: 900px) {
-	.feed-container.grid-view {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
 @media (max-width: 600px) {
-	.feed-container.grid-view {
+	.feed-container {
 		grid-template-columns: 1fr;
 	}
 	.feed-filters {

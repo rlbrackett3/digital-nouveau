@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![The Clock](dc9b92_5249fbf4f3f44895aeba6c60a18292fa~mv2_d_1800_1800_s_2.jpg)
+
 <figcaption>The Clock</figcaption>
 </figure>
 

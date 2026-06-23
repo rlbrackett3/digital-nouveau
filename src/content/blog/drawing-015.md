@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![A plant-like canopy structure for summer cocktails.](dc9b92_3934bcf335f245e1b97dbbd4b5b2baaf~mv2_d_1811_2414_s_2.png)
+
 <figcaption>A plant-like canopy structure for summer cocktails.</figcaption>
 </figure>
 

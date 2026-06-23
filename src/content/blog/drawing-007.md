@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Varietals](dc9b92_65edcdfcbd2540debf7a7d67cb7f8c76~mv2_d_2000_2666_s_2.png)
+
 <figcaption>Varietals</figcaption>
 </figure>
 

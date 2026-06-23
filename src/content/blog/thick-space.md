@@ -3,7 +3,6 @@ categories: ["drawings", "teachings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
-
 Mapping is a strategy for exploring new frontiers, reconciling the unknown into accessible information. It is an abstraction, providing access to ambiguous territories and generating new organizations in the flowing space of the real and the imagined. We will map through analytical and generative drawing, recombinant animation, and computational models, engaging architecture as a medium of thick space operating within the horizontal constraints of the mat building typology.
 
 Our maps will investigate rhythmic grid systems as sampling and remixing devices for generating new territories through "the wall." Walls operate as mediators, interfaces of delineation and separation, but they can also be thresholds, markers of spatial sequence and discovery. We will question how walls can become destabilizing devices of interface and transition. Our new walls will operate as a grafting device between conflicting conditions; splicing old / new, building / site, ground / sky, and solid / void; and embracing contradictions.

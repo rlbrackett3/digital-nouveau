@@ -11,17 +11,17 @@ likes: 0
 ---
 
 <figure>
-![Opal location and fit test](dc9b92_62a114873e4c4583959cb8419727c130~mv2.png)
+![Opal location and fit test](/images/dc9b92_62a114873e4c4583959cb8419727c130~mv2.png)
 <figcaption>Opal location and fit test</figcaption>
 </figure>
 
 <figure>
-![Resin and Nylon prototypes](dc9b92_74f7d107fab9412498f532a8cced349b~mv2.png)
+![Resin and Nylon prototypes](/images/dc9b92_74f7d107fab9412498f532a8cced349b~mv2.png)
 <figcaption>Resin and Nylon prototypes</figcaption>
 </figure>
 
 <figure>
-![Form and detail comparison](dc9b92_d72109ec5708465fb65340945dd0aaa2~mv2.png)
+![Form and detail comparison](/images/dc9b92_d72109ec5708465fb65340945dd0aaa2~mv2.png)
 <figcaption>Form and detail comparison</figcaption>
 </figure>
 

@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Where is your camp?](dc9b92_25afbdd2cb234328a7a7f6d0d2380ee9~mv2_d_1387_2000_s_2.png)
+
 <figcaption>Where is your camp?</figcaption>
 </figure>
 

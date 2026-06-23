@@ -3,7 +3,6 @@ categories: ["skyfi", "readings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
-
 ## Last and First Men
 
 **Core Premise:** A vast speculative history spanning **2 billion years of human evolution** across 18 distinct species, from our own to the final post-human form.

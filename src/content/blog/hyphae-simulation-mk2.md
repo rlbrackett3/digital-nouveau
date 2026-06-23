@@ -3,8 +3,6 @@ categories: ["design", "drawings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
-
-
 <div class="video-embed"><iframe src="https://player.vimeo.com/video/354272629" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 The system evolves with two particle systems interacting. The original mk1 system is invisible, but active as a force field dynamic emitter, pulsing and reorganizing the second particle drawing systems. Color and light pulse like a sea creature as the speed and acceleration of the particles change. This one uses four layers in aftereffects: point, multi-point, cloud, and mesh. Each layer is just a playblast from Maya (series of screenshots) with some transparency and blending mode manipulations to amplify the colors and exposure. The background sounds are  Ambient Server music from Deus Ex: Human Revolution.

@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Under the microscope.](dc9b92_1a42e82b33be42b997332e4087e17324~mv2_d_2081_2775_s_2.png)
+
 <figcaption>Under the microscope.</figcaption>
 </figure>
 

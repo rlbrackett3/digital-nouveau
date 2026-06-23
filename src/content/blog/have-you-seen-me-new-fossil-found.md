@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Section of vertebrae found at North Brooklyn dig.](dc9b92_2c6ac56071e24c4ba2873cc9c731fc85~mv2.png)
+![Section of vertebrae found at North Brooklyn dig.](/images/dc9b92_2c6ac56071e24c4ba2873cc9c731fc85~mv2.png)
 <figcaption>Section of vertebrae found at North Brooklyn dig.</figcaption>
 </figure>
 

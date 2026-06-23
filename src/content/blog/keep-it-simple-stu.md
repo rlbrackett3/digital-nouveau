@@ -11,32 +11,32 @@ likes: 0
 ---
 
 <figure>
-![Frei Otto self organization strategies in fibers](dc9b92_e284dea86fcc4be0b0605e8b3f9ad159~mv2_d_3671_2754_s_4_2.jpg)
+
 <figcaption>Frei Otto self organization strategies in fibers</figcaption>
 </figure>
 
 <figure>
-![Frei Otto self organization fibers](dc9b92_4ee9da074946485ba15410f4b91cc9fa~mv2.jpg)
+![Frei Otto self organization fibers](/images/dc9b92_4ee9da074946485ba15410f4b91cc9fa~mv2.jpg)
 <figcaption>Frei Otto self organization fibers</figcaption>
 </figure>
 
 <figure>
-![Frei Otto Self Organization Structures](dc9b92_4d4de5db7c054704905935444329aecd~mv2.jpg)
+![Frei Otto Self Organization Structures](/images/dc9b92_4d4de5db7c054704905935444329aecd~mv2.jpg)
 <figcaption>Frei Otto Self Organization Structures</figcaption>
 </figure>
 
 <figure>
-![3D printed parts from a clock for my mother](dc9b92_c754d4ef6b7545a38934b24b00fa9dd5~mv2_d_1800_1350_s_2.jpg)
+
 <figcaption>3D printed parts from a clock for my mother</figcaption>
 </figure>
 
 <figure>
-![Frei Otto Funicular Geometry](dc9b92_0f8a898cdecf48649266b7ab9dfc709d~mv2.jpg)
+![Frei Otto Funicular Geometry](/images/dc9b92_0f8a898cdecf48649266b7ab9dfc709d~mv2.jpg)
 <figcaption>Frei Otto Funicular Geometry</figcaption>
 </figure>
 
 <figure>
-![Frei Otto](dc9b92_31ae27b994504f04803c7307448d6bd8~mv2.jpg)
+![Frei Otto](/images/dc9b92_31ae27b994504f04803c7307448d6bd8~mv2.jpg)
 <figcaption>Frei Otto</figcaption>
 </figure>
 

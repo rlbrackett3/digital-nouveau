@@ -10,11 +10,6 @@ comments: 0
 likes: 0
 ---
 
-<figure>
-<img src="/images/dc9b92_cb48f3c5b7504a6687e46b744590cb6a~mv2_d_2048_1280_s_2.jpg" alt="">
-
-</figure>
-
 Back when Laura and I started working together on Miscellaneous Projects, circa 2012, we were also sharing our fledgling interest in human performance and optimization. We read Christopher McDougall's, Born To Run, a journey into our natural ability to run and perform feats of endurance as a part of everyday life for survival and fun. Much of the book focuses on ultra-marathoners and the anthropological study of the Tarahumara Indians of Mexico’s Copper Canyons. Neither of us were,or are, big runners, but we did have a couple great takeaways from the book. We were fascinated by the idea of designing shoes that support the human bodies natural gaits, we even developed a product out of it and learned a lot about leather craft and branding (www.min-made.com).
 
 The second creative item was a philosophy captured in the desktop background above. The top two lines came from the book as a way to think about athletic (or any skill) based progression. If you can focus on the fundamentals and basic mechanics with intensity and awareness, then the skill will become easy. Once a skill or compound cluster of skills becomes easy (think leaning slightly forward and keeping one foot in front of the other in a forward effort not t fall), then you can focus on a feeling of lightness. With easy and light well practiced the effort will become smooth and appear effortless. Now you are ready to really let loose and get fast.
@@ -25,7 +20,3 @@ To set ourselves up for practice and growth each day, we look at our work critic
 
 For anyone interested, you can use the branded image above, or feel free to grab the more general version below to set as your desktop background.
 
-<figure>
-<img src="/images/dc9b92_55be657cc6ef4f3492213876f0bd12a8~mv2_d_2048_1280_s_2.jpg" alt="">
-
-</figure>

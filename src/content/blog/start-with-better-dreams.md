@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Cover of Hieroglyph](dc9b92_993e66190b764878b774e19b469c9a6e~mv2.jpg)
+![Cover of Hieroglyph](/images/dc9b92_993e66190b764878b774e19b469c9a6e~mv2.jpg)
 <figcaption>Cover of Hieroglyph</figcaption>
 </figure>
 

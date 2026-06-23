@@ -11,22 +11,22 @@ likes: 0
 ---
 
 <figure>
-![3D printed model of a digital transformation to a luna moth. Cast in sterling silver and highly polished.](dc9b92_aec2e1dd3df042f08716f2a074a2a20e~mv2_d_1500_2000_s_2.png)
+
 <figcaption>3D printed model of a digital transformation to a luna moth. Cast in sterling silver and highly polished.</figcaption>
 </figure>
 
 <figure>
-![Pendant](dc9b92_3313b1c76ce94147920ebce5b70343ae~mv2_d_1432_2000_s_2.png)
+
 <figcaption>Pendant</figcaption>
 </figure>
 
 <figure>
-![And this is how it hangs.](dc9b92_525d85a4d46348f4b4df1b0e4d4d0adf~mv2_d_1500_2000_s_2.png)
+
 <figcaption>And this is how it hangs.</figcaption>
 </figure>
 
 <figure>
-![Haze](dc9b92_4509d95e0c7849b3a149dc661d63ae9e~mv2_d_1500_2000_s_2.png)
+
 <figcaption>Haze</figcaption>
 </figure>
 

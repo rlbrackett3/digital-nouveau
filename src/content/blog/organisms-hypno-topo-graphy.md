@@ -37,17 +37,7 @@ The discreet images offer inputs into a new territory of aesthetic relationships
 
 A few adjustments to the saturation and contrast to create a higher intensity map for use as a Height Field input in Rhino. This created a bumpy, high frequency, ground territory, remapped as soft topographic relationships in the drawing below.
 
-<figure>
-<img src="/images/dc9b92_987641af11b146a69b21ee2d387a8dec~mv2_d_3307_1848_s_2.jpg" alt="">
-
-</figure>
-
 The topography traverses peripheral coastal boundaries (blue), large interior domains (green), oozing islands (magenta) and dramatic peaks (cyan). The whole territory pulses and flows through the map. the vertical striation of the collage still emerges and regulate but not longer dominate and retreat into the cuddling topography.
-
-<figure>
-<img src="/images/dc9b92_0d88c71cc66744548fe98e5a6ebc382c~mv2_d_3307_1848_s_2.jpg" alt="">
-
-</figure>
 
 Another round of sampling and remapping back to the original collage territory. It feels like a 90's psychedelic tie dye or some heat map of a struggle between hyper toxic bacteria .
 

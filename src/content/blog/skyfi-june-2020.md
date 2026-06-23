@@ -3,7 +3,6 @@ categories: ["skyfi", "readings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
-
 **Format:** Double feature reading session covering two China Mieville collections: *Exploded View* and *New Dark Age*.
 
 **Exploded View:** A curated collection of Mieville's earlier short stories, originally published across magazines like *Asimov's*, *Interzone*, *Weird Tales*, and *Alfred Hitchcock's Mystery Magazine*. A "sampler platter" of his storytelling range.

@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Side profiles of the prototype](dc9b92_cd236d8d062d4c2186390cd288e551a0~mv2.png)
+![Side profiles of the prototype](/images/dc9b92_cd236d8d062d4c2186390cd288e551a0~mv2.png)
 <figcaption>Side profiles of the prototype</figcaption>
 </figure>
 

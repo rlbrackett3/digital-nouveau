@@ -13,14 +13,14 @@ likes: 0
 I was under the weather for this month's meeting of the Sky-Fi Bookclub, but we did get a report of the meeting including the constellations forming around Strange Stars by  Jason Heller. I have to say that this was not a book I was able to get into. While it dives deep into the parallels between the growth of Science Fiction in literature and music during the 60's, 70's and 80's (maybe more but I gave up reading at some point). The content is interesting, and broadly researched, but the writing is repetitive and drawn out.
 
 <figure>
-![(J. English/University of Manitoba/NRAO/F. Schinzel et al./DRAO/Canadian Galactic Plane Survey/NASA/IRAS)](dc9b92_0db168d105fe45f5a280c3253b67e61d~mv2.jpg)
+![(J. English/University of Manitoba/NRAO/F. Schinzel et al./DRAO/Canadian Galactic Plane Survey/NASA/IRAS)](/images/dc9b92_0db168d105fe45f5a280c3253b67e61d~mv2.jpg)
 <figcaption>(J. English/University of Manitoba/NRAO/F. Schinzel et al./DRAO/Canadian Galactic Plane Survey/NASA/IRAS)</figcaption>
 </figure>
 
 A fee strange stars of the more science variety.
 
 <figure>
-![(Nahks Tr'Ehnl, Penn State)](dc9b92_300c897f8e2a4147b6759aaca0060113~mv2.gif)
+![(Nahks Tr'Ehnl, Penn State)](/images/dc9b92_300c897f8e2a4147b6759aaca0060113~mv2.gif)
 <figcaption>(Nahks Tr'Ehnl, Penn State)</figcaption>
 </figure>
 
@@ -41,11 +41,6 @@ Currently digging into the Kraftwerk/ Krautrock section and would kindly refer e
 
 <figure>
 <img src="/images/dc9b92_4088d57adb624bf7a279faca26956d5d~mv2.png" alt="">
-
-</figure>
-
-<figure>
-<img src="/images/dc9b92_b62a42372faf4dba97c7debfc4f2d859~mv2_d_1200_1200_s_2.png" alt="">
 
 </figure>
 
@@ -74,7 +69,7 @@ For those that haven’t seen it:  https://film.avclub.com/bubba-ho-tep-17981989
 John in Denver’s at the end may be correct.
 
 <figure>
-![http://www.galex.caltech.edu/media/glx2007-04r_img01.html](dc9b92_7e93dd8857874b0fac4b187d74361d09~mv2.jpg)
+![http://www.galex.caltech.edu/media/glx2007-04r_img01.html](/images/dc9b92_7e93dd8857874b0fac4b187d74361d09~mv2.jpg)
 <figcaption>http://www.galex.caltech.edu/media/glx2007-04r_img01.html</figcaption>
 </figure>
 

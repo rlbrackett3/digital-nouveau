@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![This one might eat you.](dc9b92_73943202763341c7825bd1a02d8525ab~mv2_d_1737_2795_s_2.png)
+
 <figcaption>This one might eat you.</figcaption>
 </figure>
 

@@ -3,7 +3,6 @@ categories: ["skyfi", "readings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
-
 **Event:** April 2020 SkyFi book club discussion held via Zoom during global pandemic/social distancing.
 
 **Universe & Premise:** Shares continuity with *The Peripheral* but shifts from far-future computational time-branching to a near-present reality altered by a slight shift in the **2016 US presidential election**. Explores autonomous systems and emergent militaristic AI surpassing human control.

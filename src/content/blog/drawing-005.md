@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![She's got legs!](dc9b92_4cf4e63cc745477bb91509534b022ce4~mv2_d_2000_2666_s_2.png)
+
 <figcaption>She's got legs!</figcaption>
 </figure>
 

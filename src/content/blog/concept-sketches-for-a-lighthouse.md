@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Flickering Beacon](dc9b92_35258d145bcd494ab50fc637782efe6a~mv2.png)
+![Flickering Beacon](/images/dc9b92_35258d145bcd494ab50fc637782efe6a~mv2.png)
 <figcaption>Flickering Beacon</figcaption>
 </figure>
 

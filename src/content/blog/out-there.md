@@ -3,7 +3,6 @@ categories: ["observings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
-
 What do we do with all those photos?
 
 On travels, weekend adventures, commutes, and just around the house, I often grab the convenient personal computing device (aka iphone) and point its image capture device (aka camera) at something visually interesting. Those photos get automatically uploaded to the cloud via iCloud and Dropbox (and probably other services I have forgotten to disable) to be saved as bits of data forever. I do quite often pull up recent photographs for reference in conversation, occasionally I dig through the archive to use in a lecture, and I organize archival images from big trips and studio reviews. But many just sit there in the catalog, feeding on electrons, waiting.

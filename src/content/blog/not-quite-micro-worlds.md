@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Asphalt and Dandelion Seeds](dc9b92_526b90dd3787421689664cc3da707bee~mv2.png)
+![Asphalt and Dandelion Seeds](/images/dc9b92_526b90dd3787421689664cc3da707bee~mv2.png)
 <figcaption>Asphalt and Dandelion Seeds</figcaption>
 </figure>
 

@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![California Cactus, Competition.](dc9b92_9cb67210e1bf4702907b00868dc15302~mv2.png)
+![California Cactus, Competition.](/images/dc9b92_9cb67210e1bf4702907b00868dc15302~mv2.png)
 <figcaption>California Cactus, Competition.</figcaption>
 </figure>
 

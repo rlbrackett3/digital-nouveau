@@ -11,12 +11,12 @@ comments: 0
 ---
 
 <figure>
-![Wires](dc9b92_6b394a9c22a246c9a31ab1401b735a72~mv2.png)
+![Wires](/images/dc9b92_6b394a9c22a246c9a31ab1401b735a72~mv2.png)
 <figcaption>Wires</figcaption>
 </figure>
 
 <figure>
-![Poster for Ikiru by Akira Kurosawa](dc9b92_98b85e83f922414f91df5aa700660d22~mv2.jpg)
+![Poster for Ikiru by Akira Kurosawa](/images/dc9b92_98b85e83f922414f91df5aa700660d22~mv2.jpg)
 <figcaption>Poster for Ikiru by Akira Kurosawa</figcaption>
 </figure>
 

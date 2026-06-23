@@ -43,95 +43,116 @@ const displayName = categoryDisplay[category] || category;
 
 	<!-- Category navigation - Wix style -->
 	<nav class="category-nav" aria-label="Blog categories">
-		<a href="/blog" class="category-link">&gt; everything ~</a>
+		<a href="/" class="category-link">&gt; everything ~</a>
 		{CATEGORIES.map((cat) => (
 			<a href={`/category/${cat}`} class={`category-link${cat === category ? ' active' : ''}`}>{cat}</a>
 		))}
 	</nav>
 
 	<main class="category-page">
+		<div class="feed-container" id="feed-container">
 		{categoryPosts.length > 0 ? (
-			<div class="post-list">
-				{categoryPosts.map(post => (
-					<article class="post-item">
-						<h2 class="post-item-title">
-							<a href={`/blog/${post.id}`}>{post.data.title}</a>
-						</h2>
-						<div class="post-item-meta">
-							<time datetime={post.data.pubDate.toISOString()}>
-								{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-							</time>
-							{post.readTime && <span class="read-time">&middot; {post.readTime} min read</span>}
+			categoryPosts.map(post => {
+				const words = (post.body || '').trim().split(/\s+/).filter(Boolean).length;
+				const readTime = Math.max(1, Math.ceil(words / 200));
+				const dateStr = post.data.pubDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+				const image = post.data.image;
+				return (
+				<article class="feed-card visible" data-cats={JSON.stringify(post.data.categories)} data-post-id={post.id}>
+					<a href={`/blog/${post.id}`} class="feed-card-link">
+						{image ? (
+							<div class="feed-card-image">
+								<img src={image} alt={post.data.title} loading="lazy" />
+							</div>
+						) : ''}
+						<div class="feed-card-body">
+							<time class="feed-card-date">{dateStr} · {readTime} min read</time>
+							<h2 class="feed-card-title">{post.data.title}</h2>
+							<div class="feed-card-content">{post.data.description}</div>
 						</div>
-						<p class="post-item-desc">{post.data.description}</p>
-					</article>
-				))}
-			</div>
+					</a>
+					<div class="feed-card-meta">
+						<div class="feed-card-stats">
+							<span class="feed-stat">
+								<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+								0
+							</span>
+							<span class="feed-stat">
+								<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+								0
+							</span>
+						</div>
+					</div>
+				</article>
+				);
+			})
 		) : (
 			<p>No posts in this category yet.</p>
 		)}
+		</div>
 	</main>
 
 	<style>
 		.category-page {
 			max-width: var(--content-max-width);
 			margin: 0 auto;
-			padding: 0 var(--header-padding-x);
+			padding: 20px var(--header-padding-x);
 		}
 
-		.post-list {
+		.category-nav {
 			display: flex;
-			flex-direction: column;
-		}
-
-		.post-item {
-			padding: 1.5rem 0;
-			border-bottom: 1px solid var(--border);
-		}
-
-		.post-item:first-child {
-			margin-top: 1rem;
-		}
-
-		.post-item-title {
-			font-size: 1.5rem;
-			font-weight: 100;
-			line-height: 1.2;
-			margin-bottom: 0.5rem;
-		}
-
-		.post-item-title a {
-			color: var(--text-primary);
-			text-decoration: none;
-		}
-
-		.post-item-title a:hover {
-			color: var(--text-link);
-		}
-
-		.post-item-meta {
-			font-size: 0.8rem;
-			color: var(--text-muted);
-			display: flex;
-			gap: 0.5rem;
-			align-items: center;
 			flex-wrap: wrap;
+			gap: 8px;
+			padding: 12px var(--header-padding-x);
+			border-bottom: 1px solid var(--border);
+			background: var(--bg);
+			max-width: var(--content-max-width);
+			margin: 0 auto;
 		}
 
-		.post-item-desc {
-			font-size: 1rem;
-			color: var(--text-secondary);
-			line-height: 1.5;
-			margin: 0.75rem 0 0 0;
+		.category-link {
+			font-size: 12px;
+			font-weight: var(--font-weight-body);
+			color: var(--accent-dim);
+			font-family: var(--font-body);
+			text-decoration: none;
+			padding: 6px 14px;
+			border: 1px solid var(--accent-subtle);
+			transition: all 0.2s;
 		}
 
-		@media (max-width: 768px) {
-			.category-page {
-				padding: 0 var(--header-padding-x);
+		.category-link:hover {
+			border-color: var(--accent-dim);
+			color: var(--accent);
+		}
+
+		.category-link.active {
+			border-color: var(--accent);
+			color: var(--accent);
+			background: var(--accent-faint);
+		}
+
+		.feed-container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+			margin-top: 20px;
+		}
+
+		@media (max-width: 600px) {
+			.feed-container {
+				grid-template-columns: 1fr;
 			}
-
-			.post-item-title {
-				font-size: 1.25rem;
+			.category-nav {
+				overflow-x: auto;
+				flex-wrap: nowrap;
+				scrollbar-width: none;
+			}
+			.category-nav::-webkit-scrollbar {
+				display: none;
+			}
+			.category-link {
+				flex-shrink: 0;
 			}
 		}
 	</style>

@@ -3,8 +3,6 @@ categories: ["design", "drawings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
-
-
 <div class="video-embed"><iframe src="https://player.vimeo.com/video/293231826" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 This blog has been on a long hiatus, primarily due to aging and broken technology and my lack of time commitment to fix it. I took the time this week to transfer everything over to a new platform and I am excited to get back into sharing bits and pieces of the miscellaneous projects (shameless plug to another website that lacks the content that it should have, phase 2 of this reengaged web presence) that occupy my professional life.

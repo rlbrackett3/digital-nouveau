@@ -11,12 +11,12 @@ likes: 0
 ---
 
 <figure>
-![Phantom Demi-Vertebrae](dc9b92_a369befd54394119bd612753e4fbac30~mv2.png)
+![Phantom Demi-Vertebrae](/images/dc9b92_a369befd54394119bd612753e4fbac30~mv2.png)
 <figcaption>Phantom Demi-Vertebrae</figcaption>
 </figure>
 
 <figure>
-![A quick inversion to explore greater geometry definition at the bifurcations.](dc9b92_fdaee54903a34bd5940e8fd62ff0809c~mv2.png)
+![A quick inversion to explore greater geometry definition at the bifurcations.](/images/dc9b92_fdaee54903a34bd5940e8fd62ff0809c~mv2.png)
 <figcaption>A quick inversion to explore greater geometry definition at the bifurcations.</figcaption>
 </figure>
 

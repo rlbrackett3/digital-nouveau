@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![DELAM](dc9b92_3389cbbef5a84535ba02c9ae128d28c9~mv2.png)
+![DELAM](/images/dc9b92_3389cbbef5a84535ba02c9ae128d28c9~mv2.png)
 <figcaption>DELAM</figcaption>
 </figure>
 

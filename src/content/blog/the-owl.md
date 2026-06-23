@@ -11,12 +11,12 @@ likes: 0
 ---
 
 <figure>
-![Who Saw-whet](dc9b92_722eeea352cb4711921faddc755cb366~mv2.png)
+![Who Saw-whet](/images/dc9b92_722eeea352cb4711921faddc755cb366~mv2.png)
 <figcaption>Who Saw-whet</figcaption>
 </figure>
 
 <figure>
-![In Captivity](dc9b92_e5021879b28446e88380b2e3c4f9e1cb~mv2.png)
+![In Captivity](/images/dc9b92_e5021879b28446e88380b2e3c4f9e1cb~mv2.png)
 <figcaption>In Captivity</figcaption>
 </figure>
 

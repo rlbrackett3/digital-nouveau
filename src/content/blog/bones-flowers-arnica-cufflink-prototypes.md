@@ -11,12 +11,12 @@ likes: 0
 ---
 
 <figure>
-![Cufflink Prototypes - 22K Gold & Rose Gold](dc9b92_7d19f03cd2f54109847159dab2e888ed~mv2.png)
+![Cufflink Prototypes - 22K Gold & Rose Gold](/images/dc9b92_7d19f03cd2f54109847159dab2e888ed~mv2.png)
 <figcaption>Cufflink Prototypes - 22K Gold & Rose Gold</figcaption>
 </figure>
 
 <figure>
-![Rendering](dc9b92_fe210705bedc4c71bc315deebe64fab6~mv2.png)
+![Rendering](/images/dc9b92_fe210705bedc4c71bc315deebe64fab6~mv2.png)
 <figcaption>Rendering</figcaption>
 </figure>
 

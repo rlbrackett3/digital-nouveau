@@ -10,31 +10,6 @@ comments: 0
 likes: 0
 ---
 
-<figure>
-<img src="/images/dc9b92_cd80d774c5eb4bb585a645ecf67b3368~mv2_d_1664_5986_s_2.jpg" alt="">
-
-</figure>
-
-<figure>
-<img src="/images/dc9b92_5af171ec3cfc47f19e266e6edd620cba~mv2_d_1664_3229_s_2.jpg" alt="">
-
-</figure>
-
-<figure>
-<img src="/images/dc9b92_6ce5160c6fe9490b83abbd679c851d05~mv2_d_1664_5697_s_2.jpg" alt="">
-
-</figure>
-
-<figure>
-<img src="/images/dc9b92_f509fbc9bcf44717bc038d4304370274~mv2_d_1664_3377_s_2.jpg" alt="">
-
-</figure>
-
-<figure>
-<img src="/images/dc9b92_e88e4c5c7db84672901550ed049d3cbf~mv2_d_1200_4882_s_2.jpg" alt="">
-
-</figure>
-
 The following is a collection of the work produced during my First year Architectural Design Studio at Pratt for Fall 2014.  The images follow a group of 13 students through their initial journey into architecture.  They progressed through a series of Design Exercises that pit them in design conversations with Point & Line, Plane & Surface, Solid & Void, and finally a Hybrid synthesis of techniques into a spatial, architectural concept, a Folly.
 
 ## An Architectural Proposition of…

@@ -3,7 +3,6 @@ categories: ["skyfi", "readings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
-
 **Book Club Update:** SkyFi transitions from Frank Herbert's *Dune* to Ann Leckie's *Ancillary Justice* for the next reading cycle.
 
 **Current Read:** Dune by Frank Herbert — The foundational science fiction epic of ecological worldbuilding, messianic prophecy, and feudal space opera.

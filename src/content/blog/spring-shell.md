@@ -11,12 +11,12 @@ likes: 0
 ---
 
 <figure>
-![Determined little fellow.](dc9b92_da588e0492424e6ba84b7615c488fdd7~mv2.png)
+![Determined little fellow.](/images/dc9b92_da588e0492424e6ba84b7615c488fdd7~mv2.png)
 <figcaption>Determined little fellow.</figcaption>
 </figure>
 
 <figure>
-![Dangerous territory](dc9b92_24794e07b7eb4b02ad71362107787757~mv2.png)
+![Dangerous territory](/images/dc9b92_24794e07b7eb4b02ad71362107787757~mv2.png)
 <figcaption>Dangerous territory</figcaption>
 </figure>
 

@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Cholla cactus woven micro endo-skeleton.](dc9b92_6ed86992857b4b11af9e3a3b9e230b6f~mv2_d_1277_2000_s_2.png)
+
 <figcaption>Cholla cactus woven micro endo-skeleton.</figcaption>
 </figure>
 

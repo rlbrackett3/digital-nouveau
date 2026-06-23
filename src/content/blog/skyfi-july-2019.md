@@ -3,7 +3,6 @@ categories: ["skyfi", "readings"]
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 
-
 **Core Premise:** A scientist discovers a new form of energy — **Strange Stars** — capable of powering an interstellar ark to escape a dying Earth. She becomes convinced this phenomenon is **the physical presence of God**.
 
 **Central Theme — Faith:** 

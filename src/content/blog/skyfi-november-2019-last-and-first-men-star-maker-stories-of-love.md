@@ -110,11 +110,6 @@ Movie Recommendations (or Critiques?):
 
 Jason X - A fantastic space horror extravaganza staring this prime specimen of cybernetic enhanced genetic terror:
 
-<figure>
-<img src="/images/dc9b92_c091052557bf426b99b9be41e70966c7~mv2_d_2806_1857_s_2.jpg" alt="">
-
-</figure>
-
 ---
 
 C.H.U.D. - Caniobalistic Humanoid Underground Dwellers - A fun look at NY Cities underbelly.
@@ -152,11 +147,6 @@ They even made a few sequels, and with litters like this how could you not.
 ---
 
 Terminator gets back to its roots in Dark Fate - Almost Human or Almost Machine - A Metal Mother Fucker of a ride
-
-<figure>
-<img src="/images/dc9b92_2176b277ce194acda6d1496fa1808233~mv2_d_1200_1874_s_2.jpg" alt="">
-
-</figure>
 
 Such a badass, then and now, or both, since this is a time travel thing. I think the casting, outside of the tried and true originals in new roles as aging cyborg time wars veterans, was very well considered on the physical and emotional level. The new Terminator is uncanny in his blend of every human and subtle empathetic responses, very creepy. Grace is powerfully and jacked to the gills on adrenaline and purpose.  The future of humanity is another every woman, discovering a way in the rapidly changing world of the 21st century, and coming into her confidence and purpose through adversity and resilient self-determination.
 
@@ -269,11 +259,6 @@ Nate shared his amazing Army of Darkness Ash costume and fun Halloween trickery.
 
 The entire Sam Raimi series, Evil Dead, Evil Dead 2, and Army of Darkness are must watch for the Halloween season, or just about any time you need to work on your melodramatic one-liners, and fight evil.
 
-<figure>
-<img src="/images/dc9b92_5b287a74caf44cd99e8f97492a41b34e~mv2_d_1500_2204_s_2.jpg" alt="">
-
-</figure>
-
 ---
 
 Wings of Design and Faraway so Close, directed by Wim Wenders are film classics with an outstanding cast and chilling inhabitation of the emerging Berlin.
@@ -329,11 +314,6 @@ We plan for it. As if we have any agency in this vast cosmos, we must pretend, o
 Now Reading:
 
 Ninefox Gambit by Yoon Ha Lee
-
-<figure>
-<img src="/images/dc9b92_78e2d754d6b64d90bcf26c5bb22e5a40~mv2_d_1400_2161_s_2.jpg" alt="">
-
-</figure>
 
 “StarshipTroopers meets Apocalypse Now – and they’ve put Kurtz in charge...Mind-blistering military space opera, but with a density of ideas and strangeness that recalls the works of Hannu Rajaniemi, even Cordwainer Smith.An unmissable debut.”  :: Author: Stephen Baxter
 

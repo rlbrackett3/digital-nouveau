@@ -3,7 +3,6 @@ categories: ["design"]
 image: "/images/dc9b92_4c5f6231d256461da6f98d7ca774ea82~mv2.gif"
 ---
 
-
 <figure>
 <img src="/images/dc9b92_4c5f6231d256461da6f98d7ca774ea82~mv2.gif" alt="">
 

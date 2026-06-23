@@ -10,11 +10,6 @@ comments: 0
 likes: 0
 ---
 
-<figure>
-<img src="/images/dc9b92_b3e8755437bf417fb8de8e7e67916df9~mv2_d_1200_1200_s_2.png" alt="">
-
-</figure>
-
 ---
 
 Mapping is a strategy for exploring new frontiers, reconciling the unknown into accessible information. It is an abstraction, providing access to ambiguous territories and generating new organizations in the flowing space of the real and the imagined.  We will map through analytical and generative drawing, recombinant animation, and computational models, engaging architecture as a medium of thick space operating within the horizontal constraints of the mat building typology.

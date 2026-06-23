@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Tree House Form](dc9b92_70789f62c80f4a1e807df61215548f6c~mv2_d_2019_2692_s_2.png)
+
 <figcaption>Tree House Form</figcaption>
 </figure>
 

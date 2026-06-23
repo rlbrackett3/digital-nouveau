@@ -11,27 +11,27 @@ likes: 0
 ---
 
 <figure>
-![Perfect Fit Packaging - Photo by LC](dc9b92_acbbdf3ef61940cca15c506c29ff673f~mv2_d_2000_1500_s_2.png)
+
 <figcaption>Perfect Fit Packaging - Photo by LC</figcaption>
 </figure>
 
 <figure>
-![The ring wraps my finger every day, battle tested and much approved](dc9b92_58be61a16dce4402b94c172098331f56~mv2_d_2153_1615_s_2.png)
+
 <figcaption>The ring wraps my finger every day, battle tested and much approved</figcaption>
 </figure>
 
 <figure>
-![I can't help but wear these at least twice a week.](dc9b92_c2b61fcdc67c4c3c8b1f9e9578f75e2a~mv2_d_2000_1500_s_2.png)
+
 <figcaption>I can't help but wear these at least twice a week.</figcaption>
 </figure>
 
 <figure>
-![The Initial Collection](dc9b92_c320b399e5f448bea6fa9045ef5501da~mv2.png)
+![The Initial Collection](/images/dc9b92_c320b399e5f448bea6fa9045ef5501da~mv2.png)
 <figcaption>The Initial Collection</figcaption>
 </figure>
 
 <figure>
-![ARNICA - Photo by LC](dc9b92_ab11e3ea2a9d4b18babf097c7f590f6f~mv2.png)
+![ARNICA - Photo by LC](/images/dc9b92_ab11e3ea2a9d4b18babf097c7f590f6f~mv2.png)
 <figcaption>ARNICA - Photo by LC</figcaption>
 </figure>
 
