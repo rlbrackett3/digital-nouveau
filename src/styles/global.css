@@ -601,7 +601,17 @@ p {
 	margin-right: -50vw;
 	background: rgba(0, 0, 0, 0.85);
 	border-top: 1px solid var(--accent);
+	border-bottom: 1px solid var(--accent);
 	padding: 20px var(--header-padding-x);
+}
+
+.skyfi-band + .skyfi-band {
+	margin-top: 32px;
+}
+
+.skyfi-band:first-of-type {
+	border-top: none;
+	margin-top: 0;
 }
 
 .skyfi-heading {
