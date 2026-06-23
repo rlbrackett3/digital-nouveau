@@ -587,9 +587,21 @@ p {
 
 /* ── SkyFi reading list page ── */
 .skyfi-page {
-	max-width: var(--content-max-width);
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 20px var(--header-padding-x) 60px;
+}
+
+.skyfi-band {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	background: rgba(0, 0, 0, 0.85);
+	border-top: 1px solid var(--accent);
+	padding: 20px var(--header-padding-x);
 }
 
 .skyfi-heading {

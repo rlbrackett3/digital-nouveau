@@ -177,36 +177,44 @@ const booksOnRadar = [
 
 <SiteLayout title="skyfi :: a reading list">
 	<main class="skyfi-page">
-		<h1 class="skyfi-heading">
-			SkyFi is a mostly science fiction focused (with a mix of philosophy, music, horror, surrealism, and post-modern literature) book club made up of a group of people mostly based in new york city who mostly operate in the field of architecture. The lists below are some of the books we have read together and spinoffs they have inspired me to explore.
-		</h1>
+		<div class="skyfi-band">
+			<h1 class="skyfi-heading">
+				SkyFi is a mostly science fiction focused (with a mix of philosophy, music, horror, surrealism, and post-modern literature) book club made up of a group of people mostly based in new york city who mostly operate in the field of architecture. The lists below are some of the books we have read together and spinoffs they have inspired me to explore.
+			</h1>
+		</div>
 
-		<section class="currently-reading">
-			<h1>Currently Reading :: October 2020</h1>
-			<h1></h1>
-			<h1>Psuedo Fiction :: Staying with the Trouble: Making Kin in the Chthulucene by Donna Haraway</h1>
-			<h1>Watching :: Alien 3</h1>
-		</section>
+		<div class="skyfi-band">
+			<section class="currently-reading">
+				<h1>Currently Reading :: October 2020</h1>
+				<h1></h1>
+				<h1>Psuedo Fiction :: Staying with the Trouble: Making Kin in the Chthulucene by Donna Haraway</h1>
+				<h1>Watching :: Alien 3</h1>
+			</section>
+		</div>
 
-		<section class="skyfi-books">
-			<h1>SKYFI BOOKS :: EXTRA CURRICULAR</h1>
-			<div class="two-column-layout">
-				<div class="left-column">
-					{leftCol.map(book => <p>{book}</p>)}
+		<div class="skyfi-band">
+			<section class="skyfi-books">
+				<h1>SKYFI BOOKS :: EXTRA CURRICULAR</h1>
+				<div class="two-column-layout">
+					<div class="left-column">
+						{leftCol.map(book => <p>{book}</p>)}
+					</div>
+					<div class="right-column">
+						{rightCol.map(book => <p>{book}</p>)}
+					</div>
 				</div>
-				<div class="right-column">
-					{rightCol.map(book => <p>{book}</p>)}
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 
-		<section class="skyfi-radar">
-			<div class="radar-layout">
-				<h1>SKYFI :: BOOKS ON OUR RADAR (under construction)</h1>
-				<div class="radar-list">
-					{booksOnRadar.map(book => <p>{book}</p>)}
+		<div class="skyfi-band">
+			<section class="skyfi-radar">
+				<div class="radar-layout">
+					<h1>SKYFI :: BOOKS ON OUR RADAR (under construction)</h1>
+					<div class="radar-list">
+						{booksOnRadar.map(book => <p>{book}</p>)}
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	</main>
 </SiteLayout>
