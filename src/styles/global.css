@@ -602,7 +602,14 @@ p {
 	background: rgba(0, 0, 0, 0.85);
 	border-top: 1px solid var(--accent);
 	border-bottom: 1px solid var(--accent);
-	padding: 20px var(--header-padding-x);
+	padding: 20px 0;
+}
+
+.skyfi-band > * {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 20px;
 }
 
 .skyfi-band + .skyfi-band {
