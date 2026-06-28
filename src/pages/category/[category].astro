@@ -1,81 +1,144 @@
 ---
-// Category page - 3-column grid matching Wix blog structure
-import { getCollection } from 'astro:content';
+// Category filter page — unified 3-column square card grid
 import SiteLayout from '@/components/SiteLayout.astro';
-import { SITE_TITLE, CATEGORIES } from '@/consts';
+import { getCollection } from 'astro:content';
 
-const { category } = Astro.props;
-const allPosts = await getCollection('blog');
-const categoryPosts = allPosts
-	.filter(post => post.data.categories.includes(category))
-	.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
-	.map(post => {
-		const words = (post.body || '').trim().split(/\s+/).filter(Boolean).length;
-		const image = post.data.image;
-		const dateStr = post.data.pubDate
-			? new Date(post.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
-			: '';
-		return {
-			id: post.id,
-			title: post.data.title,
-			image,
-			date: dateStr,
-			readTime: post.data.readTime || Math.max(1, Math.ceil(words / 200)),
-			categories: post.data.categories || [],
-		};
-	});
+const allPosts = await getCollection('blog', () => true);
 
-const categoryDisplay: Record<string, string> = {
-	design: 'Design',
-	drawings: 'Drawings',
-	readings: 'Readings',
-	skyfi: 'SkyFi',
-	thinkings: 'Thinkings',
-	observings: 'Observings',
-	teachings: 'Teachings',
-	writings: 'Writings',
-};
+// Get all unique categories from posts
+const categorySet = new Set();
+allPosts.forEach(post => {
+	if (post.data.categories) {
+		post.data.categories.forEach(cat => categorySet.add(cat));
+	}
+});
 
-const displayName = categoryDisplay[category] || category;
+const categories = Array.from(categorySet);
 
-export function getStaticPaths() {
-	return CATEGORIES.map((cat) => ({
-		params: { category: cat },
-		props: { category: cat },
-	}));
+export async function getStaticPaths() {
+	const posts = await getCollection('blog', () => true);
+	const cats = new Set();
+	posts.forEach(p => { if (p.data.categories) p.data.categories.forEach(c => cats.add(c)); });
+	return Array.from(cats).map(cat => ({ params: { category: cat } }));
 }
+
+const category = Astro.params.category;
+const filteredPosts = allPosts
+	.filter(post => post.data.categories && post.data.categories.includes(category))
+	.sort((a, b) => {
+		const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+		const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+		return dateB - dateA;
+	});
 ---
 
-<SiteLayout title={`${displayName} | ${SITE_TITLE}`}>
-	<main class="feed-page">
-		<div class="feed-container grid-view" id="feed-container">
-		{categoryPosts.map(pc => (
-			<article class="feed-card" data-cats={JSON.stringify(pc.categories)} data-post-id={pc.id}>
-				<a href={`/blog/${pc.id}`} class="feed-card-link">
-					{pc.image ? (
-						<div class="feed-card-image">
-							<img src={pc.image} alt={pc.title} loading="lazy" />
-						</div>
-					) : ''}
-					<div class="feed-card-body">
-						<h2 class="feed-card-title">{pc.title}</h2>
-						<p class="feed-card-content">{pc.date}</p>
-					</div>
-				</a>
-				<div class="feed-card-meta">
-					<div class="feed-card-stats">
-						<span class="feed-stat">
-							<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-							{(pc.views as number) || 0}
-						</span>
-						<span class="feed-stat">
-							<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-							0
-						</span>
-					</div>
-				</div>
-			</article>
-		))}
+<SiteLayout title={category}>
+	<main class="category-page">
+		<div class="category-grid">
+			{filteredPosts.map(post => {
+				const dateStr = post.data.pubDate
+					? new Date(post.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+					: '';
+				return (
+					<article class="category-card">
+						<a href={`/blog/${post.id}`} class="category-card-link">
+							{post.data.image && (
+								<div class="category-card-image">
+									<img src={post.data.image} alt={post.data.title} loading="lazy" />
+								</div>
+							)}
+							<div class="category-card-body">
+								<time class="category-card-date">{dateStr}</time>
+								<h2 class="category-card-title">{post.data.title}</h2>
+							</div>
+						</a>
+					</article>
+				);
+			})}
 		</div>
 	</main>
 </SiteLayout>
+
+<style>
+.category-page {
+	max-width: var(--content-max-width);
+	margin: 0 auto;
+	padding: 20px var(--header-padding-x) 60px;
+}
+
+.category-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.category-card {
+	aspect-ratio: 1 / 1;
+}
+
+.category-card-link {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	text-decoration: none;
+	background: transparent;
+	border: 1px solid var(--accent-subtle);
+	overflow: hidden;
+	transition: none;
+}
+
+.category-card-link:hover {
+	border-color: var(--accent);
+}
+
+.category-card-image {
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+	background: var(--accent-ghost);
+}
+
+.category-card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.category-card-body {
+	padding: 10px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+}
+
+.category-card-date {
+	font-size: 11px;
+	color: var(--text-muted);
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	margin-bottom: 8px;
+}
+
+.category-card-title {
+	font-size: 14px;
+	font-weight: var(--font-weight-body);
+	color: var(--accent);
+	margin: 0;
+	line-height: 1.3;
+	font-family: var(--font-body);
+}
+
+@media (max-width: 768px) {
+	.category-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 12px;
+	}
+}
+
+@media (max-width: 480px) {
+	.category-grid {
+		grid-template-columns: 1fr;
+	}
+}
+</style>

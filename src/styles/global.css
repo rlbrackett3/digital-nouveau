@@ -9,27 +9,32 @@
 
 /* ── CSS Custom Properties ── */
 :root {
-	--accent: #22f0ff;
-	--accent-dim: rgba(34, 240, 255, 0.5);
-	--accent-subtle: rgba(34, 240, 255, 0.3);
-	--accent-faint: rgba(34, 240, 255, 0.15);
-	--accent-ghost: rgba(34, 240, 255, 0.08);
+	--accent: #1CEBF4;
+	--accent-dim: rgba(28, 235, 244, 0.5);
+	--accent-subtle: rgba(28, 235, 244, 0.3);
+	--accent-faint: rgba(28, 235, 244, 0.15);
+	--accent-ghost: rgba(28, 235, 244, 0.08);
 
 	--text: #ffffff;
-	--text-primary: #22f0ff;
-	--text-secondary: rgba(34, 240, 255, 0.85);
-	--text-muted: rgba(34, 240, 255, 0.5);
-	--text-link: #22f0ff;
-	--text-link-hover: #22f0ff;
+	--text-primary: #1CEBF4;
+	--text-primary-hover: #ff4040;
+	--text-secondary: rgba(28, 235, 244, 0.85);
+	--text-muted: rgba(28, 235, 244, 0.5);
+	--text-link: #1CEBF4;
+	--text-link-hover: #ff4040;
 
 	--font-body: 'DM Sans', 'Courier New', 'Lucida Console', monospace;
-	--font-size-base: 14px;
+	--font-size-xs: 11px;
+	--font-size-sm: 14px;
+	--font-size-base: 16px;
+	--font-size-lg: 20px;
+	--font-size-xl: 22px;
 	--font-weight-body: 200;
 	--font-weight-heading: 100;
 
 	--bg: #000000;
-	--border: rgba(34, 240, 255, 0.15);
-	--border-subtle: rgba(34, 240, 255, 0.1);
+	--border: rgba(28, 235, 244, 0.15);
+	--border-subtle: rgba(28, 235, 244, 0.1);
 
 	--content-max-width: 960px;
 	--post-max-width: 860px;
@@ -110,6 +115,7 @@ p {
 	position: relative;
 	z-index: 10;
 	background: var(--bg);
+	border-top: 1px solid var(--accent);
 	border-bottom: 1px solid var(--accent);
 }
 
@@ -189,10 +195,15 @@ p {
 }
 
 .main-nav a {
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: var(--font-weight-body);
-	color: var(--accent);
+	color: var(--accent-dim);
 	letter-spacing: 0.02em;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+	color: var(--accent);
 }
 
 .nav-link {
@@ -339,252 +350,6 @@ p {
   border-bottom: none;
 }
 
-/* ── Blog post card ── */
-.blog-post-card {
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid var(--accent-subtle);
-  margin-bottom: 40px;
-  overflow: hidden;
-  transition: border-color 0.2s;
-}
-
-.blog-post-card:hover {
-  border-color: var(--accent);
-}
-
-.post-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.post-content {
-	padding: 20px;
-}
-
-.post-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-  font-size: 12px;
-}
-
-.author-info {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 14px;
-  color: white;
-  font-weight: 100;
-}
-
-.author-name {
-  color: var(--accent);
-  font-size: 12px;
-}
-
-.post-date {
-  color: var(--accent-dim);
-  font-size: 12px;
-}
-
-.post-title {
-  font-size: 28px;
-  font-weight: 100;
-  line-height: 1.2;
-  margin: 0 0 12px;
-}
-
-.post-title a {
-  color: var(--accent);
-}
-
-.post-excerpt {
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 0 0 20px;
-  color: var(--text-secondary);
-}
-
-/* ── Social buttons ── */
-.social-actions {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-
-.social-btn {
-  background: none;
-  border: none;
-  color: var(--accent);
-  cursor: pointer;
-  padding: 4px;
-  opacity: 0.6;
-  transition: opacity 0.2s;
-}
-
-.social-btn:hover {
-  opacity: 1;
-}
-
-/* ── Post stats ── */
-.post-stats {
-  display: flex;
-  gap: 16px;
-  font-size: 12px;
-  color: var(--accent-dim);
-}
-
-.stat {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-/* ── Recent posts grid ── */
-.recent-posts {
-  margin: 40px 0;
-  padding-top: 30px;
-  border-top: 1px solid var(--border);
-}
-
-.section-title {
-  font-size: 13px;
-  font-weight: 100;
-  color: var(--accent);
-  margin: 0 0 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.posts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.post-thumbnail {
-  display: block;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.85);
-  border: 1px solid var(--border);
-  overflow: hidden;
-  transition: border-color 0.2s;
-}
-
-.post-thumbnail:hover {
-  border-color: var(--accent-dim);
-}
-
-.thumbnail-image {
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  background: var(--accent-ghost);
-}
-
-.thumbnail-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.thumbnail-info {
-  padding: 10px;
-}
-
-.thumbnail-info h4 {
-  font-size: 13px;
-  font-weight: 100;
-  color: var(--accent);
-  margin: 0 0 6px;
-  line-height: 1.3;
-}
-
-.thumbnail-stats {
-  display: flex;
-  gap: 10px;
-  font-size: 10px;
-  color: var(--accent-dim);
-}
-
-/* ── Comments ── */
-.comments-section {
-  margin: 40px 0;
-  padding-top: 30px;
-  border-top: 1px solid var(--border);
-}
-
-.comment-form-wrapper {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-
-.comment-avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 12px;
-  flex-shrink: 0;
-}
-
-.comment-form {
-  flex: 1;
-}
-
-.comment-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--accent-subtle);
-  background: rgba(0, 0, 0, 0.8);
-  color: var(--accent);
-  font-family: var(--font-body);
-  font-size: 12px;
-  resize: vertical;
-  margin-bottom: 8px;
-  outline: none;
-}
-
-.comment-form textarea::placeholder {
-  color: var(--accent-dim);
-}
-
-.comment-submit {
-  padding: 8px 14px;
-  border: 1px solid var(--accent-subtle);
-  background: rgba(0, 0, 0, 0.8);
-  color: var(--accent);
-  font-size: 14px;
-  cursor: pointer;
-  font-family: var(--font-body);
-  font-weight: 100;
-  transition: all 0.2s;
-}
-
-.comment-submit:hover {
-	border-color: var(--accent);
-	background: var(--border-subtle);
-}
-
 /* ── SkyFi reading list page ── */
 .skyfi-page {
 	max-width: 100%;
@@ -599,72 +364,116 @@ p {
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
-	background: rgba(0, 0, 0, 0.85);
-	border-top: 1px solid var(--accent);
-	border-bottom: 1px solid var(--accent);
-	padding: 20px 0;
+	background: transparent;
+	border: none;
+	padding: 24px 0;
 }
 
 .skyfi-band > * {
-	max-width: 960px;
+	max-width: 720px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 20px;
 }
 
 .skyfi-band + .skyfi-band {
-	margin-top: 32px;
-}
-
-.skyfi-band:first-of-type {
-	border-top: none;
 	margin-top: 0;
+	border-top: 1px solid var(--accent);
+	padding-top: 60px;
 }
 
 .skyfi-heading {
-	font-size: 22px;
+	font-size: var(--font-size-xl);
 	font-family: var(--font-body);
-	font-weight: 200;
+	font-weight: var(--font-weight-body);
 	color: var(--accent);
 	line-height: 1.4;
 	margin: 0 0 30px 0;
 	text-align: center;
 }
 
-.currently-reading {
-	margin-bottom: 40px;
+.skyfi-intro {
+	font-size: var(--font-size-sm);
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	color: var(--accent);
+	line-height: 1.6;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 640px;
+	padding-bottom: 40px;
 }
 
-.currently-reading h1 {
-	font-size: 22px;
-	font-family: var(--font-body);
-	font-weight: 200;
-	color: var(--accent);
-	margin: 0 0 8px 0;
+.currently-reading {
+	margin-bottom: 40px;
 	text-align: center;
 }
 
-.currently-reading h1:empty {
-	display: none;
+/* "Currently Reading ::" label: LARGEST in section (matches Wix) */
+.currently-reading p:first-child {
+	font-size: var(--font-size-xl);
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	color: var(--accent);
+	margin: 0 0 8px 0;
+	text-align: center;
+	line-height: 1.3;
 }
 
-.currently-reading h1:nth-child(3),
-.currently-reading h1:nth-child(4) {
-	font-size: 22px;
+/* Book title + author: smaller than label */
+.currently-reading p:nth-child(2) {
+	font-size: var(--font-size-base);
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
 	color: var(--accent);
-	margin-top: 0;
+	margin: 0 0 8px 0;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.currently-reading p:nth-child(2) a {
+	color: var(--accent);
+	text-decoration: underline;
+	text-decoration-color: var(--accent);
+}
+
+.currently-reading p:nth-child(2) a:hover {
+	color: #ff4040;
+	text-decoration-color: #ff4040;
+}
+
+/* "Watching ::" label: same as book title */
+.currently-reading p:nth-child(3) {
+	font-size: var(--font-size-base);
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	color: var(--accent);
+	margin: 0;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.currently-reading p:nth-child(3) a {
+	color: var(--accent);
+	text-decoration: underline;
+	text-decoration-color: var(--accent);
+}
+
+.currently-reading p:nth-child(3) a:hover {
+	color: #ff4040;
+	text-decoration-color: #ff4040;
 }
 
 .skyfi-books {
-	margin-top: 40px;
-	padding-top: 30px;
-	border-top: 1px solid var(--border);
+	margin-top: 0;
+	padding-top: 0;
+	border-top: none;
 }
 
 .skyfi-books > h1 {
-	font-size: 22px;
+	font-size: var(--font-size-xl);
 	font-family: var(--font-body);
-	font-weight: 200;
+	font-weight: var(--font-weight-body);
 	color: var(--accent);
 	margin: 0 0 30px 0;
 	text-align: center;
@@ -672,37 +481,35 @@ p {
 
 .two-column-layout {
 	display: flex;
-	gap: 55px;
+	gap: 160px;
 }
 
 .left-column,
 .right-column {
-	width: 440px;
-	flex-shrink: 0;
+	flex: 1;
+	min-width: 0;
 }
 
 .left-column p,
 .right-column p {
-	font-size: 16px;
-	line-height: normal;
+	font-size: var(--font-size-sm);
+	line-height: 1.5;
 	color: var(--accent);
-	margin: 0 0 4px 0;
+	margin: 0 0 2px 0;
 	font-family: var(--font-body);
-	font-weight: 200;
+	font-weight: var(--font-weight-body);
 }
 
+/* Column headers: same color, smallest size, uppercase */
 .left-column p:first-child,
 .right-column p:first-child {
-	font-size: 15px;
-	line-height: 19.5px;
-}
-
-.scifi-group p:last-child {
-	margin-bottom: 0;
-}
-
-.right-section {
-	margin-bottom: 20px;
+	font-size: var(--font-size-xs);
+	font-weight: var(--font-weight-body);
+	color: var(--accent);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	margin-bottom: 12px;
 }
 
 .skyfi-radar {
@@ -713,22 +520,22 @@ p {
 
 .skyfi-radar .book-columns {
 	columns: 2;
-	column-gap: 55px;
+	column-gap: 160px;
 }
 
 .skyfi-radar .book-text {
-	font-size: 16px;
-	line-height: normal;
+	font-size: var(--font-size-base);
+	line-height: 1.5;
 	color: var(--accent);
 	margin: 0 0 4px 0;
 	font-family: var(--font-body);
-	font-weight: 200;
+	font-weight: var(--font-weight-body);
 	break-inside: avoid;
 }
 
 .skyfi-radar .book-text:first-of-type {
-	font-size: 15px;
-	line-height: 19.5px;
+	font-size: var(--font-size-sm);
+	line-height: 1.4;
 }
 
 /* ── Footer ── */
@@ -814,79 +621,7 @@ p {
   color: var(--accent-dim);
 }
 
-/* Feed page layout */
-.feed-page {
-	max-width: var(--content-max-width);
-	margin: 0 auto;
-	padding: 20px var(--header-padding-x);
-}
-
-.feed-container {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: 1fr;
-}
-
-/* Feed grid view (category filter) - 3 equal columns of square cards */
-.feed-container.grid-view {
-	grid-template-columns: repeat(3, 1fr);
-	gap: 16px;
-}
-
-.grid-view .feed-card {
-	display: block;
-}
-
-.grid-view .feed-card-link {
-	height: 100%;
-	aspect-ratio: 1 / 1;
-	display: flex;
-	flex-direction: column;
-}
-
-.grid-view .feed-card-image {
-	width: 100%;
-	height: 160px;
-	overflow: hidden;
-	background: var(--accent-ghost);
-	flex-shrink: 0;
-}
-
-.grid-view .feed-card-image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.grid-view .feed-card-body {
-	padding: 16px;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	min-height: 0;
-}
-
-.grid-view .feed-card-title {
-	font-size: 14px;
-	font-family: var(--font-body);
-	font-weight: 200;
-	color: var(--accent);
-	line-height: 1.4;
-	margin: 0 0 8px 0;
-}
-
-.grid-view .feed-card-content {
-	flex: 1;
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	font-size: 12px;
-	color: var(--text-muted);
-	line-height: 1.5;
-	font-family: var(--font-body);
-	font-weight: 200;
-}
+/* Feed page: handled in index.astro inline styles */
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
@@ -895,14 +630,25 @@ p {
 		padding: 0;
 	}
 
+	.site-header .container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 10px 12px;
+	}
+
 	.header-content {
-		flex-direction: column;
-		padding: 12px 0;
+		flex-direction: row;
+		align-items: flex-start;
+		padding: 6px 0;
 		gap: 8px;
+		width: 100%;
 	}
 
 	.header-left {
 		max-width: none;
+		min-width: 0;
+		flex: 1;
 	}
 
 	.header-logo {
@@ -910,10 +656,22 @@ p {
 	}
 
 	.site-title {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.taglines {
+		display: block;
+	}
+
+	.tagline {
+		font-size: 10px;
+		line-height: 1.2;
+		margin: 0;
+	}
+
+	/* Hide less essential taglines on mobile to save vertical space */
+	.tagline:nth-child(3),
+	.tagline:nth-child(4) {
 		display: none;
 	}
 
@@ -927,6 +685,9 @@ p {
 
 	.hamburger-btn {
 		display: flex;
+		order: 99;
+		margin-left: auto;
+		flex-shrink: 0;
 	}
 
 	.feed-container.grid-view {
@@ -935,27 +696,15 @@ p {
 	}
 
 	.feed-card-body {
-		padding: 12px;
-	}
-
-	.feed-card-meta {
-		padding: 8px 12px;
+		padding: 8px;
 	}
 
 	/* Blog post mobile */
 	.blog-post {
-		padding: 12px 16px 40px;
-	}
-
-	.post-card {
-		padding: 0;
-	}
-
-	.post-header {
-		padding: 12px 12px 0;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 4px;
+		padding: 8px 8px 30px;
+		max-width: calc(100vw - 16px);
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.post-title {
@@ -1003,14 +752,6 @@ p {
 		padding-right: 12px;
 	}
 
-	.post-footer {
-		padding-left: 12px;
-		padding-right: 12px;
-		flex-direction: column;
-		gap: 12px;
-		align-items: flex-start;
-	}
-
 	/* SkyFi mobile */
 	.skyfi-page {
 		padding: 12px 16px 40px;
@@ -1034,41 +775,15 @@ p {
 		font-size: 13px;
 	}
 
-	.radar-list p {
-		font-size: 13px;
-	}
-
-	.radar-list {
-		width: 100%;
-		margin-left: 0;
-	}
-
-	/* Old selectors for backward compat */
-	.skyfi-description {
-		font-size: 13px;
-	}
-
 	.book-columns {
 		columns: 1;
 		column-gap: 0;
 		column-rule: none;
 	}
 
-	.book-column h4 {
-		font-size: 11px;
-	}
-
-	.book-column li {
-		font-size: 12px;
-	}
-
 	/* Category page mobile */
 	.category-page {
 		padding: 12px 16px;
-	}
-
-	.category-header h1 {
-		font-size: 20px;
 	}
 
 	/* Footer mobile */
@@ -1095,27 +810,6 @@ p {
 		font-size: 10px;
 	}
 
-	/* Comment form mobile */
-	.comment-form-wrapper {
-		flex-direction: column;
-	}
-
-	.comment-form textarea {
-		font-size: 14px;
-		padding: 12px;
-	}
-
-	/* Posts grid mobile */
-	.posts-grid {
-		grid-template-columns: 1fr;
-		gap: 12px;
-	}
-
-	.recent-posts {
-		margin: 24px 0;
-		padding-top: 20px;
-	}
-
 	/* Mobile menu touch targets */
 	.mobile-menu {
 		width: 260px;
@@ -1125,15 +819,6 @@ p {
 	.mobile-nav-link {
 		padding: 10px 0;
 		font-size: 14px;
-	}
-
-	/* Share buttons */
-	.feed-card-share {
-		padding: 4px;
-	}
-
-	.share-btn {
-		padding: 6px;
 	}
 
 	/* Feed filters scrollable on mobile */
@@ -1186,9 +871,5 @@ p {
 
 	.post-content {
 		padding: 0 10px 10px;
-	}
-
-	.book-column li {
-		font-size: 11px;
 	}
 }

@@ -51,41 +51,12 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 		{postsData.map(pc => (
 			<article class="feed-card" data-cats={JSON.stringify(pc.categories)} data-post-id={pc.id}>
 				<a href={`/blog/${pc.id}`} class="feed-card-link">
-					{pc.image ? (
-						<div class="feed-card-image">
-							<img src={pc.image} alt={pc.title} loading="lazy" />
-						</div>
-					) : ''}
 					<div class="feed-card-body">
 						<time class="feed-card-date">{pc.date}{pc.readTime ? ` · ${pc.readTime}` : ''}</time>
 						<h2 class="feed-card-title">{pc.title}</h2>
 						<div class="feed-card-content" set:html={pc.contentHTML}></div>
 					</div>
 				</a>
-				<div class="feed-card-meta">
-					<div class="feed-card-stats">
-						<span class="feed-stat">
-							<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-							{pc.views}
-						</span>
-						<span class="feed-stat">
-							<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-							{pc.comments}
-						</span>
-						<span class="feed-stat">
-							<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-							{pc.likes}
-						</span>
-					</div>
-					<div class="feed-card-share">
-						<button class="share-btn" title="Share" onclick="event.stopPropagation();">
-							<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231z"/></svg>
-						</button>
-						<button class="share-btn" title="Copy link" onclick="event.stopPropagation();">
-							<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-						</button>
-					</div>
-				</div>
 			</article>
 		))}
 		</div>
@@ -181,22 +152,25 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	}
 }
 
-.feed-card-link {
+.feed-page .feed-card-link {
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
-	background: transparent;
-	border: 1px solid var(--accent-subtle);
+	background: rgba(0, 0, 0, 0.75) !important;
+	border: 1px solid var(--accent);
 	overflow: hidden;
-	transition: none;
+	transition: none !important;
 	height: 100%;
 }
 
-.feed-card-link:hover {
+.feed-page .feed-card-link:hover {
 	border-color: var(--accent);
-	box-shadow: 0 0 0 1px var(--accent);
-	outline: 1px solid var(--accent);
-	outline-offset: 1px;
+	opacity: 1 !important;
+	background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.feed-page .feed-card-link:hover .feed-card-title {
+	color: var(--text-primary-hover);
 }
 
 /* Unified card style — grid view square cards */
@@ -341,15 +315,18 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 }
 
 .list-view .feed-card-link {
-	border: 1px solid var(--accent-subtle);
-	background: transparent;
+	border: 1px solid var(--accent);
+	background: rgba(0, 0, 0, 0.75) !important;
 }
 
 .list-view .feed-card-link:hover {
 	border-color: var(--accent);
-	box-shadow: 0 0 0 1px var(--accent);
-	outline: 1px solid var(--accent);
-	outline-offset: 1px;
+	opacity: 1 !important;
+	background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.feed-page .feed-card-link:hover .feed-card-title {
+	color: var(--text-primary-hover);
 }
 
 .list-view .feed-card-meta {
@@ -395,52 +372,6 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	line-height: 1.5;
 	font-family: var(--font-body);
 	font-weight: var(--font-weight-body);
-}
-
-.feed-card-meta {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 8px 16px;
-	border-top: 1px solid var(--border);
-}
-
-.feed-card-stats {
-	display: flex;
-	gap: 10px;
-}
-
-.feed-stat {
-	display: flex;
-	align-items: center;
-	gap: 4px;
-	font-size: 10px;
-	color: var(--text-muted);
-}
-
-.feed-stat svg {
-	opacity: 0.6;
-}
-
-.feed-card-share {
-	display: flex;
-	gap: 6px;
-}
-
-.share-btn {
-	background: none;
-	border: 1px solid var(--border);
-	color: var(--accent-dim);
-	padding: 4px;
-	cursor: pointer;
-	transition: all 0.2s;
-	display: flex;
-	align-items: center;
-}
-
-.share-btn:hover {
-	border-color: var(--text-muted);
-	color: var(--accent);
 }
 
 .scroll-sentinel {
@@ -535,21 +466,7 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 		showBatch();
 	}
 
-	// Intercept header nav clicks to filter in place
-	mainNavLinks.forEach(function(link) {
-		link.addEventListener('click', function(e) {
-			e.preventDefault();
-			var href = link.getAttribute('href');
-			var filter = 'all';
-			if (href && href !== '/' && href !== '#') {
-				// Extract category from /category/design -> design
-				var parts = href.split('/');
-				filter = parts[parts.length - 1] || 'all';
-			}
-			setActive(link);
-			resetAndShow(filter);
-		});
-	});
+	// Nav links navigate normally — no client-side interception
 
 	// Infinite scroll
 	if (sentinel) {
@@ -564,8 +481,7 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 		observer.observe(sentinel);
 	}
 
-	// Initial render (set first nav link active)
-	if (mainNavLinks.length > 0) setActive(mainNavLinks[0]);
+	// Initial render (show first batch of all cards)
 	resetAndShow('all');
 })();
 </script>
