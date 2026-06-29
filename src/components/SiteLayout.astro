@@ -113,9 +113,9 @@ const { title, description } = Astro.props;
 			<div class="footer-inner">
 				<div class="newsletter">
 					<h3 class="newsletter-title">&gt; follow along</h3>
-					<form class="newsletter-form" action="#" method="post">
-						<input type="text" placeholder="name" aria-label="Name" />
-						<input type="email" placeholder="e-mail" aria-label="Email" />
+					<form class="newsletter-form" action="mailto:robert@digitalnouveau.com" method="post" enctype="text/plain">
+						<input type="text" name="name" placeholder="name" aria-label="Name" />
+						<input type="email" name="email" placeholder="e-mail" aria-label="Email" />
 						<button type="submit">&gt; initiate drone connection</button>
 					</form>
 				</div>

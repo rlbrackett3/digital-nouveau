@@ -1,5 +1,5 @@
 ---
-categories: ["design"]
+categories: ["skyfi"]
 image: "/images/dc9b92_79120111607a41e89cc49fd464321de2~mv2.jpg"
 ---
 

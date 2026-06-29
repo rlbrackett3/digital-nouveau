@@ -519,23 +519,23 @@ p {
 }
 
 .skyfi-radar .book-columns {
-	columns: 2;
-	column-gap: 160px;
+	display: flex;
+	gap: 160px;
 }
 
 .skyfi-radar .book-text {
-	font-size: var(--font-size-base);
+	font-size: var(--font-size-sm);
 	line-height: 1.5;
 	color: var(--accent);
-	margin: 0 0 4px 0;
+	margin: 0 0 2px 0;
 	font-family: var(--font-body);
 	font-weight: var(--font-weight-body);
-	break-inside: avoid;
 }
 
 .skyfi-radar .book-text:first-of-type {
 	font-size: var(--font-size-sm);
 	line-height: 1.4;
+	margin-bottom: 6px;
 }
 
 /* ── Footer ── */
@@ -776,9 +776,8 @@ p {
 	}
 
 	.book-columns {
-		columns: 1;
-		column-gap: 0;
-		column-rule: none;
+		flex-direction: column;
+		gap: 30px !important;
 	}
 
 	/* Category page mobile */
