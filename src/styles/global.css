@@ -365,7 +365,9 @@ p {
 	margin-left: -50vw;
 	margin-right: -50vw;
 	background: rgba(0, 0, 0, 0.75);
-	border: none;
+	border-top: 1px solid var(--accent);
+	border-bottom: 1px solid var(--accent);
+	margin-bottom: 30px;
 	padding: 24px 0;
 }
 
@@ -374,12 +376,6 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 20px;
-}
-
-.skyfi-band + .skyfi-band {
-	margin-top: 0;
-	border-top: 1px solid var(--accent);
-	padding-top: 60px;
 }
 
 .skyfi-heading {
