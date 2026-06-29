@@ -523,21 +523,6 @@ p {
 	gap: 160px;
 }
 
-.skyfi-radar .book-text {
-	font-size: var(--font-size-sm);
-	line-height: 1.5;
-	color: var(--accent);
-	margin: 0 0 2px 0;
-	font-family: var(--font-body);
-	font-weight: var(--font-weight-body);
-}
-
-.skyfi-radar .book-text:first-of-type {
-	font-size: var(--font-size-sm);
-	line-height: 1.4;
-	margin-bottom: 6px;
-}
-
 /* ── Footer ── */
 .site-footer {
   padding: 60px 0;
