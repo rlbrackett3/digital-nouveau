@@ -1,5 +1,5 @@
 ---
-title: "Bones &amp; Flowers - Arnica Cufflink Prototypes"
+title: "Bones & Flowers - Arnica Cufflink Prototypes"
 description: "Two Cufflink samples testing 22K Gold and Rose Gold finishes (coming soon).  They are resting in a prototype ceramic plate we are..."
 pubDate: '2013-09-13'
 categories: ["design"]

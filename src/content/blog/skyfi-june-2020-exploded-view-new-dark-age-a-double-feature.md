@@ -1,5 +1,5 @@
 ---
-title: "SkyFi :: June 2020 :: Exploded View &amp; New Dark Age :: A Double Feature"
+title: "SkyFi :: June 2020 :: Exploded View & New Dark Age :: A Double Feature"
 description: "A summer double feature to ease us all into the pandemic isolation of New York. Our book pairing turned out to be extremely well aligned..."
 pubDate: '2020-07-02'
 categories: ["observings", "skyfi"]

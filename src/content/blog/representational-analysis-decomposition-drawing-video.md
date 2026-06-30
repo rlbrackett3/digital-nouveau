@@ -1,5 +1,5 @@
 ---
-title: "Representational Analysis :: Decomposition Drawing &amp; Video"
+title: "Representational Analysis :: Decomposition Drawing & Video"
 description: "The following video was a micro-lecture provided for the ARCH202 Intermediate Design studios at Pratt Institute as an introduction to..."
 pubDate: '2020-01-27'
 categories: ["design", "teachings"]
