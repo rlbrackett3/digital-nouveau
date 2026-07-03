@@ -527,9 +527,8 @@ p {
 
 /* ── Footer ── */
 .site-footer {
-  padding: 60px 0;
+  padding: 0;
   text-align: center;
-  border-top: 1px solid var(--border-subtle);
   position: relative;
   z-index: 10;
 }
@@ -537,13 +536,14 @@ p {
 .footer-inner {
   max-width: var(--content-max-width);
   margin: 0 auto;
-  padding: 0 var(--header-padding-x);
+  padding: 0;
 }
 
-.newsletter {
-  margin-bottom: 24px;
+.footer-band {
+  background: rgba(0, 0, 0, 0.85);
   border: 1px solid var(--accent);
-  padding: 24px;
+  padding: 32px 24px;
+  margin: 0 var(--header-padding-x) 32px;
   text-align: left;
 }
 
@@ -638,13 +638,20 @@ p {
 
 .footer-copy {
   font-size: 11px;
-  color: var(--accent-dim);
+  color: var(--accent);
   line-height: 1.5;
+  padding: 0 var(--header-padding-x) 40px;
+  text-align: center;
 }
 
 .footer-copy p {
-  margin: 0;
-  color: var(--accent-dim);
+  margin: 0 0 4px;
+  color: var(--accent);
+}
+
+.footer-email {
+  font-size: 10px;
+  opacity: 0.6;
 }
 
 /* ── Video embeds — responsive 16:9, full column width ── */
