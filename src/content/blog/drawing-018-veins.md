@@ -1,9 +1,8 @@
 ---
 title: "Drawing 018 - Veins"
-description: "I have had this branch, which I found while hiking in the desert around Ghost Ranch, NM, sitting on my bookshelf for several weeks.  I..."
 pubDate: '2013-07-14'
 categories: ["drawings", "thinkings"]
-image: ""
+image: "/images/dc9b92_8d6c17bfc5e74c44b692d900e9b7367f~mv2.png"
 readTime: 1
 views: 5
 comments: 0

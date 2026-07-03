@@ -45,6 +45,11 @@
 /* ── Body ── */
 body {
 	background-color: var(--bg);
+	background-image: url('/neural-bg.png');
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	color: var(--text);
 	font-family: var(--font-body);
 	font-size: var(--font-size-base);
@@ -53,6 +58,19 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
+}
+
+/* Dark overlay on parallax background */
+body::after {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.65);
+	z-index: -1;
+	pointer-events: none;
 }
 
 img, video, iframe, picture {
@@ -88,20 +106,6 @@ p {
   margin-bottom: 1em;
 }
 
-/* ── Neural background ── */
-.bg-neural {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.25;
-  pointer-events: none;
-  filter: contrast(1.1) brightness(1.1);
-}
-
 /* ── Container ── */
 .container {
 	max-width: 960px;
@@ -114,9 +118,11 @@ p {
 	padding: 0;
 	position: relative;
 	z-index: 10;
-	background: var(--bg);
+	background: rgba(0, 0, 0, 0.5);
 	border-top: 1px solid var(--accent);
 	border-bottom: 1px solid var(--accent);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
 }
 
 .site-header .container {
@@ -529,61 +535,100 @@ p {
 }
 
 .footer-inner {
-  max-width: 600px;
+  max-width: var(--content-max-width);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 var(--header-padding-x);
 }
 
 .newsletter {
   margin-bottom: 24px;
+  border: 1px solid var(--accent);
+  padding: 24px;
+  text-align: left;
 }
 
 .newsletter-title {
   font-size: 14px;
   color: var(--accent);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-weight: 100;
   letter-spacing: 0.05em;
 }
 
 .newsletter-form {
   display: flex;
-  gap: 8px;
-  justify-content: center;
+  gap: 16px;
+  align-items: flex-end;
   flex-wrap: wrap;
 }
 
-.newsletter-form input {
-  padding: 10px 14px;
-  border: 1px solid var(--accent-subtle);
-  background: rgba(0, 0, 0, 0.9);
+.newsletter-fields {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  flex: 1;
+  min-width: 0;
+}
+
+.newsletter-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.field-label {
+  font-size: 11px;
+  color: var(--accent);
+  margin-bottom: 6px;
+  opacity: 0.6;
+  letter-spacing: 0.05em;
+}
+
+.newsletter-field input {
+  padding: 4px 0;
+  border: none;
+  border-bottom: 1px solid rgba(28, 235, 244, 0.4);
+  background: transparent;
   color: var(--accent);
   font-size: 14px;
   font-family: var(--font-body);
   font-weight: 100;
   outline: none;
-  min-width: 160px;
+  min-width: 0;
 }
 
-.newsletter-form input::placeholder {
+.newsletter-field input::placeholder {
   color: var(--accent-dim);
 }
 
-.newsletter-form input:focus {
-  border-color: var(--accent);
+.newsletter-field input:focus {
+  border-bottom-color: var(--accent);
+}
+
+.field-separator {
+  color: var(--accent);
+  opacity: 0.3;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-bottom: 4px;
+  flex-shrink: 0;
+  user-select: none;
 }
 
 .newsletter-form button {
-  padding: 10px 16px;
-  border: 1px solid var(--accent-subtle);
-  background: rgba(0, 0, 0, 0.9);
+  padding: 8px 16px;
+  border: 1px solid var(--accent);
+  background: transparent;
   color: var(--accent);
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   font-family: var(--font-body);
   font-weight: 100;
   letter-spacing: 0.05em;
   transition: all 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .newsletter-form button:hover {
@@ -600,6 +645,24 @@ p {
 .footer-copy p {
   margin: 0;
   color: var(--accent-dim);
+}
+
+/* ── Video embeds — responsive 16:9, full column width ── */
+.video-embed {
+	position: relative;
+	width: 100%;
+	max-width: var(--post-max-width);
+	margin: 1em auto;
+	aspect-ratio: 16 / 9;
+}
+
+.video-embed iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
 }
 
 /* Feed page: handled in index.astro inline styles */
@@ -680,57 +743,29 @@ p {
 		padding: 8px;
 	}
 
-	/* Blog post mobile */
+	/* Blog post mobile — BlogPost.astro handles article padding */
 	.blog-post {
-		padding: 8px 8px 30px;
-		max-width: calc(100vw - 16px);
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.post-title {
-		font-size: 20px;
-		padding: 10px 12px 0;
-	}
-
-	.post-content {
-		font-size: 14px;
-		padding: 0 12px 12px;
-	}
-
-	.post-content p {
-		margin-bottom: 1em;
-	}
-
-	.post-content h1 {
-		font-size: 22px;
-	}
-
-	.post-content h2 {
-		font-size: 18px;
-	}
-
-	.post-content h3 {
-		font-size: 16px;
+		padding: 16px;
 	}
 
 	.post-content img,
 	.post-content figure img {
-		margin: 1em auto;
+		margin: 1em 0;
 	}
 
 	.post-content figure {
-		margin: 1em auto;
+		margin: 1em 0;
 	}
 
 	.post-content video,
 	.post-content iframe {
 		margin: 1em 0;
+		display: block;
 	}
 
 	.post-tags {
-		padding-left: 12px;
-		padding-right: 12px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	/* SkyFi mobile */
@@ -773,17 +808,25 @@ p {
 
 	.newsletter-form {
 		flex-direction: column;
-		align-items: center;
+		align-items: stretch;
+		gap: 12px;
 	}
 
-	.newsletter-form input {
+	.newsletter-fields {
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.field-separator {
+		display: none;
+	}
+
+	.newsletter-field input {
 		width: 100%;
-		max-width: 280px;
 	}
 
 	.newsletter-form button {
 		width: 100%;
-		max-width: 280px;
 	}
 
 	.footer-copy {
@@ -843,13 +886,5 @@ p {
 
 	.list-view .feed-card-title {
 		font-size: 16px;
-	}
-
-	.post-title {
-		font-size: 18px;
-	}
-
-	.post-content {
-		padding: 0 10px 10px;
 	}
 }

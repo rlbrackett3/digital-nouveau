@@ -1,0 +1,31 @@
+WIX DATA DISCREPANCY REPORT
+============================================================
+
+Generated: 2026-06-30T17:46:04.288561
+Posts requiring stats updates: 10
+Posts requiring date updates: 2
+Posts with no Wix date data: 108
+
+--- STATS UPDATES NEEDED ---
+  a-mindful-drawing-practice: views: Wix=43 Cur=0; likes: Wix=2 Cur=0
+  MISS-cache: comics-beyond-fiction-trans-fiction-2020 — title 'Comics Beyond Fiction :: [Trans-] FICTION 2020'
+  MISS-cache: concept-sketches-for-a-lighthouse — title 'Concept Sketches for a Lighthouse'
+  forming-rivers: views: Wix=1 Cur=0
+  hyphae-simulation-mk2: views: Wix=4 Cur=0; likes: Wix=1 Cur=0
+  hyphae-simulation-mk3: views: Wix=5 Cur=0
+  hyphae-simulations-mk1: views: Wix=1 Cur=0; likes: Wix=1 Cur=0
+  MISS-cache: make-it-better — title 'Make It Better'
+  make-things: views: Wix=2 Cur=0; likes: Wix=1 Cur=0
+  MISS-cache: out-there-and-all-those-images-in-there — title 'Out There :: And All Those Images In There'
+  poetry-of-design: views: Wix=12 Cur=0; likes: Wix=1 Cur=0
+  savoring-complexity: views: Wix=2 Cur=0
+  MISS-cache: skyfi-april-2020-agency-by-william-gibson — title 'SkyFi :: April 2020 :: Agency by William Gibson'
+  MISS-cache: skyfi-december-2019-ninefox-gambit — title 'SkyFi :: December 2019 :: Ninefox Gambit'
+  skyfi-october-2020-parable-of-the-sower-octavia-butler: views: Wix=40 Cur=0; likes: Wix=2 Cur=0
+  MISS-cache: staircases-georges-perec-species-of-space — title 'Staircases - Georges Perec - Species of Space'
+  thick-envelopes-scanning-synthetic-realities: views: Wix=36 Cur=0; likes: Wix=1 Cur=0
+  MISS-cache: thick-space-mapping-ambiguous-territories — title 'THICK SPACE :: MAPPING AMBIGUOUS TERRITORIES'
+
+--- DATE UPDATES NEEDED ---
+  a-mindful-drawing-practice: Wix=2021-04-12 vs Cur=2024-01-15
+  skyfi-october-2020-parable-of-the-sower-octavia-butler: Wix=2020-10-27 vs Cur=2020-10-01

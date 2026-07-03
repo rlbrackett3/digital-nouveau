@@ -1,9 +1,8 @@
 ---
 title: "Keep it Simple Stu***"
-description: "Everything man is doing in architecture is to try to go against nature. Of course we have to understand nature to know how far we have to..."
 pubDate: '2016-01-06'
 categories: ["teachings"]
-image: ""
+image: "/images/dc9b92_4ee9da074946485ba15410f4b91cc9fa~mv2.jpg"
 readTime: 2
 views: 19
 comments: 0

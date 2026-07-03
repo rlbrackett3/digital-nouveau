@@ -1,8 +1,12 @@
 ---
 categories: ["skyfi"]
+title: "SkyFi :: October 2020 :: Parable of the Sower"
+pubDate: '2020-10-27'
 image: "/images/dc9b92_79120111607a41e89cc49fd464321de2~mv2.jpg"
+views: 40
+likes: 2
+comments: 0
 ---
-
 In a time of troubles aggravated by human malware at a global scale revealing the cracks in our fragile reality we find ourselves taking a journey through a very near what could be with Octavia Butler. A staple of science fiction since the late 80s, Butler's Parable of the Sower sets itself in the here and now as imagined from nearly thirty years ago. The story is almost too close to reality to remain fiction in our upended world. The book certainly pulls no punches and I often found myself only managing to read a few pages before needed a break to real from the series of blows. Suburban enclaves carving out a semi agrarian society established on the shakey alliances of begrudging neighbors set the stage for a world burning down. Everyone clings to 'normal' or the old ways of scraping together enough bread to make it another day, just as long as nothing upsets the fragile balance of false security and raising tensions. The future is bleak, but for the young, who only know uncertainty, there is a possibility. There is no attachment to the old normal, now is normal, all you can do is live in the now and carve a space to have a better future.
 
 <figure>

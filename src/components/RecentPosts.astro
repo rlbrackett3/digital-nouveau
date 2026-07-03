@@ -1,0 +1,232 @@
+---
+// RecentPosts — square cards matching filtered feed grid format
+import { getCollection } from 'astro:content';
+
+const currentSlug = Astro.props.slug;
+const allPosts = await getCollection('blog');
+
+// Sort by date descending, exclude current, take 3
+const recent = allPosts
+	.filter(entry => entry.id !== currentSlug)
+	.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+	.slice(0, 3)
+	.map(entry => {
+		const dateStr = entry.data.pubDate
+			? new Date(entry.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+			: '';
+		const thumbUrl = entry.data.image ? entry.data.image.replace('~', '%7E') : '';
+		return {
+			...entry,
+			dateStr,
+			thumbUrl,
+		};
+	});
+---
+
+{recent.length > 0 && (
+	<div class="recent-posts">
+		<h2 class="recent-posts-title">&gt; recent posts ~</h2>
+		<div class="recent-grid">
+			{recent.map(post => (
+				<div class="recent-card">
+					<a href={`/blog/${post.id}/`} class="recent-card-link">
+						{post.thumbUrl ? (
+							<div class="recent-card-thumb" style={`background-image: url('${post.thumbUrl}');`}></div>
+						) : (
+							<div class="recent-card-thumb recent-card-no-thumb"></div>
+						)}
+						<div class="recent-card-info">
+							<time class="recent-card-date">{post.dateStr}</time>
+							<h3 class="recent-card-title">{post.data.title}</h3>
+							{post.data.categories && post.data.categories.length > 0 && (
+								<div class="recent-card-cats">
+									{post.data.categories.slice(0, 2).map(cat => (
+										<span class="recent-card-cat">{cat}</span>
+									))}
+								</div>
+							)}
+							<div class="recent-card-stats">
+								{post.data.views !== undefined && (
+									<span class="recent-stat">
+										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+										{post.data.views}
+									</span>
+								)}
+								{post.data.comments !== undefined && (
+									<span class="recent-stat">
+										<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+										{post.data.comments}
+									</span>
+								)}
+								{post.data.likes !== undefined && (
+									<span class="recent-stat recent-stat-likes">
+										<svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+										{post.data.likes}
+									</span>
+								)}
+							</div>
+						</div>
+					</a>
+				</div>
+			))}
+		</div>
+	</div>
+)}
+
+<style is:global>
+	.recent-posts {
+		margin-bottom: 48px;
+	}
+
+	.recent-posts-title {
+		font-size: 14px;
+		font-family: var(--font-body);
+		font-weight: var(--font-weight-body);
+		color: var(--accent);
+		margin: 0 0 20px 0;
+		opacity: 0.8;
+	}
+
+	.recent-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 16px;
+	}
+
+	.recent-card {
+		aspect-ratio: 1 / 1;
+		background: rgba(0, 0, 0, 0.75);
+		border: 1px solid var(--accent);
+		overflow: hidden;
+		transition: all 0.2s;
+	}
+
+	.recent-card:hover {
+		background: rgba(0, 0, 0, 0.85);
+		border-color: var(--text-primary-hover);
+	}
+
+	.recent-card:hover .recent-card-title {
+		color: var(--text-primary-hover);
+	}
+
+	.recent-card-link {
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+		height: 100%;
+	}
+
+	.recent-card-thumb {
+		width: 100%;
+		height: 160px;
+		flex-shrink: 0;
+		background-color: rgba(0, 0, 0, 0.4);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-bottom: 1px solid rgba(28, 235, 244, 0.15);
+	}
+
+	.recent-card-no-thumb {
+		height: 120px;
+		background: linear-gradient(135deg, rgba(28, 235, 244, 0.08), rgba(28, 235, 244, 0.03));
+	}
+
+	.recent-card-info {
+		padding: 14px 16px 12px;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		min-height: 0;
+		overflow: hidden;
+	}
+
+	.recent-card-date {
+		font-size: 10px;
+		color: var(--text-muted);
+		font-family: var(--font-body);
+		font-weight: var(--font-weight-body);
+		display: block;
+		margin-bottom: 6px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		flex-shrink: 0;
+	}
+
+	.recent-card-title {
+		font-size: 13px;
+		font-family: var(--font-body);
+		font-weight: var(--font-weight-body);
+		color: var(--accent);
+		margin: 0;
+		line-height: 1.3;
+		letter-spacing: 0.01em;
+		transition: color 0.2s;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		flex-shrink: 0;
+	}
+
+	.recent-card-cats {
+		display: flex;
+		gap: 6px;
+		flex-wrap: wrap;
+		margin-top: 6px;
+		flex-shrink: 0;
+	}
+
+	.recent-card-cat {
+		font-size: 9px;
+		font-family: var(--font-body);
+		color: var(--accent-dim);
+		background: rgba(28, 235, 244, 0.08);
+		padding: 2px 8px;
+		letter-spacing: 0.04em;
+		text-transform: lowercase;
+		border: 1px solid rgba(28, 235, 244, 0.12);
+	}
+
+	.recent-card-stats {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		font-size: 10px;
+		color: rgba(28, 235, 244, 0.45);
+		margin-top: auto;
+		padding-top: 8px;
+		flex-shrink: 0;
+	}
+
+	.recent-stat {
+		display: flex;
+		align-items: center;
+		gap: 3px;
+	}
+
+	.recent-stat-likes svg {
+		color: rgba(255, 64, 64, 0.7);
+	}
+
+	@media (max-width: 768px) {
+		.recent-grid {
+			grid-template-columns: 1fr;
+			gap: 16px;
+		}
+
+		.recent-card {
+			aspect-ratio: auto;
+			min-height: 200px;
+		}
+
+		.recent-card-thumb {
+			height: 140px;
+		}
+
+		.recent-card-info {
+			height: auto;
+		}
+	}
+</style>

@@ -1,0 +1,185 @@
+---
+// Drawings gallery — shows only drawings with actual images
+import SiteLayout from '@/components/SiteLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog', () => true);
+
+// Filter to drawings with actual images
+const drawingPosts = allPosts
+	.filter(post => 
+		post.data.categories?.includes('drawings') && 
+		post.data.image && 
+		post.data.image !== ''
+	)
+	.sort((a, b) => {
+		const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+		const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+		return dateB - dateA;
+	});
+---
+
+<SiteLayout title="drawings">
+	<main class="drawings-page">
+		<div class="drawings-header">
+			<h1>&gt; drawings ~</h1>
+			<p class="drawings-subtitle">{drawingPosts.length} works in the archive</p>
+		</div>
+		<div class="drawings-grid">
+			{drawingPosts.map(post => {
+				const dateStr = post.data.pubDate
+					? new Date(post.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+					: '';
+				return (
+					<article class="drawing-card">
+						<a href={`/blog/${post.id}`} class="drawing-card-link">
+							<div class="drawing-card-image">
+								<img src={post.data.image} alt={post.data.title} loading="lazy" />
+							</div>
+							<div class="drawing-card-body">
+								<time class="drawing-card-date">{dateStr}</time>
+								<h2 class="drawing-card-title">{post.data.title}</h2>
+								{post.data.description && (
+									<p class="drawing-card-desc">{post.data.description.replace(/\n/g, ' ').trim().slice(0, 120)}{post.data.description.length > 120 ? '...' : ''}</p>
+								)}
+							</div>
+						</a>
+					</article>
+				);
+			})}
+		</div>
+	</main>
+</SiteLayout>
+
+<style>
+.drawings-page {
+	max-width: var(--content-max-width);
+	margin: 0 auto;
+	padding: 30px var(--header-padding-x) 60px;
+}
+
+.drawings-header {
+	margin-bottom: 30px;
+}
+
+.drawings-header h1 {
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	font-size: 22px;
+	color: var(--accent);
+	margin: 0 0 6px 0;
+	letter-spacing: 0.02em;
+}
+
+.drawings-subtitle {
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	font-size: 12px;
+	color: var(--text-muted);
+	margin: 0;
+	letter-spacing: 0.03em;
+}
+
+.drawings-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+}
+
+.drawing-card {
+	background: rgba(0, 0, 0, 0.6);
+	border: 1px solid var(--border-subtle);
+	overflow: hidden;
+	transition: border-color 0.2s, background 0.2s;
+}
+
+.drawing-card:hover {
+	border-color: var(--accent);
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.drawing-card-link {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	text-decoration: none;
+}
+
+.drawing-card-image {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	overflow: hidden;
+	background: var(--accent-ghost);
+}
+
+.drawing-card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+
+.drawing-card:hover .drawing-card-image img {
+	transform: scale(1.03);
+}
+
+.drawing-card-body {
+	padding: 14px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+}
+
+.drawing-card-date {
+	font-size: 11px;
+	color: var(--text-muted);
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	margin-bottom: 6px;
+}
+
+.drawing-card-title {
+	font-size: 14px;
+	font-weight: var(--font-weight-body);
+	color: var(--accent);
+	margin: 0 0 6px 0;
+	line-height: 1.3;
+	font-family: var(--font-body);
+}
+
+.drawing-card:hover .drawing-card-title {
+	color: var(--text-primary-hover);
+}
+
+.drawing-card-desc {
+	font-size: 12px;
+	color: var(--text-muted);
+	margin: 0;
+	line-height: 1.5;
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+@media (max-width: 900px) {
+	.drawings-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 12px;
+	}
+}
+
+@media (max-width: 540px) {
+	.drawings-grid {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+	
+	.drawings-page {
+		padding: 20px var(--header-padding-x) 40px;
+	}
+}
+</style>

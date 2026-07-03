@@ -1,5 +1,10 @@
 ---
 categories: ["design", "drawings"]
+title: "Hyphae Simulation mk2"
+pubDate: '2019-08-16'
+views: 4
+likes: 1
+comments: 0
 image: "/images/dc9b92_7cc45ca2ea714151b38e9a390554ec60~mv2.gif"
 ---
 

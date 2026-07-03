@@ -1,12 +1,7 @@
 ---
-// Main feed — full posts, list view, infinite scroll
+// Main feed — full post list view with infinite scroll
 import SiteLayout from '@/components/SiteLayout.astro';
 import { getCollection } from 'astro:content';
-import { unified } from 'unified';
-import remarkParse from 'remark-parse';
-import remarkRehype from 'remark-rehype';
-import rehypeStringify from 'rehype-stringify';
-import remarkGfm from 'remark-gfm';
 
 const posts = await getCollection('blog', () => true);
 const sortedPosts = posts.sort((a, b) => {
@@ -15,18 +10,11 @@ const sortedPosts = posts.sort((a, b) => {
 	return dateB - dateA;
 });
 
-const processor = unified()
-	.use(remarkParse, { gfm: true })
-	.use(remarkGfm)
-	.use(remarkRehype, { allowDangerousHtml: true })
-	.use(rehypeStringify, { allowDangerousHtml: true });
-
-// Pre-render all post content to HTML strings
-const postsData = await Promise.all(sortedPosts.map(async (post) => {
-	// Fix body image paths: Wix images are relative, need /images/ prefix
-	let bodyContent = post.body || '';
-	bodyContent = bodyContent.replace(/src="([^\/][^"]*?)"/g, 'src="/images/$1"');
-	const html = await processor.process(bodyContent);
+// Pre-render posts as data objects
+const postsData = sortedPosts.map((post) => {
+	// Strip HTML for excerpt, take first ~400 chars of body text
+	const bodyText = (post.body || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+	const excerpt = bodyText.length > 400 ? bodyText.substring(0, 400) + '...' : bodyText;
 	const dateStr = post.data.pubDate
 		? new Date(post.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
 		: '';
@@ -40,21 +28,32 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 		views: (post.data.views as number) || 0,
 		likes: (post.data.likes as number) || 0,
 		comments: (post.data.comments as number) || 0,
-		contentHTML: String(html.value),
+		excerpt,
 	};
-}));
+});
 ---
 
 <SiteLayout>
-		<main class="feed-page">
-			<div class="feed-container" id="feed-container">
+	<main class="feed-page">
+		<div class="feed-container" id="feed-container">
 		{postsData.map(pc => (
 			<article class="feed-card" data-cats={JSON.stringify(pc.categories)} data-post-id={pc.id}>
 				<a href={`/blog/${pc.id}`} class="feed-card-link">
+					{pc.image && (
+						<div class="feed-card-image">
+							<img src={pc.image} alt="" loading="lazy" />
+						</div>
+					)}
 					<div class="feed-card-body">
-						<time class="feed-card-date">{pc.date}{pc.readTime ? ` · ${pc.readTime}` : ''}</time>
+						<time class="feed-card-date">{pc.date}{pc.readTime ? ` : ${pc.readTime}` : ''}</time>
 						<h2 class="feed-card-title">{pc.title}</h2>
-						<div class="feed-card-content" set:html={pc.contentHTML}></div>
+						<p class="feed-card-excerpt">{pc.excerpt}</p>
+						<div class="feed-card-stats">
+							<span class="feed-stat">{pc.views} views</span>
+							<span class="feed-stat">{pc.comments} comments</span>
+							<span class="feed-stat">{pc.likes} likes</span>
+						</div>
+						<span class="feed-card-read-more">Read More &gt;~</span>
 					</div>
 				</a>
 			</article>
@@ -64,6 +63,48 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 		<div class="scroll-sentinel" id="scroll-sentinel"></div>
 		<div class="load-more" id="load-more"><span class="loading-dots">loading ~</span></div>
 	</main>
+
+	<script is:inline>
+	(function() {
+		var BATCH = 10;
+		var grid = document.getElementById('feed-container');
+		var sentinel = document.getElementById('scroll-sentinel');
+		var loadMore = document.getElementById('load-more');
+		var allCards = Array.prototype.slice.call(grid.querySelectorAll('.feed-card'));
+		var visibleCards = allCards;
+		var shown = 0;
+
+		function showBatch() {
+			var end = Math.min(shown + BATCH, visibleCards.length);
+			for (var i = shown; i < end; i++) {
+				visibleCards[i].style.display = '';
+				visibleCards[i].classList.add('visible');
+			}
+			shown = end;
+			if (shown >= visibleCards.length && loadMore) {
+				loadMore.style.display = 'none';
+			} else if (loadMore) {
+				loadMore.style.display = 'block';
+			}
+		}
+
+		// Initial render — show first batch
+		showBatch();
+
+		// Infinite scroll via sentinel
+		if (sentinel) {
+			var observer = new IntersectionObserver(
+				function(entries) {
+					if (entries[0].isIntersecting && shown < visibleCards.length) {
+						showBatch();
+					}
+				},
+				{ rootMargin: '200px' }
+			);
+			observer.observe(sentinel);
+		}
+	})();
+	</script>
 </SiteLayout>
 
 <style is:global>
@@ -73,67 +114,24 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	padding: 20px var(--header-padding-x);
 }
 
-.feed-filters {
+.feed-container {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 8px;
-	padding: 12px 0;
-	margin-bottom: 24px;
-	border-bottom: 1px solid var(--border);
-	position: sticky;
-	top: 0;
-	z-index: 50;
-	background: var(--bg);
-}
-
-.feed-filter-btn {
-	padding: 6px 14px;
-	border: 1px solid var(--accent-subtle);
-	background: transparent;
-	color: var(--accent-dim);
-	font-family: var(--font-body);
-	font-size: 12px;
-	font-weight: var(--font-weight-body);
-	cursor: pointer;
-	transition: all 0.2s;
-	text-transform: lowercase;
-	letter-spacing: 0.03em;
-}
-
-.feed-filter-btn:hover {
-	border-color: var(--accent-dim);
-	color: var(--accent);
-}
-
-.feed-filter-btn.active {
-	border-color: var(--accent);
-	color: var(--accent);
-	background: var(--accent-faint);
-}
-
-.feed-container {
-	display: grid;
-	gap: 20px;
-}
-
-/* Default: single column, full post view */
-.feed-container {
-	grid-template-columns: 1fr;
+	flex-direction: column;
+	gap: 2px;
 	max-width: var(--content-max-width);
 	margin: 0 auto;
 }
 
-/* Grid view (category filter) - 3 equal columns of square cards */
-.feed-container.grid-view {
-	grid-template-columns: repeat(3, 1fr);
-	gap: 16px;
-	max-width: var(--content-max-width);
-	margin: 0 auto;
-}
-
-/* Cards hidden initially, JS reveals */
+/* Feed card — bordered box wrapping each post */
 .feed-card {
+	border: 1px solid rgba(28, 235, 244, 0.5);
+	background: rgba(0, 0, 0, 0.75);
 	display: none;
+	transition: border-color 0.2s;
+}
+
+.feed-card:hover {
+	border-color: var(--accent);
 }
 
 .feed-card.visible {
@@ -144,7 +142,7 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 @keyframes cardIn {
 	from {
 		opacity: 0;
-		transform: translateY(12px);
+		transform: translateY(8px);
 	}
 	to {
 		opacity: 1;
@@ -152,204 +150,37 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	}
 }
 
-.feed-page .feed-card-link {
+.feed-card-link {
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
-	background: rgba(0, 0, 0, 0.75) !important;
-	border: 1px solid var(--accent);
-	overflow: hidden;
-	transition: none !important;
+	color: inherit;
 	height: 100%;
 }
 
-.feed-page .feed-card-link:hover {
-	border-color: var(--accent);
-	opacity: 1 !important;
-	background: rgba(0, 0, 0, 0.75) !important;
-}
-
-.feed-page .feed-card-link:hover .feed-card-title {
-	color: var(--text-primary-hover);
-}
-
-/* Unified card style — grid view square cards */
-.grid-view .feed-card-image {
+/* Hero image at top of card */
+.feed-card-image {
 	width: 100%;
-	height: 160px;
+	max-height: 200px;
 	overflow: hidden;
-	background: var(--accent-ghost);
-	flex-shrink: 0;
+	background: rgba(28, 235, 244, 0.05);
 }
 
-.grid-view .feed-card-image img {
+.feed-card-image img {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	object-fit: cover;
-}
-
-.grid-view .feed-card-body {
-	padding: 16px;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	min-height: 0;
-}
-
-.grid-view .feed-card-content {
-	flex: 1;
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	font-size: 12px;
-	color: var(--text-muted);
-	line-height: 1.5;
-	font-family: var(--font-body);
-	font-weight: var(--font-weight-body);
-}
-
-.grid-view .feed-card {
-	height: 100%;
-}
-
-.grid-view .feed-card-link {
-	height: 100%;
-	aspect-ratio: 1 / 1;
-	display: flex;
-	flex-direction: column;
-}
-
-/* List view (default "everything") — full width, aligned column */
-.list-view .feed-card-image {
-	width: 100%;
-	background: var(--accent-ghost);
-}
-
-.list-view .feed-card-image img {
-	width: 100%;
-	height: auto;
 	display: block;
-	object-fit: none;
 }
 
-.list-view .feed-card-body {
-	padding: 24px 115px;
-}
-
-.list-view .feed-card-title {
-	font-size: 22px;
-	font-weight: var(--font-weight-body);
-	color: var(--accent);
-	margin: 0 0 12px;
-	line-height: 1.3;
-	font-family: var(--font-body);
-}
-
-.list-view .feed-card-content {
-	font-size: 14px;
-	color: var(--text-secondary);
-	line-height: 1.7;
-	font-family: var(--font-body);
-	font-weight: var(--font-weight-body);
-}
-
-.list-view .feed-card-content p {
-	margin: 0 0 1em;
-}
-
-.list-view .feed-card-content p:last-child {
-	margin-bottom: 0;
-}
-
-.list-view .feed-card-content img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-	margin: 1.5em 0;
-}
-
-.list-view .feed-card-content h1,
-.list-view .feed-card-content h2,
-.list-view .feed-card-content h3 {
-	color: var(--accent);
-	font-weight: var(--font-weight-body);
-	margin: 1.5em 0 0.75em;
-	line-height: 1.3;
-}
-
-.list-view .feed-card-content h1 { font-size: 1.5em; }
-.list-view .feed-card-content h2 { font-size: 1.25em; }
-.list-view .feed-card-content h3 { font-size: 1.1em; }
-
-.list-view .feed-card-content a {
-	color: var(--accent);
-	text-decoration: underline;
-}
-
-.list-view .feed-card-content blockquote {
-	border-left: 2px solid var(--accent-dim);
-	padding-left: 1em;
-	margin: 1em 0;
-	color: var(--text-muted);
-	font-style: italic;
-}
-
-.list-view .feed-card-content ul,
-.list-view .feed-card-content ol {
-	margin: 0.5em 0 1em;
-	padding-left: 1.5em;
-}
-
-.list-view .feed-card-content li {
-	margin-bottom: 0.4em;
-}
-
-.list-view .feed-card-date {
-	font-size: 12px;
-	color: var(--text-muted);
-	font-family: var(--font-body);
-	font-weight: var(--font-weight-body);
-	display: block;
-	margin-bottom: 8px;
-}
-
-.list-view .feed-card-link {
-	border: 1px solid var(--accent);
-	background: rgba(0, 0, 0, 0.75) !important;
-}
-
-.list-view .feed-card-link:hover {
-	border-color: var(--accent);
-	opacity: 1 !important;
-	background: rgba(0, 0, 0, 0.75) !important;
-}
-
-.feed-page .feed-card-link:hover .feed-card-title {
-	color: var(--text-primary-hover);
-}
-
-.list-view .feed-card-meta {
-	display: none;
-}
-
-@media (max-width: 768px) {
-	.list-view .feed-card-body {
-		padding: 16px;
-	}
-}
-
-.grid-card-no-image {
-	background: linear-gradient(135deg, var(--accent-faint), var(--accent-ghost));
-}
-
+/* Card body — excerpt + stats */
 .feed-card-body {
-	padding: 16px;
+	padding: 16px 20px;
 }
 
 .feed-card-date {
 	font-size: 11px;
-	color: var(--text-muted);
+	color: rgba(28, 235, 244, 0.5);
 	font-family: var(--font-body);
 	font-weight: var(--font-weight-body);
 	display: block;
@@ -357,21 +188,52 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 }
 
 .feed-card-title {
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: var(--font-weight-body);
 	color: var(--accent);
-	margin: 0 0 8px;
-	line-height: 1.35;
 	font-family: var(--font-body);
+	margin: 0 0 10px;
+	line-height: 1.3;
 }
 
-.feed-card-content {
-	font-size: 12px;
-	color: var(--text-muted);
-	margin: 0 0 12px;
-	line-height: 1.5;
+.feed-card-title:hover {
+	color: #ff4040;
+}
+
+.feed-card-excerpt {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.6);
 	font-family: var(--font-body);
 	font-weight: var(--font-weight-body);
+	line-height: 1.6;
+	margin: 0 0 12px;
+}
+
+.feed-card-stats {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 8px;
+}
+
+.feed-stat {
+	font-size: 11px;
+	color: rgba(28, 235, 244, 0.4);
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+}
+
+.feed-card-read-more {
+	display: block;
+	font-size: 11px;
+	color: rgba(28, 235, 244, 0.5);
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	letter-spacing: 0.03em;
+	transition: color 0.2s;
+}
+
+.feed-card-link:hover .feed-card-read-more {
+	color: #ff4040;
 }
 
 .scroll-sentinel {
@@ -391,36 +253,33 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 }
 
 @keyframes pulse {
-	0%,
-	100% {
-		opacity: 0.4;
-	}
-	50% {
-		opacity: 1;
-	}
+	0%, 100% { opacity: 0.4; }
+	50% { opacity: 1; }
 }
 
 @media (max-width: 600px) {
-	.feed-container {
-		grid-template-columns: 1fr;
+	.feed-card-body {
+		padding: 12px 14px;
 	}
-	.feed-filters {
-		position: relative;
-		top: 0;
+	.feed-card-title {
+		font-size: 16px;
+	}
+	.feed-card-stats {
+		gap: 10px;
+		flex-wrap: wrap;
 	}
 }
 </style>
 
-<!-- Client: infinite scroll reveal + category filtering via header nav -->
+<!-- Client: infinite scroll reveal -->
 <script is:inline>
 (function() {
-	var BATCH = 12;
+	var BATCH = 10;
 	var grid = document.getElementById('feed-container');
 	var sentinel = document.getElementById('scroll-sentinel');
 	var loadMore = document.getElementById('load-more');
 	var allCards = Array.prototype.slice.call(grid.querySelectorAll('.feed-card'));
-	var mainNavLinks = document.querySelectorAll('.main-nav a');
-	var visibleCards = allCards; // current filtered set
+	var visibleCards = allCards;
 	var shown = 0;
 
 	function showBatch() {
@@ -430,45 +289,17 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 			visibleCards[i].classList.add('visible');
 		}
 		shown = end;
-	}
-
-	function setActive(link) {
-		mainNavLinks.forEach(function(l) {
-			l.classList.remove('active');
-			l.style.color = '';
-		});
-		link.classList.add('active');
-		link.style.color = 'var(--accent)';
-	}
-
-	function resetAndShow(filter) {
-		// Hide all
-		allCards.forEach(function(c) {
-			c.classList.remove('visible');
-			c.style.display = 'none';
-		});
-		shown = 0;
-
-		// Set view mode
-		if (filter === 'all') {
-			grid.classList.remove('grid-view');
-			grid.classList.add('list-view');
-			visibleCards = allCards.slice();
-		} else {
-			grid.classList.remove('list-view');
-			grid.classList.add('grid-view');
-			visibleCards = allCards.filter(function(c) {
-				var cats = JSON.parse(c.getAttribute('data-cats') || '[]');
-				return cats.indexOf(filter) >= 0;
-			});
+		if (shown >= visibleCards.length && loadMore) {
+			loadMore.style.display = 'none';
+		} else if (loadMore) {
+			loadMore.style.display = 'block';
 		}
-
-		showBatch();
 	}
 
-	// Nav links navigate normally — no client-side interception
+	// Initial render — show first batch
+	showBatch();
 
-	// Infinite scroll
+	// Infinite scroll via sentinel
 	if (sentinel) {
 		var observer = new IntersectionObserver(
 			function(entries) {
@@ -480,8 +311,5 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 		);
 		observer.observe(sentinel);
 	}
-
-	// Initial render (show first batch of all cards)
-	resetAndShow('all');
 })();
 </script>

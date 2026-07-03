@@ -1,5 +1,7 @@
 ---
 categories: ["observings", "skyfi"]
+title: "SkyFi :: December 2019 :: Ninefox Gambit"
+pubDate: '2019-12-01'
 image: ""
 ---
 

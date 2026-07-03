@@ -24,12 +24,7 @@ const { title, description } = Astro.props;
 		<slot name="head" />
 	</head>
 	<body>
-		<!-- Neural network background -->
-		<img 
-			src="/neural-bg.png" 
-			alt="" 
-			class="bg-neural"
-		/>
+		<!-- Neural network background — parallax via CSS -->
 		
 		<header class="site-header">
 			<div class="container">
@@ -61,6 +56,7 @@ const { title, description } = Astro.props;
 					<div class="header-right">
 						<nav class="utility-nav">
 							<a href="/" class="nav-link">feed</a>
+							<a href="/drawings" class="nav-link">drawings</a>
 							<a href="https://www.miscproj.com" class="nav-link" target="_blank">portfolio</a>
 							<a href="/skyfi-a-reading-list" class="nav-link">skyfi :: a reading list</a>
 						</nav>
@@ -100,6 +96,7 @@ const { title, description } = Astro.props;
 				<div class="mobile-nav-section">
 					<div class="mobile-nav-label">Links</div>
 					<a href="/" class="mobile-nav-link">feed</a>
+					<a href="/drawings" class="mobile-nav-link">drawings</a>
 					<a href="https://www.miscproj.com" class="mobile-nav-link" target="_blank">portfolio</a>
 					<a href="/skyfi-a-reading-list" class="mobile-nav-link">skyfi :: a reading list</a>
 				</div>
@@ -114,18 +111,30 @@ const { title, description } = Astro.props;
 				<div class="newsletter">
 					<h3 class="newsletter-title">&gt; follow along</h3>
 					<form class="newsletter-form" action="mailto:robert@digitalnouveau.com" method="post" enctype="text/plain">
-						<input type="text" name="name" placeholder="name" aria-label="Name" />
-						<input type="email" name="email" placeholder="e-mail" aria-label="Email" />
+						<div class="newsletter-fields">
+							<label class="newsletter-field">
+								<span class="field-label">name</span>
+								<input type="text" name="name" aria-label="Name" />
+							</label>
+							<span class="field-separator">...</span>
+							<label class="newsletter-field">
+								<span class="field-label">e-mail</span>
+								<input type="email" name="email" aria-label="Email" />
+							</label>
+						</div>
 						<button type="submit">&gt; initiate drone connection</button>
 					</form>
 				</div>
 				<div class="footer-copy">
-					<p>&gt; copyright Robert Lee Brackett 2025 | all rights reserved | new york / brooklyn</p>
+					<p>&gt; copyright Robert Lee Brackett <span id="copyright-year"></span> | all rights reserved | new york / brooklyn</p>
 				</div>
 			</div>
 		</footer>
 
 		<script>
+			// Dynamic copyright year
+			document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
 			// Hamburger menu toggle
 			const mobileMenu = document.getElementById('mobileMenu');
 			const mobileOverlay = document.getElementById('mobileOverlay');
@@ -145,6 +154,26 @@ const { title, description } = Astro.props;
 			document.addEventListener('keydown', (e) => {
 				if (e.key === 'Escape') closeMenu();
 			});
-		</script>
+
+			// Nav active state — highlight current category/page
+			var path = window.location.pathname;
+			var mainLinks = document.querySelectorAll('.main-nav a');
+			var footerCatLink = document.querySelector('footer a');
+			var footerCat = footerCatLink ? footerCatLink.textContent.trim().toLowerCase() : null;
+			mainLinks.forEach(function(link) {
+				var href = link.getAttribute('href');
+				var text = link.textContent.trim().toLowerCase();
+				// Feed/home
+				if (href === '/' && (path === '/' || path === '/blog/')) {
+					link.classList.add('active');
+				// Category page
+				} else if (href !== '/' && path.indexOf(href) === 0) {
+					link.classList.add('active');
+				// Blog post — match footer category tag to nav
+				} else if (footerCat && text === footerCat && href.indexOf('/category/') === 0) {
+					link.classList.add('active');
+				}
+			});
+			</script>
 	</body>
 </html>

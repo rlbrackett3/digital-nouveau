@@ -3,6 +3,9 @@ title: "SAVORING :: COMPLEXITY"
 pubDate: '2019-10-30'
 categories: ["design"]
 image: ""
+views: 2
+likes: 0
+comments: 0
 ---
 
 > "Knowledge is not the gradual approach to truth.  The task of the scientist is "to make the weaker case the stronger" as the sophists said.  We need a set of alternative assumptions or, as it were, an entire alternative world, we need a dream world in order to discover the real world we think we inhabit (and which may actually just be another dream world).  We must invent a new conceptual system that suspends, or clashes with, the most carefully established observational results...and introduces perceptions that cannot form part of the existing perceptual world."
