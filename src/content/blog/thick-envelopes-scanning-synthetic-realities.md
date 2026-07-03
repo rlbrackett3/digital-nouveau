@@ -1,5 +1,5 @@
 ---
-categories: ["design"]
+categories: []
 title: "Thick Envelopes :: Scanning Synthetic Realities"
 pubDate: '2020-01-08'
 image: "/images/dc9b92_4c5f6231d256461da6f98d7ca774ea82~mv2.gif"

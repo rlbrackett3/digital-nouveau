@@ -1,3 +1,4 @@
+image: "/images/dc9b92_1ec06462d5d940c7a018b69c5c4b027e~mv2_d_2000_2955_s_2.png"
 ---
 title: "Drawing 008"
 description: "

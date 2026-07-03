@@ -2,7 +2,7 @@
 title: "ARNICA (softly)"
 pubDate: '2015-03-24'
 categories: ["design"]
-image: "/images/dc9b92_c320b399e5f448bea6fa9045ef5501da~mv2.png"
+image: "/images/dc9b92_acbbdf3ef61940cca15c506c29ff673f~mv2_d_2000_1500_s_2.png"
 readTime: 1
 views: 4
 comments: 0

@@ -1,3 +1,4 @@
+image: "/images/dc9b92_781effb97d1d48a693a382e5f18476df~mv2_d_2000_2667_s_2.jpg"
 ---
 title: "Deep Thoughts from Isaac Asimov"
 description: "The Society of Mind - Marvin Minsky - Cover &quot;It is the nature of the mind that makes individuals kin, and the differences in the shape,..."

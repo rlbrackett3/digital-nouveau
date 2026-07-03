@@ -1,6 +1,6 @@
 ---
 title: "Forming Rivers"
-pubDate: '2014-08-22'
+pubDate: 2015-02-25
 categories: ["observings"]
 image: "/images/dc9b92_23c94e81c41c45bf856c34e40370a67b~mv2.jpg"
 views: 1

@@ -1,7 +1,7 @@
 ---
 categories: ["design", "drawings"]
 title: "Hyphae Simulation mk3"
-pubDate: '2019-08-15'
+pubDate: 2019-08-18
 views: 5
 likes: 0
 comments: 0

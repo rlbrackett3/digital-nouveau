@@ -1,6 +1,7 @@
+image: "/images/dc9b92_b05d6cfc83b0495a9a04172bc2b0b277~mv2_d_1200_1200_s_2.png"
 ---
-title: "Journey Through America&#x27;s Southwest"
-description: "The following series of posts will feature photographs and drawings inspired by me &amp; LC&#x27;s two week road trip excursion through the..."
+title: "Journey Through America's Southwest"
+description: "The following series of posts will feature photographs and drawings inspired by me & LC's two week road trip excursion through the..."
 pubDate: '2013-06-03'
 categories: ["readings", "thinkings"]
 image: ""

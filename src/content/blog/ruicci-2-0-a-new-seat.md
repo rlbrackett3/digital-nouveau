@@ -1,6 +1,6 @@
 ---
 title: "Ruicci 2.0 - A New Seat"
-description: "A shot from today&#x27;s (nearly) final install for the transforming Digital Nouveau bed (and now bench) system. More photos to come."
+description: "A shot from today's (nearly) final install for the transforming Digital Nouveau bed (and now bench) system. More photos to come."
 pubDate: '2015-05-31'
 categories: ["design"]
 image: "/images/dc9b92_4084a042cbb94685ab9e2578b425efcc~mv2.jpg"

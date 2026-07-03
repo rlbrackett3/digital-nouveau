@@ -1,6 +1,6 @@
 ---
 title: "Learning to Design @ Home :: Drawing and Modeling"
-description: "During the Fall &#x27;19 and Spring &#x27;20 semesters at Pratt I was teaching an architectural design course for NYC high school students to have..."
+description: "During the Fall '19 and Spring '20 semesters at Pratt I was teaching an architectural design course for NYC high school students to have..."
 pubDate: '2020-07-01'
 categories: ["design", "drawings", "teachings"]
 readTime: 2

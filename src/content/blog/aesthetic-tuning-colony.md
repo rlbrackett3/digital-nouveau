@@ -1,3 +1,4 @@
+image: "/images/dc9b92_19d6480cc7144133a7f45fcbc443216b~mv2_d_1599_1599_s_2.jpg"
 ---
 title: "Aesthetic Tuning :: Colony"
 description: "A question I have been exploring for a long time as a designer is, how do we reveal, accept, and filter our aesthetic influence without ..."

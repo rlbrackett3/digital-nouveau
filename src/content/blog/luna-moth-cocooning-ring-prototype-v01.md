@@ -1,6 +1,6 @@
 ---
 title: "Luna Moth Cocooning Ring Prototype v01"
-description: "I am designing a new custom ring as a gift for Lauren&#x27;s birthday.  These are the initial design sketches of the process to evolve a new..."
+description: "I am designing a new custom ring as a gift for Lauren's birthday.  These are the initial design sketches of the process to evolve a new..."
 pubDate: '2014-09-11'
 categories: ["design", "drawings"]
 image: "/images/dc9b92_cd236d8d062d4c2186390cd288e551a0~mv2.png"

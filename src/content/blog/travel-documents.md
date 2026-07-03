@@ -2,7 +2,7 @@
 title: "Travel Documents"
 pubDate: '2015-01-24'
 categories: ["readings", "thinkings"]
-image: "/images/dc9b92_31f261c54b4f4a8082c406816f0ea644~mv2.png"
+image: "/images/dc9b92_b05f96d692064151a999669d28f62233~mv2_d_1600_1200_s_2.png"
 readTime: 1
 views: 1
 comments: 0

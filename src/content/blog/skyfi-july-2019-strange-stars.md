@@ -1,6 +1,6 @@
 ---
 title: "SkyFi :: July 2019 :: Strange Stars"
-description: "I was under the weather for this month&#x27;s meeting of the Sky-Fi Bookclub, but we did get a report of the meeting including the..."
+description: "I was under the weather for this month's meeting of the Sky-Fi Bookclub, but we did get a report of the meeting including the..."
 pubDate: '2019-07-26'
 categories: ["skyfi"]
 image: "/images/dc9b92_300c897f8e2a4147b6759aaca0060113~mv2.gif"

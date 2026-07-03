@@ -2,7 +2,7 @@
 title: "Keep it Simple Stu***"
 pubDate: '2016-01-06'
 categories: ["teachings"]
-image: "/images/dc9b92_4ee9da074946485ba15410f4b91cc9fa~mv2.jpg"
+image: "/images/dc9b92_e284dea86fcc4be0b0605e8b3f9ad159~mv2_d_3671_2754_s_4_2.jpg"
 readTime: 2
 views: 19
 comments: 0

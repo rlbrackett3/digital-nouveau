@@ -1,6 +1,6 @@
 ---
 title: "Hello World"
-description: "&quot;We came here to do something, so let&#x27;s do something!&quot; :: Pillsbury - Land of the Dead Expressions: Synaptic Resistive Skin :: CityTech..."
+description: "&quot;We came here to do something, so let's do something!&quot; :: Pillsbury - Land of the Dead Expressions: Synaptic Resistive Skin :: CityTech..."
 pubDate: '2013-02-09'
 categories: ["design"]
 readTime: 2

@@ -2,7 +2,7 @@
 title: "A Mindful Drawing Practice"
 description: "Leading a weekly mindful drawing practice for the Pratt Resilience, Wellness, and Well-Being Council."
 pubDate: '2021-04-12'
-categories: ["design"]
+categories: []
 image: "/images/dc9b92_71a00c91b27b476b82f7f7eadf832eae~mv2.jpg"
 views: 43
 likes: 2

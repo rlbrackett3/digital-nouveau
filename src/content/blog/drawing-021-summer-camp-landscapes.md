@@ -1,3 +1,4 @@
+image: "/images/dc9b92_25afbdd2cb234328a7a7f6d0d2380ee9~mv2_d_1387_2000_s_2.png"
 ---
 title: "Drawing 021 :: Summer Camp Landscapes"
 description: "Many of my evening drawings start without an established trajectory or predetermined intent.  This one began from nine open dots spaced..."

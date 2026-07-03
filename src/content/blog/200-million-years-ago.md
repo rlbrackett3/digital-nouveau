@@ -1,6 +1,6 @@
 ---
 title: "200 Million Years Ago..."
-description: "Some textures and patterns found on a stroll through New Mexico&#x27;s Petrified Forest National Park."
+description: "Some textures and patterns found on a stroll through New Mexico's Petrified Forest National Park."
 pubDate: '2013-06-04'
 categories: ["readings", "thinkings"]
 image: "/images/dc9b92_c4e01ef246f0493a9c96ed8a8bd2b389~mv2.png"

@@ -1,3 +1,4 @@
+image: "/images/dc9b92_9950a045a4d244abbb0b0204574a1df4~mv2_d_2000_2000_s_2.png"
 ---
 title: "A Texas Thistle"
 description: "Image development for a poster. Theme to address the alienating and discouraging situation afflicting humans crossing arbitrary borders...."

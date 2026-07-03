@@ -1,3 +1,4 @@
+image: "/images/dc9b92_b8d039c5113347579906356b637095b3~mv2_d_1898_2530_s_2.png"
 ---
 title: "Drawing 014"
 description: "

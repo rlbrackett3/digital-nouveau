@@ -1,6 +1,6 @@
 ---
 title: "Staircases - Georges Perec - Species of Space"
-description: "&quot;We don&#x27;t think enough about staircases. Nothing was more beautiful in old houses than the staircases. Nothing is uglier, colder, more..."
+description: "&quot;We don't think enough about staircases. Nothing was more beautiful in old houses than the staircases. Nothing is uglier, colder, more..."
 pubDate: '2015-06-28'
 categories: ["readings", "thinkings"]
 image: "/images/dc9b92_4f122d7bc3054d83bb58d5470b580432~mv2.png"

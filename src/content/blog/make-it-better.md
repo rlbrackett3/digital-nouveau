@@ -1,6 +1,6 @@
 ---
 title: "Make It Better"
-pubDate: '2015-03-15'
+pubDate: 2015-09-11
 categories: ["teachings"]
 image: "/images/dc9b92_2e6ddfa7a3db4dbb9b92383087bbd70e~mv2.jpg"
 ---

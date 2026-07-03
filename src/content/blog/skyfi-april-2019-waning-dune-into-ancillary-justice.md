@@ -1,6 +1,6 @@
 ---
 title: "SkyFi :: April 2019 :: Waning Dune into Ancillary Justice"
-description: "Dear Future Readers, It was great to have such a big turnout last night for Alpna&#x27;s farewell book tour. It has been a rich eon spanning..."
+description: "Dear Future Readers, It was great to have such a big turnout last night for Alpna's farewell book tour. It has been a rich eon spanning..."
 pubDate: '2019-04-24'
 categories: ["observings", "skyfi"]
 image: "/images/dc9b92_7ee493a3b0214081b7df8808cd79a8ee~mv2.jpg"

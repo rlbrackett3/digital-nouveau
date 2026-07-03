@@ -2,7 +2,7 @@
 title: "Drawing 018 - Veins"
 pubDate: '2013-07-14'
 categories: ["drawings", "thinkings"]
-image: "/images/dc9b92_8d6c17bfc5e74c44b692d900e9b7367f~mv2.png"
+image: "/images/dc9b92_b854bb26e6da4e51b764caa928d020a4~mv2_d_2000_1500_s_2.png"
 readTime: 1
 views: 5
 comments: 0

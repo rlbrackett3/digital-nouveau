@@ -1,6 +1,6 @@
 ---
 title: "Suspended"
-description: "Each of us lives most fully &#x27;on the wire&#x27; in the face of death, daring to do the very thing which fear prevents us from. :: Akira..."
+description: "Each of us lives most fully 'on the wire' in the face of death, daring to do the very thing which fear prevents us from. :: Akira..."
 pubDate: '2015-07-21'
 categories: ["readings", "thinkings"]
 image: "/images/dc9b92_6b394a9c22a246c9a31ab1401b735a72~mv2.png"

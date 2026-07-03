@@ -1,6 +1,6 @@
 ---
 title: "The Computer Connection :: Alfred Bester"
-description: "&quot;No. No. No. That&#x27;s gone with the past years. Is there a war? Yes. Yes. Yes. Now listen carefully, Guig. Ten thousand years we lived with ou"
+description: "&quot;No. No. No. That's gone with the past years. Is there a war? Yes. Yes. Yes. Now listen carefully, Guig. Ten thousand years we lived with ou"
 pubDate: '2020-03-20'
 categories: ["observings", "skyfi", "thinkings"]
 image: "/images/dc9b92_23c94e81c41c45bf856c34e40370a67b~mv2.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Contouring - Plywood Landscapes"
-description: "Word of the day.  Haven&#x27;t had much time to draw or write recently, but i did make a few things and the photos of these CNC machined..."
+description: "Word of the day.  Haven't had much time to draw or write recently, but i did make a few things and the photos of these CNC machined..."
 pubDate: '2015-06-19'
 categories: ["design"]
 image: "/images/dc9b92_55ff7c13a81644dbaba270a021f35708~mv2.png"

@@ -1,3 +1,4 @@
+image: "/images/dc9b92_5249fbf4f3f44895aeba6c60a18292fa~mv2_d_1800_1800_s_2.jpg"
 ---
 title: "TicToc - A Gnarly Clock"
 description: "For years my mother has been asking me to make her a clock. It was always a project that went on the list and then kept moving down the..."

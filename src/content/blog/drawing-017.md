@@ -1,3 +1,4 @@
+image: "/images/dc9b92_1a42e82b33be42b997332e4087e17324~mv2_d_2081_2775_s_2.png"
 ---
 title: "Drawing 017"
 description: "A detailed look at the section through the fleshy flowering portion of a veining plant.  My students are examining the use of the Comic..."

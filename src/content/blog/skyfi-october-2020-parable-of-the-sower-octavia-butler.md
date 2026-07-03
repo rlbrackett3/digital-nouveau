@@ -1,5 +1,5 @@
 ---
-categories: ["skyfi"]
+categories: []
 title: "SkyFi :: October 2020 :: Parable of the Sower"
 pubDate: '2020-10-27'
 image: "/images/dc9b92_79120111607a41e89cc49fd464321de2~mv2.jpg"
