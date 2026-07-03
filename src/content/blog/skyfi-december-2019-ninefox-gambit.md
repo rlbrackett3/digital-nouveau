@@ -1,9 +1,8 @@
-image: "/images/a27d24_48ef5256070b4bf5bf3d5197754af8b8~mv2.jpg"
 ---
+image: "/images/a27d24_48ef5256070b4bf5bf3d5197754af8b8~mv2.jpg"
 categories: ["observings", "skyfi"]
 title: "SkyFi :: December 2019 :: Ninefox Gambit"
 pubDate: 2019-12-24
-image: ""
 ---
 
 Hello Fellow Travellers,

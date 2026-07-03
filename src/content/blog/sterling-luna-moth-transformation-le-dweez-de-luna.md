@@ -1,10 +1,9 @@
-image: "/images/dc9b92_aec2e1dd3df042f08716f2a074a2a20e~mv2_d_1500_2000_s_2.png"
 ---
+image: "/images/dc9b92_aec2e1dd3df042f08716f2a074a2a20e~mv2_d_1500_2000_s_2.png"
 title: "Sterling Luna Moth Transformation - Le Dweez de Luna"
 description: "A fun little design project for that special someone on her birthday.  I call it Le Dweez de Luna. The design focused on translating the..."
 pubDate: '2013-10-22'
 categories: ["design"]
-image: ""
 readTime: 1
 views: 5
 comments: 0

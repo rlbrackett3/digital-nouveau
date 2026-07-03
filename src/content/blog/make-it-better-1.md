@@ -1,10 +1,9 @@
-image: "/images/dc9b92_cb48f3c5b7504a6687e46b744590cb6a~mv2_d_2048_1280_s_2.jpg"
 ---
+image: "/images/dc9b92_cb48f3c5b7504a6687e46b744590cb6a~mv2_d_2048_1280_s_2.jpg"
 title: "Make It Better"
 description: "Back when Laura and I started working together on Miscellaneous Projects, circa 2012, we were also sharing our fledgling interest in..."
 pubDate: '2019-09-05'
 categories: ["observings", "readings"]
-image: ""
 readTime: 2
 views: 6
 comments: 0

@@ -1,9 +1,8 @@
-image: "/images/dc9b92_a11af88a4e094b0d9bccd01b67540964~mv2_d_2000_1500_s_2.jpg"
 ---
+image: "/images/dc9b92_a11af88a4e094b0d9bccd01b67540964~mv2_d_2000_1500_s_2.jpg"
 title: "SAVORING :: COMPLEXITY"
 pubDate: '2019-10-30'
 categories: []
-image: ""
 views: 2
 likes: 0
 comments: 0
