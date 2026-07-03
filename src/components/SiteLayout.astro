@@ -126,13 +126,17 @@ const { title, description } = Astro.props;
 					</div>
 				</div>
 				<div class="footer-copy">
-					<p>&copy; 2020 :: Digital Nouveau :: A Miscellaneous Project :: New York</p>
+					<p>&copy; <span id="footer-year"></span> :: Digital Nouveau :: A <a href="https://www.miscproj.com" target="_blank">Miscellaneous Project :: New York</a></p>
 					<p class="footer-email">digital[dot]nouveau[@]gmail[dot]com</p>
 				</div>
 			</div>
 		</footer>
 
 		<script>
+			// Dynamic footer year
+			var yearSpan = document.getElementById('footer-year');
+			if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
 			// Hamburger menu toggle
 			const mobileMenu = document.getElementById('mobileMenu');
 			const mobileOverlay = document.getElementById('mobileOverlay');
