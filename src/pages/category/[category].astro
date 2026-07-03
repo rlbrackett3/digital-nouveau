@@ -39,35 +39,42 @@ const filteredPosts = allPosts
 				const dateStr = post.data.pubDate
 					? new Date(post.data.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
 					: '';
+				// Extract text-only body excerpt for posts without images
+				const bodyText = (post.body || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+				const excerpt = bodyText.length > 180 ? bodyText.substring(0, 180) + '...' : bodyText;
 				return (
 					<article class="category-card">
-										<a href={`/blog/${post.id}`} class="category-card-link">
-											{post.data.image && (
-												<div class="category-card-image">
-													<img src={post.data.image} alt={post.data.title} loading="lazy" />
-												</div>
-											)}
-											<div class="category-card-body">
-												<time class="category-card-date">{dateStr}</time>
-												<h2 class="category-card-title">{post.data.title}</h2>
-												<div class="category-card-stats">
-							{post.data.views !== undefined && (
-								<span class="category-stat">
-									<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-									{post.data.views}
-								</span>
+						<a href={`/blog/${post.id}`} class="category-card-link">
+							{post.data.image ? (
+								<div class="category-card-image">
+									<img src={post.data.image} alt={post.data.title} loading="lazy" />
+								</div>
+							) : (
+								<div class="category-card-excerpt">
+									<p>{excerpt}</p>
+								</div>
 							)}
-							{post.data.likes !== undefined && (
-								<span class="category-stat">
-									<svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-									{post.data.likes}
-								</span>
-							)}
-						</div>
-						<span class="category-card-read-more">Read More &gt;~</span>
-											</div>
-										</a>
-									</article>
+							<div class="category-card-body">
+								<time class="category-card-date">{dateStr}</time>
+								<h2 class="category-card-title">{post.data.title}</h2>
+								<div class="category-card-stats">
+									{post.data.views !== undefined && (
+										<span class="category-stat">
+											<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+											{post.data.views}
+										</span>
+									)}
+									{post.data.likes !== undefined && (
+										<span class="category-stat">
+											<svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+											{post.data.likes}
+										</span>
+									)}
+								</div>
+								<span class="category-card-read-more">Read More &gt;~</span>
+							</div>
+						</a>
+					</article>
 				);
 			})}
 		</div>
@@ -99,35 +106,14 @@ const filteredPosts = allPosts
 	background: rgba(0, 0, 0, 0.75);
 	border: 1px solid var(--accent);
 	overflow: hidden;
-	transition: all 0.2s;
 }
 
 .category-card-link:hover {
-	border-color: var(--text-primary-hover);
-	background: rgba(0, 0, 0, 0.85);
-}
-
-.category-card-link:hover .category-card-title {
-	color: var(--text-primary-hover);
-}
-
-.category-card-read-more {
-	display: block;
-	font-size: 10px;
-	font-family: var(--font-body);
-	font-weight: var(--font-weight-body);
-	color: var(--accent-dim);
-	margin-top: 4px;
-	opacity: 0.5;
-	transition: opacity 0.2s, color 0.2s;
-	letter-spacing: 0.03em;
-}
-
-.category-card-link:hover .category-card-read-more {
+	border-color: var(--accent);
 	opacity: 1;
-	color: var(--text-primary-hover);
 }
 
+/* Image or excerpt area — top 50% of card */
 .category-card-image {
 	width: 100%;
 	height: 50%;
@@ -141,6 +127,30 @@ const filteredPosts = allPosts
 	object-fit: cover;
 }
 
+.category-card-excerpt {
+	width: 100%;
+	height: 50%;
+	padding: 14px;
+	overflow: hidden;
+	background: var(--accent-ghost);
+	display: flex;
+	align-items: flex-start;
+}
+
+.category-card-excerpt p {
+	font-size: 11px;
+	color: rgba(28, 235, 244, 0.5);
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	line-height: 1.5;
+	margin: 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* Card body */
 .category-card-body {
 	padding: 14px;
 	flex: 1;
@@ -188,6 +198,17 @@ const filteredPosts = allPosts
 
 .category-stat svg {
 	color: rgba(28, 235, 244, 0.45);
+}
+
+.category-card-read-more {
+	display: block;
+	font-size: 10px;
+	font-family: var(--font-body);
+	font-weight: var(--font-weight-body);
+	color: var(--accent-dim);
+	margin-top: 4px;
+	letter-spacing: 0.03em;
+	transition: opacity 0.2s;
 }
 
 @media (max-width: 768px) {
