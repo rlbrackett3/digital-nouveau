@@ -161,7 +161,7 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 
 /* Card body — content + stats */
 .feed-card-body {
-	padding: 24px 28px;
+	padding: 24px 115px 60px;
 }
 
 .feed-card-date {
@@ -222,7 +222,7 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	max-width: 100%;
 	height: auto;
 	display: block;
-	margin: 1.5em auto;
+	margin: 1.5em 0;
 }
 
 .feed-card-content figure {
@@ -330,10 +330,10 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 
 @media (max-width: 600px) {
 	.feed-card-body {
-		padding: 12px 14px;
+		padding: 16px;
 	}
 	.feed-card-title {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.feed-card-stats {
 		gap: 10px;

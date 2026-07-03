@@ -641,17 +641,21 @@ p {
   color: var(--accent);
   line-height: 1.5;
   padding: 0 var(--header-padding-x) 40px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.footer-copy p {
-  margin: 0 0 4px;
+.footer-left {
+  margin: 0;
   color: var(--accent);
 }
 
-.footer-email {
+.footer-right {
+  margin: 0;
   font-size: 10px;
   opacity: 0.6;
+  color: var(--accent);
 }
 
 /* ── Video embeds — responsive 16:9, full column width ── */
