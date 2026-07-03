@@ -79,7 +79,7 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 
 	<script is:inline>
 	(function() {
-		var BATCH = 3;
+		var BATCH = 5;
 		var grid = document.getElementById('feed-container');
 		var sentinel = document.getElementById('scroll-sentinel');
 		var loadMore = document.getElementById('load-more');
@@ -200,7 +200,7 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	color: #ff4040;
 }
 
-/* Full post content — dynamic height, inline images */
+/* Full post content — clipped with fade, no underlines */
 .feed-card-content {
 	font-size: 14px;
 	color: var(--text-secondary);
@@ -208,6 +208,20 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	font-weight: var(--font-weight-body);
 	line-height: 1.7;
 	margin: 0 0 16px;
+	max-height: 480px;
+	overflow: hidden;
+	position: relative;
+}
+
+.feed-card-content::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 120px;
+	background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.95));
+	pointer-events: none;
 }
 
 .feed-card-content p {
@@ -255,7 +269,11 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 
 .feed-card-content a {
 	color: var(--accent);
-	text-decoration: underline;
+	text-decoration: none;
+}
+
+.feed-card-content a:hover {
+	color: #ff4040;
 }
 
 .feed-card-content blockquote {
