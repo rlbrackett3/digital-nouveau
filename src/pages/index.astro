@@ -52,11 +52,6 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 		{postsData.map(pc => (
 			<article class="feed-card" data-cats={JSON.stringify(pc.categories)} data-post-id={pc.id}>
 				<a href={`/blog/${pc.id}`} class="feed-card-link">
-					{pc.image && (
-						<div class="feed-card-image">
-							<img src={pc.image} alt="" loading="lazy" />
-						</div>
-					)}
 					<div class="feed-card-body">
 						<time class="feed-card-date">{pc.date}{pc.readTime ? ` : ${pc.readTime}` : ''}</time>
 						<h2 class="feed-card-title">{pc.title}</h2>
@@ -163,18 +158,8 @@ const postsData = await Promise.all(sortedPosts.map(async (post) => {
 	opacity: 1 !important;
 }
 
-.feed-card-image {
-	width: 100%;
-	overflow: hidden;
-	background: rgba(28, 235, 244, 0.05);
-}
 
-.feed-card-image img {
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
+/* Card body — content + stats */
 .feed-card-body {
 	padding: 24px 28px;
 }
