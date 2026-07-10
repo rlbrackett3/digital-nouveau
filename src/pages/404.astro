@@ -1,0 +1,60 @@
+---
+import SiteLayout from '@/components/SiteLayout.astro';
+---
+
+<SiteLayout title="Not found">
+	<main class="not-found-page">
+		<div class="not-found-container">
+			<h1 class="not-found-title">404</h1>
+			<p class="not-found-subtitle">Page not found. The coordinates don't lead here.</p>
+			<a href="/" class="not-found-link">return to feed</a>
+		</div>
+	</main>
+</SiteLayout>
+
+<style>
+	.not-found-page {
+		padding-top: 120px;
+		padding-bottom: 120px;
+		text-align: center;
+	}
+
+	.not-found-container {
+		max-width: 688px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.not-found-title {
+		font-size: 120px;
+		font-weight: 100;
+		color: var(--accent);
+		letter-spacing: -4px;
+		margin: 0;
+		line-height: 1;
+	}
+
+	.not-found-subtitle {
+		font-size: 16px;
+		color: rgba(28, 235, 244, 0.6);
+		font-family: var(--font-body);
+		font-weight: var(--font-weight-body);
+		margin-top: 16px;
+		line-height: 1.6;
+	}
+
+	.not-found-link {
+		display: inline-block;
+		margin-top: 32px;
+		font-size: 13px;
+		color: var(--accent);
+		text-decoration: none;
+		border-bottom: 1px solid var(--accent-dim);
+		padding-bottom: 2px;
+		transition: border-color 0.2s;
+	}
+
+	.not-found-link:hover {
+		border-color: var(--accent);
+	}
+</style>
