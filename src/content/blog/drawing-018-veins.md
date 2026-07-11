@@ -2,7 +2,7 @@
 title: "Drawing 018 - Veins"
 pubDate: '2013-07-14'
 categories: ["drawings", "thinkings"]
-image: "/images/dc9b92_b854bb26e6da4e51b764caa928d020a4~mv2_d_2000_1500_s_2.png"
+image: "/images/dc9b92_b854bb26e6da4e51b764caa928d020a4~mv2_d_2000_1500_s_2.jpg"
 readTime: 1
 views: 5
 comments: 0
@@ -15,7 +15,7 @@ likes: 0
 </figure>
 
 <figure>
-![Sun-dried branch found near Ghost Ranch, NM. It is dyed red by the hot red soil filling a valley floor.](/images/dc9b92_8d6c17bfc5e74c44b692d900e9b7367f~mv2.png)
+![Sun-dried branch found near Ghost Ranch, NM. It is dyed red by the hot red soil filling a valley floor.](/images/dc9b92_8d6c17bfc5e74c44b692d900e9b7367f~mv2.jpg)
 <figcaption>Sun-dried branch found near Ghost Ranch, NM. It is dyed red by the hot red soil filling a valley floor.</figcaption>
 </figure>
 

@@ -89,7 +89,7 @@ The Dark Crystal - Jim Henson's and Frank Oz's 1982 classic of fantasy storytell
 </figure>
 
 <figure>
-<img src="/images/dc9b92_12fb3351389a4f40a3fcc6f6a2a1b3a2~mv2.png" alt="">
+<img src="/images/dc9b92_12fb3351389a4f40a3fcc6f6a2a1b3a2~mv2.jpg" alt="">
 
 </figure>
 

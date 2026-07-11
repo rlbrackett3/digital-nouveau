@@ -3,7 +3,7 @@ title: "Drawing 020 :: Laminar Erosion Process"
 description: "Start with a blank page. Draw two roughly parallel squiggly curves from the top center to lower left corner. Draw progressively smoothing..."
 pubDate: '2015-01-25'
 categories: ["drawings"]
-image: "/images/dc9b92_3389cbbef5a84535ba02c9ae128d28c9~mv2.png"
+image: "/images/dc9b92_3389cbbef5a84535ba02c9ae128d28c9~mv2.jpg"
 readTime: 1
 views: 1
 comments: 0
@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![DELAM](/images/dc9b92_3389cbbef5a84535ba02c9ae128d28c9~mv2.png)
+![DELAM](/images/dc9b92_3389cbbef5a84535ba02c9ae128d28c9~mv2.jpg)
 <figcaption>DELAM</figcaption>
 </figure>
 

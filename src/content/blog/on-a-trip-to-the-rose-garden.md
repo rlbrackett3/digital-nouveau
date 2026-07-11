@@ -1,5 +1,5 @@
 ---
-image: "/images/dc9b92_5f03fb2ae08e4fd78a7f932921500c73~mv2_d_2550_2551_s_4_2.png"
+image: "/images/dc9b92_5f03fb2ae08e4fd78a7f932921500c73~mv2_d_2550_2551_s_4_2.jpg"
 title: "On a trip to the rose garden"
 description: "I made an afternoon in the Brooklyn Botanical Gardens last fall while the roses were in full bloom.  This is one of a series of drawings..."
 pubDate: '2013-02-28'

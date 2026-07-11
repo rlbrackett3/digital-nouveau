@@ -3,7 +3,7 @@ title: "DN Studios Application"
 description: "In a constant search for a way to collect, process, manage and integrate my work teaching architecture and design courses @ Pratt and..."
 pubDate: '2013-06-28'
 categories: ["design", "readings"]
-image: "/images/dc9b92_f0a63ac805974a189514dc497cebbaf2~mv2.png"
+image: "/images/dc9b92_f0a63ac805974a189514dc497cebbaf2~mv2.jpg"
 readTime: 1
 views: 3
 comments: 0
@@ -11,12 +11,12 @@ likes: 0
 ---
 
 <figure>
-![Initial design information architecture map](/images/dc9b92_f0a63ac805974a189514dc497cebbaf2~mv2.png)
+![Initial design information architecture map](/images/dc9b92_f0a63ac805974a189514dc497cebbaf2~mv2.jpg)
 <figcaption>Initial design information architecture map</figcaption>
 </figure>
 
 <figure>
-![Concept sketch produced during a planning meeting @ Pratt](/images/dc9b92_ff639d8f4f3b4720b3a5d075b750f304~mv2.png)
+![Concept sketch produced during a planning meeting @ Pratt](/images/dc9b92_ff639d8f4f3b4720b3a5d075b750f304~mv2.jpg)
 <figcaption>Concept sketch produced during a planning meeting @ Pratt</figcaption>
 </figure>
 

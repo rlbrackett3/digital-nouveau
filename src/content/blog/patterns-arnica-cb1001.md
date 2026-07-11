@@ -3,7 +3,7 @@ title: "Patterns || Arnica CB1001"
 description: "Desktop background patterns utilizing a concept rendering of the Arnica Coat Button top view.  The designs tend to form around an X, and..."
 pubDate: '2013-09-23'
 categories: ["design"]
-image: "/images/dc9b92_70ed1e0efd184e1bbf9676e7a0385ef8~mv2_d_2560_1440_s_2.png"
+image: "/images/dc9b92_70ed1e0efd184e1bbf9676e7a0385ef8~mv2_d_2560_1440_s_2.jpg"
 readTime: 1
 views: 1
 comments: 0
@@ -21,7 +21,7 @@ likes: 0
 </figure>
 
 <figure>
-![Gears (Rotating)](/images/dc9b92_232b1b2a7cd34cbc85b563e362cc5ee3~mv2.png)
+![Gears (Rotating)](/images/dc9b92_232b1b2a7cd34cbc85b563e362cc5ee3~mv2.jpg)
 <figcaption>Gears (Rotating)</figcaption>
 </figure>
 

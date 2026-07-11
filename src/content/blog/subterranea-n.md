@@ -3,7 +3,7 @@ title: "SubTerranea[N]"
 description: "A quick charcoal drawing that I made during studio at Pratt.  I wanted to give the students a little change of pace and try to loosen..."
 pubDate: '2015-01-21'
 categories: ["drawings"]
-image: "/images/dc9b92_18a6de95d54f4a6e9c1bb42cda274647~mv2.png"
+image: "/images/dc9b92_18a6de95d54f4a6e9c1bb42cda274647~mv2.jpg"
 readTime: 1
 views: 2
 comments: 0
@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Designing expressive landscapes with charcoal](/images/dc9b92_18a6de95d54f4a6e9c1bb42cda274647~mv2.png)
+![Designing expressive landscapes with charcoal](/images/dc9b92_18a6de95d54f4a6e9c1bb42cda274647~mv2.jpg)
 <figcaption>Designing expressive landscapes with charcoal</figcaption>
 </figure>
 

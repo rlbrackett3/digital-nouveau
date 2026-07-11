@@ -3,7 +3,7 @@ title: "Have you seen me? New fossil found!"
 description: "We are not yet clear on what creature this may have belonged to. Given its extremely delicate nature we are taking every precaution in..."
 pubDate: '2013-02-19'
 categories: ["drawings"]
-image: "/images/dc9b92_2c6ac56071e24c4ba2873cc9c731fc85~mv2.png"
+image: "/images/dc9b92_2c6ac56071e24c4ba2873cc9c731fc85~mv2.jpg"
 readTime: 1
 views: 1
 comments: 0
@@ -11,7 +11,7 @@ likes: 0
 ---
 
 <figure>
-![Section of vertebrae found at North Brooklyn dig.](/images/dc9b92_2c6ac56071e24c4ba2873cc9c731fc85~mv2.png)
+![Section of vertebrae found at North Brooklyn dig.](/images/dc9b92_2c6ac56071e24c4ba2873cc9c731fc85~mv2.jpg)
 <figcaption>Section of vertebrae found at North Brooklyn dig.</figcaption>
 </figure>
 

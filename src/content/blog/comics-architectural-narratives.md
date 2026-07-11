@@ -24,7 +24,7 @@ A fundamental tension exists between the visual communication of architectural d
 Over fifteen semesters of paired teaching with Professor Sacha Frey in the first-year architecture studio sequence we have explored and developed many strategies for integrating writing, both generative and descriptive, with design work. Our most successful format for connecting the two disparate mediums has been adopting strategies from Comic design. The Comic provides a semi-sequential, but not necessarily linear, framework of windows into a project at multiple scales. Primary influence developed from the work of Chris Ware’s Building Stories and Scott McCloud’s Time Frames – Understanding Comics. By adopting a medium that is a text-graphic hybrid from outside either discipline, we decolonize both specializations and provide greater access to participation for all our Students, native and nonnative English-speakers. Traditional and experimental architectural drawings can operate together on a single page due to the ability to isolate local content. Text can operate at multiple scales to notate specific conditions of form and program within the frame and negotiate the space between frames with local narratives connecting non-linear moments within a project. Students can build writing into their design process by creating iterations of comic sequences. The visual format operates similarly to the traditional architecture drawing sets with the text refocusing the content on telling multiple simultaneous stories within a project.
 
 <figure>
-![Daniella Tero :: SP19](/images/dc9b92_b130d45834c649daa0a405bb5122f622~mv2.png)
+![Daniella Tero :: SP19](/images/dc9b92_b130d45834c649daa0a405bb5122f622~mv2.jpg)
 <figcaption>Daniella Tero :: SP19</figcaption>
 </figure>
 

@@ -1,5 +1,5 @@
 ---
-image: "/images/dc9b92_d3b405e3332545de88f3589115288ff6~mv2_d_1970_2626_s_2.png"
+image: "/images/dc9b92_d3b405e3332545de88f3589115288ff6~mv2_d_1970_2626_s_2.jpg"
 title: "Drawing 004"
 description: "
 

@@ -3,7 +3,7 @@ title: "Landforms - Craggs"
 description: "Early design tests for a craggy landscape.  These employ Maya's nParticles and dynamic fields as a platform for generating turbulent..."
 pubDate: '2014-05-29'
 categories: ["design", "drawings"]
-image: "/images/dc9b92_abffbfd765dd4b4ca8dede58a9cd0e79~mv2.png"
+image: "/images/dc9b92_abffbfd765dd4b4ca8dede58a9cd0e79~mv2.jpg"
 readTime: 2
 views: 5
 comments: 0

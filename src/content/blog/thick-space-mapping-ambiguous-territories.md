@@ -1,5 +1,5 @@
 ---
-image: "/images/dc9b92_b3e8755437bf417fb8de8e7e67916df9~mv2_d_1200_1200_s_2.png"
+image: "/images/dc9b92_b3e8755437bf417fb8de8e7e67916df9~mv2_d_1200_1200_s_2.jpg"
 title: "THICK SPACE :: MAPPING AMBIGUOUS TERRITORIES"
 description: "'--- Mapping is a strategy for exploring new frontiers, reconciling the unknown into accessible information. It is an abstraction,..."
 pubDate: '2019-08-20'

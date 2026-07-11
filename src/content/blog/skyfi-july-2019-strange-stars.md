@@ -33,21 +33,21 @@ Minutes are going to be pretty slim because, well, the meeting was pretty slim. 
 I actually am really enjoying it (though, admittedly, I'm only halfway in).  I like the story being broken up into annual chapters and I'll basically jump at any excuse to revisit "Starless and Bible Black" &  "Space Ritual 2."  In fact, that's what I enjoy so much about it - listening along.  There are a lot of things I was only familiar with tangentially (looking at you Pearls Before Swine & Emerson Lake and Palmer) and I like piecing them together with the other more familiar characters.
 
 <figure>
-<img src="/images/dc9b92_da5ad4d3d5d4446a8f32b104c474881f~mv2.png" alt="">
+<img src="/images/dc9b92_da5ad4d3d5d4446a8f32b104c474881f~mv2.jpg" alt="">
 
 </figure>
 
 Currently digging into the Kraftwerk/ Krautrock section and would kindly refer everyone to Julian Cope's "Krautrocksampler" and Rob Young's "All Gates Are Open" for a deeper dive.  Also, I have become very curious about one Mr. Michael Moorcock, whom I've never read.  I especially like his characterizations of Hawkwind as "barbarians who got hold of loads of electrical gear"
 
 <figure>
-<img src="/images/dc9b92_4088d57adb624bf7a279faca26956d5d~mv2.png" alt="">
+<img src="/images/dc9b92_4088d57adb624bf7a279faca26956d5d~mv2.jpg" alt="">
 
 </figure>
 
 We talked a lot about TV and Gainesville and working with shitty people. We were going to pick one of Nate's suggestions, all of which looked interesting - but after the conversation diverted itself to Los Angeles we settled upon Steve Erickson's Shadowbahn,  in which the Twin Towers magically reappear in the Badlands and Elvis' stillborn twin brother is a main character.  Time to get weird.
 
 <figure>
-<img src="/images/dc9b92_98a9f1a5cdc24b6094d7a3c455510e02~mv2.png" alt="">
+<img src="/images/dc9b92_98a9f1a5cdc24b6094d7a3c455510e02~mv2.jpg" alt="">
 
 </figure>
 

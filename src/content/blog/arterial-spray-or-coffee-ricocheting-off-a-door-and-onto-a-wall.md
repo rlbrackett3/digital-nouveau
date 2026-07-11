@@ -1,5 +1,5 @@
 ---
-image: "/images/dc9b92_6196be220961431fa201dd9539c8bc81~mv2_d_2000_1500_s_2.png"
+image: "/images/dc9b92_6196be220961431fa201dd9539c8bc81~mv2_d_2000_1500_s_2.jpg"
 title: "Arterial Spray or Coffee Ricocheting Off a Door and Onto a Wall"
 description: "
 

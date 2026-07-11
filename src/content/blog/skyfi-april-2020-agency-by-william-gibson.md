@@ -3,7 +3,7 @@ title: "SkyFi :: April 2020 :: Agency by William Gibson"
 description: "Emerging from the black hole of final reviews and the added hustle of wrapping up a semester of challenges I have some time now to get..."
 pubDate: '2020-05-11'
 categories: ["observings", "skyfi"]
-image: "/images/dc9b92_420843d31a6a44ae92f3dfb4beca3a0d~mv2.png"
+image: "/images/dc9b92_420843d31a6a44ae92f3dfb4beca3a0d~mv2.jpg"
 readTime: 4
 views: 39
 likes: 1
@@ -13,7 +13,7 @@ comments: 0
 Emerging from the black hole of final reviews and the added hustle of wrapping up a semester of challenges I have some time now to get back to this writeup. Luckily I took some notes and already gathered many of the images and references. Just a bit of writing now.
 
 <figure>
-<img src="/images/dc9b92_420843d31a6a44ae92f3dfb4beca3a0d~mv2.png" alt="">
+<img src="/images/dc9b92_420843d31a6a44ae92f3dfb4beca3a0d~mv2.jpg" alt="">
 
 </figure>
 
@@ -22,7 +22,7 @@ A long gap as the world slowly falls apart and digitally sutures itself back tog
 Agency is the second book in Gibson's current trilogy, building upon the multi-threaded realities, or stubs, introduced in The Peripheral. In the long gap, several people decided to start with The Peripheral before going into Agency. I feel I probably should have (and will soon) reread it myself after our discussion. The Peripheral is a more complex and driven story as it builds out the near (and slightly further)  future with cataclysmic change and significantly advanced technology allowing for the branching of time and reality from past events through computational simulations. The future cast of characters returns in Agency to dig deeper into our more immediate present as autonomous systems and emergent reforming militaristic AI start to transcend the will and understanding of their human creators. The two books live in the same universe but are completely different explorations through the speculative lens. A light (lite) version of time travel based on communication and a multiverse of possibilities. Agency hits much closer to home building a new world from the slight shift in the 2016 US presidential election.
 
 <figure>
-<img src="/images/dc9b92_a86716ccf69e4ee388f960e0d9af3cac~mv2.png" alt="">
+<img src="/images/dc9b92_a86716ccf69e4ee388f960e0d9af3cac~mv2.jpg" alt="">
 
 </figure>
 

@@ -3,7 +3,7 @@ title: "Within the Pixels"
 description: "After Yesterdays post I kept playing around with the images of fungus (or molds, moss, lichen...) and just for fun threw an inversion..."
 pubDate: '2013-06-17'
 categories: ["readings", "thinkings"]
-image: "/images/dc9b92_0e8d39e087c24d5da05d5d19067a92f3~mv2.png"
+image: "/images/dc9b92_0e8d39e087c24d5da05d5d19067a92f3~mv2.jpg"
 readTime: 1
 views: 4
 comments: 0
@@ -11,22 +11,22 @@ likes: 0
 ---
 
 <figure>
-![It's like the electric surface of a pool on a sunny day.](/images/dc9b92_0e8d39e087c24d5da05d5d19067a92f3~mv2.png)
+![It's like the electric surface of a pool on a sunny day.](/images/dc9b92_0e8d39e087c24d5da05d5d19067a92f3~mv2.jpg)
 <figcaption>It's like the electric surface of a pool on a sunny day.</figcaption>
 </figure>
 
 <figure>
-![It's like the electric surface of a pool on a sunny day.](/images/dc9b92_5177b1408e6441c987ec3f3a7fd56f31~mv2.png)
+![It's like the electric surface of a pool on a sunny day.](/images/dc9b92_5177b1408e6441c987ec3f3a7fd56f31~mv2.jpg)
 <figcaption>It's like the electric surface of a pool on a sunny day.</figcaption>
 </figure>
 
 <figure>
-![Powers of 10](/images/dc9b92_36bb751b84384e51adea33d815151542~mv2.png)
+![Powers of 10](/images/dc9b92_36bb751b84384e51adea33d815151542~mv2.jpg)
 <figcaption>Powers of 10</figcaption>
 </figure>
 
 <figure>
-![This one almost makes me want to lay on it.](/images/dc9b92_91dd6362f5d24ad6b65657a85ed810d8~mv2.png)
+![This one almost makes me want to lay on it.](/images/dc9b92_91dd6362f5d24ad6b65657a85ed810d8~mv2.jpg)
 <figcaption>This one almost makes me want to lay on it.</figcaption>
 </figure>
 

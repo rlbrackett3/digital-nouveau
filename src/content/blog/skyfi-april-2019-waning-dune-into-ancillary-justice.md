@@ -33,7 +33,7 @@ Dune (by Frank Herbert) kicked things off, there is a recent article in SYFYwire
 </figure>
 
 <figure>
-<img src="/images/dc9b92_f38eb71a69dc4bcab577e80a64dc8fee~mv2.png" alt="">
+<img src="/images/dc9b92_f38eb71a69dc4bcab577e80a64dc8fee~mv2.jpg" alt="">
 
 </figure>
 

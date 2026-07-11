@@ -3,7 +3,7 @@ title: "Body Transforms :: Laminar Cloud :: Folly 2014"
 description: "Exploring the intersection of responsive dynamic form & human spatial perception. Light. Space. Position. Speed The stark white cloud..."
 pubDate: '2014-01-16'
 categories: ["design"]
-image: "/images/dc9b92_2e5c29b8a1684b52bbe9441b326b7560~mv2.png"
+image: "/images/dc9b92_2e5c29b8a1684b52bbe9441b326b7560~mv2.jpg"
 readTime: 4
 views: 2
 comments: 0

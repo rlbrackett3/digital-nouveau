@@ -3,7 +3,7 @@ title: "TechnoCrafting - The Digital Hand"
 description: "This blog started with a series of drawings. Simple black line renderings in a regularly shaped notebook I had sitting around, lacking..."
 pubDate: '2015-05-04'
 categories: ["drawings", "thinkings"]
-image: "/images/dc9b92_e22d5327cbf34f47b6a1d718654fd0e5~mv2.png"
+image: "/images/dc9b92_e22d5327cbf34f47b6a1d718654fd0e5~mv2.jpg"
 readTime: 2
 views: 0
 comments: 0

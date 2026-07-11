@@ -120,7 +120,7 @@ C.H.U.D. - Caniobalistic Humanoid Underground Dwellers - A fun look at NY Cities
 </figure>
 
 <figure>
-<img src="/images/dc9b92_1781cc3fb9b645ddba8d63eefcb49606~mv2.png" alt="">
+<img src="/images/dc9b92_1781cc3fb9b645ddba8d63eefcb49606~mv2.jpg" alt="">
 
 </figure>
 
@@ -167,7 +167,7 @@ Great particle simulation effects for the dualistic machine: T1 + T2 hybrid.
 It takes our face
 
 <figure>
-<img src="/images/dc9b92_a1dd00db300c400b9cffb0c9807db057~mv2.png" alt="">
+<img src="/images/dc9b92_a1dd00db300c400b9cffb0c9807db057~mv2.jpg" alt="">
 
 </figure>
 

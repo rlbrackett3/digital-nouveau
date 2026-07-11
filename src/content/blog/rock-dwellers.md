@@ -3,7 +3,7 @@ title: "Rock Dwellers"
 description: "Of the very small and somewhat freakish variety.  These are some samples of tiny creatures that cover the mostly shady sides of large..."
 pubDate: '2013-06-14'
 categories: ["readings", "thinkings"]
-image: "/images/dc9b92_f780ea5c046045ad9e552727d7d08296~mv2.png"
+image: "/images/dc9b92_f780ea5c046045ad9e552727d7d08296~mv2.jpg"
 readTime: 1
 views: 3
 comments: 0

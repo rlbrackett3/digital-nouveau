@@ -1,5 +1,5 @@
 ---
-image: "/images/dc9b92_6ed86992857b4b11af9e3a3b9e230b6f~mv2_d_1277_2000_s_2.png"
+image: "/images/dc9b92_6ed86992857b4b11af9e3a3b9e230b6f~mv2_d_1277_2000_s_2.jpg"
 title: "Cholla Cactus Wood - Joshua Tree National Park"
 description: "This is a series of shots focusing on the internal structure of a Cholla Cactus in the Joshua Tree National Forest.  Beautiful woven..."
 pubDate: '2013-06-05'

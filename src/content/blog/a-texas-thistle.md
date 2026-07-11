@@ -1,5 +1,5 @@
 ---
-image: "/images/dc9b92_9950a045a4d244abbb0b0204574a1df4~mv2_d_2000_2000_s_2.png"
+image: "/images/dc9b92_9950a045a4d244abbb0b0204574a1df4~mv2_d_2000_2000_s_2.jpg"
 title: "A Texas Thistle"
 description: "Image development for a poster. Theme to address the alienating and discouraging situation afflicting humans crossing arbitrary borders...."
 pubDate: '2019-08-20'
@@ -20,7 +20,7 @@ Image development for a poster. Theme to address the alienating and discouraging
 Remembering influences, and the current under the film, our fear of the other.
 
 <figure>
-<img src="/images/dc9b92_8d97df3d2fdf48ef92e50777025ff9ed~mv2.png" alt="">
+<img src="/images/dc9b92_8d97df3d2fdf48ef92e50777025ff9ed~mv2.jpg" alt="">
 
 </figure>
 
@@ -33,6 +33,6 @@ Protected from within, isolated from without.
 The final poster sent for production brings the child back into focus. A space of a dream of a memory, something to escape into, or perhaps escape through. A shared space of connection between humans in a region of the earth with a shared beauty, communal wonder at the vibrancy of life. Share and be free.
 
 <figure>
-<img src="/images/dc9b92_68165fc6182445eca95bb4384309955f~mv2.png" alt="">
+<img src="/images/dc9b92_68165fc6182445eca95bb4384309955f~mv2.jpg" alt="">
 
 </figure>

@@ -3,7 +3,7 @@ title: "Suspended"
 description: "Each of us lives most fully 'on the wire' in the face of death, daring to do the very thing which fear prevents us from. :: Akira..."
 pubDate: '2015-07-21'
 categories: ["readings", "thinkings"]
-image: "/images/dc9b92_6b394a9c22a246c9a31ab1401b735a72~mv2.png"
+image: "/images/dc9b92_6b394a9c22a246c9a31ab1401b735a72~mv2.jpg"
 readTime: 1
 views: 4
 likes: 1
@@ -11,7 +11,7 @@ comments: 0
 ---
 
 <figure>
-![Wires](/images/dc9b92_6b394a9c22a246c9a31ab1401b735a72~mv2.png)
+![Wires](/images/dc9b92_6b394a9c22a246c9a31ab1401b735a72~mv2.jpg)
 <figcaption>Wires</figcaption>
 </figure>
 

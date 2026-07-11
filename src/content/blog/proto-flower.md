@@ -1,5 +1,5 @@
 ---
-image: "/images/dc9b92_ec49f5f46a9247e5b11d96988224afbf~mv2_d_1200_1200_s_2.png"
+image: "/images/dc9b92_ec49f5f46a9247e5b11d96988224afbf~mv2_d_1200_1200_s_2.jpg"
 title: "Proto Flower"
 description: "www.shoparnica.com"
 pubDate: '2013-07-08'
