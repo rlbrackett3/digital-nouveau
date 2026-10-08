@@ -92,4 +92,34 @@ const socialLinks = [
 			gap: 12px;
 		}
 	}
-</style>
+	</style>
+
+	<script is:inline>
+	(function() {
+		var copyLink = document.querySelector('.share-copy');
+		if (!copyLink) return;
+		copyLink.addEventListener('click', function(e) {
+			e.preventDefault();
+			var url = copyLink.getAttribute('data-url');
+			function done(ok) {
+				copyLink.style.color = ok ? 'var(--accent)' : '';
+				copyLink.title = ok ? 'Copied' : 'Copy failed';
+				setTimeout(function() { copyLink.style.color = ''; copyLink.title = 'Copy Link'; }, 1500);
+			}
+			if (navigator.clipboard && navigator.clipboard.writeText) {
+				navigator.clipboard.writeText(url).then(function(){ done(true); }, function(){ done(false); });
+			} else {
+				var ta = document.createElement('textarea');
+				ta.value = url;
+				ta.style.position = 'fixed';
+				ta.style.opacity = '0';
+				document.body.appendChild(ta);
+				ta.select();
+				var ok = false;
+				try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+				document.body.removeChild(ta);
+				done(ok);
+			}
+		});
+	})();
+	</script>
