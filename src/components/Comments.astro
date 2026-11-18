@@ -1,15 +1,18 @@
 ---
 // Comments via giscus — real backend: GitHub Discussions.
 // One Discussion per post, keyed to pathname. No server, no tracking, data owned by repo.
-// Leave GISCUS.repoId empty to render nothing (e.g. before the giscus GitHub App is installed).
+// Leave ENABLED false until the giscus GitHub App is installed on the repo:
+// https://github.com/apps/giscus -> Install -> select ONLY digital-nouveau
+const ENABLED = false;
+
 const GISCUS = {
 	repo: 'rlbrackett3/digital-nouveau',
-	repoId: '', // R_ / O_ id from https://giscus.app — fill after app install
-	category: 'Announcements',
-	categoryId: '', // DISC_ id from https://giscus.app
+	repoId: 'R_kgDOVzFs8g',
+	category: 'General',
+	categoryId: 'DIC_kwDOVzFs8s4DLa9l',
 };
 
-const enabled = Boolean(GISCUS.repoId && GISCUS.categoryId);
+const enabled = ENABLED && Boolean(GISCUS.repoId && GISCUS.categoryId);
 ---
 
 {enabled && (
