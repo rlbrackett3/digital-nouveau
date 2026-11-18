@@ -541,43 +541,10 @@ p {
   padding: 0;
 }
 
-.footer-band {
-  background: rgba(0, 0, 0, 0.85);
-  border: 1px solid var(--accent);
-  padding: 32px 24px;
-  margin: 0 var(--header-padding-x) 32px;
-  text-align: left;
-}
 
-.newsletter-title {
-  font-size: 14px;
-  color: var(--accent);
-  margin-bottom: 20px;
-  font-weight: 100;
-  letter-spacing: 0.05em;
-}
 
-.newsletter-form {
-  display: flex;
-  gap: 16px;
-  align-items: flex-end;
-  flex-wrap: wrap;
-}
 
-.newsletter-fields {
-  display: flex;
-  gap: 20px;
-  align-items: flex-end;
-  flex: 1;
-  min-width: 0;
-}
 
-.newsletter-field {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 0;
-}
 
 .field-label {
   font-size: 11px;
@@ -587,26 +554,8 @@ p {
   letter-spacing: 0.05em;
 }
 
-.newsletter-field input {
-  padding: 4px 0;
-  border: none;
-  border-bottom: 1px solid rgba(28, 235, 244, 0.4);
-  background: transparent;
-  color: var(--accent);
-  font-size: 14px;
-  font-family: var(--font-body);
-  font-weight: 100;
-  outline: none;
-  min-width: 0;
-}
 
-.newsletter-field input::placeholder {
-  color: var(--accent-dim);
-}
 
-.newsletter-field input:focus {
-  border-bottom-color: var(--accent);
-}
 
 .field-separator {
   color: var(--accent);
@@ -618,25 +567,7 @@ p {
   user-select: none;
 }
 
-.newsletter-form button {
-  padding: 8px 16px;
-  border: 1px solid var(--accent);
-  background: transparent;
-  color: var(--accent);
-  font-size: 12px;
-  cursor: pointer;
-  font-family: var(--font-body);
-  font-weight: 100;
-  letter-spacing: 0.05em;
-  transition: all 0.2s;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
 
-.newsletter-form button:hover {
-  border-color: var(--accent);
-  background: var(--border-subtle);
-}
 
 .footer-copy {
   font-size: 11px;
@@ -819,28 +750,13 @@ p {
 		padding: 40px 0;
 	}
 
-	.newsletter-form {
-		flex-direction: column;
-		align-items: stretch;
-		gap: 12px;
-	}
 
-	.newsletter-fields {
-		flex-direction: column;
-		gap: 12px;
-	}
 
 	.field-separator {
 		display: none;
 	}
 
-	.newsletter-field input {
-		width: 100%;
-	}
 
-	.newsletter-form button {
-		width: 100%;
-	}
 
 	.footer-copy {
 		font-size: 10px;

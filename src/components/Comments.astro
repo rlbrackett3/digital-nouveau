@@ -1,30 +1,40 @@
 ---
-// Comments — form + submit button + comment display area
+// Comments via giscus — real backend: GitHub Discussions.
+// One Discussion per post, keyed to pathname. No server, no tracking, data owned by repo.
+// Leave GISCUS.repoId empty to render nothing (e.g. before the giscus GitHub App is installed).
+const GISCUS = {
+	repo: 'rlbrackett3/digital-nouveau',
+	repoId: '', // R_ / O_ id from https://giscus.app — fill after app install
+	category: 'Announcements',
+	categoryId: '', // DISC_ id from https://giscus.app
+};
+
+const enabled = Boolean(GISCUS.repoId && GISCUS.categoryId);
 ---
 
-<div class="comments-section">
-	<div class="comments-container">
-		<h2 class="comments-title">&gt; comments</h2>
-		<div class="comments-divider"></div>
-
-		<!-- Comment display area -->
-		<div class="comments-list" id="comments-list">
-			<!-- Existing comments rendered here -->
+{enabled && (
+	<div class="comments-section">
+		<div class="comments-container">
+			<h2 class="comments-title">&gt; comments</h2>
+			<div class="comments-divider"></div>
+			<div
+				id="giscus-thread"
+				class="giscus"
+				data-repo={GISCUS.repo}
+				data-repo-id={GISCUS.repoId}
+				data-category={GISCUS.category}
+				data-category-id={GISCUS.categoryId}
+				data-mapping="pathname"
+				data-reactions-enabled="1"
+				data-emit-metadata="0"
+				data-input-position="top"
+				data-theme="transparent_dark"
+				data-lang="en"
+				loading="lazy"
+			></div>
 		</div>
-
-		<!-- Comment form -->
-		<form class="comments-form" id="comment-form">
-			<div class="comments-form-row">
-				<input type="text" class="comments-form-input comments-form-name" name="name" placeholder="name" aria-label="Name" required />
-				<input type="email" class="comments-form-input comments-form-email" name="email" placeholder="e-mail" aria-label="Email" required />
-			</div>
-			<textarea class="comments-form-textarea" name="comment" placeholder="Write a comment..." aria-label="Comment" required></textarea>
-			<div class="comments-form-actions">
-				<button type="submit" class="comments-submit-btn">&gt; submit comment</button>
-			</div>
-		</form>
 	</div>
-</div>
+)}
 
 <style is:global>
 	.comments-section {
@@ -62,187 +72,16 @@
 		flex-shrink: 0;
 	}
 
-	/* Comment display area */
-	.comments-list {
-		margin-bottom: 24px;
+	/* giscus iframe inherits the site's dark/cyan surface */
+	.giscus {
+		min-height: 120px;
 	}
 
-	.comment-item {
-		padding: 16px 0;
-		border-bottom: 1px solid rgba(28, 235, 244, 0.1);
-	}
-
-	.comment-item:last-child {
-		border-bottom: none;
-	}
-
-	.comment-header {
-		display: flex;
-		gap: 12px;
-		align-items: center;
-		margin-bottom: 8px;
-		font-size: 12px;
-	}
-
-	.comment-author {
-		color: var(--accent);
-		font-weight: 400;
-	}
-
-	.comment-date {
-		color: var(--text-muted);
-	}
-
-	.comment-body {
-		font-size: 14px;
-		font-family: var(--font-body);
-		font-weight: var(--font-weight-body);
-		color: rgba(28, 235, 244, 0.75);
-		line-height: 1.6;
-	}
-
-	/* Form */
-	.comments-form {
-		display: flex;
-		flex-direction: column;
-		gap: 12px;
-	}
-
-	.comments-form-row {
-		display: flex;
-		gap: 16px;
-	}
-
-	.comments-form-input {
-		flex: 1;
-		min-width: 0;
-		background: transparent;
-		border: none;
-		border-bottom: 1px solid rgba(28, 235, 244, 0.2);
-		padding: 8px 0;
-		color: rgba(28, 235, 244, 0.85);
-		font-family: var(--font-body);
-		font-size: 14px;
-		font-weight: var(--font-weight-body);
-		outline: none;
-		transition: border-color 0.2s;
-	}
-
-	.comments-form-input:focus {
-		border-bottom-color: var(--accent);
-	}
-
-	.comments-form-input::placeholder {
-		color: rgba(28, 235, 244, 0.3);
-	}
-
-	.comments-form-textarea {
-		flex: 1;
-		min-height: 80px;
-		width: 100%;
-		background: transparent;
-		border: none;
-		border-bottom: 1px solid rgba(28, 235, 244, 0.2);
-		padding: 8px 0;
-		color: rgba(28, 235, 244, 0.85);
-		font-family: var(--font-body);
-		font-size: 14px;
-		font-weight: var(--font-weight-body);
-		resize: none;
-		line-height: 1.6;
-		outline: none;
-		transition: border-color 0.2s;
-	}
-
-	.comments-form-textarea:focus {
-		border-bottom-color: var(--accent);
-	}
-
-	.comments-form-textarea::placeholder {
-		color: rgba(28, 235, 244, 0.3);
-	}
-
-	.comments-form-actions {
-		display: flex;
-		justify-content: flex-start;
-		margin-top: 4px;
-	}
-
-	.comments-submit-btn {
-		background: transparent;
-		border: 1px solid var(--accent);
-		color: var(--accent);
-		font-family: var(--font-body);
-		font-size: 12px;
-		font-weight: var(--font-weight-body);
-		padding: 8px 20px;
-		cursor: pointer;
-		letter-spacing: 0.05em;
-		transition: all 0.2s;
-	}
-
-	.comments-submit-btn:hover {
-		background: var(--accent-faint);
-	}
-
-	@media (max-width: 768px) {
-		.comments-form-row {
-			flex-direction: column;
-			gap: 12px;
-		}
+	.giscus > iframe {
+		color-scheme: dark;
 	}
 </style>
 
-<!-- Client-side comment handling -->
-<script is:inline>
-(function() {
-	var form = document.getElementById('comment-form');
-	var list = document.getElementById('comments-list');
-	if (!form || !list) return;
-
-	// Load saved comments from localStorage
-	var comments = JSON.parse(localStorage.getItem('dn-comments') || '[]');
-
-	function renderComments() {
-		list.innerHTML = '';
-		comments.forEach(function(c) {
-			var item = document.createElement('div');
-			item.className = 'comment-item';
-			item.innerHTML =
-				'<div class="comment-header">' +
-					'<span class="comment-author">' + escapeHTML(c.name) + '</span>' +
-					'<span class="comment-date">' + c.date + '</span>' +
-				'</div>' +
-				'<div class="comment-body">' + escapeHTML(c.text) + '</div>';
-			list.appendChild(item);
-		});
-	}
-
-	function escapeHTML(str) {
-		var div = document.createElement('div');
-		div.appendChild(document.createTextNode(str));
-		return div.innerHTML;
-	}
-
-	form.addEventListener('submit', function(e) {
-		e.preventDefault();
-		var name = form.querySelector('[name="name"]').value.trim();
-		var email = form.querySelector('[name="email"]').value.trim();
-		var text = form.querySelector('[name="comment"]').value.trim();
-		if (!name || !text) return;
-
-		var comment = {
-			name: name,
-			email: email,
-			text: text,
-			date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
-		};
-		comments.push(comment);
-		localStorage.setItem('dn-comments', JSON.stringify(comments));
-		form.reset();
-		renderComments();
-	});
-
-	renderComments();
-})();
-</script>
+{enabled && (
+	<script is:inline src="https://giscus.app/client.js" data-repo={GISCUS.repo} data-repo-id={GISCUS.repoId} data-category={GISCUS.category} data-category-id={GISCUS.categoryId} data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="transparent_dark" data-lang="en" crossorigin="anonymous" async></script>
+)}

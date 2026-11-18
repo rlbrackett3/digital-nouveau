@@ -1,0 +1,28 @@
+---
+// Legacy Wix URL compat: /post/<slug> -> /blog/<slug>
+// Static meta-refresh stub (no JS dependency) + canonical signal for search engines.
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { slug: post.id },
+	}));
+}
+
+const { slug } = Astro.params;
+const canonical = `/blog/${slug}/`;
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content={`0;url=${canonical}`} />
+		<link rel="canonical" href={new URL(canonical, Astro.site)} />
+		<meta name="robots" content="index, follow" />
+		<title>Redirecting...</title>
+	</head>
+	<body>
+		<p>MOVED: <a href={canonical}>this post now lives here</a></p>
+	</body>
+</html>
